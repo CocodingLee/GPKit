@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     UIEdgeInsets safeArea = gpSafeArea();
     NSLog(@"safeArea.top = %f" , safeArea.top);
 }

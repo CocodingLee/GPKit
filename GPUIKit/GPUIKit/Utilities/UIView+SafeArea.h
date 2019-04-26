@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (SafeArea)
+@interface UIView (GPSafeArea)
 @property (nonatomic , readonly) UIEdgeInsets gp_safeAreaInsets;
 @end
 

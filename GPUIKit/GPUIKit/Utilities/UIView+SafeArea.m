@@ -8,7 +8,7 @@
 
 #import "UIView+SafeArea.h"
 
-@implementation UIView (SafeArea)
+@implementation UIView (GPSafeArea)
 
 - (UIEdgeInsets) gp_safeAreaInsets
 {
