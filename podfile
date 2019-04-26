@@ -6,14 +6,23 @@
 workspace 'GPUIKit.xcworkspace'
 
 target 'GPUIKit' do
-  platform :ios, '8.0'
+  platform :ios, '9.0'
   project './GPUIKit/GPUIKit.xcodeproj'
 
 end
 
+# 本地工程
+def localPods
+    # UI库
+    pod 'GPUIKit'          , :path => './GPUIKit/'
+    
+end
+
 target 'GPUIKitDemo' do
-  platform :ios, '8.0'
+  platform :ios, '9.0'
   project './GPUIKitDemo/GPUIKitDemo.xcodeproj'
   
+  # loal
+  localPods
 end
 

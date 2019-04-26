@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AB2D26CDE74E3DC69EAF1D88 /* libPods-GPUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 473602EF16F935DE4E91529E /* libPods-GPUIKit.a */; };
+		D7897B162273043E0095CD53 /* UIView+SafeArea.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B142273043E0095CD53 /* UIView+SafeArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7897B172273043E0095CD53 /* UIView+SafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B152273043E0095CD53 /* UIView+SafeArea.m */; };
 		D7E9A2832272FC6E00CAEE53 /* GPUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -15,6 +17,8 @@
 		473602EF16F935DE4E91529E /* libPods-GPUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63134B0FF365D4A725DD9891 /* Pods-GPUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUIKit.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GPUIKit/Pods-GPUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		CD7AE1FF93B01581A0E7B0D8 /* Pods-GPUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUIKit.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPUIKit/Pods-GPUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		D7897B142273043E0095CD53 /* UIView+SafeArea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SafeArea.h"; sourceTree = "<group>"; };
+		D7897B152273043E0095CD53 /* UIView+SafeArea.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SafeArea.m"; sourceTree = "<group>"; };
 		D7E9A27E2272FC6E00CAEE53 /* GPUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUIKit.h; sourceTree = "<group>"; };
 		D7E9A2822272FC6E00CAEE53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +44,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D7897B132273040D0095CD53 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D7897B142273043E0095CD53 /* UIView+SafeArea.h */,
+				D7897B152273043E0095CD53 /* UIView+SafeArea.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		D7E9A2742272FC6E00CAEE53 = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +74,9 @@
 		D7E9A2802272FC6E00CAEE53 /* GPUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */,
 				D7E9A2822272FC6E00CAEE53 /* Info.plist */,
+				D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */,
+				D7897B132273040D0095CD53 /* Utilities */,
 			);
 			path = GPUIKit;
 			sourceTree = "<group>";
@@ -84,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7E9A2832272FC6E00CAEE53 /* GPUIKit.h in Headers */,
+				D7897B162273043E0095CD53 /* UIView+SafeArea.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7897B172273043E0095CD53 /* UIView+SafeArea.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <GPUIKit/GPUIKit.h>
 
 @interface ViewController ()
 
@@ -16,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIEdgeInsets safeArea = gpSafeArea();
+    NSLog(@"safeArea.top = %f" , safeArea.top);
 }
 
 
