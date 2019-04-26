@@ -1,0 +1,19 @@
+
+# 个人私有源
+# source "https://github.com/YanweiLi/GPSpecs.git"
+
+# workspace文件名
+workspace 'GPUIKit.xcworkspace'
+
+target 'GPUIKit' do
+  platform :ios, '8.0'
+  project './GPUIKit/GPUIKit.xcodeproj'
+
+end
+
+target 'GPUIKitDemo' do
+  platform :ios, '8.0'
+  project './GPUIKitDemo/GPUIKitDemo.xcodeproj'
+  
+end
+
