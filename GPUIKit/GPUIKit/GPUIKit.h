@@ -15,3 +15,4 @@
 
 #import <GPUIKit/UIImageView+GPWebCache.h>
 #import <GPUIKit/UIImage+GPRounded.h>
+#import <GPUIKit/UIImage+GPBlur.h>
