@@ -115,6 +115,25 @@
 			path = ImageBlur;
 			sourceTree = "<group>";
 		};
+		D7DA71932275B4FC0026543C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA718E2275B0BB0026543C /* ImageBlur */,
+				D7897B2222758DB70095CD53 /* ImageRound */,
+				D7897B2122758BB30095CD53 /* WebImageView */,
+				D7897B1822757F890095CD53 /* Button */,
+				D7897B132273040D0095CD53 /* SafeArea */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D7DA71942275B50B0026543C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		D7E9A2742272FC6E00CAEE53 = {
 			isa = PBXGroup;
 			children = (
@@ -138,11 +157,8 @@
 			children = (
 				D7E9A2822272FC6E00CAEE53 /* Info.plist */,
 				D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */,
-				D7DA718E2275B0BB0026543C /* ImageBlur */,
-				D7897B2222758DB70095CD53 /* ImageRound */,
-				D7897B2122758BB30095CD53 /* WebImageView */,
-				D7897B1822757F890095CD53 /* Button */,
-				D7897B132273040D0095CD53 /* SafeArea */,
+				D7DA71932275B4FC0026543C /* Base */,
+				D7DA71942275B50B0026543C /* Navigation */,
 			);
 			path = GPUIKit;
 			sourceTree = "<group>";
