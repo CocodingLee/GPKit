@@ -1,9 +1,14 @@
 
-# 个人私有源
-# source "https://github.com/YanweiLi/GPSpecs.git"
-
 # workspace文件名
 workspace 'GPUIKit.xcworkspace'
+
+# 本地工程
+def _3rdPods
+   
+   pod 'FrameAccessor' , '~> 2.0'
+   
+end
+
 
 target 'GPUIKit' do
   platform :ios, '9.0'
@@ -24,5 +29,7 @@ target 'GPUIKitDemo' do
   
   # loal
   localPods
+  # 第三方库
+  _3rdPods
 end
 

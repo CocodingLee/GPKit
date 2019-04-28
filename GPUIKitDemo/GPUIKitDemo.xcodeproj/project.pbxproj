@@ -20,6 +20,7 @@
 		29E840727FB89A311CBC3E8D /* Pods-GPUIKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUIKitDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GPUIKitDemo/Pods-GPUIKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		387E15268C65C69FC6F306C1 /* Pods-GPUIKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUIKitDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPUIKitDemo/Pods-GPUIKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C0CF65C469B170783A90BEA1 /* libPods-GPUIKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPUIKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7897B2F22759F320095CD53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D7E9A2922272FC8900CAEE53 /* GPUIKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPUIKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E9A2952272FC8900CAEE53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7E9A2962272FC8900CAEE53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		7C730C7B951324956AF99BA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7897B2F22759F320095CD53 /* ImageIO.framework */,
 				C0CF65C469B170783A90BEA1 /* libPods-GPUIKitDemo.a */,
 			);
 			name = Frameworks;

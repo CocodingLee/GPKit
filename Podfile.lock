@@ -1,16 +1,67 @@
 PODS:
-  - GPUIKit (1.0.0)
+  - FrameAccessor (2.0)
+  - GPUIKit (1.0.0):
+    - libextobjc (~> 0.6)
+    - SDWebImage (~> 4.4.5)
+  - libextobjc (0.6):
+    - libextobjc/EXTADT (= 0.6)
+    - libextobjc/EXTConcreteProtocol (= 0.6)
+    - libextobjc/EXTKeyPathCoding (= 0.6)
+    - libextobjc/EXTNil (= 0.6)
+    - libextobjc/EXTSafeCategory (= 0.6)
+    - libextobjc/EXTScope (= 0.6)
+    - libextobjc/EXTSelectorChecking (= 0.6)
+    - libextobjc/EXTSynthesize (= 0.6)
+    - "libextobjc/NSInvocation+EXT (= 0.6)"
+    - "libextobjc/NSMethodSignature+EXT (= 0.6)"
+    - libextobjc/RuntimeExtensions (= 0.6)
+    - libextobjc/UmbrellaHeader (= 0.6)
+  - libextobjc/EXTADT (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.6):
+    - libextobjc/RuntimeExtensions
+  - "libextobjc/NSInvocation+EXT (0.6)":
+    - libextobjc/RuntimeExtensions
+  - "libextobjc/NSMethodSignature+EXT (0.6)":
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.6)
+  - libextobjc/UmbrellaHeader (0.6)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
 
 DEPENDENCIES:
+  - FrameAccessor (~> 2.0)
   - GPUIKit (from `./GPUIKit/`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FrameAccessor
+    - libextobjc
+    - SDWebImage
 
 EXTERNAL SOURCES:
   GPUIKit:
     :path: "./GPUIKit/"
 
 SPEC CHECKSUMS:
-  GPUIKit: dbbbae0b572027c2a6120cbc8303dcce6ae79c08
+  FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
+  GPUIKit: b25adebcc4f8697df7c089150bd8a76b696540aa
+  libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
 
-PODFILE CHECKSUM: 5af83d42594b52240cfa2d41ad917d912e6774e9
+PODFILE CHECKSUM: be0aa599b243d9b436197ee0a710f27db7e59096
 
 COCOAPODS: 1.5.3

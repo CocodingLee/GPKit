@@ -10,6 +10,14 @@
 		AB2D26CDE74E3DC69EAF1D88 /* libPods-GPUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 473602EF16F935DE4E91529E /* libPods-GPUIKit.a */; };
 		D7897B162273043E0095CD53 /* UIView+SafeArea.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B142273043E0095CD53 /* UIView+SafeArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7897B172273043E0095CD53 /* UIView+SafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B152273043E0095CD53 /* UIView+SafeArea.m */; };
+		D7897B1B22757FAA0095CD53 /* UIButton+Expand.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B1922757FAA0095CD53 /* UIButton+Expand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7897B1C22757FAA0095CD53 /* UIButton+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B1A22757FAA0095CD53 /* UIButton+Expand.m */; };
+		D7897B1F227586E80095CD53 /* UIButton+ImagePosition.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B1D227586E80095CD53 /* UIButton+ImagePosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7897B20227586E80095CD53 /* UIButton+ImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B1E227586E80095CD53 /* UIButton+ImagePosition.m */; };
+		D7897B2522758E570095CD53 /* UIImageView+GPWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B2322758E570095CD53 /* UIImageView+GPWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7897B2622758E570095CD53 /* UIImageView+GPWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B2422758E570095CD53 /* UIImageView+GPWebCache.m */; };
+		D7897B292275962D0095CD53 /* UIImage+GPRounded.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B272275962D0095CD53 /* UIImage+GPRounded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7897B2A2275962D0095CD53 /* UIImage+GPRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B282275962D0095CD53 /* UIImage+GPRounded.m */; };
 		D7E9A2832272FC6E00CAEE53 /* GPUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -19,6 +27,16 @@
 		CD7AE1FF93B01581A0E7B0D8 /* Pods-GPUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUIKit.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPUIKit/Pods-GPUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		D7897B142273043E0095CD53 /* UIView+SafeArea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SafeArea.h"; sourceTree = "<group>"; };
 		D7897B152273043E0095CD53 /* UIView+SafeArea.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SafeArea.m"; sourceTree = "<group>"; };
+		D7897B1922757FAA0095CD53 /* UIButton+Expand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Expand.h"; sourceTree = "<group>"; };
+		D7897B1A22757FAA0095CD53 /* UIButton+Expand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Expand.m"; sourceTree = "<group>"; };
+		D7897B1D227586E80095CD53 /* UIButton+ImagePosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImagePosition.h"; sourceTree = "<group>"; };
+		D7897B1E227586E80095CD53 /* UIButton+ImagePosition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImagePosition.m"; sourceTree = "<group>"; };
+		D7897B2322758E570095CD53 /* UIImageView+GPWebCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GPWebCache.h"; sourceTree = "<group>"; };
+		D7897B2422758E570095CD53 /* UIImageView+GPWebCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GPWebCache.m"; sourceTree = "<group>"; };
+		D7897B272275962D0095CD53 /* UIImage+GPRounded.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GPRounded.h"; sourceTree = "<group>"; };
+		D7897B282275962D0095CD53 /* UIImage+GPRounded.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GPRounded.m"; sourceTree = "<group>"; };
+		D7897B2B22759ED90095CD53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D7897B2D22759EE20095CD53 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		D7E9A27E2272FC6E00CAEE53 /* GPUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUIKit.h; sourceTree = "<group>"; };
 		D7E9A2822272FC6E00CAEE53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,18 +57,49 @@
 		5B969F997002BEAC05461C05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7897B2D22759EE20095CD53 /* CoreMedia.framework */,
+				D7897B2B22759ED90095CD53 /* ImageIO.framework */,
 				473602EF16F935DE4E91529E /* libPods-GPUIKit.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D7897B132273040D0095CD53 /* Utilities */ = {
+		D7897B132273040D0095CD53 /* SafeArea */ = {
 			isa = PBXGroup;
 			children = (
 				D7897B142273043E0095CD53 /* UIView+SafeArea.h */,
 				D7897B152273043E0095CD53 /* UIView+SafeArea.m */,
 			);
-			path = Utilities;
+			path = SafeArea;
+			sourceTree = "<group>";
+		};
+		D7897B1822757F890095CD53 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				D7897B1922757FAA0095CD53 /* UIButton+Expand.h */,
+				D7897B1A22757FAA0095CD53 /* UIButton+Expand.m */,
+				D7897B1D227586E80095CD53 /* UIButton+ImagePosition.h */,
+				D7897B1E227586E80095CD53 /* UIButton+ImagePosition.m */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		D7897B2122758BB30095CD53 /* WebImageView */ = {
+			isa = PBXGroup;
+			children = (
+				D7897B2322758E570095CD53 /* UIImageView+GPWebCache.h */,
+				D7897B2422758E570095CD53 /* UIImageView+GPWebCache.m */,
+			);
+			path = WebImageView;
+			sourceTree = "<group>";
+		};
+		D7897B2222758DB70095CD53 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				D7897B272275962D0095CD53 /* UIImage+GPRounded.h */,
+				D7897B282275962D0095CD53 /* UIImage+GPRounded.m */,
+			);
+			path = ImageView;
 			sourceTree = "<group>";
 		};
 		D7E9A2742272FC6E00CAEE53 = {
@@ -76,7 +125,10 @@
 			children = (
 				D7E9A2822272FC6E00CAEE53 /* Info.plist */,
 				D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */,
-				D7897B132273040D0095CD53 /* Utilities */,
+				D7897B2222758DB70095CD53 /* ImageView */,
+				D7897B2122758BB30095CD53 /* WebImageView */,
+				D7897B1822757F890095CD53 /* Button */,
+				D7897B132273040D0095CD53 /* SafeArea */,
 			);
 			path = GPUIKit;
 			sourceTree = "<group>";
@@ -98,6 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7E9A2832272FC6E00CAEE53 /* GPUIKit.h in Headers */,
+				D7897B2522758E570095CD53 /* UIImageView+GPWebCache.h in Headers */,
+				D7897B1F227586E80095CD53 /* UIButton+ImagePosition.h in Headers */,
+				D7897B1B22757FAA0095CD53 /* UIButton+Expand.h in Headers */,
+				D7897B292275962D0095CD53 /* UIImage+GPRounded.h in Headers */,
 				D7897B162273043E0095CD53 /* UIView+SafeArea.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,7 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7897B20227586E80095CD53 /* UIButton+ImagePosition.m in Sources */,
+				D7897B2A2275962D0095CD53 /* UIImage+GPRounded.m in Sources */,
+				D7897B1C22757FAA0095CD53 /* UIButton+Expand.m in Sources */,
 				D7897B172273043E0095CD53 /* UIView+SafeArea.m in Sources */,
+				D7897B2622758E570095CD53 /* UIImageView+GPWebCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +394,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gp.GPUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -358,6 +423,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gp.GPUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

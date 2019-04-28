@@ -14,4 +14,9 @@ Pod::Spec.new do |s|
   s.source_files = "#{s.name}/**/*.*"
   s.public_header_files = "#{s.name}/**/*.{h}"
 
+  #s.libraries = 'ImageIO.framework'
+
+  s.dependency 'SDWebImage'             , '~> 4.4.5'
+  s.dependency 'libextobjc'             , '~> 0.6'
+
 end
