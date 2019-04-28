@@ -18,6 +18,9 @@
 #import <SDWebImage/SDImageCache.h>
 #import <SDWebImage/SDWebImageManager.h>
 
+
+// 使用 coobjc 来管理下载线程
+
 ////////////////////////////////////////////////////////////////////////////
 // 本次缓存连接
 

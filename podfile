@@ -6,6 +6,7 @@ workspace 'GPUIKit.xcworkspace'
 def _3rdPods
    
    pod 'FrameAccessor' , '~> 2.0'
+   #pod 'coobjc' , '~> 1.2.0'
    
 end
 
