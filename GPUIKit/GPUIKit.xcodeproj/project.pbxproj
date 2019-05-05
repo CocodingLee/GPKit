@@ -20,6 +20,9 @@
 		D7897B2A2275962D0095CD53 /* UIImage+GPRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B282275962D0095CD53 /* UIImage+GPRounded.m */; };
 		D7DA71912275B0F30026543C /* UIImage+GPBlur.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA718F2275B0F30026543C /* UIImage+GPBlur.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7DA71922275B0F30026543C /* UIImage+GPBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71902275B0F30026543C /* UIImage+GPBlur.m */; };
+		D7DA71982275B6790026543C /* GPBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71962275B6790026543C /* GPBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DA71992275B6790026543C /* GPBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71972275B6790026543C /* GPBarButtonItem.m */; };
+		D7DA719A227EDC330026543C /* GPNavigationDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71952275B58F0026543C /* GPNavigationDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7E9A2832272FC6E00CAEE53 /* GPUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,9 @@
 		D7897B2D22759EE20095CD53 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		D7DA718F2275B0F30026543C /* UIImage+GPBlur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GPBlur.h"; sourceTree = "<group>"; };
 		D7DA71902275B0F30026543C /* UIImage+GPBlur.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GPBlur.m"; sourceTree = "<group>"; };
+		D7DA71952275B58F0026543C /* GPNavigationDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPNavigationDefine.h; sourceTree = "<group>"; };
+		D7DA71962275B6790026543C /* GPBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBarButtonItem.h; sourceTree = "<group>"; };
+		D7DA71972275B6790026543C /* GPBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPBarButtonItem.m; sourceTree = "<group>"; };
 		D7E9A27E2272FC6E00CAEE53 /* GPUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUIKit.h; sourceTree = "<group>"; };
 		D7E9A2822272FC6E00CAEE53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 		D7DA71942275B50B0026543C /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				D7DA71952275B58F0026543C /* GPNavigationDefine.h */,
+				D7DA71962275B6790026543C /* GPBarButtonItem.h */,
+				D7DA71972275B6790026543C /* GPBarButtonItem.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -180,6 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7E9A2832272FC6E00CAEE53 /* GPUIKit.h in Headers */,
+				D7DA71982275B6790026543C /* GPBarButtonItem.h in Headers */,
+				D7DA719A227EDC330026543C /* GPNavigationDefine.h in Headers */,
 				D7897B2522758E570095CD53 /* UIImageView+GPWebCache.h in Headers */,
 				D7897B1F227586E80095CD53 /* UIButton+ImagePosition.h in Headers */,
 				D7DA71912275B0F30026543C /* UIImage+GPBlur.h in Headers */,
@@ -278,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DA71992275B6790026543C /* GPBarButtonItem.m in Sources */,
 				D7DA71922275B0F30026543C /* UIImage+GPBlur.m in Sources */,
 				D7897B20227586E80095CD53 /* UIButton+ImagePosition.m in Sources */,
 				D7897B2A2275962D0095CD53 /* UIImage+GPRounded.m in Sources */,
