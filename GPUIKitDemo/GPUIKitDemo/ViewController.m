@@ -54,7 +54,8 @@
                                                                    style:GPBarButtonItemStyleDefault
                                                                  handler:^(id sender) {
                                                                      @strongify(self);
-                                                                     //[self searchBtnClick];
+                                                                     ViewController* vc = [ViewController new];
+                                                                     [self.navigationController pushViewController:vc animated:YES];
                                                                  }];
     
     

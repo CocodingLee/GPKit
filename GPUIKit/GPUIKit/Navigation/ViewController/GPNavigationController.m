@@ -18,6 +18,8 @@
 #import "GPGeneralPushAnimation.h"
 #import "GPPresentDismissAnimation.h"
 
+#import <libextobjc/EXTScope.h>
+
 @interface GPNavigationController () <UIGestureRecognizerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, assign) BOOL isTransiting;
@@ -194,7 +196,7 @@
 {
     if (!viewController.gp_navigationItem) {
         GPNavigationItem *navigationItem = [[GPNavigationItem alloc] init];
-        [navigationItem setValue:viewController forKey:@"_gp_viewController"];
+        [navigationItem setValue:viewController forKey:@"gp_viewController"];
         viewController.gp_navigationItem = navigationItem;
     }
     
@@ -218,23 +220,25 @@
         }
         
         if (!viewController.gp_navigationItem.leftBarButtonItem && !viewController.gp_notAutoCreateBackButtonItem) {
-            __weak typeof(UIViewController) *weakViewController = viewController;
+            @weakify(viewController);
             if (viewController.gp_backButtonImage != nil) {
-                viewController.gp_navigationItem.leftBarButtonItem = [[GPBarButtonItem alloc]initWithImage:viewController.gp_backButtonImage style:0 handler:^(id sender) {
-                    __strong typeof(UIViewController) *strongViewController = weakViewController;
-                    [strongViewController.navigationController popViewControllerAnimated:YES];
+                viewController.gp_navigationItem.leftBarButtonItem = [[GPBarButtonItem alloc] initWithImage:viewController.gp_backButtonImage style:0 handler:^(id sender) {
+                  
+                    @strongify(viewController);
+                    [viewController.navigationController popViewControllerAnimated:YES];
                 }];
+                
             }else{
                 
                 // 默认黑色
                 UIImage *originalImage = [UIImage imageNamed:@"ng_navigationbar_back_icon"];
-                viewController.gp_navigationItem.leftBarButtonItem = [[GPBarButtonItem alloc]initWithImage:originalImage style:0 handler:^(id sender) {
-                    __strong typeof(UIViewController) *vc = weakViewController;
-                    //[strongViewController.navigationController popViewControllerAnimated:YES];
-                    if (vc.presentingViewController) {
-                        [vc dismissViewControllerAnimated:YES completion:nil];
+                viewController.gp_navigationItem.leftBarButtonItem = [[GPBarButtonItem alloc] initWithImage:originalImage style:0 handler:^(id sender) {
+                    
+                    @strongify(viewController);
+                    if (viewController.presentingViewController) {
+                        [viewController dismissViewControllerAnimated:YES completion:nil];
                     } else {
-                        [vc.navigationController popViewControllerAnimated:YES];
+                        [viewController.navigationController popViewControllerAnimated:YES];
                     }
                 }];
                 
@@ -244,14 +248,17 @@
         } else {
             viewController.gp_navigationItem.leftBarButtonItem = viewController.gp_navigationItem.leftBarButtonItem;
         }
+        
         if (viewController.gp_isNavigationBarHidden) {
             viewController.gp_navigationItem.leftBarButtonItem.view.alpha = 0;
         }
+        
         if (viewController.gp_isNavigationBarHiddenAll) {
             viewController.gp_navigationItem.leftBarButtonItem.view.alpha = 0;
             viewController.gp_navigationBar.hidden = YES;
         }
     }
+    
     return viewController.gp_navigationBar;
 }
 @end
