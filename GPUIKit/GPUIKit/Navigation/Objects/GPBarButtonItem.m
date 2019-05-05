@@ -172,27 +172,24 @@
 
 #pragma mark - Private Methods
 
-- (void)handleTouchUpInside:(UIButton *)button {
-    
+- (void)handleTouchUpInside:(UIButton *)button
+{
     self.actionBlock(button);
     [UIView animateWithDuration:0.2 animations:^{
         button.alpha = 1.0;
     }];
-    
 }
 
-- (void)handleTouchDown:(UIButton *)button {
-    
+- (void)handleTouchDown:(UIButton *)button
+{
     button.alpha = 0.7;
-    
 }
 
-- (void)handleTouchUp:(UIButton *)button {
-    
+- (void)handleTouchUp:(UIButton *)button
+{
     [UIView animateWithDuration:0.3 animations:^{
         button.alpha = 1.0;
     }];
-    
 }
 
 - (UIImage *)imageWithColor:(UIColor *)color image:(UIImage *)image

@@ -1,6 +1,7 @@
 PODS:
   - FrameAccessor (2.0)
   - GPUIKit (1.0.0):
+    - FrameAccessor (~> 2.0)
     - libextobjc (~> 0.6)
     - SDWebImage (~> 4.4.5)
   - libextobjc (0.6):
@@ -58,7 +59,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
-  GPUIKit: 6f3e459992ee18cac7a7f225ebcf476c55630089
+  GPUIKit: 8e52b2c73f266c94b590f6e918da1d5240702eb8
   libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
 

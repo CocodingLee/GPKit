@@ -23,6 +23,22 @@
 		D7DA71982275B6790026543C /* GPBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71962275B6790026543C /* GPBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7DA71992275B6790026543C /* GPBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71972275B6790026543C /* GPBarButtonItem.m */; };
 		D7DA719A227EDC330026543C /* GPNavigationDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71952275B58F0026543C /* GPNavigationDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DA719D227EFA4B0026543C /* GPNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA719B227EFA4B0026543C /* GPNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DA719E227EFA4B0026543C /* GPNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA719C227EFA4B0026543C /* GPNavigationBar.m */; };
+		D7DA71A4227EFF4C0026543C /* UIViewController+GPNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71A2227EFF4C0026543C /* UIViewController+GPNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DA71A5227EFF4C0026543C /* UIViewController+GPNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71A3227EFF4C0026543C /* UIViewController+GPNavigation.m */; };
+		D7DA71A8227F00D50026543C /* GPNavigationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71A6227F00D50026543C /* GPNavigationItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DA71A9227F00D50026543C /* GPNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71A7227F00D50026543C /* GPNavigationItem.m */; };
+		D7DA71AC227F04210026543C /* GPNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71AA227F04210026543C /* GPNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DA71AD227F04210026543C /* GPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71AB227F04210026543C /* GPNavigationController.m */; };
+		D7DA71B0227F04820026543C /* UIViewController+GPTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71AE227F04820026543C /* UIViewController+GPTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DA71B1227F04820026543C /* UIViewController+GPTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71AF227F04820026543C /* UIViewController+GPTransition.m */; };
+		D7DA71B9227F058A0026543C /* GPGeneralPushAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71B3227F058A0026543C /* GPGeneralPushAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DA71BA227F058A0026543C /* GPPresentDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71B4227F058A0026543C /* GPPresentDismissAnimation.m */; };
+		D7DA71BB227F058A0026543C /* GPPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71B5227F058A0026543C /* GPPresentAnimation.m */; };
+		D7DA71BC227F058A0026543C /* GPGeneralPushAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71B6227F058A0026543C /* GPGeneralPushAnimation.m */; };
+		D7DA71BD227F058A0026543C /* GPPresentDismissAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71B7227F058A0026543C /* GPPresentDismissAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DA71BE227F058A0026543C /* GPPresentAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71B8227F058A0026543C /* GPPresentAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7E9A2832272FC6E00CAEE53 /* GPUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -47,6 +63,22 @@
 		D7DA71952275B58F0026543C /* GPNavigationDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPNavigationDefine.h; sourceTree = "<group>"; };
 		D7DA71962275B6790026543C /* GPBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBarButtonItem.h; sourceTree = "<group>"; };
 		D7DA71972275B6790026543C /* GPBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPBarButtonItem.m; sourceTree = "<group>"; };
+		D7DA719B227EFA4B0026543C /* GPNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPNavigationBar.h; sourceTree = "<group>"; };
+		D7DA719C227EFA4B0026543C /* GPNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPNavigationBar.m; sourceTree = "<group>"; };
+		D7DA71A2227EFF4C0026543C /* UIViewController+GPNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GPNavigation.h"; sourceTree = "<group>"; };
+		D7DA71A3227EFF4C0026543C /* UIViewController+GPNavigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GPNavigation.m"; sourceTree = "<group>"; };
+		D7DA71A6227F00D50026543C /* GPNavigationItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPNavigationItem.h; sourceTree = "<group>"; };
+		D7DA71A7227F00D50026543C /* GPNavigationItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPNavigationItem.m; sourceTree = "<group>"; };
+		D7DA71AA227F04210026543C /* GPNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPNavigationController.h; sourceTree = "<group>"; };
+		D7DA71AB227F04210026543C /* GPNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPNavigationController.m; sourceTree = "<group>"; };
+		D7DA71AE227F04820026543C /* UIViewController+GPTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GPTransition.h"; sourceTree = "<group>"; };
+		D7DA71AF227F04820026543C /* UIViewController+GPTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GPTransition.m"; sourceTree = "<group>"; };
+		D7DA71B3227F058A0026543C /* GPGeneralPushAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPGeneralPushAnimation.h; sourceTree = "<group>"; };
+		D7DA71B4227F058A0026543C /* GPPresentDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPresentDismissAnimation.m; sourceTree = "<group>"; };
+		D7DA71B5227F058A0026543C /* GPPresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPresentAnimation.m; sourceTree = "<group>"; };
+		D7DA71B6227F058A0026543C /* GPGeneralPushAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPGeneralPushAnimation.m; sourceTree = "<group>"; };
+		D7DA71B7227F058A0026543C /* GPPresentDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPresentDismissAnimation.h; sourceTree = "<group>"; };
+		D7DA71B8227F058A0026543C /* GPPresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPresentAnimation.h; sourceTree = "<group>"; };
 		D7E9A27E2272FC6E00CAEE53 /* GPUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUIKit.h; sourceTree = "<group>"; };
 		D7E9A2822272FC6E00CAEE53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,10 +169,58 @@
 			isa = PBXGroup;
 			children = (
 				D7DA71952275B58F0026543C /* GPNavigationDefine.h */,
-				D7DA71962275B6790026543C /* GPBarButtonItem.h */,
-				D7DA71972275B6790026543C /* GPBarButtonItem.m */,
+				D7DA71A0227EFF0E0026543C /* Objects */,
+				D7DA71A1227EFF2D0026543C /* ViewController */,
+				D7DA71B2227F058A0026543C /* Transition */,
+				D7DA719F227EFF060026543C /* Views */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		D7DA719F227EFF060026543C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA719B227EFA4B0026543C /* GPNavigationBar.h */,
+				D7DA719C227EFA4B0026543C /* GPNavigationBar.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D7DA71A0227EFF0E0026543C /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA71962275B6790026543C /* GPBarButtonItem.h */,
+				D7DA71972275B6790026543C /* GPBarButtonItem.m */,
+				D7DA71A6227F00D50026543C /* GPNavigationItem.h */,
+				D7DA71A7227F00D50026543C /* GPNavigationItem.m */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		D7DA71A1227EFF2D0026543C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA71AE227F04820026543C /* UIViewController+GPTransition.h */,
+				D7DA71AF227F04820026543C /* UIViewController+GPTransition.m */,
+				D7DA71A2227EFF4C0026543C /* UIViewController+GPNavigation.h */,
+				D7DA71A3227EFF4C0026543C /* UIViewController+GPNavigation.m */,
+				D7DA71AA227F04210026543C /* GPNavigationController.h */,
+				D7DA71AB227F04210026543C /* GPNavigationController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D7DA71B2227F058A0026543C /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA71B3227F058A0026543C /* GPGeneralPushAnimation.h */,
+				D7DA71B6227F058A0026543C /* GPGeneralPushAnimation.m */,
+				D7DA71B8227F058A0026543C /* GPPresentAnimation.h */,
+				D7DA71B5227F058A0026543C /* GPPresentAnimation.m */,
+				D7DA71B7227F058A0026543C /* GPPresentDismissAnimation.h */,
+				D7DA71B4227F058A0026543C /* GPPresentDismissAnimation.m */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 		D7E9A2742272FC6E00CAEE53 = {
@@ -190,10 +270,18 @@
 			files = (
 				D7E9A2832272FC6E00CAEE53 /* GPUIKit.h in Headers */,
 				D7DA71982275B6790026543C /* GPBarButtonItem.h in Headers */,
+				D7DA719D227EFA4B0026543C /* GPNavigationBar.h in Headers */,
+				D7DA71A8227F00D50026543C /* GPNavigationItem.h in Headers */,
 				D7DA719A227EDC330026543C /* GPNavigationDefine.h in Headers */,
 				D7897B2522758E570095CD53 /* UIImageView+GPWebCache.h in Headers */,
 				D7897B1F227586E80095CD53 /* UIButton+ImagePosition.h in Headers */,
 				D7DA71912275B0F30026543C /* UIImage+GPBlur.h in Headers */,
+				D7DA71B9227F058A0026543C /* GPGeneralPushAnimation.h in Headers */,
+				D7DA71BD227F058A0026543C /* GPPresentDismissAnimation.h in Headers */,
+				D7DA71B0227F04820026543C /* UIViewController+GPTransition.h in Headers */,
+				D7DA71AC227F04210026543C /* GPNavigationController.h in Headers */,
+				D7DA71BE227F058A0026543C /* GPPresentAnimation.h in Headers */,
+				D7DA71A4227EFF4C0026543C /* UIViewController+GPNavigation.h in Headers */,
 				D7897B1B22757FAA0095CD53 /* UIButton+Expand.h in Headers */,
 				D7897B292275962D0095CD53 /* UIImage+GPRounded.h in Headers */,
 				D7897B162273043E0095CD53 /* UIView+SafeArea.h in Headers */,
@@ -289,13 +377,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DA719E227EFA4B0026543C /* GPNavigationBar.m in Sources */,
 				D7DA71992275B6790026543C /* GPBarButtonItem.m in Sources */,
+				D7DA71BC227F058A0026543C /* GPGeneralPushAnimation.m in Sources */,
 				D7DA71922275B0F30026543C /* UIImage+GPBlur.m in Sources */,
+				D7DA71A5227EFF4C0026543C /* UIViewController+GPNavigation.m in Sources */,
+				D7DA71B1227F04820026543C /* UIViewController+GPTransition.m in Sources */,
 				D7897B20227586E80095CD53 /* UIButton+ImagePosition.m in Sources */,
+				D7DA71A9227F00D50026543C /* GPNavigationItem.m in Sources */,
 				D7897B2A2275962D0095CD53 /* UIImage+GPRounded.m in Sources */,
 				D7897B1C22757FAA0095CD53 /* UIButton+Expand.m in Sources */,
+				D7DA71BB227F058A0026543C /* GPPresentAnimation.m in Sources */,
 				D7897B172273043E0095CD53 /* UIView+SafeArea.m in Sources */,
 				D7897B2622758E570095CD53 /* UIImageView+GPWebCache.m in Sources */,
+				D7DA71BA227F058A0026543C /* GPPresentDismissAnimation.m in Sources */,
+				D7DA71AD227F04210026543C /* GPNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

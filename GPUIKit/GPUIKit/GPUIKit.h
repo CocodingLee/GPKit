@@ -19,3 +19,5 @@
 // navigation
 #import <GPUIKit/GPNavigationDefine.h>
 #import <GPUIKit/GPBarButtonItem.h>
+#import <GPUIKit/GPNavigationBar.h>
+

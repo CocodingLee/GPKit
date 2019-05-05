@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.framework    = 'Accelerate'
 
   # 依赖的第三方库
-  s.dependency 'SDWebImage'  , '~> 4.4.5'
-  s.dependency 'libextobjc'  , '~> 0.6'
+  s.dependency 'SDWebImage'       , '~> 4.4.5'
+  s.dependency 'libextobjc'       , '~> 0.6'
+  s.dependency 'FrameAccessor'    , '~> 2.0'
 end
