@@ -6,8 +6,6 @@
 //  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 // base
 #import <GPUIKit/UIView+SafeArea.h>
 #import <GPUIKit/UIButton+Expand.h>
@@ -25,7 +23,7 @@
 
 // view controller
 #import <GPUIKit/UIViewController+GPTransition.h>
-#import <GPUIKit/UIViewController+GPNavigationBar.h>
+#import <GPUIKit/UIViewController+GPNavigation.h>
 #import <GPUIKit/GPNavigationController.h>
 
 // Transition

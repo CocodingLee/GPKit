@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <GPUIKit/GPUIKit.h>
 
 @interface AppDelegate ()
 
@@ -16,12 +17,14 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyWindow];
     
     ViewController* vc = [ViewController new];
-    UINavigationController* root = [[UINavigationController alloc] initWithRootViewController:vc];
+    GPNavigationController* root = [[GPNavigationController alloc] initWithRootViewController:vc];
     
     self.window.rootViewController = root;
     [self.window makeKeyAndVisible];

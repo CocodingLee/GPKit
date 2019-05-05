@@ -14,9 +14,6 @@ Pod::Spec.new do |s|
   s.source_files = "#{s.name}/**/*.*"
   s.public_header_files = "#{s.name}/**/*.{h}"
 
-  # 依赖的系统库
-  s.framework    = 'Accelerate'
-
   # 依赖的第三方库
   s.dependency 'SDWebImage'       , '~> 4.4.5'
   s.dependency 'libextobjc'       , '~> 0.6'

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <GPUIKit/GPUIKit.h>
 #import <FrameAccessor/FrameAccessor.h>
+#import <libextobjc/EXTScope.h>
 
 @interface ViewController ()
 @property (nonatomic , strong) UIImageView* webImageView;
@@ -29,8 +30,42 @@
     return _webImageView;
 }
 
+- (void) setupNavigationBar
+{
+    NSString* title = @"测试首页";
+    self.gp_navigationItem.title = title;
+    self.gp_navigationItem.tintColor = HEXCOLOR(0x222222);
+    
+    self.gp_navigationItem.titleLabel.textAlignment = NSTextAlignmentLeft;
+    self.gp_navigationItem.titleLabel.left = 40;
+    self.gp_navigationItem.titleLabel.font = [UIFont systemFontOfSize:17];
+    self.gp_navigationBar.backgroundColor = HEXCOLOR(0xFFFFFF);
+    
+    if (@available(iOS 11.0, *)) {
+        [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+    }else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
+    @weakify(self);
+    // 更多
+    UIImage* searchImage = [UIImage imageNamed:@"navbar_icon_search"];
+    GPBarButtonItem* searchItem = [[GPBarButtonItem alloc] initWithImage:searchImage
+                                                                   style:GPBarButtonItemStyleDefault
+                                                                 handler:^(id sender) {
+                                                                     @strongify(self);
+                                                                     //[self searchBtnClick];
+                                                                 }];
+    
+    
+    self.gp_navigationItem.rightBarButtonItem = searchItem;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self createNavigationBar];
+    [self setupNavigationBar];
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     // 安全区
