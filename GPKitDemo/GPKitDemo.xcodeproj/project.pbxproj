@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38E031786C41F4642C648819 /* libPods-GPKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB4A1414331E96A20DF63AE /* libPods-GPKitDemo.a */; };
+		D79B2E332285700B00D82858 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79B2E322285700B00D82858 /* Images.xcassets */; };
 		D7E9A2972272FC8900CAEE53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A2962272FC8900CAEE53 /* AppDelegate.m */; };
 		D7E9A29A2272FC8900CAEE53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A2992272FC8900CAEE53 /* ViewController.m */; };
 		D7E9A29D2272FC8900CAEE53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E9A29B2272FC8900CAEE53 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		C0CF65C469B170783A90BEA1 /* libPods-GPUIKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPUIKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7897B2F22759F320095CD53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D79B2E2E2285669A00D82858 /* GPKitDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPKitDemo.pch; sourceTree = "<group>"; };
+		D79B2E322285700B00D82858 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D7E9A2922272FC8900CAEE53 /* GPKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E9A2952272FC8900CAEE53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7E9A2962272FC8900CAEE53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,12 +75,13 @@
 		D79B2E2C2285663000D82858 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				D79B2E322285700B00D82858 /* Images.xcassets */,
+				D7E9A29E2272FC8A00CAEE53 /* Assets.xcassets */,
 				D7E9A2952272FC8900CAEE53 /* AppDelegate.h */,
 				D7E9A2962272FC8900CAEE53 /* AppDelegate.m */,
 				D7E9A2982272FC8900CAEE53 /* ViewController.h */,
 				D7E9A2992272FC8900CAEE53 /* ViewController.m */,
 				D7E9A29B2272FC8900CAEE53 /* Main.storyboard */,
-				D7E9A29E2272FC8A00CAEE53 /* Assets.xcassets */,
 				D7E9A2A02272FC8A00CAEE53 /* LaunchScreen.storyboard */,
 				D7E9A2A32272FC8A00CAEE53 /* Info.plist */,
 				D7E9A2A42272FC8A00CAEE53 /* main.m */,
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7E9A2A22272FC8A00CAEE53 /* LaunchScreen.storyboard in Resources */,
+				D79B2E332285700B00D82858 /* Images.xcassets in Resources */,
 				D7E9A29F2272FC8A00CAEE53 /* Assets.xcassets in Resources */,
 				D7E9A29D2272FC8900CAEE53 /* Main.storyboard in Resources */,
 			);
@@ -366,16 +370,18 @@
 			baseConfigurationReference = 12B301AE436DBE939E063DE3 /* Pods-GPKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V49Y6Y2SC7;
+				DEVELOPMENT_TEAM = ZGJ864BUY8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/${PROJECT}/Common/${PROJECT}.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/GPKitDemo/support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gp.gpkitdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gp2.gpkitdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -386,16 +392,18 @@
 			baseConfigurationReference = 7269A762F0B477F4FBABA37D /* Pods-GPKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V49Y6Y2SC7;
+				DEVELOPMENT_TEAM = ZGJ864BUY8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/${PROJECT}/Common/${PROJECT}.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/GPKitDemo/support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gp.gpkitdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gp2.gpkitdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
