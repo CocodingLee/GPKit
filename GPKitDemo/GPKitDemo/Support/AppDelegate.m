@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import <GPUIKit/GPUIKit.h>
 
 @interface AppDelegate ()
 

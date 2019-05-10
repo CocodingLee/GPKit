@@ -1,0 +1,17 @@
+//
+//  GPKitDemo.pch
+//  GPKitDemo
+//
+//  Created by Liyanwei on 2019/5/10.
+//  Copyright © 2019 Liyanwei. All rights reserved.
+//
+
+#ifndef GPKitDemo_pch
+#define GPKitDemo_pch
+
+// GPUIKit
+#import <GPUIKit/GPUIKit.h>
+// GPPerformance
+#import <GPPerformance/GPPerformance.h>
+
+#endif /* GPKitDemo_pch */
