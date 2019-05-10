@@ -9,6 +9,22 @@
 /* Begin PBXBuildFile section */
 		38E031786C41F4642C648819 /* libPods-GPKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB4A1414331E96A20DF63AE /* libPods-GPKitDemo.a */; };
 		D79B2E332285700B00D82858 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79B2E322285700B00D82858 /* Images.xcassets */; };
+		D79B2E3F2285739200D82858 /* GPUIKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E3E2285739200D82858 /* GPUIKitViewController.m */; };
+		D79B2E42228573A100D82858 /* EZKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E41228573A100D82858 /* EZKitViewController.m */; };
+		D79B2E45228573B200D82858 /* GPMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E44228573B200D82858 /* GPMoreViewController.m */; };
+		D79B2E6F22857DC300D82858 /* CYLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E5322857DC300D82858 /* CYLHomeViewController.m */; };
+		D79B2E7022857DC300D82858 /* CYLSameCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E5622857DC300D82858 /* CYLSameCityViewController.m */; };
+		D79B2E7122857DC300D82858 /* CYLDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E5722857DC300D82858 /* CYLDetailsViewController.m */; };
+		D79B2E7222857DC300D82858 /* CYLPlusDemoChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E5B22857DC300D82858 /* CYLPlusDemoChildViewController.m */; };
+		D79B2E7322857DC300D82858 /* CYLMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E5D22857DC300D82858 /* CYLMessageViewController.m */; };
+		D79B2E7422857DC300D82858 /* CYLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E6022857DC300D82858 /* CYLMineViewController.m */; };
+		D79B2E7522857DC300D82858 /* tab_me_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = D79B2E6422857DC300D82858 /* tab_me_animate.json */; };
+		D79B2E7622857DC300D82858 /* tab_home_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = D79B2E6522857DC300D82858 /* tab_home_animate.json */; };
+		D79B2E7722857DC300D82858 /* tab_search_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = D79B2E6622857DC300D82858 /* tab_search_animate.json */; };
+		D79B2E7822857DC300D82858 /* tab_message_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = D79B2E6722857DC300D82858 /* tab_message_animate.json */; };
+		D79B2E7922857DC300D82858 /* CYLPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E6A22857DC300D82858 /* CYLPlusButtonSubclass.m */; };
+		D79B2E7A22857DC300D82858 /* CYLMainRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E6B22857DC300D82858 /* CYLMainRootViewController.m */; };
+		D79B2E7B22857DC300D82858 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E6E22857DC300D82858 /* MainTabBarController.m */; };
 		D7E9A2972272FC8900CAEE53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A2962272FC8900CAEE53 /* AppDelegate.m */; };
 		D7E9A29A2272FC8900CAEE53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A2992272FC8900CAEE53 /* ViewController.m */; };
 		D7E9A29D2272FC8900CAEE53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E9A29B2272FC8900CAEE53 /* Main.storyboard */; };
@@ -27,6 +43,34 @@
 		D7897B2F22759F320095CD53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D79B2E2E2285669A00D82858 /* GPKitDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPKitDemo.pch; sourceTree = "<group>"; };
 		D79B2E322285700B00D82858 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D79B2E3D2285739200D82858 /* GPUIKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUIKitViewController.h; sourceTree = "<group>"; };
+		D79B2E3E2285739200D82858 /* GPUIKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUIKitViewController.m; sourceTree = "<group>"; };
+		D79B2E40228573A100D82858 /* EZKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZKitViewController.h; sourceTree = "<group>"; };
+		D79B2E41228573A100D82858 /* EZKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZKitViewController.m; sourceTree = "<group>"; };
+		D79B2E43228573B200D82858 /* GPMoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPMoreViewController.h; sourceTree = "<group>"; };
+		D79B2E44228573B200D82858 /* GPMoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPMoreViewController.m; sourceTree = "<group>"; };
+		D79B2E5222857DC300D82858 /* CYLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLHomeViewController.h; sourceTree = "<group>"; };
+		D79B2E5322857DC300D82858 /* CYLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHomeViewController.m; sourceTree = "<group>"; };
+		D79B2E5522857DC300D82858 /* CYLDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLDetailsViewController.h; sourceTree = "<group>"; };
+		D79B2E5622857DC300D82858 /* CYLSameCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSameCityViewController.m; sourceTree = "<group>"; };
+		D79B2E5722857DC300D82858 /* CYLDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLDetailsViewController.m; sourceTree = "<group>"; };
+		D79B2E5822857DC300D82858 /* CYLSameCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLSameCityViewController.h; sourceTree = "<group>"; };
+		D79B2E5A22857DC300D82858 /* CYLPlusDemoChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusDemoChildViewController.h; sourceTree = "<group>"; };
+		D79B2E5B22857DC300D82858 /* CYLPlusDemoChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusDemoChildViewController.m; sourceTree = "<group>"; };
+		D79B2E5D22857DC300D82858 /* CYLMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLMessageViewController.m; sourceTree = "<group>"; };
+		D79B2E5E22857DC300D82858 /* CYLMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLMessageViewController.h; sourceTree = "<group>"; };
+		D79B2E6022857DC300D82858 /* CYLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLMineViewController.m; sourceTree = "<group>"; };
+		D79B2E6122857DC300D82858 /* CYLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLMineViewController.h; sourceTree = "<group>"; };
+		D79B2E6422857DC300D82858 /* tab_me_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_me_animate.json; sourceTree = "<group>"; };
+		D79B2E6522857DC300D82858 /* tab_home_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_home_animate.json; sourceTree = "<group>"; };
+		D79B2E6622857DC300D82858 /* tab_search_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_search_animate.json; sourceTree = "<group>"; };
+		D79B2E6722857DC300D82858 /* tab_message_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_message_animate.json; sourceTree = "<group>"; };
+		D79B2E6922857DC300D82858 /* CYLPlusButtonSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButtonSubclass.h; sourceTree = "<group>"; };
+		D79B2E6A22857DC300D82858 /* CYLPlusButtonSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButtonSubclass.m; sourceTree = "<group>"; };
+		D79B2E6B22857DC300D82858 /* CYLMainRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLMainRootViewController.m; sourceTree = "<group>"; };
+		D79B2E6C22857DC300D82858 /* CYLMainRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLMainRootViewController.h; sourceTree = "<group>"; };
+		D79B2E6D22857DC300D82858 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		D79B2E6E22857DC300D82858 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		D7E9A2922272FC8900CAEE53 /* GPKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E9A2952272FC8900CAEE53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7E9A2962272FC8900CAEE53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +136,11 @@
 		D79B2E2D2285666B00D82858 /* MainFrame */ = {
 			isa = PBXGroup;
 			children = (
+				D79B2E4F22857DC300D82858 /* Classes */,
+				D79B2E6C22857DC300D82858 /* CYLMainRootViewController.h */,
+				D79B2E6B22857DC300D82858 /* CYLMainRootViewController.m */,
+				D79B2E6D22857DC300D82858 /* MainTabBarController.h */,
+				D79B2E6E22857DC300D82858 /* MainTabBarController.m */,
 			);
 			path = MainFrame;
 			sourceTree = "<group>";
@@ -102,6 +151,130 @@
 				D79B2E2E2285669A00D82858 /* GPKitDemo.pch */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		D79B2E3A2285735100D82858 /* UIKitTest */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E3D2285739200D82858 /* GPUIKitViewController.h */,
+				D79B2E3E2285739200D82858 /* GPUIKitViewController.m */,
+			);
+			path = UIKitTest;
+			sourceTree = "<group>";
+		};
+		D79B2E3B2285736200D82858 /* EZReactTest */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E40228573A100D82858 /* EZKitViewController.h */,
+				D79B2E41228573A100D82858 /* EZKitViewController.m */,
+			);
+			path = EZReactTest;
+			sourceTree = "<group>";
+		};
+		D79B2E3C2285737000D82858 /* MoreTest */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E43228573B200D82858 /* GPMoreViewController.h */,
+				D79B2E44228573B200D82858 /* GPMoreViewController.m */,
+			);
+			path = MoreTest;
+			sourceTree = "<group>";
+		};
+		D79B2E4F22857DC300D82858 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E5022857DC300D82858 /* Module */,
+				D79B2E6222857DC300D82858 /* Other */,
+				D79B2E6822857DC300D82858 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D79B2E5022857DC300D82858 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E5122857DC300D82858 /* Home */,
+				D79B2E5422857DC300D82858 /* SameCity */,
+				D79B2E5922857DC300D82858 /* Other */,
+				D79B2E5C22857DC300D82858 /* Message */,
+				D79B2E5F22857DC300D82858 /* Mine */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		D79B2E5122857DC300D82858 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E5222857DC300D82858 /* CYLHomeViewController.h */,
+				D79B2E5322857DC300D82858 /* CYLHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D79B2E5422857DC300D82858 /* SameCity */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E5522857DC300D82858 /* CYLDetailsViewController.h */,
+				D79B2E5622857DC300D82858 /* CYLSameCityViewController.m */,
+				D79B2E5722857DC300D82858 /* CYLDetailsViewController.m */,
+				D79B2E5822857DC300D82858 /* CYLSameCityViewController.h */,
+			);
+			path = SameCity;
+			sourceTree = "<group>";
+		};
+		D79B2E5922857DC300D82858 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E5A22857DC300D82858 /* CYLPlusDemoChildViewController.h */,
+				D79B2E5B22857DC300D82858 /* CYLPlusDemoChildViewController.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D79B2E5C22857DC300D82858 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E5D22857DC300D82858 /* CYLMessageViewController.m */,
+				D79B2E5E22857DC300D82858 /* CYLMessageViewController.h */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		D79B2E5F22857DC300D82858 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E6022857DC300D82858 /* CYLMineViewController.m */,
+				D79B2E6122857DC300D82858 /* CYLMineViewController.h */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		D79B2E6222857DC300D82858 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E6322857DC300D82858 /* LottieResources */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D79B2E6322857DC300D82858 /* LottieResources */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E6422857DC300D82858 /* tab_me_animate.json */,
+				D79B2E6522857DC300D82858 /* tab_home_animate.json */,
+				D79B2E6622857DC300D82858 /* tab_search_animate.json */,
+				D79B2E6722857DC300D82858 /* tab_message_animate.json */,
+			);
+			path = LottieResources;
+			sourceTree = "<group>";
+		};
+		D79B2E6822857DC300D82858 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D79B2E6922857DC300D82858 /* CYLPlusButtonSubclass.h */,
+				D79B2E6A22857DC300D82858 /* CYLPlusButtonSubclass.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D7E9A2892272FC8900CAEE53 = {
@@ -126,6 +299,9 @@
 			isa = PBXGroup;
 			children = (
 				D79B2E2F228566A100D82858 /* Common */,
+				D79B2E3C2285737000D82858 /* MoreTest */,
+				D79B2E3B2285736200D82858 /* EZReactTest */,
+				D79B2E3A2285735100D82858 /* UIKitTest */,
 				D79B2E2D2285666B00D82858 /* MainFrame */,
 				D79B2E2C2285663000D82858 /* Support */,
 			);
@@ -190,8 +366,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79B2E7522857DC300D82858 /* tab_me_animate.json in Resources */,
+				D79B2E7822857DC300D82858 /* tab_message_animate.json in Resources */,
 				D7E9A2A22272FC8A00CAEE53 /* LaunchScreen.storyboard in Resources */,
+				D79B2E7622857DC300D82858 /* tab_home_animate.json in Resources */,
 				D79B2E332285700B00D82858 /* Images.xcassets in Resources */,
+				D79B2E7722857DC300D82858 /* tab_search_animate.json in Resources */,
 				D7E9A29F2272FC8A00CAEE53 /* Assets.xcassets in Resources */,
 				D7E9A29D2272FC8900CAEE53 /* Main.storyboard in Resources */,
 			);
@@ -225,9 +405,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79B2E6F22857DC300D82858 /* CYLHomeViewController.m in Sources */,
 				D7E9A29A2272FC8900CAEE53 /* ViewController.m in Sources */,
 				D7E9A2A52272FC8A00CAEE53 /* main.m in Sources */,
+				D79B2E3F2285739200D82858 /* GPUIKitViewController.m in Sources */,
+				D79B2E7922857DC300D82858 /* CYLPlusButtonSubclass.m in Sources */,
+				D79B2E7322857DC300D82858 /* CYLMessageViewController.m in Sources */,
+				D79B2E7022857DC300D82858 /* CYLSameCityViewController.m in Sources */,
+				D79B2E42228573A100D82858 /* EZKitViewController.m in Sources */,
+				D79B2E7222857DC300D82858 /* CYLPlusDemoChildViewController.m in Sources */,
+				D79B2E45228573B200D82858 /* GPMoreViewController.m in Sources */,
 				D7E9A2972272FC8900CAEE53 /* AppDelegate.m in Sources */,
+				D79B2E7B22857DC300D82858 /* MainTabBarController.m in Sources */,
+				D79B2E7422857DC300D82858 /* CYLMineViewController.m in Sources */,
+				D79B2E7A22857DC300D82858 /* CYLMainRootViewController.m in Sources */,
+				D79B2E7122857DC300D82858 /* CYLDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

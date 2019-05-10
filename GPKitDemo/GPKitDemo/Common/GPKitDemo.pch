@@ -9,9 +9,23 @@
 #ifndef GPKitDemo_pch
 #define GPKitDemo_pch
 
+////////////////////////////////////////////////////////////////////////
+//
+// 自己开发的库
+//
+
 // GPUIKit
 #import <GPUIKit/GPUIKit.h>
 // GPPerformance
 #import <GPPerformance/GPPerformance.h>
+
+
+////////////////////////////////////////////////////////////////////////
+//
+// 第三方库
+//
+
+#import <CYLTabBarController/CYLTabBarController.h>
+
 
 #endif /* GPKitDemo_pch */
