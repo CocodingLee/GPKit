@@ -1,8 +1,12 @@
 
 # workspace文件名
-workspace 'GPUIKit.xcworkspace'
+workspace 'GPKit.xcworkspace'
 
-# 本地工程
+##########################################
+#
+# 第三方库
+#
+
 def _3rdPods
    
    pod 'FrameAccessor' , '~> 2.0'
@@ -10,23 +14,32 @@ def _3rdPods
    
 end
 
+##########################################
+#
+# 本地工程
+#
+
+target 'GPPerformance' do
+  platform :ios, '9.0'
+  project './GPPerformance/GPPerformance.xcodeproj'
+end
 
 target 'GPUIKit' do
   platform :ios, '9.0'
   project './GPUIKit/GPUIKit.xcodeproj'
-
 end
 
 # 本地工程
 def localPods
     # UI库
     pod 'GPUIKit'          , :path => './GPUIKit/'
+    pod 'GPPerformance'    , :path => './GPPerformance/'
     
 end
 
-target 'GPUIKitDemo' do
+target 'GPKitDemo' do
   platform :ios, '9.0'
-  project './GPUIKitDemo/GPUIKitDemo.xcodeproj'
+  project './GPKitDemo/GPKitDemo.xcodeproj'
   
   # loal
   localPods

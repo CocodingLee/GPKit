@@ -2,10 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:GPUIKit/GPUIKit.xcodeproj">
+      location = "group:GPKitDemo/GPKitDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:GPUIKitDemo/GPUIKitDemo.xcodeproj">
+      location = "group:GPPerformance/GPPerformance.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:GPUIKit/GPUIKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
