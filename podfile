@@ -1,5 +1,8 @@
 
+##########################################
+#
 # workspace文件名
+#
 workspace 'GPKit.xcworkspace'
 
 ##########################################
@@ -9,8 +12,9 @@ workspace 'GPKit.xcworkspace'
 
 def _3rdPods
    
-   pod 'FrameAccessor' , '~> 2.0'
-   #pod 'coobjc' , '~> 1.2.0'
+   pod 'FrameAccessor'  , '~> 2.0'
+   pod 'coobjc'         , '~> 1.2.0'
+   pod 'EasyReact'      , '~> 2.3.1'
    
 end
 
@@ -36,6 +40,11 @@ def localPods
     pod 'GPPerformance'    , :path => './GPPerformance/'
     
 end
+
+##########################################
+#
+# 主工程
+#
 
 target 'GPKitDemo' do
   platform :ios, '9.0'
