@@ -38,7 +38,7 @@ target 'GPUIKit' do
 end
 
 # 本地工程
-def localPods
+def _localPods
     # UI库
     pod 'GPUIKit'          , :path => './GPUIKit/'
     pod 'GPPerformance'    , :path => './GPPerformance/'
@@ -55,7 +55,7 @@ target 'GPKitDemo' do
   project './GPKitDemo/GPKitDemo.xcodeproj'
   
   # loal
-  localPods
+  _localPods
   # 第三方库
   _3rdPods
 end

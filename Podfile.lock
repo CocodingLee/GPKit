@@ -53,6 +53,7 @@ PODS:
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.6)
   - libextobjc/UmbrellaHeader (0.6)
+  - lottie-ios (2.5.3)
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
@@ -64,6 +65,7 @@ DEPENDENCIES:
   - FrameAccessor (~> 2.0)
   - GPPerformance (from `./GPPerformance/`)
   - GPUIKit (from `./GPUIKit/`)
+  - lottie-ios (~> 2.5.3)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -76,6 +78,7 @@ SPEC REPOS:
     - EasyTuple
     - FrameAccessor
     - libextobjc
+    - lottie-ios
     - SDWebImage
 
 EXTERNAL SOURCES:
@@ -96,8 +99,9 @@ SPEC CHECKSUMS:
   GPPerformance: 9e5a80308d0526a43e343adc1e23cd82fd5a1646
   GPUIKit: 4fdf4064a9678a2bdb14f06c8585f403cc62b860
   libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
 
-PODFILE CHECKSUM: ebe5b01a015c02ba9d66aaeda12f7b6ec9519002
+PODFILE CHECKSUM: 0d2b45e468b33574e9862ee5077ac497ed669cf7
 
 COCOAPODS: 1.5.3

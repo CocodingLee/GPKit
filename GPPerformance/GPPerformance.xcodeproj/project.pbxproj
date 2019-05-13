@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C4B695AC94AE89EC47253F58 /* libPods-GPPerformance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 410E3471DBCFB32381CB64DF /* libPods-GPPerformance.a */; };
 		D79B2E2522855B9D00D82858 /* GPPerformance.h in Headers */ = {isa = PBXBuildFile; fileRef = D79B2E2322855B9D00D82858 /* GPPerformance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A863D82289622200E35569 /* GPLagMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863D62289622200E35569 /* GPLagMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A863D92289622200E35569 /* GPLagMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863D72289622200E35569 /* GPLagMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +19,8 @@
 		D79B2E2022855B9D00D82858 /* GPPerformance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPPerformance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79B2E2322855B9D00D82858 /* GPPerformance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPPerformance.h; sourceTree = "<group>"; };
 		D79B2E2422855B9D00D82858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A863D62289622200E35569 /* GPLagMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPLagMonitor.h; sourceTree = "<group>"; };
+		D7A863D72289622200E35569 /* GPLagMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPLagMonitor.m; sourceTree = "<group>"; };
 		EE507B9C819115E24E8FC09E /* Pods-GPPerformance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPPerformance.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPPerformance/Pods-GPPerformance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,8 +76,18 @@
 			children = (
 				D79B2E2322855B9D00D82858 /* GPPerformance.h */,
 				D79B2E2422855B9D00D82858 /* Info.plist */,
+				D7A863D52289620300E35569 /* LagMonitor */,
 			);
 			path = GPPerformance;
+			sourceTree = "<group>";
+		};
+		D7A863D52289620300E35569 /* LagMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				D7A863D62289622200E35569 /* GPLagMonitor.h */,
+				D7A863D72289622200E35569 /* GPLagMonitor.m */,
+			);
+			path = LagMonitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D79B2E2522855B9D00D82858 /* GPPerformance.h in Headers */,
+				D7A863D82289622200E35569 /* GPLagMonitor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A863D92289622200E35569 /* GPLagMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
