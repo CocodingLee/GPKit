@@ -11,6 +11,9 @@
 		D79B2E2522855B9D00D82858 /* GPPerformance.h in Headers */ = {isa = PBXBuildFile; fileRef = D79B2E2322855B9D00D82858 /* GPPerformance.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A863D82289622200E35569 /* GPLagMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863D62289622200E35569 /* GPLagMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A863D92289622200E35569 /* GPLagMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863D72289622200E35569 /* GPLagMonitor.m */; };
+		D7A863DD22896A1000E35569 /* GPCallStack.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863DB22896A1000E35569 /* GPCallStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A863DE22896A1000E35569 /* GPCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863DC22896A1000E35569 /* GPCallStack.m */; };
+		D7A863E02289705000E35569 /* GPSystemKits.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863DF22896AB800E35569 /* GPSystemKits.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		D79B2E2422855B9D00D82858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7A863D62289622200E35569 /* GPLagMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPLagMonitor.h; sourceTree = "<group>"; };
 		D7A863D72289622200E35569 /* GPLagMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPLagMonitor.m; sourceTree = "<group>"; };
+		D7A863DB22896A1000E35569 /* GPCallStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPCallStack.h; sourceTree = "<group>"; };
+		D7A863DC22896A1000E35569 /* GPCallStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPCallStack.m; sourceTree = "<group>"; };
+		D7A863DF22896AB800E35569 /* GPSystemKits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSystemKits.h; sourceTree = "<group>"; };
 		EE507B9C819115E24E8FC09E /* Pods-GPPerformance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPPerformance.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPPerformance/Pods-GPPerformance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				D79B2E2322855B9D00D82858 /* GPPerformance.h */,
+				D7A863DF22896AB800E35569 /* GPSystemKits.h */,
 				D79B2E2422855B9D00D82858 /* Info.plist */,
+				D7A863DA228969E600E35569 /* GPCallStack */,
 				D7A863D52289620300E35569 /* LagMonitor */,
 			);
 			path = GPPerformance;
@@ -90,6 +98,15 @@
 			path = LagMonitor;
 			sourceTree = "<group>";
 		};
+		D7A863DA228969E600E35569 /* GPCallStack */ = {
+			isa = PBXGroup;
+			children = (
+				D7A863DB22896A1000E35569 /* GPCallStack.h */,
+				D7A863DC22896A1000E35569 /* GPCallStack.m */,
+			);
+			path = GPCallStack;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -98,7 +115,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D79B2E2522855B9D00D82858 /* GPPerformance.h in Headers */,
+				D7A863E02289705000E35569 /* GPSystemKits.h in Headers */,
 				D7A863D82289622200E35569 /* GPLagMonitor.h in Headers */,
+				D7A863DD22896A1000E35569 /* GPCallStack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7A863D92289622200E35569 /* GPLagMonitor.m in Sources */,
+				D7A863DE22896A1000E35569 /* GPCallStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

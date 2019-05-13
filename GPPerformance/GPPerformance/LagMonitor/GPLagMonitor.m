@@ -9,7 +9,20 @@
 #import "GPLagMonitor.h"
 
 @interface GPLagMonitor ()
+{
+@private
+    // 超时次数
+    int timeoutCount;
+    // run loop 观察者
+    CFRunLoopObserverRef runLoopObserver;
+    
+@public
+    dispatch_semaphore_t dispatchSemaphore;
+    CFRunLoopActivity runLoopActivity;
+}
 
+// 定时器
+@property (nonatomic, strong) NSTimer *cpuMonitorTimer;
 @end
 
 @implementation GPLagMonitor
