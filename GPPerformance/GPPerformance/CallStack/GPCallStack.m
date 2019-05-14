@@ -122,11 +122,12 @@ static mach_port_t gs_gpMainThreadId;
         return [self allThreadCallback];
     } else if (type == GPCallStackTypeMain) {
         //主线程
-        [self  mainThreadCallstack];
+        return [self  mainThreadCallstack];
     } else {
         //当前线程
-        [self currentThreadCallstack];
+        return [self currentThreadCallstack];
     }
+    
     return @"";
 }
 

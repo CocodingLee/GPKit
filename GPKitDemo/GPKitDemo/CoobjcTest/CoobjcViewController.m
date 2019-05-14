@@ -9,7 +9,8 @@
 #import "CoobjcViewController.h"
 
 @interface CoobjcViewController ()
-
+// 触发线程卡顿
+@property (nonatomic , strong) UIButton* mainThreadButton;
 @end
 
 @implementation CoobjcViewController
@@ -73,6 +74,20 @@
     [super viewDidLoad];
     [self createNavigationBar];
     [self setupNavigationBar];
+    
+    
+    self.mainThreadButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.mainThreadButton.backgroundColor = [UIColor redColor];
+    self.mainThreadButton.frame = CGRectMake(100, 100, 100, 44);
+    [self.view addSubview:self.mainThreadButton];
+    
+    [self.mainThreadButton addTarget:self action:@selector(mainThreadButtonAction) forControlEvents:UIControlEventTouchUpInside];
 }
 
+- (void) mainThreadButtonAction
+{
+    while (1) {
+        sleep(1000);
+    }
+}
 @end
