@@ -47,13 +47,26 @@
                                                                    style:GPBarButtonItemStyleDefault
                                                                  handler:^(id sender) {
                                                                      @strongify(self);
-                                                                     //[self searchBtnClick];
+                                                                     [self jumptoCo2];
                                                                  }];
     
     
     self.gp_navigationItem.rightBarButtonItem = searchItem;
 }
 
+- (void) jumptoCo2
+{
+    [[GPRouteManager sharedInstance] openDomain:kRouteCoobjcDomain
+                                           path:kRouteCoobjcThreadPath
+                                         params:@{}
+                                     completion:^(NSDictionary * _Nonnull param, NSError * _Nonnull error) {
+                                         
+                                         id vc = param[GPRouteTargetKey];
+                                         if ([vc isKindOfClass:UIViewController.class] && !error) {
+                                             [self.navigationController pushViewController:vc animated:YES];
+                                         }
+                                     }];
+}
 
 - (void)viewDidLoad
 {

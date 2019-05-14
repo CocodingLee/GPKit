@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		A30189C17B6F0CB35901962E /* libPods-GPRoute.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CD3B71C21030D0919CEC8B /* libPods-GPRoute.a */; };
 		D7A86409228A6A8100E35569 /* GPRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86407228A6A8100E35569 /* GPRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7A86413228A6C1500E35569 /* GPRouteDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86412228A6C1500E35569 /* GPRouteDelegate.h */; };
+		D7A86413228A6C1500E35569 /* GPRouteDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86412228A6C1500E35569 /* GPRouteDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A86415228A6DE400E35569 /* GPRouteDefine.h in Sources */ = {isa = PBXBuildFile; fileRef = D7A86414228A6DE400E35569 /* GPRouteDefine.h */; };
-		D7A86417228A6E2A00E35569 /* GPRouteRegTreeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86416228A6E2A00E35569 /* GPRouteRegTreeDelegate.h */; };
+		D7A86417228A6E2A00E35569 /* GPRouteRegTreeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86416228A6E2A00E35569 /* GPRouteRegTreeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A8641E228A6F5100E35569 /* GPRouteRegTree.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8641C228A6F5100E35569 /* GPRouteRegTree.m */; };
-		D7A8641F228A6F5100E35569 /* GPRouteRegTree.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8641D228A6F5100E35569 /* GPRouteRegTree.h */; };
-		D7A86422228A6FA500E35569 /* GPRouteRegManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86420228A6FA500E35569 /* GPRouteRegManager.h */; };
+		D7A8641F228A6F5100E35569 /* GPRouteRegTree.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8641D228A6F5100E35569 /* GPRouteRegTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86422228A6FA500E35569 /* GPRouteRegManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86420228A6FA500E35569 /* GPRouteRegManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A86423228A6FA500E35569 /* GPRouteRegManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86421228A6FA500E35569 /* GPRouteRegManager.m */; };
+		D7A86424228A8D2C00E35569 /* GPRouteDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86414228A6DE400E35569 /* GPRouteDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86429228A8E6F00E35569 /* GPRoutePluginManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86427228A8E6F00E35569 /* GPRoutePluginManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8642A228A8E6F00E35569 /* GPRoutePluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86428228A8E6F00E35569 /* GPRoutePluginManager.m */; };
+		D7A8642D228A8F7200E35569 /* GPRouteManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8642B228A8F7200E35569 /* GPRouteManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8642E228A8F7200E35569 /* GPRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8642C228A8F7200E35569 /* GPRouteManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,10 @@
 		D7A8641D228A6F5100E35569 /* GPRouteRegTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPRouteRegTree.h; sourceTree = "<group>"; };
 		D7A86420228A6FA500E35569 /* GPRouteRegManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPRouteRegManager.h; sourceTree = "<group>"; };
 		D7A86421228A6FA500E35569 /* GPRouteRegManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPRouteRegManager.m; sourceTree = "<group>"; };
+		D7A86427228A8E6F00E35569 /* GPRoutePluginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPRoutePluginManager.h; sourceTree = "<group>"; };
+		D7A86428228A8E6F00E35569 /* GPRoutePluginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPRoutePluginManager.m; sourceTree = "<group>"; };
+		D7A8642B228A8F7200E35569 /* GPRouteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPRouteManager.h; sourceTree = "<group>"; };
+		D7A8642C228A8F7200E35569 /* GPRouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPRouteManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +95,7 @@
 			children = (
 				D7A86407228A6A8100E35569 /* GPRoute.h */,
 				D7A86408228A6A8100E35569 /* Info.plist */,
+				D7A86426228A8E5100E35569 /* Manager */,
 				D7A86411228A6BEA00E35569 /* Route */,
 				D7A86410228A6B7400E35569 /* Reg */,
 			);
@@ -113,6 +123,17 @@
 			path = Route;
 			sourceTree = "<group>";
 		};
+		D7A86426228A8E5100E35569 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D7A8642B228A8F7200E35569 /* GPRouteManager.h */,
+				D7A8642C228A8F7200E35569 /* GPRouteManager.m */,
+				D7A86427228A8E6F00E35569 /* GPRoutePluginManager.h */,
+				D7A86428228A8E6F00E35569 /* GPRoutePluginManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -122,8 +143,11 @@
 			files = (
 				D7A86417228A6E2A00E35569 /* GPRouteRegTreeDelegate.h in Headers */,
 				D7A86413228A6C1500E35569 /* GPRouteDelegate.h in Headers */,
+				D7A86424228A8D2C00E35569 /* GPRouteDefine.h in Headers */,
 				D7A86422228A6FA500E35569 /* GPRouteRegManager.h in Headers */,
+				D7A86429228A8E6F00E35569 /* GPRoutePluginManager.h in Headers */,
 				D7A8641F228A6F5100E35569 /* GPRouteRegTree.h in Headers */,
+				D7A8642D228A8F7200E35569 /* GPRouteManager.h in Headers */,
 				D7A86409228A6A8100E35569 /* GPRoute.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,8 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7A86415228A6DE400E35569 /* GPRouteDefine.h in Sources */,
+				D7A8642A228A8E6F00E35569 /* GPRoutePluginManager.m in Sources */,
 				D7A8641E228A6F5100E35569 /* GPRouteRegTree.m in Sources */,
 				D7A86423228A6FA500E35569 /* GPRouteRegManager.m in Sources */,
+				D7A8642E228A8F7200E35569 /* GPRouteManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +388,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gp.GPRoute;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -387,6 +414,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gp.GPRoute;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

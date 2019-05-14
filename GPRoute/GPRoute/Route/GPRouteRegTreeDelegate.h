@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GPRouteDefine.h>
+#import "GPRouteDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol GPRouteRegTreeDelegate <NSObject>
 
-- (void)regWithDomain:(NSString *)domain path:(NSString *)path
+- (void)regWithDomain:(NSString *)domain
+                 path:(NSString *)path
                params:(NSDictionary *)params
            completion:(void (^)(GPRouteDecision, NSError *))completion;
 @end
