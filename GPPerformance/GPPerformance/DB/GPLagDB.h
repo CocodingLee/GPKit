@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <coobjc/coobjc.h>
 #import <fmdb/FMDB.h>
+#import <libextobjc/EXTScope.h>
 
 #import "GPCallTraceTimeCostModel.h"
 #import "GPCallStackModel.h"
@@ -26,19 +27,20 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GPLagDB : NSObject
 
 + (GPLagDB *)shareInstance;
-//
-///*------------卡顿和CPU超标堆栈---------------*/
-//- (RACSignal *)increaseWithStackModel:(GPCallStackModel *)model;
-//- (RACSignal *)selectStackWithPage:(NSUInteger)page;
-//- (void)clearStackData;
-//
-///*------------ClsCall方法调用频次-------------*/
-////添加记录s
-//- (void)addWithClsCallModel:(SMCallTraceTimeCostModel *)model;
-////分页查询
-//- (RACSignal *)selectClsCallWithPage:(NSUInteger)page;
-////清除数据
-//- (void)clearClsCallData;
+
+/*------------卡顿和CPU超标堆栈---------------*/
+
+- (COPromise *)increaseWithStackModel:(GPCallStackModel *)model CO_ASYNC;
+- (COPromise *)selectStackWithPage:(NSUInteger)page CO_ASYNC;
+- (void)clearStackData;
+
+/*------------ClsCall方法调用频次-------------*/
+//添加记录s
+- (void)addWithClsCallModel:(GPCallTraceTimeCostModel *)model;
+//分页查询
+- (COPromise *)selectClsCallWithPage:(NSUInteger)page CO_ASYNC;
+//清除数据
+- (void)clearClsCallData;
 
 @end
 

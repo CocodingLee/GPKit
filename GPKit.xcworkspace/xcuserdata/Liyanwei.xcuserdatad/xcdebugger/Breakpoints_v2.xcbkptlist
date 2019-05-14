@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GPRoute/GPRoute/Manager/GPRouteManager.m"
-            timestampString = "579508464.71497"
+            timestampString = "579509602.877196"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
@@ -41,46 +41,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GPRoute/GPRoute/Manager/GPRouteManager.m"
-            timestampString = "579508464.715058"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "-openScheme:domain:path:params:completion:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GPRoute/GPRoute/Manager/GPRouteManager.m"
-            timestampString = "579508464.715129"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "-openScheme:domain:path:params:completion:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "GPRoute/GPRoute/Reg/GPRouteRegManager.m"
-            timestampString = "579508459.027539"
+            timestampString = "579509602.877378"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "-matchRegsWithDomain:path:"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "-checkRegsWithRegs:domain:path:params:completion:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[GPRouteRegManager checkRegsWithRegs:domain:path:params:completion:]"
+                  moduleName = "GPKitDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Liyanwei/9.%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/GPKit/GPRoute/GPRoute/Reg/GPRouteRegManager.m"
+                  timestampString = "579509603.0285341"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "306">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__69-[GPRouteRegManager checkRegsWithRegs:domain:path:params:completion:]_block_invoke"
+                  moduleName = "GPKitDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Liyanwei/9.%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/GPKit/GPRoute/GPRoute/Reg/GPRouteRegManager.m"
+                  timestampString = "579509603.033096"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_e8_32s40s48s56s64s72s"
+                  moduleName = "GPKitDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Liyanwei/9.%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/GPKit/GPRoute/GPRoute/Reg/GPRouteRegManager.m"
+                  timestampString = "579509603.036227"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
