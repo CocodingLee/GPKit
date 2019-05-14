@@ -14,6 +14,17 @@
 
 @implementation CoobjcViewController
 
+- (instancetype) init
+{
+    self = [super init];
+    if (self) {
+        // 首页不创建返回
+        self.gp_notAutoCreateBackButtonItem = YES;
+    }
+    
+    return self;
+}
+
 - (void) setupNavigationBar
 {
     self.gp_navigationItem.title = @"coobjc";

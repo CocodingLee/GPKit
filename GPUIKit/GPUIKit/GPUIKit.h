@@ -33,3 +33,4 @@
 
 // view
 #import <GPUIKit/GPNavigationBar.h>
+#import <GPUIKit/GPBaseViewController.h>

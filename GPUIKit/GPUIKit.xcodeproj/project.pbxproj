@@ -19,7 +19,7 @@
 		D7897B292275962D0095CD53 /* UIImage+GPRounded.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B272275962D0095CD53 /* UIImage+GPRounded.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7897B2A2275962D0095CD53 /* UIImage+GPRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B282275962D0095CD53 /* UIImage+GPRounded.m */; };
 		D7A863F8228A651800E35569 /* GPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863F6228A651800E35569 /* GPBaseViewController.m */; };
-		D7A863F9228A651800E35569 /* GPBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863F7228A651800E35569 /* GPBaseViewController.h */; };
+		D7A863F9228A651800E35569 /* GPBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863F7228A651800E35569 /* GPBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7DA71912275B0F30026543C /* UIImage+GPBlur.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA718F2275B0F30026543C /* UIImage+GPBlur.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7DA71922275B0F30026543C /* UIImage+GPBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71902275B0F30026543C /* UIImage+GPBlur.m */; };
 		D7DA71982275B6790026543C /* GPBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71962275B6790026543C /* GPBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -206,12 +206,12 @@
 			children = (
 				D7A863F7228A651800E35569 /* GPBaseViewController.h */,
 				D7A863F6228A651800E35569 /* GPBaseViewController.m */,
+				D7DA71AA227F04210026543C /* GPNavigationController.h */,
+				D7DA71AB227F04210026543C /* GPNavigationController.m */,
 				D7DA71AE227F04820026543C /* UIViewController+GPTransition.h */,
 				D7DA71AF227F04820026543C /* UIViewController+GPTransition.m */,
 				D7DA71A2227EFF4C0026543C /* UIViewController+GPNavigation.h */,
 				D7DA71A3227EFF4C0026543C /* UIViewController+GPNavigation.m */,
-				D7DA71AA227F04210026543C /* GPNavigationController.h */,
-				D7DA71AB227F04210026543C /* GPNavigationController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -279,8 +279,8 @@
 				D7DA71982275B6790026543C /* GPBarButtonItem.h in Headers */,
 				D7DA719D227EFA4B0026543C /* GPNavigationBar.h in Headers */,
 				D7DA71A8227F00D50026543C /* GPNavigationItem.h in Headers */,
-				D7A863F9228A651800E35569 /* GPBaseViewController.h in Headers */,
 				D7DA71B0227F04820026543C /* UIViewController+GPTransition.h in Headers */,
+				D7A863F9228A651800E35569 /* GPBaseViewController.h in Headers */,
 				D7DA71A4227EFF4C0026543C /* UIViewController+GPNavigation.h in Headers */,
 				D7DA719A227EDC330026543C /* GPNavigationDefine.h in Headers */,
 				D7897B2522758E570095CD53 /* UIImageView+GPWebCache.h in Headers */,
