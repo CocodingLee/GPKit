@@ -139,15 +139,14 @@
     
     [reg regWithDomain:domain path:path params:params completion:^(GPRouteDecision decision, NSError *error) {
         switch (decision) {
-            case GPRouteDecisionDeny:
-            {
+            case GPRouteDecisionDeny: {
                 if (completion) {
                     completion(GPRouteDecisionDeny, error);
                 }
                 break;
             }
-            case GPRouteDecisionAllow:
-            {
+                
+            case GPRouteDecisionAllow: {
                 if (nextRegs.count == 0) {
                     if (completion) {
                         completion(GPRouteDecisionAllow, nil);
