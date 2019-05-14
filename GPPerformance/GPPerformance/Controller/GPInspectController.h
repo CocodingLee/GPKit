@@ -7,22 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GPUIKit/GPUIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GPInspectController : UIViewController
-
-@property(nonatomic,strong,readonly) UIView* currentView;
-@property(nonatomic,assign,readonly) NSString* currentTab;
-
-//@property(nonatomic,strong) VZInspectorToolboxView* toolboxView;
-//@property(nonatomic,strong) VZInspectorToolboxView* pluginView;
-
-- (void)start;
-- (void)stop;
-- (BOOL)canTouchPassThrough:(CGPoint)pt;
-- (void)onClose;
-- (void)transitionToView:(UIView *)view;
+@interface GPInspectController : GPNavigationController
 
 @end
 

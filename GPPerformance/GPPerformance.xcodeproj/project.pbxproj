@@ -32,7 +32,7 @@
 		D7A86481228AE4EB00E35569 /* GPInspectorWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8647D228AE4EB00E35569 /* GPInspectorWindow.m */; };
 		D7A86482228AE4EB00E35569 /* GPInspectorWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8647E228AE4EB00E35569 /* GPInspectorWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A86483228AE4EB00E35569 /* GPInspectorOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8647F228AE4EB00E35569 /* GPInspectorOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7A86486228AE66600E35569 /* GPInspectorToolItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86484228AE66600E35569 /* GPInspectorToolItem.h */; };
+		D7A86486228AE66600E35569 /* GPInspectorToolItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86484228AE66600E35569 /* GPInspectorToolItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A86487228AE66600E35569 /* GPInspectorToolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86485228AE66600E35569 /* GPInspectorToolItem.m */; };
 /* End PBXBuildFile section */
 
@@ -220,13 +220,13 @@
 				D7A863E722899BB800E35569 /* GPCpuMonitor.h in Headers */,
 				D7A8646A228AE1DB00E35569 /* GPInspector.h in Headers */,
 				D7A86472228AE1E200E35569 /* GPInspectorResource.h in Headers */,
-				D7A86486228AE66600E35569 /* GPInspectorToolItem.h in Headers */,
 				D7A86464228AE1D200E35569 /* GPInspectController.h in Headers */,
 				D7A863F022899ECE00E35569 /* GPCallTraceTimeCostModel.h in Headers */,
 				D7A863EC22899D8100E35569 /* GPLagDB.h in Headers */,
 				D7A86482228AE4EB00E35569 /* GPInspectorWindow.h in Headers */,
 				D7A86483228AE4EB00E35569 /* GPInspectorOverlay.h in Headers */,
 				D7A863E32289724100E35569 /* GPCallStackModel.h in Headers */,
+				D7A86486228AE66600E35569 /* GPInspectorToolItem.h in Headers */,
 				D7A863DD22896A1000E35569 /* GPCallStack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,56 +35,13 @@
 {
     CGRect screenBound = [UIScreen mainScreen].bounds;
     self = [super initWithFrame:screenBound];
-    if (self)
-    {
-        self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6f];
-        self.hidden = YES;
+    
+    if (self) {
+        self.backgroundColor = HEXCOLORA(0x0, 0.6);
         self.windowLevel = UIWindowLevelStatusBar + 200;
-        self.userInteractionEnabled = NO;
-        
-        self.debuggerVC = [GPInspectController new];
-        self.rootViewController = self.debuggerVC;
-        [self addSubview:self.debuggerVC.view];
-        
     }
+    
     return self;
 }
-
-- (void)setHidden:(BOOL)hidden
-{
-    [super setHidden:hidden];
-    
-    if ( self.hidden )
-    {
-        [self.debuggerVC stop];
-    }
-    else
-    {
-        [self.debuggerVC start];
-    }
-}
-
-- (UIView* )hitTest:(CGPoint)point withEvent:(UIEvent *)event
-{
-    CGPoint pt = [self convertPoint:point toView:self.debuggerVC.view];
-    
-    if (self.debuggerVC.presentedViewController) {
-        for (long i = self.subviews.count - 1; i >= 0; i --) {
-            UIView *subview = self.subviews[i];
-            CGPoint convertedPoint = [subview convertPoint:point fromView:self];
-            UIView *hited = [subview hitTest:convertedPoint withEvent:event];
-            if (hited) {
-                return hited;
-            }
-        }
-    }
-    
-    if ([self.debuggerVC canTouchPassThrough:pt]) {
-        return [super hitTest:point withEvent:event];
-    } else {
-        return [self.debuggerVC.view hitTest:point withEvent:event];
-    }
-}
-
 
 @end

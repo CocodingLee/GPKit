@@ -9,6 +9,9 @@
 #import "GPInspector.h"
 #import "GPInspectorOverlay.h"
 #import "GPInspectorWindow.h"
+#import "GPInspectController.h"
+
+UIWindow* g_lastKeyWindow = nil;
 
 @implementation GPInspector
 
@@ -28,13 +31,24 @@
 
 + (void)show
 {
-    [GPInspectorWindow sharedInstance].hidden = NO;
+    UIWindow* window = [GPInspectorWindow sharedInstance];
+    window.hidden = NO;
+    UIViewController* root = [GPInspectController new];
+    window.rootViewController = root;
+    
+    // key window
+    g_lastKeyWindow = [UIApplication sharedApplication].keyWindow;
+    [window makeKeyAndVisible];
+    
     [GPInspectorOverlay hide];
 }
 
 + (void)hide
 {
     [GPInspectorWindow sharedInstance].hidden = YES;
+    // key window
+    [g_lastKeyWindow makeKeyAndVisible];
+    
     [GPInspectorOverlay show];
 }
 
