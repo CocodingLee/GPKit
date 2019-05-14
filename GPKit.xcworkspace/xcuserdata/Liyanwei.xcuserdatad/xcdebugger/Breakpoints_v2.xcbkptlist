@@ -4,18 +4,28 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GPKitDemo/GPKitDemo/MainFrame/Classes/Module/Other/CYLPlusDemoChildViewController.m"
-            timestampString = "579494559.649642"
+            filePath = "GPPerformance/GPPerformance/DebugWindow/GPDebugWindow.m"
+            timestampString = "579517709.510397"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "+showFrame"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +35,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GPRoute/GPRoute/Manager/GPRouteManager.m"
-            timestampString = "579515839.050992"
+            filePath = "GPPerformance/GPPerformance/DebugWindow/VZInspectorOverlay.m"
+            timestampString = "579519723.81294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "-openURL:addition:completion:"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "@implementation VZInspectorOverlay"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GPPerformance/GPPerformance/DebugWindow/VZInspectorOverlay.m"
+            timestampString = "579521691.294353"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-onSelfClicked:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,61 +67,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GPRoute/GPRoute/Reg/GPRouteRegManager.m"
-            timestampString = "579515839.0510809"
+            filePath = "GPPerformance/GPPerformance/DebugUI/Window/VZInspectorOverlay.m"
+            timestampString = "579526723.216747"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
-            landmarkName = "-checkRegsWithRegs:domain:path:params:completion:"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-onSelfClicked:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[GPRouteRegManager checkRegsWithRegs:domain:path:params:completion:]"
-                  moduleName = "GPKitDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Liyanwei/9.%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/GPKit/GPRoute/GPRoute/Reg/GPRouteRegManager.m"
-                  timestampString = "579515839.312023"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "140"
-                  endingLineNumber = "140"
-                  offsetFromSymbolStart = "268">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__69-[GPRouteRegManager checkRegsWithRegs:domain:path:params:completion:]_block_invoke"
-                  moduleName = "GPKitDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Liyanwei/9.%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/GPKit/GPRoute/GPRoute/Reg/GPRouteRegManager.m"
-                  timestampString = "579515839.313747"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "140"
-                  endingLineNumber = "140"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_e8_32s40s48s56s64s72s"
-                  moduleName = "GPKitDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Liyanwei/9.%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/GPKit/GPRoute/GPRoute/Reg/GPRouteRegManager.m"
-                  timestampString = "579515839.315439"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "140"
-                  endingLineNumber = "140"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

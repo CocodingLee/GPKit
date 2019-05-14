@@ -19,17 +19,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // 调试信息
     [[GPLagMonitor shareInstance] beginMonitor];
+    // 显示调试窗口
+    [VZInspector showOnStatusBar];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyWindow];
-
+    
     CYLMainRootViewController *rootViewController = [[CYLMainRootViewController alloc] init];
     [self.window setRootViewController:rootViewController];
     [self setUpNavigationBarAppearance];
     
-    
     [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
