@@ -14,19 +14,41 @@
 
 @implementation CoobjcViewController
 
-- (void)viewDidLoad {
+- (void) setupNavigationBar
+{
+    self.gp_navigationItem.title = @"coobjc";
+    self.gp_navigationItem.tintColor = HEXCOLOR(0x222222);
+    
+    self.gp_navigationItem.titleLabel.textAlignment = NSTextAlignmentCenter;
+    self.gp_navigationItem.titleLabel.font = [UIFont boldSystemFontOfSize:17];
+    self.gp_navigationBar.backgroundColor = HEXCOLOR(0xFFFFFF);
+    
+    if (@available(iOS 11.0, *)) {
+        [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+    }else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
+    @weakify(self);
+    // 更多
+    UIImage* searchImage = [UIImage imageNamed:@"navbar_icon_search"];
+    GPBarButtonItem* searchItem = [[GPBarButtonItem alloc] initWithImage:searchImage
+                                                                   style:GPBarButtonItemStyleDefault
+                                                                 handler:^(id sender) {
+                                                                     @strongify(self);
+                                                                     //[self searchBtnClick];
+                                                                 }];
+    
+    
+    self.gp_navigationItem.rightBarButtonItem = searchItem;
+}
+
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self createNavigationBar];
+    [self setupNavigationBar];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

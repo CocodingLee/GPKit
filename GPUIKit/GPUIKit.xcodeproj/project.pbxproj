@@ -18,6 +18,8 @@
 		D7897B2622758E570095CD53 /* UIImageView+GPWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B2422758E570095CD53 /* UIImageView+GPWebCache.m */; };
 		D7897B292275962D0095CD53 /* UIImage+GPRounded.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B272275962D0095CD53 /* UIImage+GPRounded.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7897B2A2275962D0095CD53 /* UIImage+GPRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B282275962D0095CD53 /* UIImage+GPRounded.m */; };
+		D7A863F8228A651800E35569 /* GPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863F6228A651800E35569 /* GPBaseViewController.m */; };
+		D7A863F9228A651800E35569 /* GPBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863F7228A651800E35569 /* GPBaseViewController.h */; };
 		D7DA71912275B0F30026543C /* UIImage+GPBlur.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA718F2275B0F30026543C /* UIImage+GPBlur.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7DA71922275B0F30026543C /* UIImage+GPBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71902275B0F30026543C /* UIImage+GPBlur.m */; };
 		D7DA71982275B6790026543C /* GPBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71962275B6790026543C /* GPBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,6 +60,8 @@
 		D7897B282275962D0095CD53 /* UIImage+GPRounded.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GPRounded.m"; sourceTree = "<group>"; };
 		D7897B2B22759ED90095CD53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D7897B2D22759EE20095CD53 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D7A863F6228A651800E35569 /* GPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPBaseViewController.m; sourceTree = "<group>"; };
+		D7A863F7228A651800E35569 /* GPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPBaseViewController.h; sourceTree = "<group>"; };
 		D7DA718F2275B0F30026543C /* UIImage+GPBlur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GPBlur.h"; sourceTree = "<group>"; };
 		D7DA71902275B0F30026543C /* UIImage+GPBlur.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GPBlur.m"; sourceTree = "<group>"; };
 		D7DA71952275B58F0026543C /* GPNavigationDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPNavigationDefine.h; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 		D7DA71A1227EFF2D0026543C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D7A863F7228A651800E35569 /* GPBaseViewController.h */,
+				D7A863F6228A651800E35569 /* GPBaseViewController.m */,
 				D7DA71AE227F04820026543C /* UIViewController+GPTransition.h */,
 				D7DA71AF227F04820026543C /* UIViewController+GPTransition.m */,
 				D7DA71A2227EFF4C0026543C /* UIViewController+GPNavigation.h */,
@@ -273,6 +279,7 @@
 				D7DA71982275B6790026543C /* GPBarButtonItem.h in Headers */,
 				D7DA719D227EFA4B0026543C /* GPNavigationBar.h in Headers */,
 				D7DA71A8227F00D50026543C /* GPNavigationItem.h in Headers */,
+				D7A863F9228A651800E35569 /* GPBaseViewController.h in Headers */,
 				D7DA71B0227F04820026543C /* UIViewController+GPTransition.h in Headers */,
 				D7DA71A4227EFF4C0026543C /* UIViewController+GPNavigation.h in Headers */,
 				D7DA719A227EDC330026543C /* GPNavigationDefine.h in Headers */,
@@ -381,6 +388,7 @@
 				D7DA71992275B6790026543C /* GPBarButtonItem.m in Sources */,
 				D7DA71BC227F058A0026543C /* GPGeneralPushAnimation.m in Sources */,
 				D7DA71922275B0F30026543C /* UIImage+GPBlur.m in Sources */,
+				D7A863F8228A651800E35569 /* GPBaseViewController.m in Sources */,
 				D7DA71A5227EFF4C0026543C /* UIViewController+GPNavigation.m in Sources */,
 				D7DA71B1227F04820026543C /* UIViewController+GPTransition.m in Sources */,
 				D7897B20227586E80095CD53 /* UIButton+ImagePosition.m in Sources */,

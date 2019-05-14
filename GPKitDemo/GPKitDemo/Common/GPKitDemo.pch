@@ -26,6 +26,6 @@
 //
 
 #import <CYLTabBarController/CYLTabBarController.h>
-
+#import <libextobjc/EXTScope.h>
 
 #endif /* GPKitDemo_pch */
