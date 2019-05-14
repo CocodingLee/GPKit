@@ -139,7 +139,10 @@
                     return;
                 }
                 
-                //两个runloop的状态，BeforeSources和AfterWaiting这两个状态区间时间能够检测到是否卡顿
+                //
+                // 两个runloop的状态，BeforeSources和AfterWaiting这两个状态区间时间能够检测到是否卡顿
+                // https://www.jianshu.com/p/6c10ca55d343
+                // 
                 if (self->runLoopActivity == kCFRunLoopBeforeSources
                     || self->runLoopActivity == kCFRunLoopAfterWaiting) {
                     //出现三次出结果
