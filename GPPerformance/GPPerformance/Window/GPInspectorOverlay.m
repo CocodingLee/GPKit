@@ -20,7 +20,7 @@
     dispatch_once(&onceToken, ^{
         
         int x = [UIScreen mainScreen].bounds.size.width > 320 ? 250 :180 ;
-        UIEdgeInsets safeArea = [[UIApplication sharedApplication].keyWindow gp_safeAreaInsets];
+        UIEdgeInsets safeArea = gpSafeArea();
         instance = [[GPInspectorOverlay alloc]initWithFrame:CGRectMake(x, safeArea.top, 60, 20)];
     });
     
