@@ -19,6 +19,7 @@ PODS:
   - GPPerformance (1.0.0):
     - coobjc (~> 1.2.0)
     - FMDB (~> 2.7.2)
+    - GPUIKit
   - GPRoute (1.0.0)
   - GPUIKit (1.0.0):
     - FrameAccessor (~> 2.0)
@@ -107,7 +108,7 @@ SPEC CHECKSUMS:
   EasyTuple: a6a068ab3aa47e899a0c9f9ee23ddb394542ea9e
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
-  GPPerformance: 8aac9c966cb8798c3846be307d70e704937a78e2
+  GPPerformance: 8ae24155b0b246a524e2a7f50faa9153370757f1
   GPRoute: 2c4eefdd61fc588664faecc103c6e8fbfb0f804b
   GPUIKit: 491589de4500abd05dce8c5aebd411bc89d74d30
   libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7

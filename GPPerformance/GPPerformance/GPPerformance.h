@@ -14,6 +14,6 @@
 #import <GPPerformance/GPCpuMonitor.h>
 
 // 调试UI
-#import <GPPerformance/VZInspector.h>
-#import <GPPerformance/VZInspectorOverlay.h>
+#import <GPPerformance/GPInspector.h>
+#import <GPPerformance/GPInspectorOverlay.h>
 

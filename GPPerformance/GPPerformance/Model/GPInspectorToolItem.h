@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VZInspectorToolItem : NSObject
+@interface GPInspectorToolItem : NSObject
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) UIImage *icon;

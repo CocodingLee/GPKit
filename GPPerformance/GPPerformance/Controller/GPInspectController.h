@@ -1,5 +1,5 @@
 //
-//  VZInspectController.h
+//  GPInspectController.h
 //  GPPerformance
 //
 //  Created by Liyanwei on 2019/5/14.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VZInspectController : UIViewController
+@interface GPInspectController : UIViewController
 
 @property(nonatomic,strong,readonly) UIView* currentView;
 @property(nonatomic,assign,readonly) NSString* currentTab;

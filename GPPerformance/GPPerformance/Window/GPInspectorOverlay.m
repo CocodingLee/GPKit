@@ -2,33 +2,35 @@
 //  VZInspectorOverlay.m
 //  VZInspector
 //
-//  Created by Tao Xu on 14-9-23.
-//  Copyright (c) 2014年 VizLab. All rights reserved.
+//  Created by Liyanwei on 2019/5/13.
+//  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import "VZInspectorOverlay.h"
-#import "VZInspector.h"
-#import "VZInspectorResource.h"
+#import "GPInspectorOverlay.h"
+#import "GPInspector.h"
+#import "GPInspectorResource.h"
+#import <GPUIKit/GPUIKit.h>
 
-
-@implementation VZInspectorOverlay
+@implementation GPInspectorOverlay
 
 + (instancetype)sharedInstance
 {
-    static VZInspectorOverlay* instance = nil;
+    static GPInspectorOverlay* instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
         int x = [UIScreen mainScreen].bounds.size.width > 320 ? 250 :180 ;
-        instance = [[VZInspectorOverlay alloc]initWithFrame:CGRectMake(x, 44, 60, 20)];
+        UIEdgeInsets safeArea = [[UIApplication sharedApplication].keyWindow gp_safeAreaInsets];
+        instance = [[GPInspectorOverlay alloc]initWithFrame:CGRectMake(x, safeArea.top, 60, 20)];
     });
+    
     return instance;
     
 }
 
 +(void)show
 {
-    VZInspectorOverlay* o = [self sharedInstance];
+    GPInspectorOverlay* o = [self sharedInstance];
     o.tag = 100;
     o.windowLevel = UIWindowLevelStatusBar+1;
     o.hidden = NO;
@@ -37,7 +39,7 @@
 +(void)hide
 {
     for (UIWindow* window in [UIApplication sharedApplication].windows) {
-        if ([window isKindOfClass:[VZInspectorOverlay class]]) {
+        if ([window isKindOfClass:[GPInspectorOverlay class]]) {
             window.hidden = YES;
             break;
         }
@@ -53,7 +55,7 @@
 
         UIImageView* imgv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         imgv.contentMode = UIViewContentModeScaleAspectFit;
-        imgv.image = [VZInspectorResource eye];
+        imgv.image = [GPInspectorResource eye];
         imgv.userInteractionEnabled = true;
         [imgv addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(onSelfClicked:)]];
         [self addSubview:imgv];
@@ -64,10 +66,10 @@
 
 - (void)onSelfClicked:(UIButton* )sender
 {
-    if([VZInspector isShow]) {
-        [VZInspector hide];
+    if([GPInspector isShow]) {
+        [GPInspector hide];
     } else {
-        [VZInspector show];
+        [GPInspector show];
     }
 }
 

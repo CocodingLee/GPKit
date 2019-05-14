@@ -6,27 +6,27 @@
 //  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import "VZInspectorWindow.h"
-#import "VZInspectController.h"
+#import "GPInspectorWindow.h"
+#import "GPInspectController.h"
 
-@interface VZInspectorWindow()
-@property(nonatomic,strong) VZInspectController* debuggerVC;
+@interface GPInspectorWindow()
+@property(nonatomic,strong) GPInspectController* debuggerVC;
 @end
 
-@implementation VZInspectorWindow
+@implementation GPInspectorWindow
 
 + (instancetype)sharedInstance
 {
-    static VZInspectorWindow* instance = nil;
+    static GPInspectorWindow* instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[VZInspectorWindow alloc]init];
+        instance = [[GPInspectorWindow alloc]init];
     });
     return instance;
     
 }
 
-+ (VZInspectController *)sharedController
++ (GPInspectController *)sharedController
 {
     return [[self sharedInstance] debuggerVC];
 }
@@ -42,7 +42,7 @@
         self.windowLevel = UIWindowLevelStatusBar + 200;
         self.userInteractionEnabled = NO;
         
-        self.debuggerVC = [VZInspectController new];
+        self.debuggerVC = [GPInspectController new];
         self.rootViewController = self.debuggerVC;
         [self addSubview:self.debuggerVC.view];
         
@@ -78,12 +78,12 @@
             }
         }
     }
+    
     if ([self.debuggerVC canTouchPassThrough:pt]) {
         return [super hitTest:point withEvent:event];
-    }
-    else
+    } else {
         return [self.debuggerVC.view hitTest:point withEvent:event];
-    // return self.debuggerVC.view;
+    }
 }
 
 

@@ -6,12 +6,12 @@
 //  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import "VZInspectorToolItem.h"
+#import "GPInspectorToolItem.h"
 
-@implementation VZInspectorToolItem
+@implementation GPInspectorToolItem
 
 + (instancetype)statusItemWithName:(NSString *)name icon:(UIImage *)icon callback:(NSString *(^)(NSString *status))callback {
-    VZInspectorToolItem *item = [VZInspectorToolItem new];
+    GPInspectorToolItem *item = [GPInspectorToolItem new];
     item.name = name;
     item.icon = icon;
     item.callback = callback;

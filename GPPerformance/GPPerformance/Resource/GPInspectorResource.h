@@ -1,18 +1,18 @@
 //
-//  VZInspectorResource.h
+//  GPInspectorResource.h
 //  VZInspector
 //
-//  Created by moxin on 15/4/17.
-//  Copyright (c) 2015年 VizLab. All rights reserved.
+//  Created by Liyanwei on 2019/5/13.
+//  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define VZ_IMAGE(BYTE_ARRAY)                [VZInspectorResource imageWithBytes:BYTE_ARRAY length:sizeof(BYTE_ARRAY)]
-#define VZ_IMAGE_SCALE(BYTE_ARRAY, SCALE)   [VZInspectorResource imageWithBytes:BYTE_ARRAY length:sizeof(BYTE_ARRAY) scale:SCALE]
+#define VZ_IMAGE(BYTE_ARRAY)                [GPInspectorResource imageWithBytes:BYTE_ARRAY length:sizeof(BYTE_ARRAY)]
+#define VZ_IMAGE_SCALE(BYTE_ARRAY, SCALE)   [GPInspectorResource imageWithBytes:BYTE_ARRAY length:sizeof(BYTE_ARRAY) scale:SCALE]
 
-@interface VZInspectorResource : NSObject
+@interface GPInspectorResource : NSObject
 
 + (UIImage *)imageWithBytes:(const uint8_t *)bytes length:(size_t)length;
 + (UIImage *)imageWithBytes:(const uint8_t *)bytes length:(size_t)length scale:(CGFloat)scale;

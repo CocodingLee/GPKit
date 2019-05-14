@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@class VZInspectController;
+@class GPInspectController;
 
-@interface VZInspectorWindow : UIWindow
+@interface GPInspectorWindow : UIWindow
 +(instancetype)sharedInstance;
-+(VZInspectController *)sharedController;
++(GPInspectController *)sharedController;
 @end
 
 NS_ASSUME_NONNULL_END

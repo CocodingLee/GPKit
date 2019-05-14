@@ -1,18 +1,18 @@
 //
-//  VZInspectController.m
+//  GPInspectController.m
 //  GPPerformance
 //
 //  Created by Liyanwei on 2019/5/14.
 //  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import "VZInspectController.h"
+#import "GPInspectController.h"
 
-@interface VZInspectController ()
+@interface GPInspectController ()
 
 @end
 
-@implementation VZInspectController
+@implementation GPInspectController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

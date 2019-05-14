@@ -22,7 +22,7 @@
     // 调试信息
     [[GPLagMonitor shareInstance] beginMonitor];
     // 显示调试窗口
-    [VZInspector showOnStatusBar];
+    [GPInspector showOnStatusBar];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyWindow];

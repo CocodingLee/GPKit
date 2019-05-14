@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "VZInspectorToolItem.h"
+#import "GPInspectorToolItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VZInspector : NSObject
+@interface GPInspector : NSObject
 /*
  *在状态栏显示入口
  */
@@ -48,7 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  注入自定义插件
  */
-+ (void)addToolItem:(VZInspectorToolItem *)toolItem;
++ (void)addToolItem:(GPInspectorToolItem *)toolItem;
 /*
  *  返回所有注册的自定义插件
  */

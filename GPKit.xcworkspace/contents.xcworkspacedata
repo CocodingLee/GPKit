@@ -8,10 +8,10 @@
       location = "group:GPPerformance/GPPerformance.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:GPUIKit/GPUIKit.xcodeproj">
+      location = "group:GPRoute/GPRoute.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:GPRoute/GPRoute.xcodeproj">
+      location = "group:GPUIKit/GPUIKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

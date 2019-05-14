@@ -2,13 +2,13 @@
 //  VZInspectorOverlay.h
 //  VZInspector
 //
-//  Created by Tao Xu on 14-9-23.
-//  Copyright (c) 2014年 VizLab. All rights reserved.
+//  Created by Liyanwei on 2019/5/13.
+//  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface VZInspectorOverlay : UIWindow
+@interface GPInspectorOverlay : UIWindow
 
 +(instancetype)sharedInstance;
 +(void)show;

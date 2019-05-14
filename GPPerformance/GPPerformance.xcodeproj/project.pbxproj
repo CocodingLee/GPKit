@@ -22,18 +22,18 @@
 		D7A863ED22899D8100E35569 /* GPLagDB.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863EB22899D8100E35569 /* GPLagDB.m */; };
 		D7A863F022899ECE00E35569 /* GPCallTraceTimeCostModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863EE22899ECE00E35569 /* GPCallTraceTimeCostModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A863F122899ECE00E35569 /* GPCallTraceTimeCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863EF22899ECE00E35569 /* GPCallTraceTimeCostModel.m */; };
-		D7A86463228AE1D200E35569 /* VZInspectController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86461228AE1D100E35569 /* VZInspectController.m */; };
-		D7A86464228AE1D200E35569 /* VZInspectController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86462228AE1D100E35569 /* VZInspectController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7A8646A228AE1DB00E35569 /* VZInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86466228AE1DB00E35569 /* VZInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7A8646B228AE1DB00E35569 /* VZInspectorToolItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86467228AE1DB00E35569 /* VZInspectorToolItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7A8646C228AE1DB00E35569 /* VZInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86468228AE1DB00E35569 /* VZInspector.m */; };
-		D7A8646D228AE1DB00E35569 /* VZInspectorToolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86469228AE1DB00E35569 /* VZInspectorToolItem.m */; };
-		D7A86471228AE1E200E35569 /* VZInspectorResource.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8646F228AE1E200E35569 /* VZInspectorResource.m */; };
-		D7A86472228AE1E200E35569 /* VZInspectorResource.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86470228AE1E200E35569 /* VZInspectorResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7A86478228AE1E700E35569 /* VZInspectorOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86474228AE1E700E35569 /* VZInspectorOverlay.m */; };
-		D7A86479228AE1E700E35569 /* VZInspectorWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86475228AE1E700E35569 /* VZInspectorWindow.m */; };
-		D7A8647A228AE1E700E35569 /* VZInspectorOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86476228AE1E700E35569 /* VZInspectorOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7A8647B228AE1E700E35569 /* VZInspectorWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86477228AE1E700E35569 /* VZInspectorWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86463228AE1D200E35569 /* GPInspectController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86461228AE1D100E35569 /* GPInspectController.m */; };
+		D7A86464228AE1D200E35569 /* GPInspectController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86462228AE1D100E35569 /* GPInspectController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8646A228AE1DB00E35569 /* GPInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86466228AE1DB00E35569 /* GPInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8646C228AE1DB00E35569 /* GPInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86468228AE1DB00E35569 /* GPInspector.m */; };
+		D7A86471228AE1E200E35569 /* GPInspectorResource.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8646F228AE1E200E35569 /* GPInspectorResource.m */; };
+		D7A86472228AE1E200E35569 /* GPInspectorResource.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86470228AE1E200E35569 /* GPInspectorResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86480228AE4EB00E35569 /* GPInspectorOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8647C228AE4EB00E35569 /* GPInspectorOverlay.m */; };
+		D7A86481228AE4EB00E35569 /* GPInspectorWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8647D228AE4EB00E35569 /* GPInspectorWindow.m */; };
+		D7A86482228AE4EB00E35569 /* GPInspectorWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8647E228AE4EB00E35569 /* GPInspectorWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86483228AE4EB00E35569 /* GPInspectorOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8647F228AE4EB00E35569 /* GPInspectorOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86486228AE66600E35569 /* GPInspectorToolItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86484228AE66600E35569 /* GPInspectorToolItem.h */; };
+		D7A86487228AE66600E35569 /* GPInspectorToolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86485228AE66600E35569 /* GPInspectorToolItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,18 +55,18 @@
 		D7A863EB22899D8100E35569 /* GPLagDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPLagDB.m; sourceTree = "<group>"; };
 		D7A863EE22899ECE00E35569 /* GPCallTraceTimeCostModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPCallTraceTimeCostModel.h; sourceTree = "<group>"; };
 		D7A863EF22899ECE00E35569 /* GPCallTraceTimeCostModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPCallTraceTimeCostModel.m; sourceTree = "<group>"; };
-		D7A86461228AE1D100E35569 /* VZInspectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZInspectController.m; sourceTree = "<group>"; };
-		D7A86462228AE1D100E35569 /* VZInspectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZInspectController.h; sourceTree = "<group>"; };
-		D7A86466228AE1DB00E35569 /* VZInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZInspector.h; sourceTree = "<group>"; };
-		D7A86467228AE1DB00E35569 /* VZInspectorToolItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZInspectorToolItem.h; sourceTree = "<group>"; };
-		D7A86468228AE1DB00E35569 /* VZInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZInspector.m; sourceTree = "<group>"; };
-		D7A86469228AE1DB00E35569 /* VZInspectorToolItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZInspectorToolItem.m; sourceTree = "<group>"; };
-		D7A8646F228AE1E200E35569 /* VZInspectorResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZInspectorResource.m; sourceTree = "<group>"; };
-		D7A86470228AE1E200E35569 /* VZInspectorResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZInspectorResource.h; sourceTree = "<group>"; };
-		D7A86474228AE1E700E35569 /* VZInspectorOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZInspectorOverlay.m; sourceTree = "<group>"; };
-		D7A86475228AE1E700E35569 /* VZInspectorWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZInspectorWindow.m; sourceTree = "<group>"; };
-		D7A86476228AE1E700E35569 /* VZInspectorOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZInspectorOverlay.h; sourceTree = "<group>"; };
-		D7A86477228AE1E700E35569 /* VZInspectorWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZInspectorWindow.h; sourceTree = "<group>"; };
+		D7A86461228AE1D100E35569 /* GPInspectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPInspectController.m; sourceTree = "<group>"; };
+		D7A86462228AE1D100E35569 /* GPInspectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPInspectController.h; sourceTree = "<group>"; };
+		D7A86466228AE1DB00E35569 /* GPInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPInspector.h; sourceTree = "<group>"; };
+		D7A86468228AE1DB00E35569 /* GPInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPInspector.m; sourceTree = "<group>"; };
+		D7A8646F228AE1E200E35569 /* GPInspectorResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPInspectorResource.m; sourceTree = "<group>"; };
+		D7A86470228AE1E200E35569 /* GPInspectorResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPInspectorResource.h; sourceTree = "<group>"; };
+		D7A8647C228AE4EB00E35569 /* GPInspectorOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPInspectorOverlay.m; sourceTree = "<group>"; };
+		D7A8647D228AE4EB00E35569 /* GPInspectorWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPInspectorWindow.m; sourceTree = "<group>"; };
+		D7A8647E228AE4EB00E35569 /* GPInspectorWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPInspectorWindow.h; sourceTree = "<group>"; };
+		D7A8647F228AE4EB00E35569 /* GPInspectorOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPInspectorOverlay.h; sourceTree = "<group>"; };
+		D7A86484228AE66600E35569 /* GPInspectorToolItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPInspectorToolItem.h; sourceTree = "<group>"; };
+		D7A86485228AE66600E35569 /* GPInspectorToolItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPInspectorToolItem.m; sourceTree = "<group>"; };
 		EE507B9C819115E24E8FC09E /* Pods-GPPerformance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPPerformance.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPPerformance/Pods-GPPerformance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,8 +170,8 @@
 		D7A86460228AE1D100E35569 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D7A86462228AE1D100E35569 /* VZInspectController.h */,
-				D7A86461228AE1D100E35569 /* VZInspectController.m */,
+				D7A86462228AE1D100E35569 /* GPInspectController.h */,
+				D7A86461228AE1D100E35569 /* GPInspectController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,10 +179,10 @@
 		D7A86465228AE1DB00E35569 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D7A86466228AE1DB00E35569 /* VZInspector.h */,
-				D7A86468228AE1DB00E35569 /* VZInspector.m */,
-				D7A86467228AE1DB00E35569 /* VZInspectorToolItem.h */,
-				D7A86469228AE1DB00E35569 /* VZInspectorToolItem.m */,
+				D7A86484228AE66600E35569 /* GPInspectorToolItem.h */,
+				D7A86485228AE66600E35569 /* GPInspectorToolItem.m */,
+				D7A86466228AE1DB00E35569 /* GPInspector.h */,
+				D7A86468228AE1DB00E35569 /* GPInspector.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,8 +190,8 @@
 		D7A8646E228AE1E200E35569 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				D7A86470228AE1E200E35569 /* VZInspectorResource.h */,
-				D7A8646F228AE1E200E35569 /* VZInspectorResource.m */,
+				D7A86470228AE1E200E35569 /* GPInspectorResource.h */,
+				D7A8646F228AE1E200E35569 /* GPInspectorResource.m */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -199,10 +199,10 @@
 		D7A86473228AE1E700E35569 /* Window */ = {
 			isa = PBXGroup;
 			children = (
-				D7A86476228AE1E700E35569 /* VZInspectorOverlay.h */,
-				D7A86474228AE1E700E35569 /* VZInspectorOverlay.m */,
-				D7A86477228AE1E700E35569 /* VZInspectorWindow.h */,
-				D7A86475228AE1E700E35569 /* VZInspectorWindow.m */,
+				D7A8647F228AE4EB00E35569 /* GPInspectorOverlay.h */,
+				D7A8647C228AE4EB00E35569 /* GPInspectorOverlay.m */,
+				D7A8647E228AE4EB00E35569 /* GPInspectorWindow.h */,
+				D7A8647D228AE4EB00E35569 /* GPInspectorWindow.m */,
 			);
 			path = Window;
 			sourceTree = "<group>";
@@ -218,14 +218,14 @@
 				D7A863E02289705000E35569 /* GPSystemKits.h in Headers */,
 				D7A863D82289622200E35569 /* GPLagMonitor.h in Headers */,
 				D7A863E722899BB800E35569 /* GPCpuMonitor.h in Headers */,
-				D7A8647A228AE1E700E35569 /* VZInspectorOverlay.h in Headers */,
-				D7A8646A228AE1DB00E35569 /* VZInspector.h in Headers */,
-				D7A86472228AE1E200E35569 /* VZInspectorResource.h in Headers */,
-				D7A86464228AE1D200E35569 /* VZInspectController.h in Headers */,
-				D7A8646B228AE1DB00E35569 /* VZInspectorToolItem.h in Headers */,
-				D7A8647B228AE1E700E35569 /* VZInspectorWindow.h in Headers */,
+				D7A8646A228AE1DB00E35569 /* GPInspector.h in Headers */,
+				D7A86472228AE1E200E35569 /* GPInspectorResource.h in Headers */,
+				D7A86486228AE66600E35569 /* GPInspectorToolItem.h in Headers */,
+				D7A86464228AE1D200E35569 /* GPInspectController.h in Headers */,
 				D7A863F022899ECE00E35569 /* GPCallTraceTimeCostModel.h in Headers */,
 				D7A863EC22899D8100E35569 /* GPLagDB.h in Headers */,
+				D7A86482228AE4EB00E35569 /* GPInspectorWindow.h in Headers */,
+				D7A86483228AE4EB00E35569 /* GPInspectorOverlay.h in Headers */,
 				D7A863E32289724100E35569 /* GPCallStackModel.h in Headers */,
 				D7A863DD22896A1000E35569 /* GPCallStack.h in Headers */,
 			);
@@ -321,15 +321,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7A863F122899ECE00E35569 /* GPCallTraceTimeCostModel.m in Sources */,
-				D7A86471228AE1E200E35569 /* VZInspectorResource.m in Sources */,
+				D7A86471228AE1E200E35569 /* GPInspectorResource.m in Sources */,
 				D7A863E822899BB800E35569 /* GPCpuMonitor.m in Sources */,
-				D7A8646D228AE1DB00E35569 /* VZInspectorToolItem.m in Sources */,
-				D7A8646C228AE1DB00E35569 /* VZInspector.m in Sources */,
-				D7A86479228AE1E700E35569 /* VZInspectorWindow.m in Sources */,
-				D7A86463228AE1D200E35569 /* VZInspectController.m in Sources */,
+				D7A86487228AE66600E35569 /* GPInspectorToolItem.m in Sources */,
+				D7A86481228AE4EB00E35569 /* GPInspectorWindow.m in Sources */,
+				D7A8646C228AE1DB00E35569 /* GPInspector.m in Sources */,
+				D7A86463228AE1D200E35569 /* GPInspectController.m in Sources */,
+				D7A86480228AE4EB00E35569 /* GPInspectorOverlay.m in Sources */,
 				D7A863D92289622200E35569 /* GPLagMonitor.m in Sources */,
 				D7A863E42289724100E35569 /* GPCallStackModel.m in Sources */,
-				D7A86478228AE1E700E35569 /* VZInspectorOverlay.m in Sources */,
 				D7A863DE22896A1000E35569 /* GPCallStack.m in Sources */,
 				D7A863ED22899D8100E35569 /* GPLagDB.m in Sources */,
 			);
