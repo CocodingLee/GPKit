@@ -25,6 +25,7 @@
 		D79B2E7922857DC300D82858 /* CYLPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E6A22857DC300D82858 /* CYLPlusButtonSubclass.m */; };
 		D79B2E7A22857DC300D82858 /* CYLMainRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E6B22857DC300D82858 /* CYLMainRootViewController.m */; };
 		D79B2E7B22857DC300D82858 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E6E22857DC300D82858 /* MainTabBarController.m */; };
+		D7A863F5228A61D800E35569 /* CoobjcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863F4228A61D800E35569 /* CoobjcViewController.m */; };
 		D7E9A2972272FC8900CAEE53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A2962272FC8900CAEE53 /* AppDelegate.m */; };
 		D7E9A29A2272FC8900CAEE53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A2992272FC8900CAEE53 /* ViewController.m */; };
 		D7E9A29D2272FC8900CAEE53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E9A29B2272FC8900CAEE53 /* Main.storyboard */; };
@@ -71,6 +72,8 @@
 		D79B2E6C22857DC300D82858 /* CYLMainRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLMainRootViewController.h; sourceTree = "<group>"; };
 		D79B2E6D22857DC300D82858 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		D79B2E6E22857DC300D82858 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		D7A863F3228A61D800E35569 /* CoobjcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoobjcViewController.h; sourceTree = "<group>"; };
+		D7A863F4228A61D800E35569 /* CoobjcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoobjcViewController.m; sourceTree = "<group>"; };
 		D7E9A2922272FC8900CAEE53 /* GPKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E9A2952272FC8900CAEE53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7E9A2962272FC8900CAEE53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -277,6 +280,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D7A863F2228A61B900E35569 /* CoobjcTest */ = {
+			isa = PBXGroup;
+			children = (
+				D7A863F3228A61D800E35569 /* CoobjcViewController.h */,
+				D7A863F4228A61D800E35569 /* CoobjcViewController.m */,
+			);
+			path = CoobjcTest;
+			sourceTree = "<group>";
+		};
 		D7E9A2892272FC8900CAEE53 = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +312,7 @@
 			children = (
 				D79B2E2F228566A100D82858 /* Common */,
 				D79B2E3C2285737000D82858 /* MoreTest */,
+				D7A863F2228A61B900E35569 /* CoobjcTest */,
 				D79B2E3B2285736200D82858 /* EZReactTest */,
 				D79B2E3A2285735100D82858 /* UIKitTest */,
 				D79B2E2D2285666B00D82858 /* MainFrame */,
@@ -405,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A863F5228A61D800E35569 /* CoobjcViewController.m in Sources */,
 				D79B2E6F22857DC300D82858 /* CYLHomeViewController.m in Sources */,
 				D7E9A29A2272FC8900CAEE53 /* ViewController.m in Sources */,
 				D7E9A2A52272FC8A00CAEE53 /* main.m in Sources */,

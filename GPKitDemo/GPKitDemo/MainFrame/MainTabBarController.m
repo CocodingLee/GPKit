@@ -11,10 +11,15 @@
 static CGFloat const CYLTabBarControllerHeight = 40.f;
 
 //View Controllers
-#import "CYLHomeViewController.h"
-#import "CYLMessageViewController.h"
-#import "CYLMineViewController.h"
-#import "CYLSameCityViewController.h"
+//#import "CYLHomeViewController.h"
+//#import "CYLMessageViewController.h"
+//#import "CYLMineViewController.h"
+//#import "CYLSameCityViewController.h"
+
+#import "GPUIKitViewController.h"
+#import "EZKitViewController.h"
+#import "CoobjcViewController.h"
+#import "GPMoreViewController.h"
 
 @interface MainTabBarController ()<UITabBarControllerDelegate>
 
@@ -45,23 +50,27 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
 }
 
 - (NSArray *)viewControllers {
-    CYLHomeViewController *firstViewController = [[CYLHomeViewController alloc] init];
+    
+    // 首页 UIKit 调试
+    GPUIKitViewController *firstViewController = [[GPUIKitViewController alloc] init];
     UIViewController *firstNavigationController = [[CYLBaseNavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     [firstViewController cyl_setHideNavigationBarSeparator:YES];
-    //[firstViewController cyl_setNavigationBarHidden:YES];
     
-    CYLSameCityViewController *secondViewController = [[CYLSameCityViewController alloc] init];
+    // coobjc 调试
+    CoobjcViewController *secondViewController = [[CoobjcViewController alloc] init];
     UIViewController *secondNavigationController = [[CYLBaseNavigationController alloc]
                                                     initWithRootViewController:secondViewController];
     [secondViewController cyl_setHideNavigationBarSeparator:YES];
     
-    CYLMessageViewController *thirdViewController = [[CYLMessageViewController alloc] init];
+    // mvvm 测试
+    EZKitViewController *thirdViewController = [[EZKitViewController alloc] init];
     UIViewController *thirdNavigationController = [[CYLBaseNavigationController alloc]
                                                    initWithRootViewController:thirdViewController];
     [thirdViewController cyl_setHideNavigationBarSeparator:YES];
     
-    CYLMineViewController *fourthViewController = [[CYLMineViewController alloc] init];
+    // 更多
+    GPMoreViewController *fourthViewController = [[GPMoreViewController alloc] init];
     UIViewController *fourthNavigationController = [[CYLBaseNavigationController alloc]
                                                     initWithRootViewController:fourthViewController];
     [fourthNavigationController cyl_setHideNavigationBarSeparator:YES];
