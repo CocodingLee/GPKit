@@ -2,16 +2,13 @@
 //  NGCBaseViewController.m
 //  NineGameCommunity
 //
-//  Created by Singro on 2019/1/5.
-//  Copyright © 2019 Aligames. All rights reserved.
+//  Created by Liyanwei on 2019/5/5.
+//  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
 #import "GPBaseViewController.h"
 
 @interface GPBaseViewController ()
-// 页面别名
-@property (nonatomic, copy)   NSString* pageAlias;
-
 // VC正在消失
 @property (nonatomic, assign) BOOL viewDisappearing;
 @end

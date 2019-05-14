@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "GPUIKit"
+  s.name         = "GPRoute"
   s.version      = "1.0.0"
   s.summary      = "#{s.name}"
   s.homepage     = "https://github.com/CocodingLee/#{s.name}/#{s.name}"
@@ -14,8 +14,4 @@ Pod::Spec.new do |s|
   s.source_files = "#{s.name}/**/*.*"
   s.public_header_files = "#{s.name}/**/*.{h}"
 
-  # 依赖的第三方库
-  s.dependency 'SDWebImage'       , '~> 4.4.5'
-  s.dependency 'libextobjc'       , '~> 0.6'
-  s.dependency 'FrameAccessor'    , '~> 2.0'
 end

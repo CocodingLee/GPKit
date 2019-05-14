@@ -19,6 +19,7 @@ PODS:
   - GPPerformance (1.0.0):
     - coobjc (~> 1.2.0)
     - FMDB (~> 2.7.2)
+  - GPRoute (1.0.0)
   - GPUIKit (1.0.0):
     - FrameAccessor (~> 2.0)
     - libextobjc (~> 0.6)
@@ -69,6 +70,7 @@ DEPENDENCIES:
   - EasyReact (~> 2.3.1)
   - FrameAccessor (~> 2.0)
   - GPPerformance (from `./GPPerformance/`)
+  - GPRoute (from `./GPRoute/`)
   - GPUIKit (from `./GPUIKit/`)
   - lottie-ios (~> 2.5.3)
 
@@ -90,6 +92,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   GPPerformance:
     :path: "./GPPerformance/"
+  GPRoute:
+    :path: "./GPRoute/"
   GPUIKit:
     :path: "./GPUIKit/"
 
@@ -104,11 +108,12 @@ SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
   GPPerformance: 8aac9c966cb8798c3846be307d70e704937a78e2
-  GPUIKit: 4fdf4064a9678a2bdb14f06c8585f403cc62b860
+  GPRoute: 2c4eefdd61fc588664faecc103c6e8fbfb0f804b
+  GPUIKit: 491589de4500abd05dce8c5aebd411bc89d74d30
   libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
 
-PODFILE CHECKSUM: 0d2b45e468b33574e9862ee5077ac497ed669cf7
+PODFILE CHECKSUM: 248dc353161463db62c1e22c48723f077e9fe46d
 
 COCOAPODS: 1.5.3

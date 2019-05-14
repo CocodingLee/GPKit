@@ -2,8 +2,8 @@
 //  NGCBaseViewController.h
 //  NineGameCommunity
 //
-//  Created by Singro on 2019/1/5.
-//  Copyright © 2019 Aligames. All rights reserved.
+//  Created by Liyanwei on 2019/5/5.
+//  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

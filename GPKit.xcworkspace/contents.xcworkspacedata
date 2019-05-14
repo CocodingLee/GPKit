@@ -11,6 +11,9 @@
       location = "group:GPUIKit/GPUIKit.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:GPRoute/GPRoute.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

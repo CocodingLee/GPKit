@@ -37,11 +37,17 @@ target 'GPUIKit' do
   project './GPUIKit/GPUIKit.xcodeproj'
 end
 
+target 'GPRoute' do
+  platform :ios, '9.0'
+  project './GPRoute/GPRoute.xcodeproj'
+end
+
 # 本地工程
 def _localPods
     # UI库
     pod 'GPUIKit'          , :path => './GPUIKit/'
     pod 'GPPerformance'    , :path => './GPPerformance/'
+    pod 'GPRoute'          , :path => './GPRoute/'
     
 end
 
