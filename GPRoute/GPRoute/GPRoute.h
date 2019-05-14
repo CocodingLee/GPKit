@@ -6,14 +6,12 @@
 //  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+// 基础类
+#import <GPRoute/GPRouteDefine.h>
+#import <GPRoute/GPRouteDelegate.h>
+#import <GPRoute/GPRouteRegTreeDelegate.h>
 
-//! Project version number for GPRoute.
-FOUNDATION_EXPORT double GPRouteVersionNumber;
-
-//! Project version string for GPRoute.
-FOUNDATION_EXPORT const unsigned char GPRouteVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <GPRoute/PublicHeader.h>
-
+// 功能类
+#import <GPRoute/GPRouteRegTree.h>
+#import <GPRoute/GPRouteRegManager.h>
 
