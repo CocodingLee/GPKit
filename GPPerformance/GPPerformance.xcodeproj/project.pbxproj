@@ -14,6 +14,14 @@
 		D7A863DD22896A1000E35569 /* GPCallStack.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863DB22896A1000E35569 /* GPCallStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A863DE22896A1000E35569 /* GPCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863DC22896A1000E35569 /* GPCallStack.m */; };
 		D7A863E02289705000E35569 /* GPSystemKits.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863DF22896AB800E35569 /* GPSystemKits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A863E32289724100E35569 /* GPCallStackModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863E12289724100E35569 /* GPCallStackModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A863E42289724100E35569 /* GPCallStackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863E22289724100E35569 /* GPCallStackModel.m */; };
+		D7A863E722899BB800E35569 /* GPCpuMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863E522899BB800E35569 /* GPCpuMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A863E822899BB800E35569 /* GPCpuMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863E622899BB800E35569 /* GPCpuMonitor.m */; };
+		D7A863EC22899D8100E35569 /* GPLagDB.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863EA22899D8100E35569 /* GPLagDB.h */; };
+		D7A863ED22899D8100E35569 /* GPLagDB.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863EB22899D8100E35569 /* GPLagDB.m */; };
+		D7A863F022899ECE00E35569 /* GPCallTraceTimeCostModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863EE22899ECE00E35569 /* GPCallTraceTimeCostModel.h */; };
+		D7A863F122899ECE00E35569 /* GPCallTraceTimeCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863EF22899ECE00E35569 /* GPCallTraceTimeCostModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +35,14 @@
 		D7A863DB22896A1000E35569 /* GPCallStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPCallStack.h; sourceTree = "<group>"; };
 		D7A863DC22896A1000E35569 /* GPCallStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPCallStack.m; sourceTree = "<group>"; };
 		D7A863DF22896AB800E35569 /* GPSystemKits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSystemKits.h; sourceTree = "<group>"; };
+		D7A863E12289724100E35569 /* GPCallStackModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPCallStackModel.h; sourceTree = "<group>"; };
+		D7A863E22289724100E35569 /* GPCallStackModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPCallStackModel.m; sourceTree = "<group>"; };
+		D7A863E522899BB800E35569 /* GPCpuMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPCpuMonitor.h; sourceTree = "<group>"; };
+		D7A863E622899BB800E35569 /* GPCpuMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPCpuMonitor.m; sourceTree = "<group>"; };
+		D7A863EA22899D8100E35569 /* GPLagDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPLagDB.h; sourceTree = "<group>"; };
+		D7A863EB22899D8100E35569 /* GPLagDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPLagDB.m; sourceTree = "<group>"; };
+		D7A863EE22899ECE00E35569 /* GPCallTraceTimeCostModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPCallTraceTimeCostModel.h; sourceTree = "<group>"; };
+		D7A863EF22899ECE00E35569 /* GPCallTraceTimeCostModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPCallTraceTimeCostModel.m; sourceTree = "<group>"; };
 		EE507B9C819115E24E8FC09E /* Pods-GPPerformance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPPerformance.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPPerformance/Pods-GPPerformance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +99,8 @@
 				D79B2E2322855B9D00D82858 /* GPPerformance.h */,
 				D7A863DF22896AB800E35569 /* GPSystemKits.h */,
 				D79B2E2422855B9D00D82858 /* Info.plist */,
-				D7A863DA228969E600E35569 /* GPCallStack */,
+				D7A863E922899D5E00E35569 /* DB */,
+				D7A863DA228969E600E35569 /* CallStack */,
 				D7A863D52289620300E35569 /* LagMonitor */,
 			);
 			path = GPPerformance;
@@ -94,17 +111,32 @@
 			children = (
 				D7A863D62289622200E35569 /* GPLagMonitor.h */,
 				D7A863D72289622200E35569 /* GPLagMonitor.m */,
+				D7A863E522899BB800E35569 /* GPCpuMonitor.h */,
+				D7A863E622899BB800E35569 /* GPCpuMonitor.m */,
 			);
 			path = LagMonitor;
 			sourceTree = "<group>";
 		};
-		D7A863DA228969E600E35569 /* GPCallStack */ = {
+		D7A863DA228969E600E35569 /* CallStack */ = {
 			isa = PBXGroup;
 			children = (
 				D7A863DB22896A1000E35569 /* GPCallStack.h */,
 				D7A863DC22896A1000E35569 /* GPCallStack.m */,
+				D7A863E12289724100E35569 /* GPCallStackModel.h */,
+				D7A863E22289724100E35569 /* GPCallStackModel.m */,
+				D7A863EE22899ECE00E35569 /* GPCallTraceTimeCostModel.h */,
+				D7A863EF22899ECE00E35569 /* GPCallTraceTimeCostModel.m */,
 			);
-			path = GPCallStack;
+			path = CallStack;
+			sourceTree = "<group>";
+		};
+		D7A863E922899D5E00E35569 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				D7A863EA22899D8100E35569 /* GPLagDB.h */,
+				D7A863EB22899D8100E35569 /* GPLagDB.m */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,7 +149,11 @@
 				D79B2E2522855B9D00D82858 /* GPPerformance.h in Headers */,
 				D7A863E02289705000E35569 /* GPSystemKits.h in Headers */,
 				D7A863D82289622200E35569 /* GPLagMonitor.h in Headers */,
+				D7A863F022899ECE00E35569 /* GPCallTraceTimeCostModel.h in Headers */,
+				D7A863E722899BB800E35569 /* GPCpuMonitor.h in Headers */,
+				D7A863E32289724100E35569 /* GPCallStackModel.h in Headers */,
 				D7A863DD22896A1000E35569 /* GPCallStack.h in Headers */,
+				D7A863EC22899D8100E35569 /* GPLagDB.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +246,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A863F122899ECE00E35569 /* GPCallTraceTimeCostModel.m in Sources */,
+				D7A863E822899BB800E35569 /* GPCpuMonitor.m in Sources */,
 				D7A863D92289622200E35569 /* GPLagMonitor.m in Sources */,
+				D7A863E42289724100E35569 /* GPCallStackModel.m in Sources */,
 				D7A863DE22896A1000E35569 /* GPCallStack.m in Sources */,
+				D7A863ED22899D8100E35569 /* GPLagDB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,11 @@
 //
 
 #import "GPLagMonitor.h"
+// 记录调用栈
+#import "GPCallStack.h"
+// 堆栈模型
+#import "GPCallStackModel.h"
+// 
 
 @interface GPLagMonitor ()
 {

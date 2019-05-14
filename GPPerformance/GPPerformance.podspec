@@ -14,4 +14,9 @@ Pod::Spec.new do |s|
   s.source_files = "#{s.name}/**/*.*"
   s.public_header_files = "#{s.name}/**/*.{h}"
 
+
+  # 依赖的第三方库
+  s.dependency 'FMDB'       , '~> 2.7.2'
+  s.dependency 'coobjc'     , '~> 1.2.0'
+
 end

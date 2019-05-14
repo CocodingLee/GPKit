@@ -9,3 +9,6 @@
 #import <GPPerformance/GPSystemKits.h>
 #import <GPPerformance/GPLagMonitor.h>
 #import <GPPerformance/GPCallStack.h>
+#import <GPPerformance/GPCallStackModel.h>
+#import <GPPerformance/GPCpuMonitor.h>
+

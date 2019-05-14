@@ -12,8 +12,13 @@ PODS:
     - EasyFoundation (~> 1.0.0)
   - EasySequence (1.3.1)
   - EasyTuple (1.1.2)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - FrameAccessor (2.0)
-  - GPPerformance (1.0.0)
+  - GPPerformance (1.0.0):
+    - coobjc (~> 1.2.0)
+    - FMDB (~> 2.7.2)
   - GPUIKit (1.0.0):
     - FrameAccessor (~> 2.0)
     - libextobjc (~> 0.6)
@@ -76,6 +81,7 @@ SPEC REPOS:
     - EasyReact
     - EasySequence
     - EasyTuple
+    - FMDB
     - FrameAccessor
     - libextobjc
     - lottie-ios
@@ -95,8 +101,9 @@ SPEC CHECKSUMS:
   EasyReact: 39fdf743eab448b1c3f61622a2bddc7c6ec71af2
   EasySequence: 78462a0b839cb6b8a18e30a5adc37055bac0b929
   EasyTuple: a6a068ab3aa47e899a0c9f9ee23ddb394542ea9e
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
-  GPPerformance: 9e5a80308d0526a43e343adc1e23cd82fd5a1646
+  GPPerformance: 8aac9c966cb8798c3846be307d70e704937a78e2
   GPUIKit: 4fdf4064a9678a2bdb14f06c8585f403cc62b860
   libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
