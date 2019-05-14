@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GPRoute/GPRoute/Manager/GPRouteManager.m"
-            timestampString = "579514836.702018"
+            timestampString = "579515839.050992"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GPRoute/GPRoute/Reg/GPRouteRegManager.m"
-            timestampString = "579514836.702286"
+            timestampString = "579515839.0510809"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "140"
@@ -58,12 +58,12 @@
                   moduleName = "GPKitDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Liyanwei/9.%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/GPKit/GPRoute/GPRoute/Reg/GPRouteRegManager.m"
-                  timestampString = "579514836.813634"
+                  timestampString = "579515839.312023"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "140"
                   endingLineNumber = "140"
-                  offsetFromSymbolStart = "306">
+                  offsetFromSymbolStart = "268">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -73,12 +73,12 @@
                   moduleName = "GPKitDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Liyanwei/9.%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/GPKit/GPRoute/GPRoute/Reg/GPRouteRegManager.m"
-                  timestampString = "579514836.817528"
+                  timestampString = "579515839.313747"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "140"
                   endingLineNumber = "140"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "16">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -88,7 +88,7 @@
                   moduleName = "GPKitDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Liyanwei/9.%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/GPKit/GPRoute/GPRoute/Reg/GPRouteRegManager.m"
-                  timestampString = "579514836.820931"
+                  timestampString = "579515839.315439"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "140"

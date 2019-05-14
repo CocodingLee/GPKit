@@ -65,6 +65,8 @@
 //添加 stack 表数据
 - (COPromise *)increaseWithStackModel:(GPCallStackModel *)model
 {
+    SURE_ASYNC;
+    
     @weakify(self);
     return  [COPromise promise:^(COPromiseFulfill  _Nonnull fullfill, COPromiseReject  _Nonnull reject) {
         @strongify(self);
@@ -94,6 +96,8 @@
 //stack 分页查询
 - (COPromise *) selectStackWithPage:(NSUInteger)page
 {
+    SURE_ASYNC;
+    
     @weakify(self);
     return [COPromise promise:^(COPromiseFulfill  _Nonnull fullfill, COPromiseReject  _Nonnull reject) {
         @strongify(self);
@@ -174,6 +178,8 @@
 //分页查询
 - (COPromise *)selectClsCallWithPage:(NSUInteger)page
 {
+    SURE_ASYNC;
+    
     @weakify(self);
     return [COPromise promise:^(COPromiseFulfill  _Nonnull fullfill, COPromiseReject  _Nonnull reject) {
         @strongify(self);
