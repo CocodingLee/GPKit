@@ -128,7 +128,8 @@ static CGFloat const HOME_CONTENT_SECTION_HEIGHT = 45;
     [self.view addSubview:self.pageListView];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self createNavigationBar];
     
@@ -173,7 +174,7 @@ static CGFloat const HOME_CONTENT_SECTION_HEIGHT = 45;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
