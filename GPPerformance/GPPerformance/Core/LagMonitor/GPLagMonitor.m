@@ -156,7 +156,7 @@
                     co_launch_now(^{
                         id tmp = await([self.monitorModelActor sendMessage:@""]);
                         if (!co_getError()) {
-                            NSLog(@"%@" , tmp);
+                            NSLog(@"frame loss = %@" , tmp);
                         }
                     });
                     
@@ -187,7 +187,7 @@
 
 - (void)updateCPUInfo
 {
-    [GPCpuMonitor updateData];
+    [[GPCpuMonitor shareInstance] updateData];
 }
 
 static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info)

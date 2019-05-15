@@ -13,6 +13,9 @@
 #import <GPPerformance/GPCallStackModel.h>
 #import <GPPerformance/GPCpuMonitor.h>
 
+// 函数调用时长
+#import <GPPerformance/GPTraceCore.h>
+
 // 调试UI
 #import <GPPerformance/GPInspector.h>
 #import <GPPerformance/GPInspectorOverlay.h>
