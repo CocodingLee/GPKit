@@ -79,7 +79,7 @@
     
     [self.infoLb mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.dateLb.mas_right).offset(20);
-        make.top.equalTo(self.dateLb);
+        make.centerY.equalTo(self.dateLb);
     }];
     
     [self.contentLb mas_makeConstraints:^(MASConstraintMaker *make) {

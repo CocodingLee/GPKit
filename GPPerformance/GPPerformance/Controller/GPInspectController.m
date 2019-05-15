@@ -146,15 +146,14 @@ static CGFloat const HOME_CIRCLE_HEADER_HEIGHT = 150;
     [self.view addSubview:self.closeButton];
 }
 
-
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
     
     // 重新计算当前视图大小
     UIEdgeInsets insets = gpSafeArea();
-    CGFloat height = self.view.height - insets.top - 5;
-    CGRect frame = CGRectMake(0, insets.top - 5, self.view.width, height);
+    CGFloat height = self.view.height - insets.top;
+    CGRect frame = CGRectMake(0, insets.top, self.view.width, height);
     self.pageListView.frame = frame;
 }
 
@@ -214,6 +213,8 @@ static CGFloat const HOME_CIRCLE_HEADER_HEIGHT = 150;
     if (!cell) {
         cell = [[GPSettingsCell alloc] initWithStyle:UITableViewCellStyleDefault
                                           reuseIdentifier:kFlag];
+        
+        cell.contentView.backgroundColor = HEXCOLORA(0xCCCCCC, 0.7);
     }
     
     return cell;
