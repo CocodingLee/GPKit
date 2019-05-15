@@ -86,8 +86,8 @@
 
 - (void) mainThreadButtonAction
 {
-    for (int n = 0; n < 5; ++n) {
+    dispatch_async(dispatch_get_main_queue(), ^{
         sleep(1);
-    }
+    });
 }
 @end
