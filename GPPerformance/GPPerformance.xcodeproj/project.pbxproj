@@ -40,6 +40,8 @@
 		D7A8686B228BE95000E35569 /* GPSegInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86869228BE95000E35569 /* GPSegInfo.m */; };
 		D7A8686E228BFFED00E35569 /* GPFrameLossCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8686C228BFFED00E35569 /* GPFrameLossCell.h */; };
 		D7A8686F228BFFED00E35569 /* GPFrameLossCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8686D228BFFED00E35569 /* GPFrameLossCell.m */; };
+		D7A86872228C10F200E35569 /* GPSettingsCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86870228C10F200E35569 /* GPSettingsCell.h */; };
+		D7A86873228C10F200E35569 /* GPSettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86871228C10F200E35569 /* GPSettingsCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		D7A86869228BE95000E35569 /* GPSegInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSegInfo.m; sourceTree = "<group>"; };
 		D7A8686C228BFFED00E35569 /* GPFrameLossCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPFrameLossCell.h; sourceTree = "<group>"; };
 		D7A8686D228BFFED00E35569 /* GPFrameLossCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPFrameLossCell.m; sourceTree = "<group>"; };
+		D7A86870228C10F200E35569 /* GPSettingsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSettingsCell.h; sourceTree = "<group>"; };
+		D7A86871228C10F200E35569 /* GPSettingsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSettingsCell.m; sourceTree = "<group>"; };
 		EE507B9C819115E24E8FC09E /* Pods-GPPerformance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPPerformance.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPPerformance/Pods-GPPerformance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +186,8 @@
 		D7A86460228AE1D100E35569 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D7A86870228C10F200E35569 /* GPSettingsCell.h */,
+				D7A86871228C10F200E35569 /* GPSettingsCell.m */,
 				D7A8686C228BFFED00E35569 /* GPFrameLossCell.h */,
 				D7A8686D228BFFED00E35569 /* GPFrameLossCell.m */,
 				D7A86864228BE8DB00E35569 /* GPInspectFrameLossView.h */,
@@ -246,6 +252,7 @@
 				D7A8686A228BE95000E35569 /* GPSegInfo.h in Headers */,
 				D7A86866228BE8DB00E35569 /* GPInspectFrameLossView.h in Headers */,
 				D7A86483228AE4EB00E35569 /* GPInspectorOverlay.h in Headers */,
+				D7A86872228C10F200E35569 /* GPSettingsCell.h in Headers */,
 				D7A863E32289724100E35569 /* GPCallStackModel.h in Headers */,
 				D7A86486228AE66600E35569 /* GPInspectorToolItem.h in Headers */,
 				D7A863DD22896A1000E35569 /* GPCallStack.h in Headers */,
@@ -344,6 +351,7 @@
 				D7A863F122899ECE00E35569 /* GPCallTraceTimeCostModel.m in Sources */,
 				D7A86471228AE1E200E35569 /* GPInspectorResource.m in Sources */,
 				D7A86867228BE8DB00E35569 /* GPInspectFrameLossView.m in Sources */,
+				D7A86873228C10F200E35569 /* GPSettingsCell.m in Sources */,
 				D7A863E822899BB800E35569 /* GPCpuMonitor.m in Sources */,
 				D7A86487228AE66600E35569 /* GPInspectorToolItem.m in Sources */,
 				D7A86481228AE4EB00E35569 /* GPInspectorWindow.m in Sources */,

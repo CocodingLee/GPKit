@@ -11,12 +11,15 @@
 #import "GPInspector.h"
 #import "GPInspectFrameLossView.h"
 #import "GPSegInfo.h"
+#import "GPSettingsCell.h"
 
 #import <FrameAccessor/FrameAccessor.h>
 #import <GPUIKit/GPUIKit.h>
 
 // 圈子类目列表高度
 static CGFloat const HOME_CONTENT_SECTION_HEIGHT = 45;
+// 头部高度
+static CGFloat const HOME_CIRCLE_HEADER_HEIGHT = 150;
 
 @interface GPInspectController () <GPPageListViewDelegate , UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic,strong) UIButton* closeButton;
@@ -156,7 +159,7 @@ static CGFloat const HOME_CONTENT_SECTION_HEIGHT = 45;
 }
 
 #pragma mark - NGCPageListViewDelegate
-//Tips:实现代理方法
+
 - (NSArray<UIView<GPPageListViewListDelegate> *> *)listViewsInPageListView:(GPPageListView *)pageListView
 {
     return self.listViewArray;
@@ -166,7 +169,7 @@ static CGFloat const HOME_CONTENT_SECTION_HEIGHT = 45;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -176,12 +179,58 @@ static CGFloat const HOME_CONTENT_SECTION_HEIGHT = 45;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [self.pageListView getListContainerCellHeight];
+    if (indexPath.section == 0) {
+        return HOME_CIRCLE_HEADER_HEIGHT;
+    } else if (indexPath.section == 1) {
+        return [self.pageListView getListContainerCellHeight];
+    }
+    
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //Tips:最后一个section（即listContainerCell所在的section）配置listContainerCell
-    return [self.pageListView configListContainerCellAtIndexPath:indexPath];
+    
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            return [self createHomeTopCellWith:tableView];
+        }
+    }
+    
+    else if (indexPath.section == 1) {
+        //Tips:最后一个section（即listContainerCell所在的section）配置listContainerCell
+        return [self.pageListView configListContainerCellAtIndexPath:indexPath];
+        
+    }
+    
+    NSAssert(0, @"数据错误");
+    return nil;
 }
+
+- (UITableViewCell*) createHomeTopCellWith:(UITableView*) tableView
+{
+    static NSString *kFlag = @"GPSettingsCellId";
+    GPSettingsCell *cell = [tableView dequeueReusableCellWithIdentifier:kFlag];
+    if (!cell) {
+        cell = [[GPSettingsCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                          reuseIdentifier:kFlag];
+    }
+    
+    return cell;
+}
+
+#pragma mark - scroll view
+
+- (BOOL) scrollViewShouldScrollToTop:(UIScrollView *)scrollView
+{
+    [self.pageListView.currentScrollingListView setContentOffset:CGPointZero animated:NO];
+    [self.pageListView.mainTableView setContentOffset:CGPointZero animated:YES];
+    return NO;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self.pageListView mainTableViewDidScroll:scrollView];
+}
+
 @end

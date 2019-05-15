@@ -60,16 +60,6 @@
         
         [self addSubview:tableView];
         self.tableView = tableView;
-        
-//
-//        UILabel* textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
-//        textLabel.text = segmentInfo.segmentTitle;
-//        textLabel.font = [UIFont systemFontOfSize:18];
-//        textLabel.textColor = [UIColor blackColor];
-//        [textLabel sizeToFit];
-//
-//        [self addSubview:textLabel];
-//        self.textLabel = textLabel;
     }
     
     return self;
