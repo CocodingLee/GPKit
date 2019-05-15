@@ -232,6 +232,11 @@ static CGFloat const HOME_CIRCLE_HEADER_HEIGHT = 150;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     [self.pageListView mainTableViewDidScroll:scrollView];
+    
+    // 禁止下拉刷新
+    if (scrollView.contentOffsetY <= 0) {
+        scrollView.contentOffsetY = 0;
+    }
 }
 
 @end

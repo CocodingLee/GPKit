@@ -137,15 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				D79B2E2322855B9D00D82858 /* GPPerformance.h */,
-				D7A863DF22896AB800E35569 /* GPSystemKits.h */,
 				D79B2E2422855B9D00D82858 /* Info.plist */,
-				D7A86473228AE1E700E35569 /* Window */,
-				D7A8646E228AE1E200E35569 /* Resource */,
-				D7A86465228AE1DB00E35569 /* Model */,
-				D7A86460228AE1D100E35569 /* Controller */,
-				D7A863E922899D5E00E35569 /* DB */,
-				D7A863DA228969E600E35569 /* CallStack */,
-				D7A863D52289620300E35569 /* LagMonitor */,
+				D7DBD08C228C2E0C007F4B0C /* DebugUI */,
+				D7DBD08D228C2E29007F4B0C /* Core */,
 			);
 			path = GPPerformance;
 			sourceTree = "<group>";
@@ -229,6 +223,36 @@
 				D7A8647D228AE4EB00E35569 /* GPInspectorWindow.m */,
 			);
 			path = Window;
+			sourceTree = "<group>";
+		};
+		D7DBD08C228C2E0C007F4B0C /* DebugUI */ = {
+			isa = PBXGroup;
+			children = (
+				D7A86465228AE1DB00E35569 /* Model */,
+				D7A86460228AE1D100E35569 /* Controller */,
+				D7A8646E228AE1E200E35569 /* Resource */,
+				D7A86473228AE1E700E35569 /* Window */,
+			);
+			path = DebugUI;
+			sourceTree = "<group>";
+		};
+		D7DBD08D228C2E29007F4B0C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D7A863DF22896AB800E35569 /* GPSystemKits.h */,
+				D7DBD08E228C2E30007F4B0C /* Trace */,
+				D7A863E922899D5E00E35569 /* DB */,
+				D7A863DA228969E600E35569 /* CallStack */,
+				D7A863D52289620300E35569 /* LagMonitor */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D7DBD08E228C2E30007F4B0C /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Trace;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
