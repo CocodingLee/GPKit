@@ -180,12 +180,6 @@
 		D7A86460228AE1D100E35569 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D7A86870228C10F200E35569 /* GPSettingsCell.h */,
-				D7A86871228C10F200E35569 /* GPSettingsCell.m */,
-				D7A8686C228BFFED00E35569 /* GPFrameLossCell.h */,
-				D7A8686D228BFFED00E35569 /* GPFrameLossCell.m */,
-				D7A86864228BE8DB00E35569 /* GPInspectFrameLossView.h */,
-				D7A86865228BE8DB00E35569 /* GPInspectFrameLossView.m */,
 				D7A86462228AE1D100E35569 /* GPInspectController.h */,
 				D7A86461228AE1D100E35569 /* GPInspectController.m */,
 			);
@@ -228,6 +222,8 @@
 		D7DBD08C228C2E0C007F4B0C /* DebugUI */ = {
 			isa = PBXGroup;
 			children = (
+				D7DBD090228C2EE6007F4B0C /* Cell */,
+				D7DBD08F228C2ED9007F4B0C /* View */,
 				D7A86465228AE1DB00E35569 /* Model */,
 				D7A86460228AE1D100E35569 /* Controller */,
 				D7A8646E228AE1E200E35569 /* Resource */,
@@ -253,6 +249,26 @@
 			children = (
 			);
 			path = Trace;
+			sourceTree = "<group>";
+		};
+		D7DBD08F228C2ED9007F4B0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7A86864228BE8DB00E35569 /* GPInspectFrameLossView.h */,
+				D7A86865228BE8DB00E35569 /* GPInspectFrameLossView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7DBD090228C2EE6007F4B0C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D7A86870228C10F200E35569 /* GPSettingsCell.h */,
+				D7A86871228C10F200E35569 /* GPSettingsCell.m */,
+				D7A8686C228BFFED00E35569 /* GPFrameLossCell.h */,
+				D7A8686D228BFFED00E35569 /* GPFrameLossCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
