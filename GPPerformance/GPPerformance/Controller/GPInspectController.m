@@ -9,7 +9,7 @@
 #import "GPInspectController.h"
 #import "GPInspectorResource.h"
 #import "GPInspector.h"
-#import "GPInspectView.h"
+#import "GPInspectFrameLossView.h"
 #import "GPSegInfo.h"
 
 #import <FrameAccessor/FrameAccessor.h>
@@ -23,7 +23,7 @@ static CGFloat const HOME_CONTENT_SECTION_HEIGHT = 45;
 // 添加视图
 @property (nonatomic, strong) GPPageListView *pageListView;
 // 数据
-@property (nonatomic, strong) NSArray <GPInspectView *> *listViewArray;
+@property (nonatomic, strong) NSArray <GPInspectFrameLossView *> *listViewArray;
 // 测试数据
 @property (nonatomic, strong) NSArray<GPSegInfo*>* segmentHeaderData;
 @end
@@ -84,7 +84,7 @@ static CGFloat const HOME_CONTENT_SECTION_HEIGHT = 45;
     NSMutableArray* tmp = [[NSMutableArray alloc] init];
     NSMutableArray* titles = [[NSMutableArray alloc] init];
     for (GPSegInfo* info in self.segmentHeaderData) {
-        GPInspectView* view = [[GPInspectView alloc] initWithSegmentInfo:info viewController:self];
+        GPInspectFrameLossView* view = [[GPInspectFrameLossView alloc] initWithSegmentInfo:info viewController:self];
         view.backgroundColor = [UIColor whiteColor];
         [tmp addObject:view];
         [titles addObject:info.segmentTitle];
@@ -103,7 +103,7 @@ static CGFloat const HOME_CONTENT_SECTION_HEIGHT = 45;
     table.separatorStyle = UITableViewCellSeparatorStyleNone;
     table.dataSource = self;
     table.delegate = self;
-    
+    table.bounces = YES;
     [table bindEmptyView];
     
     //
@@ -150,12 +150,9 @@ static CGFloat const HOME_CONTENT_SECTION_HEIGHT = 45;
     
     // 重新计算当前视图大小
     UIEdgeInsets insets = gpSafeArea();
-    
-    CGFloat navHeight = self.gp_navigationBar.height - insets.top;
-    CGFloat height = self.view.height - insets.top;
-    CGRect frame = CGRectMake(0, insets.top, self.view.width, height);
+    CGFloat height = self.view.height - insets.top - 5;
+    CGRect frame = CGRectMake(0, insets.top - 5, self.view.width, height);
     self.pageListView.frame = frame;
-    self.pageListView.mainTableView.contentInsetTop = navHeight;
 }
 
 #pragma mark - NGCPageListViewDelegate

@@ -89,6 +89,9 @@
 // 加载过程中网络错误
 - (void) loadingWithNetError:(NSError*) error
 {
+    [self.mj_footer endRefreshing];
+    [self.mj_header endRefreshing];
+    
     self.gp_type = UITableViewErrorType_NetError;
     self.gp_error = error;
     
@@ -101,6 +104,8 @@
 - (void) loadingWithNoContent
 {
     self.gp_type = UITableViewErrorType_NoContent;
+    [self.mj_footer endRefreshingWithNoMoreData];
+    [self.mj_header endRefreshing];
     
     [self ngc_loading_reloadData];
     [self.gp_loadingView stop];
@@ -109,6 +114,9 @@
 
 - (void) loadingSuccess
 {
+    [self.mj_footer endRefreshing];
+    [self.mj_header endRefreshing];
+    
     // 停止lottie动画
     [self.gp_loadingView stop];
     [self.gp_loadingView removeFromSuperview];

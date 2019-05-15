@@ -86,8 +86,8 @@
 
 - (void) mainThreadButtonAction
 {
-    while (1) {
-        sleep(1000);
+    for (int n = 0; n < 5; ++n) {
+        sleep(1);
     }
 }
 @end

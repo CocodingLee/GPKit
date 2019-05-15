@@ -22,6 +22,7 @@ PODS:
     - FMDB (~> 2.7.2)
     - FrameAccessor (~> 2.0)
     - GPUIKit
+    - Masonry (~> 1.1.0)
   - GPRoute (1.0.0)
   - GPUIKit (1.0.0):
     - DZNEmptyDataSet (~> 1.8.1)
@@ -66,6 +67,7 @@ PODS:
   - libextobjc/RuntimeExtensions (0.6)
   - libextobjc/UmbrellaHeader (0.6)
   - lottie-ios (2.5.3)
+  - Masonry (1.1.0)
   - MJRefresh (3.1.16)
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
@@ -82,6 +84,7 @@ DEPENDENCIES:
   - GPUIKit (from `./GPUIKit/`)
   - libextobjc (~> 0.6)
   - lottie-ios (~> 2.5.3)
+  - Masonry (~> 1.1.0)
   - MJRefresh (~> 3.1.16)
 
 SPEC REPOS:
@@ -98,6 +101,7 @@ SPEC REPOS:
     - FrameAccessor
     - libextobjc
     - lottie-ios
+    - Masonry
     - MJRefresh
     - SDWebImage
 
@@ -120,14 +124,15 @@ SPEC CHECKSUMS:
   EasyTuple: a6a068ab3aa47e899a0c9f9ee23ddb394542ea9e
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
-  GPPerformance: d2ee19d104f3e7fcaeca5d49c01a0c4e34beb272
+  GPPerformance: 77fce18db6b90baee4cc75efac6156130f69ced9
   GPRoute: 2c4eefdd61fc588664faecc103c6e8fbfb0f804b
   GPUIKit: 81b5b3daf14e5a170f5389735d20edd32a143a92
   libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
 
-PODFILE CHECKSUM: 951cce840c57963e16e6ead3e0a8347473599e7c
+PODFILE CHECKSUM: b46d89a46a0277fa6653877f1180901fd6450b12
 
 COCOAPODS: 1.5.3

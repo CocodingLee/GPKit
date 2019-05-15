@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GPInspectView : UIView < GPPageListViewListDelegate>
+@interface GPInspectFrameLossView : UIView < GPPageListViewListDelegate>
 - (instancetype)initWithSegmentInfo:(GPSegInfo *)segmentInfo
                      viewController:(UIViewController*)viewController;
 @end

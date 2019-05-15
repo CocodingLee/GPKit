@@ -119,7 +119,7 @@
             
             [db close];
             
-            if (count > 0) {
+            if (count >= 0) {
                 fullfill(arr);
             } else {
                 NSError* err = [NSError errorWithDomain:@"GPPerformance" code:-1 userInfo:@{@"msg":@"db no data"}];
