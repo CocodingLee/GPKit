@@ -37,7 +37,7 @@
     self = [super initWithFrame:screenBound];
     
     if (self) {
-        self.backgroundColor = HEXCOLORA(0x0, 0.6);
+        self.backgroundColor = HEXCOLORA(0xFFFFFF, 1.0);
         self.windowLevel = UIWindowLevelStatusBar + 200;
     }
     

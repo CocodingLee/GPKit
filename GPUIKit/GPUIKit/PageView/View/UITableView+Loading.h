@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^ErrorRetryLoadBlock)(void);
 typedef void(^ActionBlock)(void);
 
-@interface UIScrollView (Loading) < DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
+@interface UIScrollView (Loading)
 @property (nonatomic , copy) ErrorRetryLoadBlock retryBlock;
 @property (nonatomic, copy) NSString *gp_actionButtonTitle;
 @property (nonatomic, copy) ActionBlock gp_actionBlock;

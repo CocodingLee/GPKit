@@ -14,7 +14,10 @@
 #import <libextobjc/EXTScope.h>
 #import <objc/runtime.h>
 #import <GPUIKit/GPUIKit.h>
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
 
+@interface UIScrollView (EmptyPage) < DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
+@end
 
 @implementation UIScrollView (Loading)
 

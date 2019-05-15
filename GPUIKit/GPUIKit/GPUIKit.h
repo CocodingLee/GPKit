@@ -45,7 +45,7 @@
 #import <GPUIKit/GPBaseTableView.h>
 #import <GPUIKit/GPBaseCollectionView.h>
 #import <GPUIKit/UITableView+Loading.h>
-#import <GPUIKit/UITableView+Private.h>
+//#import <GPUIKit/UITableView+Private.h>
 
 // PagerView
 #import <GPUIKit/GPPagerView.h>

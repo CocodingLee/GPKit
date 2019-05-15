@@ -43,7 +43,6 @@
 		D7A867B2228BA58D00E35569 /* GPCategoryDotCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867AC228BA58D00E35569 /* GPCategoryDotCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A867C1228BB03C00E35569 /* UITableView+Loading.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867B7228BB03C00E35569 /* UITableView+Loading.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A867C4228BB03C00E35569 /* UITableView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867BA228BB03C00E35569 /* UITableView+Loading.m */; };
-		D7A867C5228BB03C00E35569 /* UITableView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867BB228BB03C00E35569 /* UITableView+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A867C7228BB03C00E35569 /* UITableView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867BD228BB03C00E35569 /* UITableView+Private.m */; };
 		D7A867D4228BB09900E35569 /* GPCategoryIndicatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867C8228BB09800E35569 /* GPCategoryIndicatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A867D5228BB09900E35569 /* GPCategoryIndicatorParamsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867C9228BB09800E35569 /* GPCategoryIndicatorParamsModel.m */; };
@@ -665,7 +664,6 @@
 				D7A86814228BBCB600E35569 /* GPCategoryIndicatorComponentView.h in Headers */,
 				D7A86853228BE1B700E35569 /* GPCategoryTitleImageCellModel.h in Headers */,
 				D7A867F2228BB4CC00E35569 /* GPPagerView.h in Headers */,
-				D7A867C5228BB03C00E35569 /* UITableView+Private.h in Headers */,
 				D7A86756228BA54300E35569 /* GPCategoryImageView.h in Headers */,
 				D7A867D8228BB09900E35569 /* GPCategoryViewDefines.h in Headers */,
 				D7A867DA228BB09900E35569 /* GPCategoryListContainerView.h in Headers */,
