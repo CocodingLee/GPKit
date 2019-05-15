@@ -20,6 +20,95 @@
 		D7897B2A2275962D0095CD53 /* UIImage+GPRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B282275962D0095CD53 /* UIImage+GPRounded.m */; };
 		D7A863F8228A651800E35569 /* GPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863F6228A651800E35569 /* GPBaseViewController.m */; };
 		D7A863F9228A651800E35569 /* GPBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863F7228A651800E35569 /* GPBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8674D228BA54300E35569 /* GPCategoryTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A866EE228BA54300E35569 /* GPCategoryTitleView.m */; };
+		D7A8674E228BA54300E35569 /* GPCategoryTitleCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A866EF228BA54300E35569 /* GPCategoryTitleCellModel.m */; };
+		D7A8674F228BA54300E35569 /* GPCategoryTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A866F0228BA54300E35569 /* GPCategoryTitleCell.m */; };
+		D7A86750228BA54300E35569 /* GPCategoryTitleView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A866F1228BA54300E35569 /* GPCategoryTitleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86751228BA54300E35569 /* GPCategoryTitleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A866F2228BA54300E35569 /* GPCategoryTitleCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86752228BA54300E35569 /* GPCategoryTitleCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A866F3228BA54300E35569 /* GPCategoryTitleCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86753228BA54300E35569 /* GPCategoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A866F4228BA54300E35569 /* GPCategoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86754228BA54300E35569 /* GPCategoryImageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A866F6228BA54300E35569 /* GPCategoryImageCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86755228BA54300E35569 /* GPCategoryImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A866F7228BA54300E35569 /* GPCategoryImageCellModel.m */; };
+		D7A86756228BA54300E35569 /* GPCategoryImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A866F8228BA54300E35569 /* GPCategoryImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86757228BA54300E35569 /* GPCategoryImageCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A866F9228BA54300E35569 /* GPCategoryImageCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86758228BA54300E35569 /* GPCategoryImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A866FA228BA54300E35569 /* GPCategoryImageCell.m */; };
+		D7A86759228BA54300E35569 /* GPCategoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A866FB228BA54300E35569 /* GPCategoryImageView.m */; };
+		D7A8675A228BA54300E35569 /* GPCategoryNumberView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A866FD228BA54300E35569 /* GPCategoryNumberView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8675B228BA54300E35569 /* GPCategoryNumberCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A866FE228BA54300E35569 /* GPCategoryNumberCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8675C228BA54300E35569 /* GPCategoryNumberCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A866FF228BA54300E35569 /* GPCategoryNumberCellModel.m */; };
+		D7A8675D228BA54300E35569 /* GPCategoryNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86700228BA54300E35569 /* GPCategoryNumberView.m */; };
+		D7A8675E228BA54300E35569 /* GPCategoryNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86701228BA54300E35569 /* GPCategoryNumberCell.m */; };
+		D7A8675F228BA54300E35569 /* GPCategoryNumberCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86702228BA54300E35569 /* GPCategoryNumberCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867B1228BA58D00E35569 /* GPCategoryDotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867AB228BA58D00E35569 /* GPCategoryDotCell.m */; };
+		D7A867B2228BA58D00E35569 /* GPCategoryDotCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867AC228BA58D00E35569 /* GPCategoryDotCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867C1228BB03C00E35569 /* UITableView+Loading.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867B7228BB03C00E35569 /* UITableView+Loading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867C4228BB03C00E35569 /* UITableView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867BA228BB03C00E35569 /* UITableView+Loading.m */; };
+		D7A867C5228BB03C00E35569 /* UITableView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867BB228BB03C00E35569 /* UITableView+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867C7228BB03C00E35569 /* UITableView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867BD228BB03C00E35569 /* UITableView+Private.m */; };
+		D7A867D4228BB09900E35569 /* GPCategoryIndicatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867C8228BB09800E35569 /* GPCategoryIndicatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867D5228BB09900E35569 /* GPCategoryIndicatorParamsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867C9228BB09800E35569 /* GPCategoryIndicatorParamsModel.m */; };
+		D7A867D6228BB09900E35569 /* GPCategoryListContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867CA228BB09900E35569 /* GPCategoryListContainerView.m */; };
+		D7A867D7228BB09900E35569 /* GPCategoryCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867CB228BB09900E35569 /* GPCategoryCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867D8228BB09900E35569 /* GPCategoryViewDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867CC228BB09900E35569 /* GPCategoryViewDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867D9228BB09900E35569 /* GPCategoryFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867CD228BB09900E35569 /* GPCategoryFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867DA228BB09900E35569 /* GPCategoryListContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867CE228BB09900E35569 /* GPCategoryListContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867DB228BB09900E35569 /* UIColor+GPAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867CF228BB09900E35569 /* UIColor+GPAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867DC228BB09900E35569 /* GPCategoryCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867D0228BB09900E35569 /* GPCategoryCollectionView.m */; };
+		D7A867DD228BB09900E35569 /* GPCategoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867D1228BB09900E35569 /* GPCategoryFactory.m */; };
+		D7A867DE228BB09900E35569 /* GPCategoryIndicatorParamsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867D2228BB09900E35569 /* GPCategoryIndicatorParamsModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867DF228BB09900E35569 /* UIColor+GPAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867D3228BB09900E35569 /* UIColor+GPAdd.m */; };
+		D7A867E2228BB1E100E35569 /* GPBaseCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867E0228BB1E100E35569 /* GPBaseCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867E3228BB1E100E35569 /* GPBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867E1228BB1E100E35569 /* GPBaseCollectionView.m */; };
+		D7A867E6228BB1F800E35569 /* GPBaseTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867E4228BB1F800E35569 /* GPBaseTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867E7228BB1F800E35569 /* GPBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867E5228BB1F800E35569 /* GPBaseTableView.m */; };
+		D7A867EA228BB24C00E35569 /* GPDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867E8228BB24C00E35569 /* GPDragView.m */; };
+		D7A867EB228BB24C00E35569 /* GPDragView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867E9228BB24C00E35569 /* GPDragView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867EE228BB49A00E35569 /* GPPagerListContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867EC228BB49900E35569 /* GPPagerListContainerView.m */; };
+		D7A867EF228BB49A00E35569 /* GPPagerListContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867ED228BB49A00E35569 /* GPPagerListContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867F2228BB4CC00E35569 /* GPPagerView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867F0228BB4CC00E35569 /* GPPagerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867F3228BB4CC00E35569 /* GPPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867F1228BB4CC00E35569 /* GPPagerView.m */; };
+		D7A867FA228BB54000E35569 /* GPPageListMainTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867F4228BB53F00E35569 /* GPPageListMainTableView.m */; };
+		D7A867FB228BB54000E35569 /* GPPageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867F5228BB53F00E35569 /* GPPageListView.m */; };
+		D7A867FC228BB54000E35569 /* GPPageListMainTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867F6228BB53F00E35569 /* GPPageListMainTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867FD228BB54000E35569 /* GPPageListContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867F7228BB53F00E35569 /* GPPageListContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867FE228BB54000E35569 /* GPPageListView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A867F8228BB54000E35569 /* GPPageListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A867FF228BB54000E35569 /* GPPageListContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A867F9228BB54000E35569 /* GPPageListContainerView.m */; };
+		D7A86810228BBCB600E35569 /* GPCategoryIndicatorBallView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86802228BBCB500E35569 /* GPCategoryIndicatorBallView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86811228BBCB600E35569 /* GPCategoryIndicatorLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86803228BBCB500E35569 /* GPCategoryIndicatorLineView.m */; };
+		D7A86812228BBCB600E35569 /* GPCategoryIndicatorImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86804228BBCB500E35569 /* GPCategoryIndicatorImageView.m */; };
+		D7A86813228BBCB600E35569 /* GPCategoryIndicatorLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86805228BBCB500E35569 /* GPCategoryIndicatorLineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86814228BBCB600E35569 /* GPCategoryIndicatorComponentView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86806228BBCB500E35569 /* GPCategoryIndicatorComponentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86815228BBCB600E35569 /* GPCategoryIndicatorComponentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86807228BBCB500E35569 /* GPCategoryIndicatorComponentView.m */; };
+		D7A86816228BBCB600E35569 /* GPCategoryIndicatorBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86808228BBCB500E35569 /* GPCategoryIndicatorBackgroundView.m */; };
+		D7A86818228BBCB600E35569 /* GPCategoryIndicatorBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8680A228BBCB500E35569 /* GPCategoryIndicatorBallView.m */; };
+		D7A86819228BBCB600E35569 /* GPCategoryIndicatorImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8680B228BBCB500E35569 /* GPCategoryIndicatorImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8681A228BBCB600E35569 /* GPCategoryIndicatorBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8680C228BBCB500E35569 /* GPCategoryIndicatorBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86820228BBDB200E35569 /* GPCategoryIndicatorTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8681C228BBDB100E35569 /* GPCategoryIndicatorTriangleView.m */; };
+		D7A86821228BBDB200E35569 /* GPCategoryIndicatorTriangleView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8681D228BBDB200E35569 /* GPCategoryIndicatorTriangleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86822228BBDB200E35569 /* GPCategoryIndicatorRainbowLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8681E228BBDB200E35569 /* GPCategoryIndicatorRainbowLineView.m */; };
+		D7A86823228BBDB200E35569 /* GPCategoryIndicatorRainbowLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8681F228BBDB200E35569 /* GPCategoryIndicatorRainbowLineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86836228BBF2100E35569 /* GPCategoryIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86830228BBF2100E35569 /* GPCategoryIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86837228BBF2100E35569 /* GPCategoryIndicatorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86831228BBF2100E35569 /* GPCategoryIndicatorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86838228BBF2100E35569 /* GPCategoryIndicatorCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86832228BBF2100E35569 /* GPCategoryIndicatorCellModel.m */; };
+		D7A86839228BBF2100E35569 /* GPCategoryIndicatorCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86833228BBF2100E35569 /* GPCategoryIndicatorCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8683A228BBF2100E35569 /* GPCategoryIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86834228BBF2100E35569 /* GPCategoryIndicatorView.m */; };
+		D7A8683B228BBF2100E35569 /* GPCategoryIndicatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86835228BBF2100E35569 /* GPCategoryIndicatorCell.m */; };
+		D7A86840228BC1C000E35569 /* GPCategoryDotView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8683C228BC1C000E35569 /* GPCategoryDotView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86841228BC1C000E35569 /* GPCategoryDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8683D228BC1C000E35569 /* GPCategoryDotView.m */; };
+		D7A86842228BC1C000E35569 /* GPCategoryDotCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8683E228BC1C000E35569 /* GPCategoryDotCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86843228BC1C000E35569 /* GPCategoryDotCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8683F228BC1C000E35569 /* GPCategoryDotCellModel.m */; };
+		D7A8684A228BDFE500E35569 /* GPCategoryTitleImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86844228BDFE400E35569 /* GPCategoryTitleImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8684B228BDFE500E35569 /* GPCategoryTitleImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86845228BDFE400E35569 /* GPCategoryTitleImageCell.m */; };
+		D7A8684C228BDFE500E35569 /* GPCategoryTitleImageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86846228BDFE400E35569 /* GPCategoryTitleImageCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8684E228BDFE500E35569 /* GPCategoryTitleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86848228BDFE500E35569 /* GPCategoryTitleImageView.m */; };
+		D7A86852228BE1B700E35569 /* GPCategoryTitleImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86850228BE1B700E35569 /* GPCategoryTitleImageCellModel.m */; };
+		D7A86853228BE1B700E35569 /* GPCategoryTitleImageCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86851228BE1B700E35569 /* GPCategoryTitleImageCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8685A228BE22600E35569 /* GPCategoryBaseCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86854228BE22600E35569 /* GPCategoryBaseCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8685B228BE22600E35569 /* GPCategoryBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86855228BE22600E35569 /* GPCategoryBaseCellModel.m */; };
+		D7A8685C228BE22600E35569 /* GPCategoryBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86856228BE22600E35569 /* GPCategoryBaseView.m */; };
+		D7A8685D228BE22600E35569 /* GPCategoryBaseCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86857228BE22600E35569 /* GPCategoryBaseCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8685E228BE22600E35569 /* GPCategoryBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86858228BE22600E35569 /* GPCategoryBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8685F228BE22600E35569 /* GPCategoryBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86859228BE22600E35569 /* GPCategoryBaseCell.m */; };
 		D7DA71912275B0F30026543C /* UIImage+GPBlur.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA718F2275B0F30026543C /* UIImage+GPBlur.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7DA71922275B0F30026543C /* UIImage+GPBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71902275B0F30026543C /* UIImage+GPBlur.m */; };
 		D7DA71982275B6790026543C /* GPBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71962275B6790026543C /* GPBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,6 +151,95 @@
 		D7897B2D22759EE20095CD53 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		D7A863F6228A651800E35569 /* GPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPBaseViewController.m; sourceTree = "<group>"; };
 		D7A863F7228A651800E35569 /* GPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPBaseViewController.h; sourceTree = "<group>"; };
+		D7A866EE228BA54300E35569 /* GPCategoryTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryTitleView.m; sourceTree = "<group>"; };
+		D7A866EF228BA54300E35569 /* GPCategoryTitleCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryTitleCellModel.m; sourceTree = "<group>"; };
+		D7A866F0228BA54300E35569 /* GPCategoryTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryTitleCell.m; sourceTree = "<group>"; };
+		D7A866F1228BA54300E35569 /* GPCategoryTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryTitleView.h; sourceTree = "<group>"; };
+		D7A866F2228BA54300E35569 /* GPCategoryTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryTitleCell.h; sourceTree = "<group>"; };
+		D7A866F3228BA54300E35569 /* GPCategoryTitleCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryTitleCellModel.h; sourceTree = "<group>"; };
+		D7A866F4228BA54300E35569 /* GPCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryView.h; sourceTree = "<group>"; };
+		D7A866F6228BA54300E35569 /* GPCategoryImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryImageCell.h; sourceTree = "<group>"; };
+		D7A866F7228BA54300E35569 /* GPCategoryImageCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryImageCellModel.m; sourceTree = "<group>"; };
+		D7A866F8228BA54300E35569 /* GPCategoryImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryImageView.h; sourceTree = "<group>"; };
+		D7A866F9228BA54300E35569 /* GPCategoryImageCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryImageCellModel.h; sourceTree = "<group>"; };
+		D7A866FA228BA54300E35569 /* GPCategoryImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryImageCell.m; sourceTree = "<group>"; };
+		D7A866FB228BA54300E35569 /* GPCategoryImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryImageView.m; sourceTree = "<group>"; };
+		D7A866FD228BA54300E35569 /* GPCategoryNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryNumberView.h; sourceTree = "<group>"; };
+		D7A866FE228BA54300E35569 /* GPCategoryNumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryNumberCell.h; sourceTree = "<group>"; };
+		D7A866FF228BA54300E35569 /* GPCategoryNumberCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryNumberCellModel.m; sourceTree = "<group>"; };
+		D7A86700228BA54300E35569 /* GPCategoryNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryNumberView.m; sourceTree = "<group>"; };
+		D7A86701228BA54300E35569 /* GPCategoryNumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryNumberCell.m; sourceTree = "<group>"; };
+		D7A86702228BA54300E35569 /* GPCategoryNumberCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryNumberCellModel.h; sourceTree = "<group>"; };
+		D7A867AB228BA58D00E35569 /* GPCategoryDotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryDotCell.m; sourceTree = "<group>"; };
+		D7A867AC228BA58D00E35569 /* GPCategoryDotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryDotCell.h; sourceTree = "<group>"; };
+		D7A867B7228BB03C00E35569 /* UITableView+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Loading.h"; sourceTree = "<group>"; };
+		D7A867BA228BB03C00E35569 /* UITableView+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Loading.m"; sourceTree = "<group>"; };
+		D7A867BB228BB03C00E35569 /* UITableView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Private.h"; sourceTree = "<group>"; };
+		D7A867BD228BB03C00E35569 /* UITableView+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Private.m"; sourceTree = "<group>"; };
+		D7A867C8228BB09800E35569 /* GPCategoryIndicatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryIndicatorProtocol.h; sourceTree = "<group>"; };
+		D7A867C9228BB09800E35569 /* GPCategoryIndicatorParamsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryIndicatorParamsModel.m; sourceTree = "<group>"; };
+		D7A867CA228BB09900E35569 /* GPCategoryListContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryListContainerView.m; sourceTree = "<group>"; };
+		D7A867CB228BB09900E35569 /* GPCategoryCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryCollectionView.h; sourceTree = "<group>"; };
+		D7A867CC228BB09900E35569 /* GPCategoryViewDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryViewDefines.h; sourceTree = "<group>"; };
+		D7A867CD228BB09900E35569 /* GPCategoryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryFactory.h; sourceTree = "<group>"; };
+		D7A867CE228BB09900E35569 /* GPCategoryListContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryListContainerView.h; sourceTree = "<group>"; };
+		D7A867CF228BB09900E35569 /* UIColor+GPAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GPAdd.h"; sourceTree = "<group>"; };
+		D7A867D0228BB09900E35569 /* GPCategoryCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryCollectionView.m; sourceTree = "<group>"; };
+		D7A867D1228BB09900E35569 /* GPCategoryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryFactory.m; sourceTree = "<group>"; };
+		D7A867D2228BB09900E35569 /* GPCategoryIndicatorParamsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryIndicatorParamsModel.h; sourceTree = "<group>"; };
+		D7A867D3228BB09900E35569 /* UIColor+GPAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GPAdd.m"; sourceTree = "<group>"; };
+		D7A867E0228BB1E100E35569 /* GPBaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPBaseCollectionView.h; sourceTree = "<group>"; };
+		D7A867E1228BB1E100E35569 /* GPBaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPBaseCollectionView.m; sourceTree = "<group>"; };
+		D7A867E4228BB1F800E35569 /* GPBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPBaseTableView.h; sourceTree = "<group>"; };
+		D7A867E5228BB1F800E35569 /* GPBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPBaseTableView.m; sourceTree = "<group>"; };
+		D7A867E8228BB24C00E35569 /* GPDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDragView.m; sourceTree = "<group>"; };
+		D7A867E9228BB24C00E35569 /* GPDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDragView.h; sourceTree = "<group>"; };
+		D7A867EC228BB49900E35569 /* GPPagerListContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPagerListContainerView.m; sourceTree = "<group>"; };
+		D7A867ED228BB49A00E35569 /* GPPagerListContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPagerListContainerView.h; sourceTree = "<group>"; };
+		D7A867F0228BB4CC00E35569 /* GPPagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPagerView.h; sourceTree = "<group>"; };
+		D7A867F1228BB4CC00E35569 /* GPPagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPagerView.m; sourceTree = "<group>"; };
+		D7A867F4228BB53F00E35569 /* GPPageListMainTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPageListMainTableView.m; sourceTree = "<group>"; };
+		D7A867F5228BB53F00E35569 /* GPPageListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPageListView.m; sourceTree = "<group>"; };
+		D7A867F6228BB53F00E35569 /* GPPageListMainTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPageListMainTableView.h; sourceTree = "<group>"; };
+		D7A867F7228BB53F00E35569 /* GPPageListContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPageListContainerView.h; sourceTree = "<group>"; };
+		D7A867F8228BB54000E35569 /* GPPageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPageListView.h; sourceTree = "<group>"; };
+		D7A867F9228BB54000E35569 /* GPPageListContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPageListContainerView.m; sourceTree = "<group>"; };
+		D7A86802228BBCB500E35569 /* GPCategoryIndicatorBallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryIndicatorBallView.h; sourceTree = "<group>"; };
+		D7A86803228BBCB500E35569 /* GPCategoryIndicatorLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryIndicatorLineView.m; sourceTree = "<group>"; };
+		D7A86804228BBCB500E35569 /* GPCategoryIndicatorImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryIndicatorImageView.m; sourceTree = "<group>"; };
+		D7A86805228BBCB500E35569 /* GPCategoryIndicatorLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryIndicatorLineView.h; sourceTree = "<group>"; };
+		D7A86806228BBCB500E35569 /* GPCategoryIndicatorComponentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryIndicatorComponentView.h; sourceTree = "<group>"; };
+		D7A86807228BBCB500E35569 /* GPCategoryIndicatorComponentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryIndicatorComponentView.m; sourceTree = "<group>"; };
+		D7A86808228BBCB500E35569 /* GPCategoryIndicatorBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryIndicatorBackgroundView.m; sourceTree = "<group>"; };
+		D7A8680A228BBCB500E35569 /* GPCategoryIndicatorBallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryIndicatorBallView.m; sourceTree = "<group>"; };
+		D7A8680B228BBCB500E35569 /* GPCategoryIndicatorImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryIndicatorImageView.h; sourceTree = "<group>"; };
+		D7A8680C228BBCB500E35569 /* GPCategoryIndicatorBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryIndicatorBackgroundView.h; sourceTree = "<group>"; };
+		D7A8681C228BBDB100E35569 /* GPCategoryIndicatorTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryIndicatorTriangleView.m; sourceTree = "<group>"; };
+		D7A8681D228BBDB200E35569 /* GPCategoryIndicatorTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryIndicatorTriangleView.h; sourceTree = "<group>"; };
+		D7A8681E228BBDB200E35569 /* GPCategoryIndicatorRainbowLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryIndicatorRainbowLineView.m; sourceTree = "<group>"; };
+		D7A8681F228BBDB200E35569 /* GPCategoryIndicatorRainbowLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryIndicatorRainbowLineView.h; sourceTree = "<group>"; };
+		D7A86830228BBF2100E35569 /* GPCategoryIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryIndicatorView.h; sourceTree = "<group>"; };
+		D7A86831228BBF2100E35569 /* GPCategoryIndicatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryIndicatorCell.h; sourceTree = "<group>"; };
+		D7A86832228BBF2100E35569 /* GPCategoryIndicatorCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryIndicatorCellModel.m; sourceTree = "<group>"; };
+		D7A86833228BBF2100E35569 /* GPCategoryIndicatorCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryIndicatorCellModel.h; sourceTree = "<group>"; };
+		D7A86834228BBF2100E35569 /* GPCategoryIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryIndicatorView.m; sourceTree = "<group>"; };
+		D7A86835228BBF2100E35569 /* GPCategoryIndicatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryIndicatorCell.m; sourceTree = "<group>"; };
+		D7A8683C228BC1C000E35569 /* GPCategoryDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryDotView.h; sourceTree = "<group>"; };
+		D7A8683D228BC1C000E35569 /* GPCategoryDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryDotView.m; sourceTree = "<group>"; };
+		D7A8683E228BC1C000E35569 /* GPCategoryDotCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryDotCellModel.h; sourceTree = "<group>"; };
+		D7A8683F228BC1C000E35569 /* GPCategoryDotCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryDotCellModel.m; sourceTree = "<group>"; };
+		D7A86844228BDFE400E35569 /* GPCategoryTitleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryTitleImageView.h; sourceTree = "<group>"; };
+		D7A86845228BDFE400E35569 /* GPCategoryTitleImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryTitleImageCell.m; sourceTree = "<group>"; };
+		D7A86846228BDFE400E35569 /* GPCategoryTitleImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryTitleImageCell.h; sourceTree = "<group>"; };
+		D7A86848228BDFE500E35569 /* GPCategoryTitleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryTitleImageView.m; sourceTree = "<group>"; };
+		D7A86850228BE1B700E35569 /* GPCategoryTitleImageCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryTitleImageCellModel.m; sourceTree = "<group>"; };
+		D7A86851228BE1B700E35569 /* GPCategoryTitleImageCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryTitleImageCellModel.h; sourceTree = "<group>"; };
+		D7A86854228BE22600E35569 /* GPCategoryBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryBaseCell.h; sourceTree = "<group>"; };
+		D7A86855228BE22600E35569 /* GPCategoryBaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryBaseCellModel.m; sourceTree = "<group>"; };
+		D7A86856228BE22600E35569 /* GPCategoryBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryBaseView.m; sourceTree = "<group>"; };
+		D7A86857228BE22600E35569 /* GPCategoryBaseCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryBaseCellModel.h; sourceTree = "<group>"; };
+		D7A86858228BE22600E35569 /* GPCategoryBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCategoryBaseView.h; sourceTree = "<group>"; };
+		D7A86859228BE22600E35569 /* GPCategoryBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCategoryBaseCell.m; sourceTree = "<group>"; };
 		D7DA718F2275B0F30026543C /* UIImage+GPBlur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GPBlur.h"; sourceTree = "<group>"; };
 		D7DA71902275B0F30026543C /* UIImage+GPBlur.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GPBlur.m"; sourceTree = "<group>"; };
 		D7DA71952275B58F0026543C /* GPNavigationDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPNavigationDefine.h; sourceTree = "<group>"; };
@@ -146,6 +324,206 @@
 				D7897B282275962D0095CD53 /* UIImage+GPRounded.m */,
 			);
 			path = ImageRound;
+			sourceTree = "<group>";
+		};
+		D7A866C0228BA54300E35569 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				D7A86717228BA54300E35569 /* View */,
+				D7A86722228BA54300E35569 /* PagerView */,
+				D7A866C1228BA54300E35569 /* PageListView */,
+				D7A866C8228BA54300E35569 /* CategoryView */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		D7A866C1228BA54300E35569 /* PageListView */ = {
+			isa = PBXGroup;
+			children = (
+				D7A867F6228BB53F00E35569 /* GPPageListMainTableView.h */,
+				D7A867F4228BB53F00E35569 /* GPPageListMainTableView.m */,
+				D7A867F8228BB54000E35569 /* GPPageListView.h */,
+				D7A867F5228BB53F00E35569 /* GPPageListView.m */,
+				D7A867F7228BB53F00E35569 /* GPPageListContainerView.h */,
+				D7A867F9228BB54000E35569 /* GPPageListContainerView.m */,
+			);
+			path = PageListView;
+			sourceTree = "<group>";
+		};
+		D7A866C8228BA54300E35569 /* CategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				D7A866F4228BA54300E35569 /* GPCategoryView.h */,
+				D7A866CD228BA54300E35569 /* IndicatorViews */,
+				D7A866C9228BA54300E35569 /* Indicator */,
+				D7A866DF228BA54300E35569 /* Dot */,
+				D7A866E6228BA54300E35569 /* TitleImage */,
+				D7A866ED228BA54300E35569 /* Title */,
+				D7A866F5228BA54300E35569 /* Image */,
+				D7A866FC228BA54300E35569 /* Number */,
+				D7A86703228BA54300E35569 /* Common */,
+				D7A86710228BA54300E35569 /* Base */,
+			);
+			path = CategoryView;
+			sourceTree = "<group>";
+		};
+		D7A866C9228BA54300E35569 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				D7A86831228BBF2100E35569 /* GPCategoryIndicatorCell.h */,
+				D7A86835228BBF2100E35569 /* GPCategoryIndicatorCell.m */,
+				D7A86833228BBF2100E35569 /* GPCategoryIndicatorCellModel.h */,
+				D7A86832228BBF2100E35569 /* GPCategoryIndicatorCellModel.m */,
+				D7A86830228BBF2100E35569 /* GPCategoryIndicatorView.h */,
+				D7A86834228BBF2100E35569 /* GPCategoryIndicatorView.m */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
+		D7A866CD228BA54300E35569 /* IndicatorViews */ = {
+			isa = PBXGroup;
+			children = (
+				D7A8681F228BBDB200E35569 /* GPCategoryIndicatorRainbowLineView.h */,
+				D7A8681E228BBDB200E35569 /* GPCategoryIndicatorRainbowLineView.m */,
+				D7A8681D228BBDB200E35569 /* GPCategoryIndicatorTriangleView.h */,
+				D7A8681C228BBDB100E35569 /* GPCategoryIndicatorTriangleView.m */,
+				D7A8680C228BBCB500E35569 /* GPCategoryIndicatorBackgroundView.h */,
+				D7A86808228BBCB500E35569 /* GPCategoryIndicatorBackgroundView.m */,
+				D7A86806228BBCB500E35569 /* GPCategoryIndicatorComponentView.h */,
+				D7A86807228BBCB500E35569 /* GPCategoryIndicatorComponentView.m */,
+				D7A8680B228BBCB500E35569 /* GPCategoryIndicatorImageView.h */,
+				D7A86804228BBCB500E35569 /* GPCategoryIndicatorImageView.m */,
+				D7A86802228BBCB500E35569 /* GPCategoryIndicatorBallView.h */,
+				D7A8680A228BBCB500E35569 /* GPCategoryIndicatorBallView.m */,
+				D7A86805228BBCB500E35569 /* GPCategoryIndicatorLineView.h */,
+				D7A86803228BBCB500E35569 /* GPCategoryIndicatorLineView.m */,
+			);
+			path = IndicatorViews;
+			sourceTree = "<group>";
+		};
+		D7A866DF228BA54300E35569 /* Dot */ = {
+			isa = PBXGroup;
+			children = (
+				D7A8683E228BC1C000E35569 /* GPCategoryDotCellModel.h */,
+				D7A8683F228BC1C000E35569 /* GPCategoryDotCellModel.m */,
+				D7A8683C228BC1C000E35569 /* GPCategoryDotView.h */,
+				D7A8683D228BC1C000E35569 /* GPCategoryDotView.m */,
+				D7A867AC228BA58D00E35569 /* GPCategoryDotCell.h */,
+				D7A867AB228BA58D00E35569 /* GPCategoryDotCell.m */,
+			);
+			path = Dot;
+			sourceTree = "<group>";
+		};
+		D7A866E6228BA54300E35569 /* TitleImage */ = {
+			isa = PBXGroup;
+			children = (
+				D7A86851228BE1B700E35569 /* GPCategoryTitleImageCellModel.h */,
+				D7A86850228BE1B700E35569 /* GPCategoryTitleImageCellModel.m */,
+				D7A86846228BDFE400E35569 /* GPCategoryTitleImageCell.h */,
+				D7A86845228BDFE400E35569 /* GPCategoryTitleImageCell.m */,
+				D7A86844228BDFE400E35569 /* GPCategoryTitleImageView.h */,
+				D7A86848228BDFE500E35569 /* GPCategoryTitleImageView.m */,
+			);
+			path = TitleImage;
+			sourceTree = "<group>";
+		};
+		D7A866ED228BA54300E35569 /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				D7A866F2228BA54300E35569 /* GPCategoryTitleCell.h */,
+				D7A866F0228BA54300E35569 /* GPCategoryTitleCell.m */,
+				D7A866F1228BA54300E35569 /* GPCategoryTitleView.h */,
+				D7A866EE228BA54300E35569 /* GPCategoryTitleView.m */,
+				D7A866F3228BA54300E35569 /* GPCategoryTitleCellModel.h */,
+				D7A866EF228BA54300E35569 /* GPCategoryTitleCellModel.m */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		D7A866F5228BA54300E35569 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D7A866F6228BA54300E35569 /* GPCategoryImageCell.h */,
+				D7A866FA228BA54300E35569 /* GPCategoryImageCell.m */,
+				D7A866F9228BA54300E35569 /* GPCategoryImageCellModel.h */,
+				D7A866F7228BA54300E35569 /* GPCategoryImageCellModel.m */,
+				D7A866F8228BA54300E35569 /* GPCategoryImageView.h */,
+				D7A866FB228BA54300E35569 /* GPCategoryImageView.m */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		D7A866FC228BA54300E35569 /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				D7A866FD228BA54300E35569 /* GPCategoryNumberView.h */,
+				D7A86700228BA54300E35569 /* GPCategoryNumberView.m */,
+				D7A866FE228BA54300E35569 /* GPCategoryNumberCell.h */,
+				D7A86701228BA54300E35569 /* GPCategoryNumberCell.m */,
+				D7A86702228BA54300E35569 /* GPCategoryNumberCellModel.h */,
+				D7A866FF228BA54300E35569 /* GPCategoryNumberCellModel.m */,
+			);
+			path = Number;
+			sourceTree = "<group>";
+		};
+		D7A86703228BA54300E35569 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D7A867CB228BB09900E35569 /* GPCategoryCollectionView.h */,
+				D7A867D0228BB09900E35569 /* GPCategoryCollectionView.m */,
+				D7A867CD228BB09900E35569 /* GPCategoryFactory.h */,
+				D7A867D1228BB09900E35569 /* GPCategoryFactory.m */,
+				D7A867D2228BB09900E35569 /* GPCategoryIndicatorParamsModel.h */,
+				D7A867C9228BB09800E35569 /* GPCategoryIndicatorParamsModel.m */,
+				D7A867C8228BB09800E35569 /* GPCategoryIndicatorProtocol.h */,
+				D7A867CE228BB09900E35569 /* GPCategoryListContainerView.h */,
+				D7A867CA228BB09900E35569 /* GPCategoryListContainerView.m */,
+				D7A867CC228BB09900E35569 /* GPCategoryViewDefines.h */,
+				D7A867CF228BB09900E35569 /* UIColor+GPAdd.h */,
+				D7A867D3228BB09900E35569 /* UIColor+GPAdd.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D7A86710228BA54300E35569 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D7A86854228BE22600E35569 /* GPCategoryBaseCell.h */,
+				D7A86859228BE22600E35569 /* GPCategoryBaseCell.m */,
+				D7A86858228BE22600E35569 /* GPCategoryBaseView.h */,
+				D7A86856228BE22600E35569 /* GPCategoryBaseView.m */,
+				D7A86857228BE22600E35569 /* GPCategoryBaseCellModel.h */,
+				D7A86855228BE22600E35569 /* GPCategoryBaseCellModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D7A86717228BA54300E35569 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7A867E9228BB24C00E35569 /* GPDragView.h */,
+				D7A867E8228BB24C00E35569 /* GPDragView.m */,
+				D7A867E4228BB1F800E35569 /* GPBaseTableView.h */,
+				D7A867E5228BB1F800E35569 /* GPBaseTableView.m */,
+				D7A867E0228BB1E100E35569 /* GPBaseCollectionView.h */,
+				D7A867E1228BB1E100E35569 /* GPBaseCollectionView.m */,
+				D7A867B7228BB03C00E35569 /* UITableView+Loading.h */,
+				D7A867BA228BB03C00E35569 /* UITableView+Loading.m */,
+				D7A867BB228BB03C00E35569 /* UITableView+Private.h */,
+				D7A867BD228BB03C00E35569 /* UITableView+Private.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7A86722228BA54300E35569 /* PagerView */ = {
+			isa = PBXGroup;
+			children = (
+				D7A867F0228BB4CC00E35569 /* GPPagerView.h */,
+				D7A867F1228BB4CC00E35569 /* GPPagerView.m */,
+				D7A867ED228BB49A00E35569 /* GPPagerListContainerView.h */,
+				D7A867EC228BB49900E35569 /* GPPagerListContainerView.m */,
+			);
+			path = PagerView;
 			sourceTree = "<group>";
 		};
 		D7DA718E2275B0BB0026543C /* ImageBlur */ = {
@@ -253,6 +631,7 @@
 				D7E9A2822272FC6E00CAEE53 /* Info.plist */,
 				D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */,
 				D7DA71932275B4FC0026543C /* Base */,
+				D7A866C0228BA54300E35569 /* PageView */,
 				D7DA71942275B50B0026543C /* Navigation */,
 			);
 			path = GPUIKit;
@@ -281,6 +660,52 @@
 				D7DA71A8227F00D50026543C /* GPNavigationItem.h in Headers */,
 				D7DA71B0227F04820026543C /* UIViewController+GPTransition.h in Headers */,
 				D7A863F9228A651800E35569 /* GPBaseViewController.h in Headers */,
+				D7A867EF228BB49A00E35569 /* GPPagerListContainerView.h in Headers */,
+				D7A867D7228BB09900E35569 /* GPCategoryCollectionView.h in Headers */,
+				D7A86814228BBCB600E35569 /* GPCategoryIndicatorComponentView.h in Headers */,
+				D7A86853228BE1B700E35569 /* GPCategoryTitleImageCellModel.h in Headers */,
+				D7A867F2228BB4CC00E35569 /* GPPagerView.h in Headers */,
+				D7A867C5228BB03C00E35569 /* UITableView+Private.h in Headers */,
+				D7A86756228BA54300E35569 /* GPCategoryImageView.h in Headers */,
+				D7A867D8228BB09900E35569 /* GPCategoryViewDefines.h in Headers */,
+				D7A867DA228BB09900E35569 /* GPCategoryListContainerView.h in Headers */,
+				D7A867EB228BB24C00E35569 /* GPDragView.h in Headers */,
+				D7A86751228BA54300E35569 /* GPCategoryTitleCell.h in Headers */,
+				D7A867FD228BB54000E35569 /* GPPageListContainerView.h in Headers */,
+				D7A86753228BA54300E35569 /* GPCategoryView.h in Headers */,
+				D7A8685E228BE22600E35569 /* GPCategoryBaseView.h in Headers */,
+				D7A8684C228BDFE500E35569 /* GPCategoryTitleImageCell.h in Headers */,
+				D7A86837228BBF2100E35569 /* GPCategoryIndicatorCell.h in Headers */,
+				D7A86839228BBF2100E35569 /* GPCategoryIndicatorCellModel.h in Headers */,
+				D7A8675F228BA54300E35569 /* GPCategoryNumberCellModel.h in Headers */,
+				D7A86842228BC1C000E35569 /* GPCategoryDotCellModel.h in Headers */,
+				D7A8675B228BA54300E35569 /* GPCategoryNumberCell.h in Headers */,
+				D7A8684A228BDFE500E35569 /* GPCategoryTitleImageView.h in Headers */,
+				D7A86819228BBCB600E35569 /* GPCategoryIndicatorImageView.h in Headers */,
+				D7A867DB228BB09900E35569 /* UIColor+GPAdd.h in Headers */,
+				D7A86821228BBDB200E35569 /* GPCategoryIndicatorTriangleView.h in Headers */,
+				D7A86840228BC1C000E35569 /* GPCategoryDotView.h in Headers */,
+				D7A86754228BA54300E35569 /* GPCategoryImageCell.h in Headers */,
+				D7A867E2228BB1E100E35569 /* GPBaseCollectionView.h in Headers */,
+				D7A867B2228BA58D00E35569 /* GPCategoryDotCell.h in Headers */,
+				D7A867FC228BB54000E35569 /* GPPageListMainTableView.h in Headers */,
+				D7A86813228BBCB600E35569 /* GPCategoryIndicatorLineView.h in Headers */,
+				D7A86750228BA54300E35569 /* GPCategoryTitleView.h in Headers */,
+				D7A867D9228BB09900E35569 /* GPCategoryFactory.h in Headers */,
+				D7A867FE228BB54000E35569 /* GPPageListView.h in Headers */,
+				D7A86823228BBDB200E35569 /* GPCategoryIndicatorRainbowLineView.h in Headers */,
+				D7A86757228BA54300E35569 /* GPCategoryImageCellModel.h in Headers */,
+				D7A86836228BBF2100E35569 /* GPCategoryIndicatorView.h in Headers */,
+				D7A8685D228BE22600E35569 /* GPCategoryBaseCellModel.h in Headers */,
+				D7A8681A228BBCB600E35569 /* GPCategoryIndicatorBackgroundView.h in Headers */,
+				D7A86752228BA54300E35569 /* GPCategoryTitleCellModel.h in Headers */,
+				D7A867C1228BB03C00E35569 /* UITableView+Loading.h in Headers */,
+				D7A867D4228BB09900E35569 /* GPCategoryIndicatorProtocol.h in Headers */,
+				D7A8675A228BA54300E35569 /* GPCategoryNumberView.h in Headers */,
+				D7A867E6228BB1F800E35569 /* GPBaseTableView.h in Headers */,
+				D7A867DE228BB09900E35569 /* GPCategoryIndicatorParamsModel.h in Headers */,
+				D7A8685A228BE22600E35569 /* GPCategoryBaseCell.h in Headers */,
+				D7A86810228BBCB600E35569 /* GPCategoryIndicatorBallView.h in Headers */,
 				D7DA71A4227EFF4C0026543C /* UIViewController+GPNavigation.h in Headers */,
 				D7DA719A227EDC330026543C /* GPNavigationDefine.h in Headers */,
 				D7897B2522758E570095CD53 /* UIImageView+GPWebCache.h in Headers */,
@@ -384,22 +809,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A8683B228BBF2100E35569 /* GPCategoryIndicatorCell.m in Sources */,
 				D7DA719E227EFA4B0026543C /* GPNavigationBar.m in Sources */,
+				D7A86815228BBCB600E35569 /* GPCategoryIndicatorComponentView.m in Sources */,
+				D7A8684B228BDFE500E35569 /* GPCategoryTitleImageCell.m in Sources */,
+				D7A86811228BBCB600E35569 /* GPCategoryIndicatorLineView.m in Sources */,
+				D7A86852228BE1B700E35569 /* GPCategoryTitleImageCellModel.m in Sources */,
+				D7A86820228BBDB200E35569 /* GPCategoryIndicatorTriangleView.m in Sources */,
 				D7DA71992275B6790026543C /* GPBarButtonItem.m in Sources */,
+				D7A86759228BA54300E35569 /* GPCategoryImageView.m in Sources */,
 				D7DA71BC227F058A0026543C /* GPGeneralPushAnimation.m in Sources */,
+				D7A867D5228BB09900E35569 /* GPCategoryIndicatorParamsModel.m in Sources */,
+				D7A8674E228BA54300E35569 /* GPCategoryTitleCellModel.m in Sources */,
+				D7A86755228BA54300E35569 /* GPCategoryImageCellModel.m in Sources */,
+				D7A86843228BC1C000E35569 /* GPCategoryDotCellModel.m in Sources */,
 				D7DA71922275B0F30026543C /* UIImage+GPBlur.m in Sources */,
 				D7A863F8228A651800E35569 /* GPBaseViewController.m in Sources */,
+				D7A8685C228BE22600E35569 /* GPCategoryBaseView.m in Sources */,
+				D7A8675E228BA54300E35569 /* GPCategoryNumberCell.m in Sources */,
 				D7DA71A5227EFF4C0026543C /* UIViewController+GPNavigation.m in Sources */,
+				D7A867C7228BB03C00E35569 /* UITableView+Private.m in Sources */,
+				D7A86812228BBCB600E35569 /* GPCategoryIndicatorImageView.m in Sources */,
 				D7DA71B1227F04820026543C /* UIViewController+GPTransition.m in Sources */,
+				D7A8674D228BA54300E35569 /* GPCategoryTitleView.m in Sources */,
+				D7A867FF228BB54000E35569 /* GPPageListContainerView.m in Sources */,
 				D7897B20227586E80095CD53 /* UIButton+ImagePosition.m in Sources */,
+				D7A8675D228BA54300E35569 /* GPCategoryNumberView.m in Sources */,
+				D7A867F3228BB4CC00E35569 /* GPPagerView.m in Sources */,
+				D7A86758228BA54300E35569 /* GPCategoryImageCell.m in Sources */,
+				D7A8684E228BDFE500E35569 /* GPCategoryTitleImageView.m in Sources */,
+				D7A86818228BBCB600E35569 /* GPCategoryIndicatorBallView.m in Sources */,
 				D7DA71A9227F00D50026543C /* GPNavigationItem.m in Sources */,
+				D7A8675C228BA54300E35569 /* GPCategoryNumberCellModel.m in Sources */,
+				D7A867E7228BB1F800E35569 /* GPBaseTableView.m in Sources */,
 				D7897B2A2275962D0095CD53 /* UIImage+GPRounded.m in Sources */,
+				D7A867DC228BB09900E35569 /* GPCategoryCollectionView.m in Sources */,
+				D7A867B1228BA58D00E35569 /* GPCategoryDotCell.m in Sources */,
+				D7A867EE228BB49A00E35569 /* GPPagerListContainerView.m in Sources */,
+				D7A86838228BBF2100E35569 /* GPCategoryIndicatorCellModel.m in Sources */,
+				D7A86822228BBDB200E35569 /* GPCategoryIndicatorRainbowLineView.m in Sources */,
 				D7897B1C22757FAA0095CD53 /* UIButton+Expand.m in Sources */,
+				D7A867FA228BB54000E35569 /* GPPageListMainTableView.m in Sources */,
+				D7A867FB228BB54000E35569 /* GPPageListView.m in Sources */,
+				D7A867DF228BB09900E35569 /* UIColor+GPAdd.m in Sources */,
+				D7A8683A228BBF2100E35569 /* GPCategoryIndicatorView.m in Sources */,
 				D7DA71BB227F058A0026543C /* GPPresentAnimation.m in Sources */,
 				D7897B172273043E0095CD53 /* UIView+SafeArea.m in Sources */,
 				D7897B2622758E570095CD53 /* UIImageView+GPWebCache.m in Sources */,
+				D7A867D6228BB09900E35569 /* GPCategoryListContainerView.m in Sources */,
+				D7A867EA228BB24C00E35569 /* GPDragView.m in Sources */,
+				D7A8685B228BE22600E35569 /* GPCategoryBaseCellModel.m in Sources */,
+				D7A867E3228BB1E100E35569 /* GPBaseCollectionView.m in Sources */,
+				D7A867DD228BB09900E35569 /* GPCategoryFactory.m in Sources */,
+				D7A8685F228BE22600E35569 /* GPCategoryBaseCell.m in Sources */,
 				D7DA71BA227F058A0026543C /* GPPresentDismissAnimation.m in Sources */,
 				D7DA71AD227F04210026543C /* GPNavigationController.m in Sources */,
+				D7A867C4228BB03C00E35569 /* UITableView+Loading.m in Sources */,
+				D7A86816228BBCB600E35569 /* GPCategoryIndicatorBackgroundView.m in Sources */,
+				D7A8674F228BA54300E35569 /* GPCategoryTitleCell.m in Sources */,
+				D7A86841228BC1C000E35569 /* GPCategoryDotView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

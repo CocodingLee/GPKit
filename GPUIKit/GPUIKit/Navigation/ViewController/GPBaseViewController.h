@@ -1,6 +1,6 @@
 //
-//  NGCBaseViewController.h
-//  NineGameCommunity
+//  GPBaseViewController.h
+//  GPUIKit
 //
 //  Created by Liyanwei on 2019/5/5.
 //  Copyright © 2019 Liyanwei. All rights reserved.

@@ -16,11 +16,13 @@ def _3rdPods
    pod 'CYLTabBarController'    , '~> 1.24.1'
    pod 'DZNEmptyDataSet'        , '~> 1.8.1'
    
-   pod 'FrameAccessor'  , '~> 2.0'
-   pod 'coobjc'         , '~> 1.2.0'
-   pod 'EasyReact'      , '~> 2.3.1'
-   pod 'lottie-ios'     , '~> 2.5.3'
-   pod 'MJRefresh'      , '~> 3.1.16'
+   pod 'FrameAccessor'          , '~> 2.0'
+   pod 'coobjc'                 , '~> 1.2.0'
+   pod 'EasyReact'              , '~> 2.3.1'
+   pod 'lottie-ios'             , '~> 2.5.3'
+   pod 'MJRefresh'              , '~> 3.1.16'
+   
+   pod 'libextobjc'             , '~> 0.6'
 end
 
 ##########################################
