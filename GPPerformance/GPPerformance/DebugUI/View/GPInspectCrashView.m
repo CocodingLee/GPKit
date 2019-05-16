@@ -92,6 +92,12 @@
 {
     // 崩溃日志
     self.crashData = [GPCrashInspector sharedInstance].crashPlist;
+    if (self.crashData.count > 0) {
+        [self.tableView loadingSuccess];
+    } else {
+        [self.tableView loadingWithNoContent];
+    }
+    
 }
 
 #pragma mark - UITableViewDataSource
