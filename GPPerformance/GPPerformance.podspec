@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.dependency 'coobjc'     	      , '~> 1.2.0'
   s.dependency 'FrameAccessor'      , '~> 2.0'
   s.dependency 'Masonry'            , '~> 1.1.0'
+  s.dependency 'KSCrash'            , '~> 1.15.19'
 
   s.dependency 'GPUIKit'   
   s.dependency 'GPRoute'

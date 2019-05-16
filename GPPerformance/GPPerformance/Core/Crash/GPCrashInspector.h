@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+@class KSCrashInstallation;
 
 @interface GPCrashInspector : NSObject
+@property (strong, nonatomic) KSCrashInstallation* crashInstallation;
 
 + (instancetype)sharedInstance;
 - (void)install;

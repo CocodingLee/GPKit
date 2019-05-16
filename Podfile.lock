@@ -23,6 +23,7 @@ PODS:
     - FrameAccessor (~> 2.0)
     - GPRoute
     - GPUIKit
+    - KSCrash (~> 1.15.19)
     - Masonry (~> 1.1.0)
   - GPRoute (1.0.0)
   - GPUIKit (1.0.0):
@@ -32,6 +33,69 @@ PODS:
     - lottie-ios (~> 2.5.3)
     - MJRefresh (~> 3.1.16)
     - SDWebImage (~> 4.4.5)
+  - KSCrash (1.15.19):
+    - KSCrash/Installations (= 1.15.19)
+  - KSCrash/Installations (1.15.19):
+    - KSCrash/Recording
+    - KSCrash/Reporting
+  - KSCrash/Recording (1.15.19):
+    - KSCrash/Recording/Tools (= 1.15.19)
+  - KSCrash/Recording/Tools (1.15.19)
+  - KSCrash/Reporting (1.15.19):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters (= 1.15.19)
+    - KSCrash/Reporting/MessageUI (= 1.15.19)
+    - KSCrash/Reporting/Sinks (= 1.15.19)
+    - KSCrash/Reporting/Tools (= 1.15.19)
+  - KSCrash/Reporting/Filters (1.15.19):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Alert (= 1.15.19)
+    - KSCrash/Reporting/Filters/AppleFmt (= 1.15.19)
+    - KSCrash/Reporting/Filters/Base (= 1.15.19)
+    - KSCrash/Reporting/Filters/Basic (= 1.15.19)
+    - KSCrash/Reporting/Filters/GZip (= 1.15.19)
+    - KSCrash/Reporting/Filters/JSON (= 1.15.19)
+    - KSCrash/Reporting/Filters/Sets (= 1.15.19)
+    - KSCrash/Reporting/Filters/Stringify (= 1.15.19)
+    - KSCrash/Reporting/Filters/Tools (= 1.15.19)
+  - KSCrash/Reporting/Filters/Alert (1.15.19):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/AppleFmt (1.15.19):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/Base (1.15.19):
+    - KSCrash/Recording
+  - KSCrash/Reporting/Filters/Basic (1.15.19):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/GZip (1.15.19):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/JSON (1.15.19):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/Sets (1.15.19):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/AppleFmt
+    - KSCrash/Reporting/Filters/Base
+    - KSCrash/Reporting/Filters/Basic
+    - KSCrash/Reporting/Filters/GZip
+    - KSCrash/Reporting/Filters/JSON
+    - KSCrash/Reporting/Filters/Stringify
+  - KSCrash/Reporting/Filters/Stringify (1.15.19):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/Tools (1.15.19):
+    - KSCrash/Recording
+  - KSCrash/Reporting/MessageUI (1.15.19):
+    - KSCrash/Recording
+  - KSCrash/Reporting/Sinks (1.15.19):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters
+    - KSCrash/Reporting/Tools
+  - KSCrash/Reporting/Tools (1.15.19):
+    - KSCrash/Recording
   - libextobjc (0.6):
     - libextobjc/EXTADT (= 0.6)
     - libextobjc/EXTConcreteProtocol (= 0.6)
@@ -100,6 +164,7 @@ SPEC REPOS:
     - EasyTuple
     - FMDB
     - FrameAccessor
+    - KSCrash
     - libextobjc
     - lottie-ios
     - Masonry
@@ -125,9 +190,10 @@ SPEC CHECKSUMS:
   EasyTuple: a6a068ab3aa47e899a0c9f9ee23ddb394542ea9e
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
-  GPPerformance: 749148eada9d799df5c68069b252420fa0a456d5
+  GPPerformance: 65091359e8ff96ca3e879091bb887bb1ed609d00
   GPRoute: 2c4eefdd61fc588664faecc103c6e8fbfb0f804b
   GPUIKit: 81b5b3daf14e5a170f5389735d20edd32a143a92
+  KSCrash: 49855f7867f7d456905c241640a203f53588497d
   libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201

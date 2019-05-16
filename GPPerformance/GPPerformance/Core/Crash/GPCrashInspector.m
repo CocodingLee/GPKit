@@ -10,6 +10,9 @@
 #include <libkern/OSAtomic.h>
 #include <execinfo.h>
 
+#import <KSCrash/KSCrash.h>
+#import <KSCrash/KSCrashInstallationConsole.h>
+
 @implementation GPCrashInspector
 {
     BOOL            _isInstalled;
@@ -135,17 +138,26 @@ void gpSignalHandler(int sig)
 
 - (void)install
 {
-    if (!_isInstalled) {
-        
-        //注册回调函数
-        NSSetUncaughtExceptionHandler(&gpHandleException);
-        signal(SIGABRT, gpSignalHandler);
-        signal(SIGILL, gpSignalHandler);
-        signal(SIGSEGV, gpSignalHandler);
-        signal(SIGFPE, gpSignalHandler);
-        signal(SIGBUS, gpSignalHandler);
-        signal(SIGPIPE, gpSignalHandler);
-    }
+//    if (!_isInstalled) {
+//
+//        //注册回调函数
+//        NSSetUncaughtExceptionHandler(&gpHandleException);
+//        signal(SIGABRT, gpSignalHandler);
+//        signal(SIGILL, gpSignalHandler);
+//        signal(SIGSEGV, gpSignalHandler);
+//        signal(SIGFPE, gpSignalHandler);
+//        signal(SIGBUS, gpSignalHandler);
+//        signal(SIGPIPE, gpSignalHandler);
+//    }
+    
+    self.crashInstallation = [self makeConsoleInstallation];
+    [self.crashInstallation install];
+    [KSCrash sharedInstance].deleteBehaviorAfterSendAll = KSCDeleteNever; // TODO: Remove this
+}
+
+- (KSCrashInstallation*) makeConsoleInstallation
+{
+    return [KSCrashInstallationConsole new];
 }
 
 - (void)dealloc
