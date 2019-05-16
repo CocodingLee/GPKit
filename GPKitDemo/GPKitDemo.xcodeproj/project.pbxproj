@@ -28,6 +28,7 @@
 		D7A863F5228A61D800E35569 /* CoobjcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863F4228A61D800E35569 /* CoobjcViewController.m */; };
 		D7A86431228A91B700E35569 /* Co2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86430228A91B700E35569 /* Co2ViewController.m */; };
 		D7A86434228A921C00E35569 /* GPRouteDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86433228A921C00E35569 /* GPRouteDomain.m */; };
+		D7DBD0C8228D2F4B007F4B0C /* GPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DBD0C5228D2F4B007F4B0C /* GPButton.m */; };
 		D7E9A2972272FC8900CAEE53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A2962272FC8900CAEE53 /* AppDelegate.m */; };
 		D7E9A29A2272FC8900CAEE53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A2992272FC8900CAEE53 /* ViewController.m */; };
 		D7E9A29D2272FC8900CAEE53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E9A29B2272FC8900CAEE53 /* Main.storyboard */; };
@@ -80,6 +81,8 @@
 		D7A86430228A91B700E35569 /* Co2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Co2ViewController.m; sourceTree = "<group>"; };
 		D7A86432228A921C00E35569 /* GPRouteDomain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPRouteDomain.h; sourceTree = "<group>"; };
 		D7A86433228A921C00E35569 /* GPRouteDomain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPRouteDomain.m; sourceTree = "<group>"; };
+		D7DBD0C5228D2F4B007F4B0C /* GPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPButton.m; sourceTree = "<group>"; };
+		D7DBD0C6228D2F4B007F4B0C /* GPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPButton.h; sourceTree = "<group>"; };
 		D7E9A2922272FC8900CAEE53 /* GPKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E9A2952272FC8900CAEE53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7E9A2962272FC8900CAEE53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				D79B2E2E2285669A00D82858 /* GPKitDemo.pch */,
+				D7DBD0C6228D2F4B007F4B0C /* GPButton.h */,
+				D7DBD0C5228D2F4B007F4B0C /* GPButton.m */,
 				D7A86432228A921C00E35569 /* GPRouteDomain.h */,
 				D7A86433228A921C00E35569 /* GPRouteDomain.m */,
 			);
@@ -456,6 +461,7 @@
 				D79B2E7322857DC300D82858 /* CYLMessageViewController.m in Sources */,
 				D7A86431228A91B700E35569 /* Co2ViewController.m in Sources */,
 				D79B2E7022857DC300D82858 /* CYLSameCityViewController.m in Sources */,
+				D7DBD0C8228D2F4B007F4B0C /* GPButton.m in Sources */,
 				D79B2E42228573A100D82858 /* EZKitViewController.m in Sources */,
 				D7A86434228A921C00E35569 /* GPRouteDomain.m in Sources */,
 				D79B2E7222857DC300D82858 /* CYLPlusDemoChildViewController.m in Sources */,

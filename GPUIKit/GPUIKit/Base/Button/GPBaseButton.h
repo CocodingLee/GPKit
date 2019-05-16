@@ -38,7 +38,7 @@ typedef GPButtonItem *(^GPButtonTypeBlock)(GPButtonType type);
 
 @end
 
-@interface GPButton : UIButton
+@interface GPBaseButton : UIButton
 
 @property (nonatomic, copy, class) GPButtonTypeBlock typeItemConfigBlock;
 

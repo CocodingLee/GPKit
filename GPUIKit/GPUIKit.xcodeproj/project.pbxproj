@@ -129,8 +129,8 @@
 		D7DA71BC227F058A0026543C /* GPGeneralPushAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DA71B6227F058A0026543C /* GPGeneralPushAnimation.m */; };
 		D7DA71BD227F058A0026543C /* GPPresentDismissAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71B7227F058A0026543C /* GPPresentDismissAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7DA71BE227F058A0026543C /* GPPresentAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DA71B8227F058A0026543C /* GPPresentAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7DBD0B9228D0E53007F4B0C /* GPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DBD0B7228D0E53007F4B0C /* GPButton.m */; };
-		D7DBD0BA228D0E53007F4B0C /* GPButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DBD0B8228D0E53007F4B0C /* GPButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DBD0B9228D0E53007F4B0C /* GPBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DBD0B7228D0E53007F4B0C /* GPBaseButton.m */; };
+		D7DBD0BA228D0E53007F4B0C /* GPBaseButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DBD0B8228D0E53007F4B0C /* GPBaseButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7DBD0C1228D104D007F4B0C /* UIImage+GPColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DBD0BF228D104D007F4B0C /* UIImage+GPColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7DBD0C2228D104D007F4B0C /* UIImage+GPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DBD0C0228D104D007F4B0C /* UIImage+GPColor.m */; };
 		D7E9A2832272FC6E00CAEE53 /* GPUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D7E9A2812272FC6E00CAEE53 /* GPUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -264,8 +264,8 @@
 		D7DA71B6227F058A0026543C /* GPGeneralPushAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPGeneralPushAnimation.m; sourceTree = "<group>"; };
 		D7DA71B7227F058A0026543C /* GPPresentDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPresentDismissAnimation.h; sourceTree = "<group>"; };
 		D7DA71B8227F058A0026543C /* GPPresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPresentAnimation.h; sourceTree = "<group>"; };
-		D7DBD0B7228D0E53007F4B0C /* GPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPButton.m; sourceTree = "<group>"; };
-		D7DBD0B8228D0E53007F4B0C /* GPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPButton.h; sourceTree = "<group>"; };
+		D7DBD0B7228D0E53007F4B0C /* GPBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPBaseButton.m; sourceTree = "<group>"; };
+		D7DBD0B8228D0E53007F4B0C /* GPBaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPBaseButton.h; sourceTree = "<group>"; };
 		D7DBD0BF228D104D007F4B0C /* UIImage+GPColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GPColor.h"; sourceTree = "<group>"; };
 		D7DBD0C0228D104D007F4B0C /* UIImage+GPColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GPColor.m"; sourceTree = "<group>"; };
 		D7E9A27E2272FC6E00CAEE53 /* GPUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -307,8 +307,8 @@
 		D7897B1822757F890095CD53 /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				D7DBD0B8228D0E53007F4B0C /* GPButton.h */,
-				D7DBD0B7228D0E53007F4B0C /* GPButton.m */,
+				D7DBD0B8228D0E53007F4B0C /* GPBaseButton.h */,
+				D7DBD0B7228D0E53007F4B0C /* GPBaseButton.m */,
 				D7897B1922757FAA0095CD53 /* UIButton+Expand.h */,
 				D7897B1A22757FAA0095CD53 /* UIButton+Expand.m */,
 				D7897B1D227586E80095CD53 /* UIButton+ImagePosition.h */,
@@ -729,7 +729,7 @@
 				D7DA719A227EDC330026543C /* GPNavigationDefine.h in Headers */,
 				D7897B2522758E570095CD53 /* UIImageView+GPWebCache.h in Headers */,
 				D7897B1F227586E80095CD53 /* UIButton+ImagePosition.h in Headers */,
-				D7DBD0BA228D0E53007F4B0C /* GPButton.h in Headers */,
+				D7DBD0BA228D0E53007F4B0C /* GPBaseButton.h in Headers */,
 				D7DA71912275B0F30026543C /* UIImage+GPBlur.h in Headers */,
 				D7DA71B9227F058A0026543C /* GPGeneralPushAnimation.h in Headers */,
 				D7DA71BD227F058A0026543C /* GPPresentDismissAnimation.h in Headers */,
@@ -858,7 +858,7 @@
 				D7A867F3228BB4CC00E35569 /* GPPagerView.m in Sources */,
 				D7A86758228BA54300E35569 /* GPCategoryImageCell.m in Sources */,
 				D7A8684E228BDFE500E35569 /* GPCategoryTitleImageView.m in Sources */,
-				D7DBD0B9228D0E53007F4B0C /* GPButton.m in Sources */,
+				D7DBD0B9228D0E53007F4B0C /* GPBaseButton.m in Sources */,
 				D7A86818228BBCB600E35569 /* GPCategoryIndicatorBallView.m in Sources */,
 				D7DA71A9227F00D50026543C /* GPNavigationItem.m in Sources */,
 				D7A8675C228BA54300E35569 /* GPCategoryNumberCellModel.m in Sources */,

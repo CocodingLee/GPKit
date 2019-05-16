@@ -6,7 +6,7 @@
 //  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import "GPButton.h"
+#import "GPBaseButton.h"
 #import "UIImage+GPColor.h"
 #import "GPNavigationDefine.h"
 #import <FrameAccessor/ViewFrameAccessor.h>
@@ -30,7 +30,7 @@ static GPButtonTypeBlock aGPButtonTypeBlock = nil;
 
 @end
 
-@interface GPButton ()
+@interface GPBaseButton ()
 
 @property (nonatomic, assign) GPButtonType gp_buttonType;
 
@@ -40,13 +40,13 @@ static GPButtonTypeBlock aGPButtonTypeBlock = nil;
 
 @end
 
-@implementation GPButton
+@implementation GPBaseButton
 
 @dynamic typeItemConfigBlock;
 
 + (instancetype)buttonWithType:(GPButtonType)buttonType
 {
-    GPButton *button = [[GPButton alloc] init];
+    GPBaseButton *button = [[GPBaseButton alloc] init];
     [button updateButtonType:buttonType];
     return button;
 }
@@ -165,9 +165,9 @@ static GPButtonTypeBlock aGPButtonTypeBlock = nil;
 
 - (GPButtonItem *)typeItemWithType:(GPButtonType)type
 {
-    if (GPButton.typeItemConfigBlock)
+    if (GPBaseButton.typeItemConfigBlock)
     {
-        return GPButton.typeItemConfigBlock(type);
+        return GPBaseButton.typeItemConfigBlock(type);
     }
     else
     {

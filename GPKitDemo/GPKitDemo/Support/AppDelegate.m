@@ -25,6 +25,8 @@
     [GPInspector showOnStatusBar];
     // 抓crash
     [GPInspector setShouldHandleCrash:YES];
+    // 配置UI样式
+    [GPButton configButtonType];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyWindow];
