@@ -96,7 +96,7 @@
 {
     NSDictionary* logs = [[GPCrashInspector sharedInstance] crashForKey:self.path];
     
-    NSString* header = @"crashes comes from => VZCrashInspector";
+    NSString* header = @"crashes comes from => GPCrashInspector";
     header = [header stringByAppendingString:@"\n--------------------------------------\n"];
     _crashLogs.text = header;
     
@@ -128,7 +128,7 @@
             }
         } // if (info.allKeys.count > 0)
         
-    } // if (logs) 
+    } // if (logs)
 }
 
 @end

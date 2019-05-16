@@ -1,5 +1,5 @@
 //
-//  VZInspector.m
+//  GPInspector.m
 //  GPPerformance
 //
 //  Created by Liyanwei on 2019/5/14.

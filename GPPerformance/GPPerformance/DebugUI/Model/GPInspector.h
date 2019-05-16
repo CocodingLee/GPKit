@@ -1,5 +1,5 @@
 //
-//  VZInspector.h
+//  GPInspector.h
 //  GPPerformance
 //
 //  Created by Liyanwei on 2019/5/14.

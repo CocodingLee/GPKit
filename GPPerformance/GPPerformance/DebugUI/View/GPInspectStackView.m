@@ -88,28 +88,7 @@
 
 - (void) listViewLoadDataIfNeeded
 {
-    //    // 加载数据
-    //    co_launch(^{
-    //        NSMutableArray* frameData = await([[GPLagDB shareInstance] selectStackWithPage:self.page]);
-    //
-    //        NSError* err = co_getError();
-    //        if (!err && frameData.count > 0) {
-    //            // 显示数据
-    //            [self.frameData addObjectsFromArray:frameData];
-    //            [self.tableView reloadData];
-    //
-    //            // 加载下一页
-    //            ++self.page;
-    //
-    //            [self.tableView loadingSuccess];
-    //        } else {
-    //            if (frameData.count <= 0 && !err) {
-    //                [self.tableView loadingWithNoContent];
-    //            } else {
-    //                [self.tableView loadingWithNetError:err];
-    //            }
-    //        }
-    //    });
+    [self.tableView loadingWithNoContent];
 }
 
 #pragma mark - UITableViewDataSource
