@@ -11,7 +11,6 @@
 #include <execinfo.h>
 
 @implementation GPCrashInspector
-
 {
     BOOL            _isInstalled;
     NSString*       _crashLogPath;
@@ -72,10 +71,8 @@ void gpSignalHandler(int sig)
         NSString* sandBoxPath  = [paths objectAtIndex:0];
         
     
-        _crashLogPath = [sandBoxPath stringByAppendingPathComponent:@"VZCrashLog"];
-        
-        if ( NO == [[NSFileManager defaultManager] fileExistsAtPath:_crashLogPath] )
-        {
+        _crashLogPath = [sandBoxPath stringByAppendingPathComponent:@"GPCrashLog"];
+        if ( NO == [[NSFileManager defaultManager] fileExistsAtPath:_crashLogPath] ) {
             [[NSFileManager defaultManager] createDirectoryAtPath:_crashLogPath
                                       withIntermediateDirectories:YES
                                                        attributes:nil
@@ -83,13 +80,14 @@ void gpSignalHandler(int sig)
         }
         
         //creat plist
-        if (YES == [[NSFileManager defaultManager] fileExistsAtPath:[_crashLogPath stringByAppendingPathComponent:@"crashLog.plist"]])
-        {
+        if (YES == [[NSFileManager defaultManager] fileExistsAtPath:[_crashLogPath stringByAppendingPathComponent:@"crashLog.plist"]]) {
             _plist = [[NSMutableArray arrayWithContentsOfFile:[_crashLogPath stringByAppendingPathComponent:@"crashLog.plist"]] mutableCopy];
         }
-        else
+        else {
             _plist = [NSMutableArray new];
+        }
     }
+    
     return self;
 }
 
@@ -116,6 +114,7 @@ void gpSignalHandler(int sig)
         NSDictionary* log = [NSDictionary dictionaryWithContentsOfFile:path];
         [ret addObject:log];
     }
+    
     return [ret copy];
 }
 
@@ -130,8 +129,8 @@ void gpSignalHandler(int sig)
         
         return dict;
     }
-    return nil;
     
+    return nil;
 }
 
 - (void)install
@@ -188,11 +187,9 @@ void gpSignalHandler(int sig)
 
 - (void)saveSignal:(int) signal
 {
-//    NSMutableDictionary * detail = [NSMutableDictionary dictionary];
-//    
-//    [detail setObject:@(signal) forKey:@"signal type"];
-
-//    [self saveToFile:detail];
+    NSMutableDictionary * detail = [NSMutableDictionary dictionary];
+    [detail setObject:@(signal) forKey:@"signal type"];
+    [self saveToFile:detail];
 }
 
 - (void)saveToFile:(NSMutableDictionary*)dict
@@ -220,7 +217,6 @@ void gpSignalHandler(int sig)
     if (_plist.count > maxCrashLogNum) {
         [[NSFileManager defaultManager] removeItemAtPath:[_crashLogPath stringByAppendingPathComponent:_plist[0]] error:nil];
         [_plist removeObjectAtIndex:0];
-        
     }
     
     [_plist writeToFile:[_crashLogPath stringByAppendingPathComponent:@"crashLog.plist"] atomically:YES];

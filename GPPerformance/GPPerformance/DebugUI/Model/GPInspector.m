@@ -32,13 +32,17 @@ UIWindow* g_lastKeyWindow = nil;
 
 + (void)show
 {
-    UIWindow* window = [GPInspectorWindow sharedInstance];
-    window.hidden = NO;
-    UIViewController* root = [GPInspectController new];
-    window.rootViewController = root;
-    
     // key window
     g_lastKeyWindow = [UIApplication sharedApplication].keyWindow;
+    
+    UIWindow* window = [GPInspectorWindow sharedInstance];
+    [window makeKeyWindow];
+    
+    window.hidden = NO;
+    UIViewController* vc = [GPInspectController new];
+    UIViewController* root = [[GPNavigationController alloc] initWithRootViewController:vc];
+    window.rootViewController = root;
+    
     [window makeKeyAndVisible];
     
     [GPInspectorOverlay hide];

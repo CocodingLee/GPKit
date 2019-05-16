@@ -75,8 +75,8 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
                                                     initWithRootViewController:fourthViewController];
     [fourthNavigationController cyl_setHideNavigationBarSeparator:YES];
     NSArray *viewControllers = @[
-                                 firstNavigationController,
                                  secondNavigationController,
+                                 firstNavigationController,
                                  thirdNavigationController,
                                  fourthNavigationController
                                  ];

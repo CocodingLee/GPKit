@@ -46,7 +46,7 @@ typedef NSString* PathName;
         
         for (int i = 0; i < numClasses; ++i) {
             
-            Class c = classes[i];
+            Class c = classes[i];            
             if (class_conformsToProtocol(c, @protocol(GPRouteDelegate))) {
                 NSString *domain = [c supportedDomain] ?: @"";
                 domain = [domain lowercaseString];

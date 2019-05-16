@@ -9,8 +9,6 @@
 #import "CoobjcViewController.h"
 
 @interface CoobjcViewController ()
-// 触发线程卡顿
-@property (nonatomic , strong) GPButton* mainThreadButton;
 @end
 
 @implementation CoobjcViewController
@@ -75,17 +73,44 @@
     [self createNavigationBar];
     [self setupNavigationBar];
     
-    self.mainThreadButton = [GPButton buttonWithType:GPKitButtonTypeOrange];
-    self.mainThreadButton.frame = CGRectMake(100, 100, 100, 44);
-    [self.mainThreadButton setTitle:@"卡顿模拟" forState:UIControlStateNormal];
-    [self.mainThreadButton addTarget:self action:@selector(mainThreadButtonAction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.mainThreadButton];
+    {
+        GPButton* frameLossBtn = [GPButton buttonWithType:GPKitButtonTypeOrange];
+        frameLossBtn.frame = CGRectMake(0, 0, 100, 44);
+        [frameLossBtn setTitle:@"卡顿模拟" forState:UIControlStateNormal];
+        [frameLossBtn addTarget:self action:@selector(frameLossAction) forControlEvents:UIControlEventTouchUpInside];
+        frameLossBtn.left = 15;
+        frameLossBtn.top = self.gp_navigationBar.height + 10;
+        
+        [self.view addSubview:frameLossBtn];
+    }
+    
+    {
+        GPButton* crashBtn = [GPButton buttonWithType:GPKitButtonTypeOrange];
+        crashBtn.frame = CGRectMake(0, 0, 100, 44);
+        [crashBtn setTitle:@"crash模拟" forState:UIControlStateNormal];
+        [crashBtn addTarget:self action:@selector(crashAction) forControlEvents:UIControlEventTouchUpInside];
+        crashBtn.left = 15;
+        crashBtn.top = self.gp_navigationBar.height + crashBtn.height + 20;
+        
+        [self.view addSubview:crashBtn];
+    }
+    
 }
 
-- (void) mainThreadButtonAction
+- (void) frameLossAction
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         sleep(1);
     });
+}
+
+- (void) crashAction
+{
+    // int* p = 0x123456;
+    // *p = 0;
+    
+    void *pc = malloc(1024);
+    free(pc);
+    free(pc);  //打开注释会导致错误
 }
 @end

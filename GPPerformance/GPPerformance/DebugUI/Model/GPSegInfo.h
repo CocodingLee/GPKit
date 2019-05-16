@@ -20,6 +20,7 @@ typedef NS_ENUM(NSUInteger, GPSegType) {
 // 类型
 @property (nonatomic , assign) GPSegType segmentType;
 @property (nonatomic , strong) NSString* segmentTitle;
+@property (nonatomic , strong) Class cls;
 @end
 
 NS_ASSUME_NONNULL_END

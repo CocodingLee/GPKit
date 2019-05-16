@@ -1,32 +1,32 @@
 //
-//  GPInspectView.m
+//  GPInspectCrashView.m
 //  GPPerformance
 //
-//  Created by Liyanwei on 2019/5/15.
+//  Created by Liyanwei on 2019/5/16.
 //  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import "GPInspectFrameLossView.h"
+#import "GPInspectCrashView.h"
 #import "GPLagDB.h"
-#import "GPCallStackModel.h"
+#import "GPCrashInspector.h"
 #import "GPFrameLossCell.h"
+#import "GPDebugRouteDomain.h"
 
 #import <FrameAccessor/FrameAccessor.h>
 #import <MJRefresh/MJRefresh.h>
+#import <GPRoute/GPRoute.h>
 
-@interface GPInspectFrameLossView () < UITableViewDataSource, UITableViewDelegate>
+@interface GPInspectCrashView () < UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, copy) void(^scrollCallback)(UIScrollView *scrollView);
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) GPSegInfo* segmentInfo;
-
 @property (nonatomic, weak) UIViewController* vc;
 
 // 业务数据
-@property (nonatomic, assign) NSUInteger page;
-@property (nonatomic, strong) NSMutableArray *frameData;
+@property(nonatomic,strong)NSArray* crashData;
 @end
 
-@implementation GPInspectFrameLossView
+@implementation GPInspectCrashView
 
 - (instancetype)initWithSegmentInfo:(GPSegInfo *)segmentInfo
                      viewController:(UIViewController*)viewController
@@ -35,10 +35,6 @@
     if (self) {
         self.segmentInfo = segmentInfo;
         self.vc = viewController;
-        
-        // 从第0页开始查看卡顿数据
-        self.page = 0;
-        self.frameData = @[].mutableCopy;
         
         UITableView *tableView = [[GPBaseTableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
         tableView.delegate = self;
@@ -70,7 +66,7 @@
     self.tableView.frame = self.bounds;
     
     UIEdgeInsets insets = gpSafeArea();
-    self.tableView.contentInsetBottom = insets.bottom;    
+    self.tableView.contentInsetBottom = insets.bottom;
 }
 
 - (void)listViewDidScrollCallback:(void (^)(UIScrollView *))callback
@@ -94,28 +90,8 @@
 
 - (void) listViewLoadDataIfNeeded
 {
-    // 加载数据
-    co_launch(^{
-        NSMutableArray* frameData = await([[GPLagDB shareInstance] selectStackWithPage:self.page]);
-        
-        NSError* err = co_getError();
-        if (!err && frameData.count > 0) {
-            // 显示数据
-            [self.frameData addObjectsFromArray:frameData];
-            [self.tableView reloadData];
-            
-            // 加载下一页
-            ++self.page;
-            
-            [self.tableView loadingSuccess];
-        } else {
-            if (frameData.count <= 0 && !err) {
-                [self.tableView loadingWithNoContent];
-            } else {
-                [self.tableView loadingWithNetError:err];
-            }
-        }
-    });
+    // 崩溃日志
+    self.crashData = [GPCrashInspector sharedInstance].crashPlist;
 }
 
 #pragma mark - UITableViewDataSource
@@ -128,27 +104,47 @@
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
-    return self.frameData.count;
+    return self.crashData.count;
 }
 
 - (CGFloat)     tableView:(UITableView *)tableView
   heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 300;
+    return 40;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* kFlag = @"GPFrameLossCell";
-    GPFrameLossCell *cell = [tableView dequeueReusableCellWithIdentifier:kFlag];
+    static NSString* sandCellId = @"crashIdentifier";
+    
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:sandCellId];
     if (!cell) {
-        cell = [[GPFrameLossCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kFlag];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:sandCellId];
+        cell.backgroundColor = [UIColor clearColor];
+        cell.textLabel.textColor = [UIColor orangeColor];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    GPCallStackModel *model = self.frameData[indexPath.row];
-    [cell updateWithModel:model];
+    cell.textLabel.text = self.crashData[indexPath.row];
+    cell.tag = indexPath.row;
     
     return cell;
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    if (indexPath.row < self.crashData.count) {
+        NSString* path = self.crashData[indexPath.row];
+        [[GPRouteManager sharedInstance] openDomain:kRouteCrashDomain
+                                               path:kRouteCrashPath
+                                             params:@{@"p":path}
+                                         completion:^(NSDictionary * _Nonnull params, NSError * _Nonnull error) {
+                                             id vc = params[GPRouteTargetKey];
+                                             if ([vc isKindOfClass:UIViewController.class] && !error) {
+                                                 [self.vc.navigationController pushViewController:vc animated:YES];
+                                             }
+                                         }];
+    }
 }
 @end

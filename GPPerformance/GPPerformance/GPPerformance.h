@@ -24,4 +24,5 @@
 
 // 调试UI
 #import <GPPerformance/GPInspector.h>
-
+#import <GPPerformance/GPDebugRouteDomain.h>
+#import <GPPerformance/GPCrashDetailsController.h>

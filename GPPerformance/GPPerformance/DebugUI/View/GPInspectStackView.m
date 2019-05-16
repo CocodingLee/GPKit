@@ -1,12 +1,13 @@
 //
-//  GPInspectView.m
+//  GPInspectStackView.m
 //  GPPerformance
 //
-//  Created by Liyanwei on 2019/5/15.
+//  Created by Liyanwei on 2019/5/16.
 //  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import "GPInspectFrameLossView.h"
+#import "GPInspectStackView.h"
+
 #import "GPLagDB.h"
 #import "GPCallStackModel.h"
 #import "GPFrameLossCell.h"
@@ -14,19 +15,16 @@
 #import <FrameAccessor/FrameAccessor.h>
 #import <MJRefresh/MJRefresh.h>
 
-@interface GPInspectFrameLossView () < UITableViewDataSource, UITableViewDelegate>
+@interface GPInspectStackView () < UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, copy) void(^scrollCallback)(UIScrollView *scrollView);
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) GPSegInfo* segmentInfo;
 
 @property (nonatomic, weak) UIViewController* vc;
 
-// 业务数据
-@property (nonatomic, assign) NSUInteger page;
-@property (nonatomic, strong) NSMutableArray *frameData;
 @end
 
-@implementation GPInspectFrameLossView
+@implementation GPInspectStackView
 
 - (instancetype)initWithSegmentInfo:(GPSegInfo *)segmentInfo
                      viewController:(UIViewController*)viewController
@@ -35,10 +33,6 @@
     if (self) {
         self.segmentInfo = segmentInfo;
         self.vc = viewController;
-        
-        // 从第0页开始查看卡顿数据
-        self.page = 0;
-        self.frameData = @[].mutableCopy;
         
         UITableView *tableView = [[GPBaseTableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
         tableView.delegate = self;
@@ -70,7 +64,7 @@
     self.tableView.frame = self.bounds;
     
     UIEdgeInsets insets = gpSafeArea();
-    self.tableView.contentInsetBottom = insets.bottom;    
+    self.tableView.contentInsetBottom = insets.bottom;
 }
 
 - (void)listViewDidScrollCallback:(void (^)(UIScrollView *))callback
@@ -94,28 +88,28 @@
 
 - (void) listViewLoadDataIfNeeded
 {
-    // 加载数据
-    co_launch(^{
-        NSMutableArray* frameData = await([[GPLagDB shareInstance] selectStackWithPage:self.page]);
-        
-        NSError* err = co_getError();
-        if (!err && frameData.count > 0) {
-            // 显示数据
-            [self.frameData addObjectsFromArray:frameData];
-            [self.tableView reloadData];
-            
-            // 加载下一页
-            ++self.page;
-            
-            [self.tableView loadingSuccess];
-        } else {
-            if (frameData.count <= 0 && !err) {
-                [self.tableView loadingWithNoContent];
-            } else {
-                [self.tableView loadingWithNetError:err];
-            }
-        }
-    });
+    //    // 加载数据
+    //    co_launch(^{
+    //        NSMutableArray* frameData = await([[GPLagDB shareInstance] selectStackWithPage:self.page]);
+    //
+    //        NSError* err = co_getError();
+    //        if (!err && frameData.count > 0) {
+    //            // 显示数据
+    //            [self.frameData addObjectsFromArray:frameData];
+    //            [self.tableView reloadData];
+    //
+    //            // 加载下一页
+    //            ++self.page;
+    //
+    //            [self.tableView loadingSuccess];
+    //        } else {
+    //            if (frameData.count <= 0 && !err) {
+    //                [self.tableView loadingWithNoContent];
+    //            } else {
+    //                [self.tableView loadingWithNetError:err];
+    //            }
+    //        }
+    //    });
 }
 
 #pragma mark - UITableViewDataSource
@@ -128,7 +122,7 @@
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
-    return self.frameData.count;
+    return 1;//self.frameData.count;
 }
 
 - (CGFloat)     tableView:(UITableView *)tableView
@@ -140,14 +134,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* kFlag = @"GPFrameLossCell";
-    GPFrameLossCell *cell = [tableView dequeueReusableCellWithIdentifier:kFlag];
+    static NSString* kFlag = @"GPStackCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kFlag];
     if (!cell) {
-        cell = [[GPFrameLossCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kFlag];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kFlag];
     }
     
-    GPCallStackModel *model = self.frameData[indexPath.row];
-    [cell updateWithModel:model];
     
     return cell;
 }

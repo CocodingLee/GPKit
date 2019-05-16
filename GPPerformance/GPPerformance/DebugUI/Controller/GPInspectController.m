@@ -9,7 +9,11 @@
 #import "GPInspectController.h"
 #import "GPInspectorResource.h"
 #import "GPInspector.h"
+
 #import "GPInspectFrameLossView.h"
+#import "GPInspectCrashView.h"
+#import "GPInspectStackView.h"
+
 #import "GPSegInfo.h"
 #import "GPSettingsCell.h"
 
@@ -19,7 +23,7 @@
 // 圈子类目列表高度
 static CGFloat const HOME_CONTENT_SECTION_HEIGHT = 45;
 // 头部高度
-static CGFloat const HOME_CIRCLE_HEADER_HEIGHT = 150;
+static CGFloat const HOME_LAB_HEADER_HEIGHT = 300;
 
 @interface GPInspectController () <GPPageListViewDelegate , UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic,strong) UIButton* closeButton;
@@ -29,6 +33,8 @@ static CGFloat const HOME_CIRCLE_HEADER_HEIGHT = 150;
 @property (nonatomic, strong) NSArray <GPInspectFrameLossView *> *listViewArray;
 // 测试数据
 @property (nonatomic, strong) NSArray<GPSegInfo*>* segmentHeaderData;
+// 记录导航栏原始高度
+@property (nonatomic, assign) CGFloat navInitBottom;
 @end
 
 @implementation GPInspectController
@@ -72,22 +78,24 @@ static CGFloat const HOME_CIRCLE_HEADER_HEIGHT = 150;
     GPSegInfo* seg1 = [[GPSegInfo alloc] init];
     seg1.segmentTitle = @"卡顿监控";
     seg1.segmentType = GPSegType_FrameDropping;
+    seg1.cls = GPInspectFrameLossView.class;
     
     GPSegInfo* seg2 = [[GPSegInfo alloc] init];
     seg2.segmentTitle = @"执行时间监控";
     seg2.segmentType = GPSegType_ExecutionTime;
+    seg2.cls = GPInspectStackView.class;
     
     GPSegInfo* seg3 = [[GPSegInfo alloc] init];
     seg3.segmentTitle = @"Crash监控";
     seg3.segmentType = GPSegType_ExecutionTime;
+    seg3.cls = GPInspectCrashView.class;
     
-    //self.segmentHeaderData = @[seg2, seg1 , seg3];
-    self.segmentHeaderData = @[seg2, seg1 , seg3 , seg3 , seg2, seg1 , seg3 , seg3];
+    self.segmentHeaderData = @[seg1 , seg2 , seg3];
     
     NSMutableArray* tmp = [[NSMutableArray alloc] init];
     NSMutableArray* titles = [[NSMutableArray alloc] init];
     for (GPSegInfo* info in self.segmentHeaderData) {
-        GPInspectFrameLossView* view = [[GPInspectFrameLossView alloc] initWithSegmentInfo:info viewController:self];
+        UIView* view = [[info.cls alloc] initWithSegmentInfo:info viewController:self];
         view.backgroundColor = [UIColor whiteColor];
         [tmp addObject:view];
         [titles addObject:info.segmentTitle];
@@ -135,7 +143,7 @@ static CGFloat const HOME_CIRCLE_HEADER_HEIGHT = 150;
 {
     [super viewDidLoad];
     [self createNavigationBar];
-    
+    self.gp_navigationItem.title = @"GP实验室";
     // 管理视图
     [self setupSubViews];
     
@@ -144,6 +152,8 @@ static CGFloat const HOME_CIRCLE_HEADER_HEIGHT = 150;
     UIEdgeInsets safeArea = gpSafeArea();
     self.closeButton.top = safeArea.top;
     [self.view addSubview:self.closeButton];
+    // 原始高度
+    self.navInitBottom = self.gp_navigationBar.height;
 }
 
 - (void)viewDidLayoutSubviews
@@ -179,7 +189,7 @@ static CGFloat const HOME_CIRCLE_HEADER_HEIGHT = 150;
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
-        return HOME_CIRCLE_HEADER_HEIGHT;
+        return HOME_LAB_HEADER_HEIGHT;
     } else if (indexPath.section == 1) {
         return [self.pageListView getListContainerCellHeight];
     }
@@ -236,6 +246,23 @@ static CGFloat const HOME_CIRCLE_HEADER_HEIGHT = 150;
     // 禁止下拉刷新
     if (scrollView.contentOffsetY <= 0) {
         scrollView.contentOffsetY = 0;
+    }
+    
+    
+    UIEdgeInsets insets = gpSafeArea();
+    CGFloat seg = HOME_LAB_HEADER_HEIGHT + insets.top - self.gp_navigationBar.height;
+    
+    if (scrollView.contentOffsetY >= seg) {
+        self.gp_navigationBar.bottom = HOME_LAB_HEADER_HEIGHT + insets.top - scrollView.contentOffsetY;
+        if (self.gp_navigationBar.bottom <= insets.top) {
+            self.gp_navigationBar.bottom = 0.0;
+        }
+    } else {
+        
+        // 放回到原始高度
+        if (self.gp_navigationBar.bottom < self.navInitBottom) {
+            self.gp_navigationBar.bottom = self.navInitBottom;
+        }
     }
 }
 
