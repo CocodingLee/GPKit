@@ -10,6 +10,7 @@
 #import "GPInspectorOverlay.h"
 #import "GPInspectorWindow.h"
 #import "GPInspectController.h"
+#import "GPCrashInspector.h"
 
 UIWindow* g_lastKeyWindow = nil;
 
@@ -52,4 +53,10 @@ UIWindow* g_lastKeyWindow = nil;
     [GPInspectorOverlay show];
 }
 
++ (void)setShouldHandleCrash:(BOOL)b
+{
+    if (b) {
+        [[GPCrashInspector sharedInstance] install];
+    }
+}
 @end

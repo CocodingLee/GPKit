@@ -50,6 +50,8 @@
 		D7DBD0A3228C39B0007F4B0C /* GPHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DBD09F228C39B0007F4B0C /* GPHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7DBD0A7228C3E72007F4B0C /* UIViewController+ClassTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DBD0A5228C3E72007F4B0C /* UIViewController+ClassTrace.m */; };
 		D7DBD0A8228C3E72007F4B0C /* UIViewController+ClassTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DBD0A6228C3E72007F4B0C /* UIViewController+ClassTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DBD0AC228CFD6D007F4B0C /* GPCrashInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DBD0AA228CFD6D007F4B0C /* GPCrashInspector.m */; };
+		D7DBD0AD228CFD6D007F4B0C /* GPCrashInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DBD0AB228CFD6D007F4B0C /* GPCrashInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +101,8 @@
 		D7DBD09F228C39B0007F4B0C /* GPHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHook.h; sourceTree = "<group>"; };
 		D7DBD0A5228C3E72007F4B0C /* UIViewController+ClassTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ClassTrace.m"; sourceTree = "<group>"; };
 		D7DBD0A6228C3E72007F4B0C /* UIViewController+ClassTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ClassTrace.h"; sourceTree = "<group>"; };
+		D7DBD0AA228CFD6D007F4B0C /* GPCrashInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCrashInspector.m; sourceTree = "<group>"; };
+		D7DBD0AB228CFD6D007F4B0C /* GPCrashInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCrashInspector.h; sourceTree = "<group>"; };
 		EE507B9C819115E24E8FC09E /* Pods-GPPerformance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPPerformance.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPPerformance/Pods-GPPerformance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -252,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				D7A863DF22896AB800E35569 /* GPSystemKits.h */,
+				D7DBD0A9228CFD5B007F4B0C /* Crash */,
 				D7DBD08E228C2E30007F4B0C /* Trace */,
 				D7A863E922899D5E00E35569 /* DB */,
 				D7A863DA228969E600E35569 /* CallStack */,
@@ -295,6 +300,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		D7DBD0A9228CFD5B007F4B0C /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				D7DBD0AB228CFD6D007F4B0C /* GPCrashInspector.h */,
+				D7DBD0AA228CFD6D007F4B0C /* GPCrashInspector.m */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -315,6 +329,7 @@
 				D7DBD0A8228C3E72007F4B0C /* UIViewController+ClassTrace.h in Headers */,
 				D7DBD097228C2FF7007F4B0C /* GPTraceCore.h in Headers */,
 				D7DBD0A3228C39B0007F4B0C /* GPHook.h in Headers */,
+				D7DBD0AD228CFD6D007F4B0C /* GPCrashInspector.h in Headers */,
 				D7A863E32289724100E35569 /* GPCallStackModel.h in Headers */,
 				D7A86872228C10F200E35569 /* GPSettingsCell.h in Headers */,
 				D7A8686A228BE95000E35569 /* GPSegInfo.h in Headers */,
@@ -422,6 +437,7 @@
 				D7A86867228BE8DB00E35569 /* GPInspectFrameLossView.m in Sources */,
 				D7DBD0A1228C39B0007F4B0C /* GPHook.m in Sources */,
 				D7DBD0A7228C3E72007F4B0C /* UIViewController+ClassTrace.m in Sources */,
+				D7DBD0AC228CFD6D007F4B0C /* GPCrashInspector.m in Sources */,
 				D7A86873228C10F200E35569 /* GPSettingsCell.m in Sources */,
 				D7A863E822899BB800E35569 /* GPCpuMonitor.m in Sources */,
 				D7A86487228AE66600E35569 /* GPInspectorToolItem.m in Sources */,

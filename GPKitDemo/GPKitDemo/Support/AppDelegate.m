@@ -23,6 +23,8 @@
     [[GPLagMonitor shareInstance] beginMonitor];
     // 显示调试窗口
     [GPInspector showOnStatusBar];
+    // 抓crash
+    [GPInspector setShouldHandleCrash:YES];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyWindow];

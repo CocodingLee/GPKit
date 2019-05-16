@@ -13,6 +13,9 @@
 #import <GPPerformance/GPCallStackModel.h>
 #import <GPPerformance/GPCpuMonitor.h>
 
+// Crash 监控
+#import <GPPerformance/GPCrashInspector.h>
+
 // 函数调用时长
 #import <GPPerformance/GPTraceCore.h>
 #import <GPPerformance/GPTrace.h>
