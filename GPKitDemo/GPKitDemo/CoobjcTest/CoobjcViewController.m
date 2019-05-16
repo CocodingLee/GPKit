@@ -106,11 +106,7 @@
 
 - (void) crashAction
 {
-    // int* p = 0x123456;
-    // *p = 0;
-    
-    void *pc = malloc(1024);
-    free(pc);
-    free(pc);  //打开注释会导致错误
+    NSString* tmp = @"a";
+    tmp = [tmp stringByAppendingString:nil];
 }
 @end

@@ -39,7 +39,7 @@ void gpHandleException(NSException *exception)
 
 void gpSignalHandler(int sig)
 {
-    [[GPCrashInspector sharedInstance]saveSignal:sig];
+    [[GPCrashInspector sharedInstance] saveSignal:sig];
     
     signal(sig, SIG_DFL);
     raise(sig);

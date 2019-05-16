@@ -86,11 +86,7 @@
             threadBaseInfo = (thread_basic_info_t)threadInfo;
             if (!(threadBaseInfo->flags & TH_FLAGS_IDLE)) {
                 integer_t cpuUsage = threadBaseInfo->cpu_usage / 10;
-#ifdef DEBUG
-                if (cpuUsage >= 0) {
-#else
                 if (cpuUsage > CPUMONITORRATE) {
-#endif
                     
                     // 触发获取主线程堆栈
                     co_launch_now(^{

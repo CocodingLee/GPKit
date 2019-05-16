@@ -18,7 +18,7 @@
 #define PATH_OF_TEMP        NSTemporaryDirectory()
 #define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
-#define CPUMONITORRATE 80
+#define CPUMONITORRATE 20
 #define STUCKMONITORRATE 88
 
 
