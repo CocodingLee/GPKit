@@ -11,7 +11,7 @@
 typedef NSUInteger GPButtonType;
 @class GPButtonItem;
 
-typedef GPButtonItem *(^AGSButtonTypeBlock)(GPButtonType type);
+typedef GPButtonItem *(^GPButtonTypeBlock)(GPButtonType type);
 
 @interface GPButtonItem : NSObject
 
@@ -40,7 +40,7 @@ typedef GPButtonItem *(^AGSButtonTypeBlock)(GPButtonType type);
 
 @interface GPButton : UIButton
 
-@property (nonatomic, copy, class) AGSButtonTypeBlock typeItemConfigBlock;
+@property (nonatomic, copy, class) GPButtonTypeBlock typeItemConfigBlock;
 
 + (instancetype)buttonWithType:(GPButtonType)buttonType;
 - (void)updateButtonType:(GPButtonType)buttonType;

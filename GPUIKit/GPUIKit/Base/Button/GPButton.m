@@ -12,7 +12,7 @@
 #import <FrameAccessor/ViewFrameAccessor.h>
 
 
-static AGSButtonTypeBlock aAGSButtonTypeBlock = nil;
+static GPButtonTypeBlock aGPButtonTypeBlock = nil;
 
 @implementation GPButtonItem
 
@@ -87,14 +87,14 @@ static AGSButtonTypeBlock aAGSButtonTypeBlock = nil;
     self.shouldUpdateItem = YES;
 }
 
-+ (void)setTypeItemConfigBlock:(AGSButtonTypeBlock)typeItemConfigBlock
++ (void)setTypeItemConfigBlock:(GPButtonTypeBlock)typeItemConfigBlock
 {
-    aAGSButtonTypeBlock = typeItemConfigBlock;
+    aGPButtonTypeBlock = typeItemConfigBlock;
 }
 
-+ (AGSButtonTypeBlock)typeItemConfigBlock
++ (GPButtonTypeBlock)typeItemConfigBlock
 {
-    return aAGSButtonTypeBlock;
+    return aGPButtonTypeBlock;
 }
 
 #pragma mark - Update

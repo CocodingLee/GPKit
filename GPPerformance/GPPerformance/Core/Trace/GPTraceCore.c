@@ -486,7 +486,7 @@ void gpCallTraceStop() {}
 void gpCallConfigMinTime(uint64_t us) {}
 void gpCallConfigMaxDepth(int depth) {}
 
-GPCallRecord *smGetCallRecords(int *num)
+GPCallRecord *gpGetCallRecords(int *num)
 {
     if (num) {
         *num = 0;
