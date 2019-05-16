@@ -117,14 +117,12 @@
             if (crashLogs.count > 0) {
                 self.crashData = crashLogs;
                 [self.tableView reloadData];
-                [self.tableView loadingSuccess];
-            } else {
-                [self.tableView loadingWithNoContent];
             }
+            
+            [self.tableView loadingWithNoContent];
         } else {
             [self.tableView loadingWithNetError:error];
         }
-        
     });
     
 }
@@ -168,6 +166,8 @@
             GPCrashItem* item = [[GPCrashItem alloc] init];
             if ([parsedJSON.allKeys containsObject:@"report"]) {
                 item = [GPCrashItem yy_modelWithJSON:parsedJSON[@"report"]];
+                NSDate* now = [self string2Date:item.timestamp];
+                item.timestamp = [self date2String:now];
             }
             
             NSString* content = await([self getCrashDetails:parsedJSON]);
@@ -238,6 +238,30 @@
     cell.tag = indexPath.row;
     
     return cell;
+}
+
+- (NSDate *) string2Date:(NSString *)dateStr
+{
+    NSDateFormatter *dateFormatter=[[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+    NSDate *date = [dateFormatter dateFromString:dateStr];
+    
+    // 直接初始化的时间, 也是当前时间
+    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    NSTimeInterval interval = [zone secondsFromGMTForDate:date];
+    NSDate *current = [date dateByAddingTimeInterval:interval];
+    
+    return current;
+}
+
+- (NSString*) date2String:(NSDate*) date
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    formatter.timeZone = zone;
+    NSString *str = [formatter stringFromDate:date];
+    return str;
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
