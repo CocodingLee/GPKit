@@ -18,6 +18,7 @@
 #import <GPUIKit/GPUIKit.h>
 // GPPerformance
 #import <GPPerformance/GPPerformance.h>
+#import <GPPerformance/UIViewController+ClassTrace.h>
 // GPRoute
 #import <GPRoute/GPRoute.h>
 

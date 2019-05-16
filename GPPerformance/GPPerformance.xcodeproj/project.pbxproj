@@ -23,20 +23,20 @@
 		D7A863F022899ECE00E35569 /* GPCallTraceTimeCostModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863EE22899ECE00E35569 /* GPCallTraceTimeCostModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A863F122899ECE00E35569 /* GPCallTraceTimeCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863EF22899ECE00E35569 /* GPCallTraceTimeCostModel.m */; };
 		D7A86463228AE1D200E35569 /* GPInspectController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86461228AE1D100E35569 /* GPInspectController.m */; };
-		D7A86464228AE1D200E35569 /* GPInspectController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86462228AE1D100E35569 /* GPInspectController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86464228AE1D200E35569 /* GPInspectController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86462228AE1D100E35569 /* GPInspectController.h */; };
 		D7A8646A228AE1DB00E35569 /* GPInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86466228AE1DB00E35569 /* GPInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A8646C228AE1DB00E35569 /* GPInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86468228AE1DB00E35569 /* GPInspector.m */; };
 		D7A86471228AE1E200E35569 /* GPInspectorResource.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8646F228AE1E200E35569 /* GPInspectorResource.m */; };
-		D7A86472228AE1E200E35569 /* GPInspectorResource.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86470228AE1E200E35569 /* GPInspectorResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86472228AE1E200E35569 /* GPInspectorResource.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86470228AE1E200E35569 /* GPInspectorResource.h */; };
 		D7A86480228AE4EB00E35569 /* GPInspectorOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8647C228AE4EB00E35569 /* GPInspectorOverlay.m */; };
 		D7A86481228AE4EB00E35569 /* GPInspectorWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8647D228AE4EB00E35569 /* GPInspectorWindow.m */; };
-		D7A86482228AE4EB00E35569 /* GPInspectorWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8647E228AE4EB00E35569 /* GPInspectorWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7A86483228AE4EB00E35569 /* GPInspectorOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8647F228AE4EB00E35569 /* GPInspectorOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86482228AE4EB00E35569 /* GPInspectorWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8647E228AE4EB00E35569 /* GPInspectorWindow.h */; };
+		D7A86483228AE4EB00E35569 /* GPInspectorOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8647F228AE4EB00E35569 /* GPInspectorOverlay.h */; };
 		D7A86486228AE66600E35569 /* GPInspectorToolItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86484228AE66600E35569 /* GPInspectorToolItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A86487228AE66600E35569 /* GPInspectorToolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86485228AE66600E35569 /* GPInspectorToolItem.m */; };
-		D7A86866228BE8DB00E35569 /* GPInspectFrameLossView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86864228BE8DB00E35569 /* GPInspectFrameLossView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A86866228BE8DB00E35569 /* GPInspectFrameLossView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86864228BE8DB00E35569 /* GPInspectFrameLossView.h */; };
 		D7A86867228BE8DB00E35569 /* GPInspectFrameLossView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86865228BE8DB00E35569 /* GPInspectFrameLossView.m */; };
-		D7A8686A228BE95000E35569 /* GPSegInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86868228BE95000E35569 /* GPSegInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A8686A228BE95000E35569 /* GPSegInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A86868228BE95000E35569 /* GPSegInfo.h */; };
 		D7A8686B228BE95000E35569 /* GPSegInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86869228BE95000E35569 /* GPSegInfo.m */; };
 		D7A8686E228BFFED00E35569 /* GPFrameLossCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A8686C228BFFED00E35569 /* GPFrameLossCell.h */; };
 		D7A8686F228BFFED00E35569 /* GPFrameLossCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8686D228BFFED00E35569 /* GPFrameLossCell.m */; };
@@ -44,6 +44,12 @@
 		D7A86873228C10F200E35569 /* GPSettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86871228C10F200E35569 /* GPSettingsCell.m */; };
 		D7DBD097228C2FF7007F4B0C /* GPTraceCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DBD095228C2FF7007F4B0C /* GPTraceCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7DBD098228C2FF7007F4B0C /* GPTraceCore.c in Sources */ = {isa = PBXBuildFile; fileRef = D7DBD096228C2FF7007F4B0C /* GPTraceCore.c */; };
+		D7DBD09B228C36FF007F4B0C /* GPTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DBD099228C36FF007F4B0C /* GPTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DBD09C228C36FF007F4B0C /* GPTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DBD09A228C36FF007F4B0C /* GPTrace.m */; };
+		D7DBD0A1228C39B0007F4B0C /* GPHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DBD09D228C39AF007F4B0C /* GPHook.m */; };
+		D7DBD0A3228C39B0007F4B0C /* GPHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DBD09F228C39B0007F4B0C /* GPHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DBD0A7228C3E72007F4B0C /* UIViewController+ClassTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DBD0A5228C3E72007F4B0C /* UIViewController+ClassTrace.m */; };
+		D7DBD0A8228C3E72007F4B0C /* UIViewController+ClassTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DBD0A6228C3E72007F4B0C /* UIViewController+ClassTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,8 +91,14 @@
 		D7A8686D228BFFED00E35569 /* GPFrameLossCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPFrameLossCell.m; sourceTree = "<group>"; };
 		D7A86870228C10F200E35569 /* GPSettingsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSettingsCell.h; sourceTree = "<group>"; };
 		D7A86871228C10F200E35569 /* GPSettingsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSettingsCell.m; sourceTree = "<group>"; };
-		D7DBD095228C2FF7007F4B0C /* GPTraceCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTraceCore.h; sourceTree = "<group>"; };
+		D7DBD095228C2FF7007F4B0C /* GPTraceCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTraceCore.h; sourceTree = "<group>"; };
 		D7DBD096228C2FF7007F4B0C /* GPTraceCore.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GPTraceCore.c; sourceTree = "<group>"; };
+		D7DBD099228C36FF007F4B0C /* GPTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTrace.h; sourceTree = "<group>"; };
+		D7DBD09A228C36FF007F4B0C /* GPTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTrace.m; sourceTree = "<group>"; };
+		D7DBD09D228C39AF007F4B0C /* GPHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHook.m; sourceTree = "<group>"; };
+		D7DBD09F228C39B0007F4B0C /* GPHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHook.h; sourceTree = "<group>"; };
+		D7DBD0A5228C3E72007F4B0C /* UIViewController+ClassTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ClassTrace.m"; sourceTree = "<group>"; };
+		D7DBD0A6228C3E72007F4B0C /* UIViewController+ClassTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ClassTrace.h"; sourceTree = "<group>"; };
 		EE507B9C819115E24E8FC09E /* Pods-GPPerformance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPPerformance.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPPerformance/Pods-GPPerformance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,8 +263,14 @@
 		D7DBD08E228C2E30007F4B0C /* Trace */ = {
 			isa = PBXGroup;
 			children = (
+				D7DBD0A6228C3E72007F4B0C /* UIViewController+ClassTrace.h */,
+				D7DBD0A5228C3E72007F4B0C /* UIViewController+ClassTrace.m */,
+				D7DBD09F228C39B0007F4B0C /* GPHook.h */,
+				D7DBD09D228C39AF007F4B0C /* GPHook.m */,
 				D7DBD095228C2FF7007F4B0C /* GPTraceCore.h */,
 				D7DBD096228C2FF7007F4B0C /* GPTraceCore.c */,
+				D7DBD099228C36FF007F4B0C /* GPTrace.h */,
+				D7DBD09A228C36FF007F4B0C /* GPTrace.m */,
 			);
 			path = Trace;
 			sourceTree = "<group>";
@@ -289,19 +307,22 @@
 				D7A863D82289622200E35569 /* GPLagMonitor.h in Headers */,
 				D7A863E722899BB800E35569 /* GPCpuMonitor.h in Headers */,
 				D7A8646A228AE1DB00E35569 /* GPInspector.h in Headers */,
-				D7A86472228AE1E200E35569 /* GPInspectorResource.h in Headers */,
-				D7A86464228AE1D200E35569 /* GPInspectController.h in Headers */,
+				D7A86486228AE66600E35569 /* GPInspectorToolItem.h in Headers */,
 				D7A863F022899ECE00E35569 /* GPCallTraceTimeCostModel.h in Headers */,
 				D7A863EC22899D8100E35569 /* GPLagDB.h in Headers */,
 				D7A8686E228BFFED00E35569 /* GPFrameLossCell.h in Headers */,
-				D7A86482228AE4EB00E35569 /* GPInspectorWindow.h in Headers */,
-				D7A8686A228BE95000E35569 /* GPSegInfo.h in Headers */,
-				D7A86866228BE8DB00E35569 /* GPInspectFrameLossView.h in Headers */,
-				D7A86483228AE4EB00E35569 /* GPInspectorOverlay.h in Headers */,
+				D7DBD09B228C36FF007F4B0C /* GPTrace.h in Headers */,
+				D7DBD0A8228C3E72007F4B0C /* UIViewController+ClassTrace.h in Headers */,
 				D7DBD097228C2FF7007F4B0C /* GPTraceCore.h in Headers */,
-				D7A86872228C10F200E35569 /* GPSettingsCell.h in Headers */,
+				D7DBD0A3228C39B0007F4B0C /* GPHook.h in Headers */,
 				D7A863E32289724100E35569 /* GPCallStackModel.h in Headers */,
-				D7A86486228AE66600E35569 /* GPInspectorToolItem.h in Headers */,
+				D7A86872228C10F200E35569 /* GPSettingsCell.h in Headers */,
+				D7A8686A228BE95000E35569 /* GPSegInfo.h in Headers */,
+				D7A86464228AE1D200E35569 /* GPInspectController.h in Headers */,
+				D7A86472228AE1E200E35569 /* GPInspectorResource.h in Headers */,
+				D7A86483228AE4EB00E35569 /* GPInspectorOverlay.h in Headers */,
+				D7A86866228BE8DB00E35569 /* GPInspectFrameLossView.h in Headers */,
+				D7A86482228AE4EB00E35569 /* GPInspectorWindow.h in Headers */,
 				D7A863DD22896A1000E35569 /* GPCallStack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +420,13 @@
 				D7A86471228AE1E200E35569 /* GPInspectorResource.m in Sources */,
 				D7DBD098228C2FF7007F4B0C /* GPTraceCore.c in Sources */,
 				D7A86867228BE8DB00E35569 /* GPInspectFrameLossView.m in Sources */,
+				D7DBD0A1228C39B0007F4B0C /* GPHook.m in Sources */,
+				D7DBD0A7228C3E72007F4B0C /* UIViewController+ClassTrace.m in Sources */,
 				D7A86873228C10F200E35569 /* GPSettingsCell.m in Sources */,
 				D7A863E822899BB800E35569 /* GPCpuMonitor.m in Sources */,
 				D7A86487228AE66600E35569 /* GPInspectorToolItem.m in Sources */,
 				D7A86481228AE4EB00E35569 /* GPInspectorWindow.m in Sources */,
+				D7DBD09C228C36FF007F4B0C /* GPTrace.m in Sources */,
 				D7A8646C228AE1DB00E35569 /* GPInspector.m in Sources */,
 				D7A8686B228BE95000E35569 /* GPSegInfo.m in Sources */,
 				D7A86463228AE1D200E35569 /* GPInspectController.m in Sources */,

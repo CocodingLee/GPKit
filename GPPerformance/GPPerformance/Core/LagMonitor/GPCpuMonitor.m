@@ -96,7 +96,7 @@
                     co_launch_now(^{
                         id tmp = await([self.monitorModelActor sendMessage:@(threads[i])]);
                         if (!co_getError()) {
-                            NSLog(@"cpu monitor = %@" , tmp);
+                            //NSLog(@"cpu monitor = %@" , tmp);
                         }
                     });
                     

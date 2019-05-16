@@ -15,8 +15,10 @@
 
 // 函数调用时长
 #import <GPPerformance/GPTraceCore.h>
+#import <GPPerformance/GPTrace.h>
+#import <GPPerformance/UIViewController+ClassTrace.h>
+
 
 // 调试UI
 #import <GPPerformance/GPInspector.h>
-#import <GPPerformance/GPInspectorOverlay.h>
 

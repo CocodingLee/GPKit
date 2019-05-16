@@ -1,5 +1,5 @@
 //
-//  default 3  extern GPCallRecord *smGetCallRecords(int *num); extern void smClearCallRecords(); GPTraceCore.c
+//  GPTraceCore.c
 //  GPPerformance
 //
 //  Created by Liyanwei on 2019/5/15.
@@ -73,7 +73,8 @@ static struct rebindings_entry *_rebindings_head;
 
 static int prepend_rebindings(struct rebindings_entry **rebindings_head,
                               struct rebinding rebindings[],
-                              size_t nel) {
+                              size_t nel)
+{
     struct rebindings_entry *new_entry = malloc(sizeof(struct rebindings_entry));
     if (!new_entry) {
         return -1;
@@ -97,20 +98,24 @@ static void perform_rebinding_with_section(struct rebindings_entry *rebindings,
                                            intptr_t slide,
                                            nlist_t *symtab,
                                            char *strtab,
-                                           uint32_t *indirect_symtab) {
+                                           uint32_t *indirect_symtab)
+{
     uint32_t *indirect_symbol_indices = indirect_symtab + section->reserved1;
     void **indirect_symbol_bindings = (void **)((uintptr_t)slide + section->addr);
+    
     for (uint i = 0; i < section->size / sizeof(void *); i++) {
         uint32_t symtab_index = indirect_symbol_indices[i];
         if (symtab_index == INDIRECT_SYMBOL_ABS || symtab_index == INDIRECT_SYMBOL_LOCAL ||
             symtab_index == (INDIRECT_SYMBOL_LOCAL   | INDIRECT_SYMBOL_ABS)) {
             continue;
         }
+        
         uint32_t strtab_offset = symtab[symtab_index].n_un.n_strx;
         char *symbol_name = strtab + strtab_offset;
         if (strnlen(symbol_name, 2) < 2) {
             continue;
         }
+        
         struct rebindings_entry *cur = rebindings;
         while (cur) {
             for (uint j = 0; j < cur->rebindings_nel; j++) {
@@ -131,7 +136,8 @@ static void perform_rebinding_with_section(struct rebindings_entry *rebindings,
 
 static void rebind_symbols_for_image(struct rebindings_entry *rebindings,
                                      const struct mach_header *header,
-                                     intptr_t slide) {
+                                     intptr_t slide)
+{
     Dl_info info;
     if (dladdr(header, &info) == 0) {
         return;
@@ -427,8 +433,13 @@ void gpCallTraceStart()
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         pthread_key_create(&_thread_key, &release_thread_call_stack);
-        fish_rebind_symbols((struct rebinding[6]){
-            {"objc_msgSend", (void *)hook_Objc_msgSend, (void **)&orig_objc_msgSend},
+        fish_rebind_symbols((struct rebinding[6])
+        {
+            {     "objc_msgSend"
+                , (void *)hook_Objc_msgSend
+                , (void **)&orig_objc_msgSend
+            }
+         
         }, 1);
     });
 }
@@ -448,7 +459,7 @@ void gpCallConfigMaxDepth(int depth)
     _max_call_depth = depth;
 }
 
-GPCallRecord *smGetCallRecords(int *num)
+GPCallRecord *gpGetCallRecords(int *num)
 {
     if (num) {
         *num = _gpRecordNum;
