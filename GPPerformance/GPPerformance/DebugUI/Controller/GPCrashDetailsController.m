@@ -13,10 +13,8 @@
 #import <FrameAccessor/FrameAccessor.h>
 
 @interface GPCrashDetailsController ()
-@property (nonatomic , copy) NSString* path;
-
-@property(nonatomic,strong) UITextView* crashLogs;
-@property(nonatomic,strong) UILabel* textLabel;
+@property (nonatomic , copy) NSString* crashLogDetail;
+@property(nonatomic,strong) UITextView* crashLogsView;
 @end
 
 @implementation GPCrashDetailsController
@@ -52,7 +50,7 @@
 {
     self = [super init];
     if (self) {
-        self.path = params[@"p"];
+        self.crashLogDetail = params[@"p"];
     }
     
     return self;
@@ -63,72 +61,23 @@
     [super viewDidLoad];
     [self createNavigationBar];
     [self setupUserViews];
-    [self showCrashLog];
-    
     self.gp_navigationItem.title = @"Crash详情";
 }
 
 - (void) setupUserViews
 {
-    self.textLabel = [[UILabel alloc]initWithFrame:CGRectMake(40, 0, self.view.width-80, 44)];
-    self.textLabel.text = @"CrashLogs";
-    self.textLabel.textAlignment = NSTextAlignmentCenter;
-    self.textLabel.textColor = [UIColor whiteColor];
-    self.textLabel.backgroundColor = [UIColor clearColor];
-    self.textLabel.font = [UIFont systemFontOfSize:18.0f];
-    [self.view addSubview:self.textLabel];
+    _crashLogsView = [[UITextView alloc] initWithFrame:CGRectMake(0, self.gp_navigationBar.height , self.view.width, self.view.height-self.gp_navigationBar.height)];
+    _crashLogsView.font = [UIFont fontWithName:@"Courier-Bold" size:14];
+    _crashLogsView.textColor = [UIColor orangeColor];
+    _crashLogsView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6f];;
+    _crashLogsView.indicatorStyle = 0;
+    _crashLogsView.editable = NO;
+    _crashLogsView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    _crashLogsView.layer.borderColor = [UIColor colorWithWhite:0.5f alpha:1.0f].CGColor;
+    _crashLogsView.layer.borderWidth = 2.0f;
+    _crashLogsView.text = self.crashLogDetail;
     
-    // Initialization code
-    _crashLogs = [[UITextView alloc] initWithFrame:CGRectMake(0, self.gp_navigationBar.height , self.view.width, self.view.height-self.gp_navigationBar.height)];
-    _crashLogs.font = [UIFont fontWithName:@"Courier-Bold" size:14];
-    _crashLogs.textColor = [UIColor orangeColor];
-    _crashLogs.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6f];;
-    _crashLogs.indicatorStyle = 0;
-    _crashLogs.editable = NO;
-    _crashLogs.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    _crashLogs.layer.borderColor = [UIColor colorWithWhite:0.5f alpha:1.0f].CGColor;
-    _crashLogs.layer.borderWidth = 2.0f;
-    
-    [self.view addSubview:_crashLogs];
-}
-
-- (void) showCrashLog
-{
-    NSDictionary* logs = [[GPCrashInspector sharedInstance] crashForKey:self.path];
-    
-    NSString* header = @"crashes comes from => GPCrashInspector";
-    header = [header stringByAppendingString:@"\n--------------------------------------\n"];
-    _crashLogs.text = header;
-    
-    if (logs) {
-        
-        NSString* date = logs[@"date"];
-        if (date.length > 0) {
-            _crashLogs.text = [_crashLogs.text stringByAppendingString:[[@"> date :"stringByAppendingString:date] stringByAppendingString:@"\n"]];
-        }
-        
-        NSDictionary* info = logs[@"info"];
-        if (info.allKeys.count > 0) {
-            //reason
-            NSString* reason = info[@"reason"];
-            if (reason.length > 0) {
-                _crashLogs.text = [[[_crashLogs.text stringByAppendingString:@"> reason: "] stringByAppendingString:reason] stringByAppendingString:@"\n"];
-            }
-            
-            //name
-            NSString* name = info[@"name"];
-            if (name.length > 0) {
-                _crashLogs.text = [[[_crashLogs.text stringByAppendingString:@"> name: "] stringByAppendingString:name] stringByAppendingString:@"\n"];
-            }
-            
-            //call stack
-            NSArray* callStack  = info[@"callStack"];
-            if (callStack.count > 0) {
-                _crashLogs.text = [[[_crashLogs.text stringByAppendingString:@"> callStack: \n"] stringByAppendingString:[NSString stringWithFormat:@"%@",callStack]] stringByAppendingString:@"\n"];
-            }
-        } // if (info.allKeys.count > 0)
-        
-    } // if (logs)
+    [self.view addSubview:_crashLogsView];
 }
 
 @end

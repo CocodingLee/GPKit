@@ -25,6 +25,7 @@ PODS:
     - GPUIKit
     - KSCrash (~> 1.15.19)
     - Masonry (~> 1.1.0)
+    - YYModel (~> 1.0.4)
   - GPRoute (1.0.0)
   - GPUIKit (1.0.0):
     - DZNEmptyDataSet (~> 1.8.1)
@@ -137,6 +138,7 @@ PODS:
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - coobjc (~> 1.2.0)
@@ -170,6 +172,7 @@ SPEC REPOS:
     - Masonry
     - MJRefresh
     - SDWebImage
+    - YYModel
 
 EXTERNAL SOURCES:
   GPPerformance:
@@ -190,7 +193,7 @@ SPEC CHECKSUMS:
   EasyTuple: a6a068ab3aa47e899a0c9f9ee23ddb394542ea9e
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
-  GPPerformance: 65091359e8ff96ca3e879091bb887bb1ed609d00
+  GPPerformance: 305d632163d37dd39305d64a7554dfd1502f6029
   GPRoute: 2c4eefdd61fc588664faecc103c6e8fbfb0f804b
   GPUIKit: 81b5b3daf14e5a170f5389735d20edd32a143a92
   KSCrash: 49855f7867f7d456905c241640a203f53588497d
@@ -199,6 +202,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: b46d89a46a0277fa6653877f1180901fd6450b12
 

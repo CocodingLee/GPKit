@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AB2D26CDE74E3DC69EAF1D88 /* libPods-GPUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 473602EF16F935DE4E91529E /* libPods-GPUIKit.a */; };
+		D731256A228D863F00A8E3BB /* NSData+GPGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312568228D863F00A8E3BB /* NSData+GPGZIP.m */; };
+		D731256B228D863F00A8E3BB /* NSData+GPGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312569228D863F00A8E3BB /* NSData+GPGZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7897B162273043E0095CD53 /* UIView+SafeArea.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B142273043E0095CD53 /* UIView+SafeArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7897B172273043E0095CD53 /* UIView+SafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B152273043E0095CD53 /* UIView+SafeArea.m */; };
 		D7897B1B22757FAA0095CD53 /* UIButton+Expand.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B1922757FAA0095CD53 /* UIButton+Expand.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -140,6 +142,8 @@
 		473602EF16F935DE4E91529E /* libPods-GPUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63134B0FF365D4A725DD9891 /* Pods-GPUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUIKit.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GPUIKit/Pods-GPUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		CD7AE1FF93B01581A0E7B0D8 /* Pods-GPUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUIKit.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPUIKit/Pods-GPUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		D7312568228D863F00A8E3BB /* NSData+GPGZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GPGZIP.m"; sourceTree = "<group>"; };
+		D7312569228D863F00A8E3BB /* NSData+GPGZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GPGZIP.h"; sourceTree = "<group>"; };
 		D7897B142273043E0095CD53 /* UIView+SafeArea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SafeArea.h"; sourceTree = "<group>"; };
 		D7897B152273043E0095CD53 /* UIView+SafeArea.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SafeArea.m"; sourceTree = "<group>"; };
 		D7897B1922757FAA0095CD53 /* UIButton+Expand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Expand.h"; sourceTree = "<group>"; };
@@ -547,6 +551,7 @@
 		D7DA71932275B4FC0026543C /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D7DBD0E8228D7F95007F4B0C /* NSData */,
 				D7DBD0BE228D104D007F4B0C /* ImageColor */,
 				D7DA718E2275B0BB0026543C /* ImageBlur */,
 				D7897B2222758DB70095CD53 /* ImageRound */,
@@ -624,6 +629,15 @@
 				D7DBD0C0228D104D007F4B0C /* UIImage+GPColor.m */,
 			);
 			path = ImageColor;
+			sourceTree = "<group>";
+		};
+		D7DBD0E8228D7F95007F4B0C /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				D7312569228D863F00A8E3BB /* NSData+GPGZIP.h */,
+				D7312568228D863F00A8E3BB /* NSData+GPGZIP.m */,
+			);
+			path = NSData;
 			sourceTree = "<group>";
 		};
 		D7E9A2742272FC6E00CAEE53 = {
@@ -736,6 +750,7 @@
 				D7DA71BE227F058A0026543C /* GPPresentAnimation.h in Headers */,
 				D7897B1B22757FAA0095CD53 /* UIButton+Expand.h in Headers */,
 				D7897B292275962D0095CD53 /* UIImage+GPRounded.h in Headers */,
+				D731256B228D863F00A8E3BB /* NSData+GPGZIP.h in Headers */,
 				D7897B162273043E0095CD53 /* UIView+SafeArea.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -844,6 +859,7 @@
 				D7A86755228BA54300E35569 /* GPCategoryImageCellModel.m in Sources */,
 				D7A86843228BC1C000E35569 /* GPCategoryDotCellModel.m in Sources */,
 				D7DA71922275B0F30026543C /* UIImage+GPBlur.m in Sources */,
+				D731256A228D863F00A8E3BB /* NSData+GPGZIP.m in Sources */,
 				D7A863F8228A651800E35569 /* GPBaseViewController.m in Sources */,
 				D7A8685C228BE22600E35569 /* GPCategoryBaseView.m in Sources */,
 				D7A8675E228BA54300E35569 /* GPCategoryNumberCell.m in Sources */,

@@ -15,6 +15,12 @@
 #import <FrameAccessor/FrameAccessor.h>
 #import <MJRefresh/MJRefresh.h>
 #import <GPRoute/GPRoute.h>
+#import <GPUIKit/GPUIKit.h>
+#import <KSCrash/KSCrash.h>
+#import <KSCrash/KSCrashInstallation.h>
+#import <KSCrash/KSCrashReportFilterAppleFmt.h>
+
+#import <YYModel/YYModel.h>
 
 @interface GPInspectCrashView () < UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, copy) void(^scrollCallback)(UIScrollView *scrollView);
@@ -90,16 +96,90 @@
 
 - (void) listViewLoadDataIfNeeded
 {
-    // 崩溃日志
-    self.crashData = [GPCrashInspector sharedInstance].crashPlist;
-    if (self.crashData.count > 0) {
-        [self.tableView loadingSuccess];
-    } else {
-        [self.tableView loadingWithNoContent];
-    }
+    co_launch(^{
+        NSArray* crashLogs = await([self getAllCrashLog]);
+        NSError* error = co_getError();
+        if (!error) {
+            if (crashLogs.count > 0) {
+                self.crashData = crashLogs;
+                [self.tableView reloadData];
+                [self.tableView loadingSuccess];
+            } else {
+                [self.tableView loadingWithNoContent];
+            }
+        } else {
+            [self.tableView loadingWithNetError:error];
+        }
+        
+    });
     
 }
 
+- (COPromise*) getAllCrashLog
+{
+    return [COPromise promise:^(COPromiseFulfill  _Nonnull fullfill, COPromiseReject  _Nonnull reject) {
+        
+        KSCrashInstallation* installation = [GPCrashInspector sharedInstance].crashInstallation;
+        [installation sendAllReportsWithCompletion:^(NSArray* reports, BOOL completed, NSError* error)
+         {
+             if (reports.count > 0) {
+                 
+                 NSArray* tmp = [self convertSystem:reports];
+                 fullfill(tmp);
+             } else {
+                 fullfill(nil);
+             }
+         }];
+    }];
+}
+
+- (NSArray*) convertSystem:(NSArray*) jsonArray CO_ASYNC
+{
+    SURE_ASYNC;
+    
+    NSMutableArray* sysArray = [[NSMutableArray alloc] init];
+    
+    for (NSString * json in jsonArray) {
+        @autoreleasepool {
+            NSDictionary*  parsedJSON = @{};
+            NSData* jsonData = [json dataUsingEncoding:NSUTF8StringEncoding];
+            if (jsonData) {
+                NSError* error = nil;
+                parsedJSON = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
+                if(error) {
+                    continue;
+                }
+            }
+            
+            NSString* content = await([self getCrashDetails:parsedJSON]);
+            if (!co_getError()) {
+                [sysArray addObject:content];
+            }
+        }
+    }
+    
+    return [sysArray copy];
+}
+
+- (COPromise*) getCrashDetails:(NSDictionary*) json
+{
+    return [COPromise promise:^(COPromiseFulfill  _Nonnull fullfill, COPromiseReject  _Nonnull reject) {
+        id filter = [KSCrashReportFilterAppleFmt filterWithReportStyle:KSAppleReportStyleSymbolicatedSideBySide];
+        NSArray *reports = @[json];
+        [filter filterReports:reports
+                 onCompletion:^(NSArray *filteredReports, BOOL completed, NSError *error) {
+                     if(error) {
+                         reject(error);
+                     } else {
+                         if(completed) {
+                             NSString *contents = [filteredReports objectAtIndex:0];
+                             fullfill(contents);
+                         }
+                     }
+                 }];
+    }];
+    
+}
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -132,7 +212,7 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    cell.textLabel.text = self.crashData[indexPath.row];
+    cell.textLabel.text = @(indexPath.row).stringValue;
     cell.tag = indexPath.row;
     
     return cell;
