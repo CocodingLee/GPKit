@@ -21,6 +21,20 @@
 #import <KSCrash/KSCrashReportFilterAppleFmt.h>
 
 #import <YYModel/YYModel.h>
+/////////////////////////////////////////////////
+
+@interface GPCrashItem : NSObject
+@property (nonatomic , strong) NSString* content;
+@property (nonatomic , strong) NSString* id;
+@property (nonatomic , strong) NSString* process_name;
+@property (nonatomic , strong) NSString* timestamp;
+@property (nonatomic , strong) NSString* type;
+@property (nonatomic , strong) NSString* version;
+@end
+
+@implementation GPCrashItem
+@end
+/////////////////////////////////////////////////
 
 @interface GPInspectCrashView () < UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, copy) void(^scrollCallback)(UIScrollView *scrollView);
@@ -151,9 +165,15 @@
                 }
             }
             
+            GPCrashItem* item = [[GPCrashItem alloc] init];
+            if ([parsedJSON.allKeys containsObject:@"report"]) {
+                item = [GPCrashItem yy_modelWithJSON:parsedJSON[@"report"]];
+            }
+            
             NSString* content = await([self getCrashDetails:parsedJSON]);
             if (!co_getError()) {
-                [sysArray addObject:content];
+                item.content = content;
+                [sysArray addObject:item];
             }
         }
     }
@@ -196,7 +216,7 @@
 - (CGFloat)     tableView:(UITableView *)tableView
   heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 40;
+    return 80;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -212,7 +232,9 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    cell.textLabel.text = @(indexPath.row).stringValue;
+    GPCrashItem* item = self.crashData[indexPath.row];
+    cell.textLabel.text = item.timestamp;
+    cell.detailTextLabel.text = item.id;
     cell.tag = indexPath.row;
     
     return cell;
@@ -221,10 +243,10 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     if (indexPath.row < self.crashData.count) {
-        NSString* path = self.crashData[indexPath.row];
+        GPCrashItem* item =  self.crashData[indexPath.row];
         [[GPRouteManager sharedInstance] openDomain:kRouteCrashDomain
                                                path:kRouteCrashPath
-                                             params:@{@"p":path}
+                                             params:@{@"p":item.content}
                                          completion:^(NSDictionary * _Nonnull params, NSError * _Nonnull error) {
                                              id vc = params[GPRouteTargetKey];
                                              if ([vc isKindOfClass:UIViewController.class] && !error) {
