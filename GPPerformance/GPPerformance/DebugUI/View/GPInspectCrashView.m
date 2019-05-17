@@ -258,8 +258,10 @@
 {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-    NSTimeZone *zone = [NSTimeZone systemTimeZone];
-    formatter.timeZone = zone;
+    
+    // NSDate转字符串, 我们需要注意的是因为时区的问题,
+    // 会快八个小时, 所以我需要设置成标准时间才行 
+    [formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
     NSString *str = [formatter stringFromDate:date];
     return str;
 }
