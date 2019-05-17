@@ -1,5 +1,5 @@
 //
-//  NSData+GZip.h
+//  NSData+GPGZIP.h
 //  GPFoundation
 //
 //  Created by Liyanwei on 2019/4/28.

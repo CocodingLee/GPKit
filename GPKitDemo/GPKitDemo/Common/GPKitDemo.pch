@@ -21,6 +21,8 @@
 #import <GPPerformance/UIViewController+ClassTrace.h>
 // GPRoute
 #import <GPRoute/GPRoute.h>
+// GPFoundation
+#import <GPFoundation/GPFoundation.h>
 
 ////////////////////////////////////////////////////////////////////////
 //

@@ -11,6 +11,8 @@
 		D7312590228E855F00A8E3BB /* GPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = D731258E228E855F00A8E3BB /* GPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D731259B228E86A500A8E3BB /* NSData+GPGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312599228E86A500A8E3BB /* NSData+GPGZIP.m */; };
 		D731259C228E86A500A8E3BB /* NSData+GPGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = D731259A228E86A500A8E3BB /* NSData+GPGZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D73125A0228E8B4E00A8E3BB /* NSObject+SwizzleHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D731259E228E8B4E00A8E3BB /* NSObject+SwizzleHook.h */; };
+		D73125A1228E8B4E00A8E3BB /* NSObject+SwizzleHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D731259F228E8B4E00A8E3BB /* NSObject+SwizzleHook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		D731258F228E855F00A8E3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7312599228E86A500A8E3BB /* NSData+GPGZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GPGZIP.m"; sourceTree = "<group>"; };
 		D731259A228E86A500A8E3BB /* NSData+GPGZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GPGZIP.h"; sourceTree = "<group>"; };
+		D731259E228E8B4E00A8E3BB /* NSObject+SwizzleHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwizzleHook.h"; sourceTree = "<group>"; };
+		D731259F228E8B4E00A8E3BB /* NSObject+SwizzleHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwizzleHook.m"; sourceTree = "<group>"; };
 		EF9C9A67DB405FB8C144A0FF /* Pods-GPFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPFoundation.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPFoundation/Pods-GPFoundation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +89,7 @@
 		D7312596228E866E00A8E3BB /* Exception */ = {
 			isa = PBXGroup;
 			children = (
+				D731259D228E8B4E00A8E3BB /* Swizzle */,
 			);
 			path = Exception;
 			sourceTree = "<group>";
@@ -106,6 +111,15 @@
 			path = NSData;
 			sourceTree = "<group>";
 		};
+		D731259D228E8B4E00A8E3BB /* Swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				D731259E228E8B4E00A8E3BB /* NSObject+SwizzleHook.h */,
+				D731259F228E8B4E00A8E3BB /* NSObject+SwizzleHook.m */,
+			);
+			path = Swizzle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -115,6 +129,7 @@
 			files = (
 				D731259C228E86A500A8E3BB /* NSData+GPGZIP.h in Headers */,
 				D7312590228E855F00A8E3BB /* GPFoundation.h in Headers */,
+				D73125A0228E8B4E00A8E3BB /* NSObject+SwizzleHook.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D731259B228E86A500A8E3BB /* NSData+GPGZIP.m in Sources */,
+				D73125A1228E8B4E00A8E3BB /* NSObject+SwizzleHook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

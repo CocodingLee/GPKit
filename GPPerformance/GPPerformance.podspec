@@ -26,5 +26,6 @@ Pod::Spec.new do |s|
 
   s.dependency 'GPUIKit'   
   s.dependency 'GPRoute'
+  s.dependency 'GPFoundation'
 
 end
