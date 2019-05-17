@@ -1,6 +1,6 @@
 //
 //  NSObject+KVOCrash.m
-//  JJException
+//  GPException
 //
 //  Created by Jezz on 2018/8/29.
 //  Copyright © 2018年 Jezz. All rights reserved.
@@ -163,7 +163,7 @@ static const char ObserverDeallocKVOKey;
 
 @end
 
-@interface JJObserverContainer : NSObject
+@interface GPObserverContainer : NSObject
 
 @property (nonatomic,readwrite,retain) NSHashTable* observers;
 
@@ -178,7 +178,7 @@ static const char ObserverDeallocKVOKey;
 
 @end
 
-@implementation JJObserverContainer
+@implementation GPObserverContainer
 
 - (instancetype)init
 {
@@ -264,10 +264,10 @@ static const char ObserverDeallocKVOKey;
         [self hookAddObserver:observer forKeyPath:keyPath options:options context:context];
     }
     
-    JJObserverContainer* observerContainer = objc_getAssociatedObject(observer,&ObserverDeallocKVOKey);
+    GPObserverContainer* observerContainer = objc_getAssociatedObject(observer,&ObserverDeallocKVOKey);
     
     if (!observerContainer) {
-        observerContainer = [JJObserverContainer new];
+        observerContainer = [GPObserverContainer new];
         [observerContainer setWhichObject:self];
         [observerContainer addObserver:item];
         objc_setAssociatedObject(observer, &ObserverDeallocKVOKey, observerContainer, OBJC_ASSOCIATION_RETAIN);
@@ -359,7 +359,7 @@ static const char ObserverDeallocKVOKey;
 {
     
     KVOObjectContainer* objectContainer = objc_getAssociatedObject(self, &DeallocKVOKey);
-    JJObserverContainer* observerContainer = objc_getAssociatedObject(self, &ObserverDeallocKVOKey);
+    GPObserverContainer* observerContainer = objc_getAssociatedObject(self, &ObserverDeallocKVOKey);
     
     if (objectContainer) {
         [objectContainer cleanKVOData];

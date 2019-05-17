@@ -1,6 +1,6 @@
 //
-//  JJException.h
-//  JJException
+//  GPException.h
+//  GPException
 //
 //  Created by Liyanwei on 2019/4/28.
 //  Copyright © 2019 Liyanwei. All rights reserved.
@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- Before start JJException,must config the GPExceptionGuardCategory
+ Before start GPException,must config the GPExceptionGuardCategory
  
  - GPExceptionGuardNone: Do not guard normal crash exception
  - GPExceptionGuardUnrecognizedSelector: Unrecognized Selector Exception
@@ -42,7 +42,7 @@ typedef NS_OPTIONS(NSInteger,GPExceptionGuardCategory){
 /**
  Exception interface
  */
-@protocol JJExceptionHandle<NSObject>
+@protocol GPExceptionHandle<NSObject>
 
 /**
  Crash message and extra info from current thread
@@ -79,7 +79,7 @@ typedef NS_OPTIONS(NSInteger,GPExceptionGuardCategory){
 @property(class,nonatomic,readwrite,assign)BOOL exceptionWhenTerminate;
 
 /**
- JJException guard exception status,default is NO
+ GPException guard exception status,default is NO
  */
 @property(class,nonatomic,readonly,assign)BOOL isGuardException;
 
@@ -99,23 +99,23 @@ typedef NS_OPTIONS(NSInteger,GPExceptionGuardCategory){
  Stop the exception protect
  
  * Why deprecated this method:
- * https://github.com/jezzmemo/JJException/issues/54
+ * https://github.com/jezzmemo/GPException/issues/54
  */
 + (void)stopGuardException __attribute__((deprecated("Stop invoke this method,If invoke this,Maybe occur the infinite loop and then CRASH")));
 
 /**
  Register exception interface
 
- @param exceptionHandle JJExceptionHandle
+ @param exceptionHandle GPExceptionHandle
  */
-+ (void)registerExceptionHandle:(id<JJExceptionHandle>)exceptionHandle;
++ (void)registerExceptionHandle:(id<GPExceptionHandle>)exceptionHandle;
 
 /**
  Only handle the black list zombie object
  
  Sample Code:
  
-    [JJException addZombieObjectArray:@[TestZombie.class]];
+    [GPException addZombieObjectArray:@[TestZombie.class]];
 
  @param objects Class Array
  */

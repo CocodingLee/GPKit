@@ -1,6 +1,6 @@
 //
 //  NSObject+SwizzleHook.h
-//  JJException
+//  GPException
 //
 //  Created by Jezz on 2018/7/10.
 //  Copyright © 2018年 Jezz. All rights reserved.
@@ -9,17 +9,17 @@
 #import <Foundation/Foundation.h>
 
 /*
- * JJSwizzledIMPBlock assist variable
+ * GPSwizzledIMPBlock assist variable
  */
-typedef void (*JJSwizzleOriginalIMP)(void /* id, SEL, ... */ );
+typedef void (*GPSwizzleOriginalIMP)(void /* id, SEL, ... */ );
 
 ////////////////////////////////////////////////////////////////////////////////
-@class JJSwizzleObject;
+@class GPSwizzleObject;
 
 /*
- * JJSwizzledIMPBlock assist variable
+ * GPSwizzledIMPBlock assist variable
  */
-typedef id (^JJSwizzledIMPBlock)(JJSwizzleObject* swizzleInfo);
+typedef id (^GPSwizzledIMPBlock)(GPSwizzleObject* swizzleInfo);
 
 /**
  * Swizzle Class Method
@@ -52,9 +52,9 @@ void gp_swizzleDeallocIfNeeded(Class class);
 // Swizzle
 //
 
-@interface JJSwizzleObject : NSObject
+@interface GPSwizzleObject : NSObject
 @property (nonatomic,readonly,assign) SEL selector;
-- (JJSwizzleOriginalIMP)getOriginalImplementation;
+- (GPSwizzleOriginalIMP)getOriginalImplementation;
 @end
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -89,6 +89,6 @@ void gp_swizzleDeallocIfNeeded(Class class);
  @param originSelector originSelector
  @param swizzledBlock block
  */
-- (void)gp_swizzleInstanceMethod:(SEL)originSelector withSwizzledBlock:(JJSwizzledIMPBlock)swizzledBlock;
+- (void)gp_swizzleInstanceMethod:(SEL)originSelector withSwizzledBlock:(GPSwizzledIMPBlock)swizzledBlock;
 
 @end

@@ -1,6 +1,6 @@
 //
-//  JJException.m
-//  JJException
+//  GPException.m
+//  GPException
 //
 //  Created by Liyanwei on 2019/4/28.
 //  Copyright © 2019 Liyanwei. All rights reserved.
@@ -35,7 +35,7 @@
     [GPExceptionProxy shareExceptionProxy].exceptionGuardCategory = exceptionGuardCategory;
 }
 
-+ (void)registerExceptionHandle:(id<JJExceptionHandle>)exceptionHandle{
++ (void)registerExceptionHandle:(id<GPExceptionHandle>)exceptionHandle{
     [GPExceptionProxy shareExceptionProxy].delegate = exceptionHandle;
 }
 

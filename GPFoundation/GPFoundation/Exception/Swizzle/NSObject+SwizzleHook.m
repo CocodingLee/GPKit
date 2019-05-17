@@ -1,6 +1,6 @@
 //
 //  NSObject+SwizzleHook.m
-//  JJException
+//  GPException
 //
 //  Created by Jezz on 2018/7/10.
 //  Copyright © 2018年 Jezz. All rights reserved.
@@ -11,8 +11,8 @@
 #import <objc/message.h>
 #import <libkern/OSAtomic.h>
 
-typedef IMP (^JJSWizzleImpProvider)(void);
-static const char jjSwizzledDeallocKey;
+typedef IMP (^GPSWizzleImpProvider)(void);
+static const char gpSwizzledDeallocKey;
 
 void swizzleClassMethod(Class cls, SEL originSelector, SEL swizzleSelector)
 {
@@ -83,7 +83,7 @@ BOOL gp_requiresDeallocSwizzle(Class class)
     BOOL swizzled = NO;
     
     for ( Class currentClass = class; !swizzled && currentClass != nil; currentClass = class_getSuperclass(currentClass) ) {
-        swizzled = [objc_getAssociatedObject(currentClass, &jjSwizzledDeallocKey) boolValue];
+        swizzled = [objc_getAssociatedObject(currentClass, &gpSwizzledDeallocKey) boolValue];
     }
     
     return !swizzled;
@@ -105,7 +105,7 @@ void gp_swizzleDeallocIfNeeded(Class class)
             return;
         }
         
-        objc_setAssociatedObject(class, &jjSwizzledDeallocKey, @(YES), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(class, &gpSwizzledDeallocKey, @(YES), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
     Method dealloc = NULL;
@@ -141,19 +141,19 @@ void gp_swizzleDeallocIfNeeded(Class class)
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-// JJSwizzleObject
+// GPSwizzleObject
 //
 
-@interface JJSwizzleObject()
-@property (nonatomic,readwrite,copy) JJSWizzleImpProvider impProviderBlock;
+@interface GPSwizzleObject()
+@property (nonatomic,readwrite,copy) GPSWizzleImpProvider impProviderBlock;
 @property (nonatomic,readwrite,assign) SEL selector;
 @end
 
-@implementation JJSwizzleObject
+@implementation GPSwizzleObject
 
-- (JJSwizzleOriginalIMP)getOriginalImplementation{
+- (GPSwizzleOriginalIMP)getOriginalImplementation{
     NSAssert(_impProviderBlock,nil);
-    return (JJSwizzleOriginalIMP)_impProviderBlock();
+    return (GPSwizzleOriginalIMP)_impProviderBlock();
 }
 
 @end
@@ -165,12 +165,12 @@ void gp_swizzleDeallocIfNeeded(Class class)
 
 @implementation NSObject (SwizzleHook)
 
-void __JJ_SWIZZLE_BLOCK(Class classToSwizzle,SEL selector,JJSwizzledIMPBlock impBlock){
+void __GP_SWIZZLE_BLOCK(Class classToSwizzle,SEL selector,GPSwizzledIMPBlock impBlock){
     Method method = class_getInstanceMethod(classToSwizzle, selector);
     
     __block IMP originalIMP = NULL;
     
-    JJSWizzleImpProvider originalImpProvider = ^IMP{
+    GPSWizzleImpProvider originalImpProvider = ^IMP{
         
         IMP imp = originalIMP;
         
@@ -181,7 +181,7 @@ void __JJ_SWIZZLE_BLOCK(Class classToSwizzle,SEL selector,JJSwizzledIMPBlock imp
         return imp;
     };
     
-    JJSwizzleObject* swizzleInfo = [JJSwizzleObject new];
+    GPSwizzleObject* swizzleInfo = [GPSwizzleObject new];
     swizzleInfo.selector = selector;
     swizzleInfo.impProviderBlock = originalImpProvider;
     
@@ -202,8 +202,8 @@ void __JJ_SWIZZLE_BLOCK(Class classToSwizzle,SEL selector,JJSwizzledIMPBlock imp
     swizzleInstanceMethod(self.class, originSelector, swizzleSelector);
 }
 
-- (void)gp_swizzleInstanceMethod:(SEL)originSelector withSwizzledBlock:(JJSwizzledIMPBlock)swizzledBlock{
-    __JJ_SWIZZLE_BLOCK(self.class, originSelector, swizzledBlock);
+- (void)gp_swizzleInstanceMethod:(SEL)originSelector withSwizzledBlock:(GPSwizzledIMPBlock)swizzledBlock{
+    __GP_SWIZZLE_BLOCK(self.class, originSelector, swizzledBlock);
 }
 
 @end

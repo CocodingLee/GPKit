@@ -1,5 +1,5 @@
 //
-//  JJExceptionProxy.h
+//  GPExceptionProxy.h
 //  GPFoundation
 //
 //  Created by Liyanwei on 2019/4/28.
@@ -47,7 +47,7 @@ __attribute__((overloadable)) void handleCrashException(GPExceptionGuardCategory
 /**
  Exception Proxy
  */
-@interface GPExceptionProxy : NSObject<JJExceptionHandle>
+@interface GPExceptionProxy : NSObject<GPExceptionHandle>
 
 
 + (instancetype)shareExceptionProxy;
@@ -56,9 +56,9 @@ __attribute__((overloadable)) void handleCrashException(GPExceptionGuardCategory
 #pragma mark - Handle crash interface
 
 /**
- Hold the JJExceptionHandle interface object
+ Hold the GPExceptionHandle interface object
  */
-@property(nonatomic,readwrite,weak)id<JJExceptionHandle> delegate;
+@property(nonatomic,readwrite,weak)id<GPExceptionHandle> delegate;
 
 /**
  Setting hook excpetion status,default value is NO

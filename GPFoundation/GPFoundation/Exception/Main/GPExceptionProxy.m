@@ -1,5 +1,5 @@
 //
-//  JJExceptionProxy.m
+//  GPExceptionProxy.m
 //  GPFoundation
 //
 //  Created by Liyanwei on 2019/4/28.
