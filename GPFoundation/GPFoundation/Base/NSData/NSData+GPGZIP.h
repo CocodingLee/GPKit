@@ -1,6 +1,6 @@
 //
 //  NSData+GZip.h
-//  GPUIKit
+//  GPFoundation
 //
 //  Created by Liyanwei on 2019/4/28.
 //  Copyright © 2019 Liyanwei. All rights reserved.

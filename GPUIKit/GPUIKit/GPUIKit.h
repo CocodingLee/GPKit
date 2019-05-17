@@ -18,9 +18,6 @@
 #import <GPUIKit/UIImage+GPRounded.h>
 #import <GPUIKit/UIImage+GPBlur.h>
 #import <GPUIKit/UIImage+GPColor.h>
-#import <GPUIKit/NSData+GPGZIP.h>
-#import <GPUIKit/UIColor+GPAdd.h>
-
 
 //////////////////////////////////////////////////
 // navigation
