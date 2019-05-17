@@ -41,11 +41,11 @@ void swizzleInstanceMethod(Class cls, SEL originSelector, SEL swizzleSelector);
 
 /**
  * Only swizzle the current class,not swizzle all class
- * perform jj_cleanKVO selector before the origin dealloc
+ * perform gp_cleanKVO selector before the origin dealloc
  
  @param class Class
  */
-void jj_swizzleDeallocIfNeeded(Class class);
+void gp_swizzleDeallocIfNeeded(Class class);
 
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -73,7 +73,7 @@ void jj_swizzleDeallocIfNeeded(Class class);
  @param originSelector originSelector
  @param swizzleSelector swizzleSelector
  */
-+ (void)jj_swizzleClassMethod:(SEL)originSelector withSwizzleMethod:(SEL)swizzleSelector;
++ (void)gp_swizzleClassMethod:(SEL)originSelector withSwizzleMethod:(SEL)swizzleSelector;
 
 /**
  Swizzle Instance Method
@@ -81,7 +81,7 @@ void jj_swizzleDeallocIfNeeded(Class class);
  @param originSelector originSelector
  @param swizzleSelector swizzleSelector
  */
-- (void)jj_swizzleInstanceMethod:(SEL)originSelector withSwizzleMethod:(SEL)swizzleSelector;
+- (void)gp_swizzleInstanceMethod:(SEL)originSelector withSwizzleMethod:(SEL)swizzleSelector;
 
 /**
  Swizzle instance method to the block target
@@ -89,6 +89,6 @@ void jj_swizzleDeallocIfNeeded(Class class);
  @param originSelector originSelector
  @param swizzledBlock block
  */
-- (void)jj_swizzleInstanceMethod:(SEL)originSelector withSwizzledBlock:(JJSwizzledIMPBlock)swizzledBlock;
+- (void)gp_swizzleInstanceMethod:(SEL)originSelector withSwizzledBlock:(JJSwizzledIMPBlock)swizzledBlock;
 
 @end

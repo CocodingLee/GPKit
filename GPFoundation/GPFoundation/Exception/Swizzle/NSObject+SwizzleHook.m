@@ -78,7 +78,7 @@ void swizzleInstanceMethod(Class cls, SEL originSelector, SEL swizzleSelector){
 }
 
 // a class doesn't need dealloc swizzled if it or a superclass has been swizzled already
-BOOL jj_requiresDeallocSwizzle(Class class)
+BOOL gp_requiresDeallocSwizzle(Class class)
 {
     BOOL swizzled = NO;
     
@@ -89,7 +89,7 @@ BOOL jj_requiresDeallocSwizzle(Class class)
     return !swizzled;
 }
 
-void jj_swizzleDeallocIfNeeded(Class class)
+void gp_swizzleDeallocIfNeeded(Class class)
 {
     static SEL deallocSEL = NULL;
     static SEL cleanupSEL = NULL;
@@ -97,11 +97,11 @@ void jj_swizzleDeallocIfNeeded(Class class)
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         deallocSEL = sel_getUid("dealloc");
-        cleanupSEL = sel_getUid("jj_cleanKVO");
+        cleanupSEL = sel_getUid("gp_cleanKVO");
     });
     
     @synchronized (class) {
-        if ( !jj_requiresDeallocSwizzle(class) ) {
+        if ( !gp_requiresDeallocSwizzle(class) ) {
             return;
         }
         
@@ -194,15 +194,15 @@ void __JJ_SWIZZLE_BLOCK(Class classToSwizzle,SEL selector,JJSwizzledIMPBlock imp
     originalIMP = class_replaceMethod(classToSwizzle, selector, newIMP, methodType);
 }
 
-+ (void)jj_swizzleClassMethod:(SEL)originSelector withSwizzleMethod:(SEL)swizzleSelector{
++ (void)gp_swizzleClassMethod:(SEL)originSelector withSwizzleMethod:(SEL)swizzleSelector{
     swizzleClassMethod(self.class, originSelector, swizzleSelector);
 }
 
-- (void)jj_swizzleInstanceMethod:(SEL)originSelector withSwizzleMethod:(SEL)swizzleSelector{
+- (void)gp_swizzleInstanceMethod:(SEL)originSelector withSwizzleMethod:(SEL)swizzleSelector{
     swizzleInstanceMethod(self.class, originSelector, swizzleSelector);
 }
 
-- (void)jj_swizzleInstanceMethod:(SEL)originSelector withSwizzledBlock:(JJSwizzledIMPBlock)swizzledBlock{
+- (void)gp_swizzleInstanceMethod:(SEL)originSelector withSwizzledBlock:(JJSwizzledIMPBlock)swizzledBlock{
     __JJ_SWIZZLE_BLOCK(self.class, originSelector, swizzledBlock);
 }
 
