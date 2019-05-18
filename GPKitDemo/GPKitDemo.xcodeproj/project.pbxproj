@@ -98,6 +98,7 @@
 		D7312784228FD05400A8E3BB /* GPException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPException.m; sourceTree = "<group>"; };
 		D7312785228FD05400A8E3BB /* GPExceptionProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPExceptionProxy.h; sourceTree = "<group>"; };
 		D7312786228FD05400A8E3BB /* GPException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPException.h; sourceTree = "<group>"; };
+		D731279E228FD29100A8E3BB /* GPExceptionHeads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPExceptionHeads.h; sourceTree = "<group>"; };
 		D7897B2F22759F320095CD53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D79B2E2E2285669A00D82858 /* GPKitDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPKitDemo.pch; sourceTree = "<group>"; };
 		D79B2E322285700B00D82858 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -183,6 +184,7 @@
 		D731275C228FD05400A8E3BB /* Exception */ = {
 			isa = PBXGroup;
 			children = (
+				D731279E228FD29100A8E3BB /* GPExceptionHeads.h */,
 				D731275D228FD05400A8E3BB /* MRC */,
 				D731276A228FD05400A8E3BB /* DeallocBlock */,
 				D731276D228FD05400A8E3BB /* Swizzle */,
