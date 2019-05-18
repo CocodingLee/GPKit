@@ -16,38 +16,38 @@
 		D73125DC228E8E6D00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125CE228E8E6C00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D73125DD228E8E6D00A8E3BB /* NSArray+ArrayHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125CF228E8E6C00A8E3BB /* NSArray+ArrayHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D73125DE228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125D0228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D73125DF228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D1228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.h */; };
-		D73125E0228E8E6D00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D2228E8E6D00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.h */; };
+		D73125DF228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D1228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D73125E0228E8E6D00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D2228E8E6D00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D73125E1228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125D3228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D73125E2228E8E6D00A8E3BB /* NSObject+ZombieHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125D4228E8E6D00A8E3BB /* NSObject+ZombieHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D73125E3228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D5228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.h */; };
+		D73125E3228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D5228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D73125E4228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125D6228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D73125E5228E8E6D00A8E3BB /* NSObject+KVOCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D7228E8E6D00A8E3BB /* NSObject+KVOCrash.h */; };
-		D73125E6228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D8228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.h */; };
-		D73125E7228E8E6D00A8E3BB /* NSArray+ArrayHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D9228E8E6D00A8E3BB /* NSArray+ArrayHook.h */; };
-		D73125E8228E8E6D00A8E3BB /* NSObject+ZombieHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125DA228E8E6D00A8E3BB /* NSObject+ZombieHook.h */; };
+		D73125E5228E8E6D00A8E3BB /* NSObject+KVOCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D7228E8E6D00A8E3BB /* NSObject+KVOCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D73125E6228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D8228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D73125E7228E8E6D00A8E3BB /* NSArray+ArrayHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D9228E8E6D00A8E3BB /* NSArray+ArrayHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D73125E8228E8E6D00A8E3BB /* NSObject+ZombieHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125DA228E8E6D00A8E3BB /* NSObject+ZombieHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D73125E9228E8E6D00A8E3BB /* NSObject+KVOCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125DB228E8E6D00A8E3BB /* NSObject+KVOCrash.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D73125F0228E8F3A00A8E3BB /* GPExceptionProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125EB228E8F3900A8E3BB /* GPExceptionProxy.h */; };
+		D73125F0228E8F3A00A8E3BB /* GPExceptionProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125EB228E8F3900A8E3BB /* GPExceptionProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D73125F1228E8F3A00A8E3BB /* GPException.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125EC228E8F3900A8E3BB /* GPException.m */; };
-		D73125F2228E8F3A00A8E3BB /* GPExceptionMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125ED228E8F3900A8E3BB /* GPExceptionMacros.h */; };
-		D73125F3228E8F3A00A8E3BB /* GPException.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125EE228E8F3900A8E3BB /* GPException.h */; };
+		D73125F2228E8F3A00A8E3BB /* GPExceptionMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125ED228E8F3900A8E3BB /* GPExceptionMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D73125F3228E8F3A00A8E3BB /* GPException.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125EE228E8F3900A8E3BB /* GPException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D73125F4228E8F3A00A8E3BB /* GPExceptionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125EF228E8F3900A8E3BB /* GPExceptionProxy.m */; };
-		D73125F8228F990700A8E3BB /* NSObject+DeallocBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125F6228F990700A8E3BB /* NSObject+DeallocBlock.h */; };
+		D73125F8228F990700A8E3BB /* NSObject+DeallocBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125F6228F990700A8E3BB /* NSObject+DeallocBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D73125F9228F990700A8E3BB /* NSObject+DeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125F7228F990700A8E3BB /* NSObject+DeallocBlock.m */; };
-		D731262D228F998500A8E3BB /* NSMutableSet+MutableSetHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D731261D228F998400A8E3BB /* NSMutableSet+MutableSetHook.h */; };
-		D731262E228F998500A8E3BB /* NSTimer+CleanTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = D731261E228F998400A8E3BB /* NSTimer+CleanTimer.h */; };
-		D731262F228F998500A8E3BB /* NSNotificationCenter+ClearNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = D731261F228F998400A8E3BB /* NSNotificationCenter+ClearNotification.h */; };
-		D7312630228F998500A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312620228F998400A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h */; };
-		D7312631228F998500A8E3BB /* NSString+StringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312621228F998400A8E3BB /* NSString+StringHook.h */; };
+		D731262D228F998500A8E3BB /* NSMutableSet+MutableSetHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D731261D228F998400A8E3BB /* NSMutableSet+MutableSetHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D731262E228F998500A8E3BB /* NSTimer+CleanTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = D731261E228F998400A8E3BB /* NSTimer+CleanTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D731262F228F998500A8E3BB /* NSNotificationCenter+ClearNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = D731261F228F998400A8E3BB /* NSNotificationCenter+ClearNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7312630228F998500A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312620228F998400A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7312631228F998500A8E3BB /* NSString+StringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312621228F998400A8E3BB /* NSString+StringHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7312632228F998500A8E3BB /* NSString+StringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312622228F998400A8E3BB /* NSString+StringHook.m */; };
 		D7312633228F998500A8E3BB /* NSMutableSet+MutableSetHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312623228F998400A8E3BB /* NSMutableSet+MutableSetHook.m */; };
-		D7312634228F998500A8E3BB /* NSAttributedString+AttributedStringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312624228F998400A8E3BB /* NSAttributedString+AttributedStringHook.h */; };
+		D7312634228F998500A8E3BB /* NSAttributedString+AttributedStringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312624228F998400A8E3BB /* NSAttributedString+AttributedStringHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7312635228F998500A8E3BB /* NSNotificationCenter+ClearNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312625228F998400A8E3BB /* NSNotificationCenter+ClearNotification.m */; };
 		D7312636228F998500A8E3BB /* NSTimer+CleanTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312626228F998500A8E3BB /* NSTimer+CleanTimer.m */; };
 		D7312637228F998500A8E3BB /* NSSet+SetHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312627228F998500A8E3BB /* NSSet+SetHook.m */; };
-		D7312638228F998500A8E3BB /* NSSet+SetHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312628228F998500A8E3BB /* NSSet+SetHook.h */; };
+		D7312638228F998500A8E3BB /* NSSet+SetHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312628228F998500A8E3BB /* NSSet+SetHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7312639228F998500A8E3BB /* NSAttributedString+AttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312629228F998500A8E3BB /* NSAttributedString+AttributedStringHook.m */; };
-		D731263A228F998500A8E3BB /* NSMutableString+MutableStringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D731262A228F998500A8E3BB /* NSMutableString+MutableStringHook.h */; };
+		D731263A228F998500A8E3BB /* NSMutableString+MutableStringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D731262A228F998500A8E3BB /* NSMutableString+MutableStringHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D731263B228F998500A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D731262B228F998500A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m */; };
 		D731263C228F998500A8E3BB /* NSMutableString+MutableStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D731262C228F998500A8E3BB /* NSMutableString+MutableStringHook.m */; };
 /* End PBXBuildFile section */
@@ -163,11 +163,11 @@
 		D7312596228E866E00A8E3BB /* Exception */ = {
 			isa = PBXGroup;
 			children = (
-				D73125FA228F996700A8E3BB /* ARC */,
-				D73125F5228F990700A8E3BB /* DeallocBlock */,
 				D73125EA228E8F3900A8E3BB /* Main */,
-				D73125B1228E8E5E00A8E3BB /* MRC */,
 				D731259D228E8B4E00A8E3BB /* Swizzle */,
+				D73125FA228F996700A8E3BB /* ARC */,
+				D73125B1228E8E5E00A8E3BB /* MRC */,
+				D73125F5228F990700A8E3BB /* DeallocBlock */,
 			);
 			path = Exception;
 			sourceTree = "<group>";
@@ -271,13 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D731259C228E86A500A8E3BB /* NSData+GPGZIP.h in Headers */,
-				D73125E3228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.h in Headers */,
 				D7312590228E855F00A8E3BB /* GPFoundation.h in Headers */,
+				D73125E3228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.h in Headers */,
 				D73125F8228F990700A8E3BB /* NSObject+DeallocBlock.h in Headers */,
 				D73125DF228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.h in Headers */,
 				D73125E6228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.h in Headers */,
 				D73125F0228E8F3A00A8E3BB /* GPExceptionProxy.h in Headers */,
-				D73125A0228E8B4E00A8E3BB /* NSObject+SwizzleHook.h in Headers */,
 				D73125E7228E8E6D00A8E3BB /* NSArray+ArrayHook.h in Headers */,
 				D73125E8228E8E6D00A8E3BB /* NSObject+ZombieHook.h in Headers */,
 				D731263A228F998500A8E3BB /* NSMutableString+MutableStringHook.h in Headers */,
@@ -292,6 +291,7 @@
 				D7312630228F998500A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h in Headers */,
 				D7312634228F998500A8E3BB /* NSAttributedString+AttributedStringHook.h in Headers */,
 				D731262D228F998500A8E3BB /* NSMutableSet+MutableSetHook.h in Headers */,
+				D73125A0228E8B4E00A8E3BB /* NSObject+SwizzleHook.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

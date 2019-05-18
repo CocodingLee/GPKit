@@ -31,7 +31,8 @@ GPSYNTH_DUMMY_CLASS(NSMutableAttributedString_MutableAttributedStringHook)
     swizzleInstanceMethod(cls,@selector(replaceCharactersInRange:withAttributedString:), @selector(hookReplaceCharactersInRange:withAttributedString:));
 }
 
-- (id)hookInitWithString:(NSString*)str{
+- (id)hookInitWithString:(NSString*)str
+{
     if (str){
         return [self hookInitWithString:str];
     }
