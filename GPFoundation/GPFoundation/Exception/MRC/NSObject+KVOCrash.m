@@ -2,8 +2,8 @@
 //  NSObject+KVOCrash.m
 //  GPException
 //
-//  Created by Jezz on 2018/8/29.
-//  Copyright © 2018年 Jezz. All rights reserved.
+//  Created by Liyanwei on 2018/8/29.
+//  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
 #import "NSObject+KVOCrash.h"
