@@ -7,6 +7,7 @@
 //
 
 #import "GPButton.h"
+#import "GPNavigationDefine.h"
 
 @implementation GPButton
 

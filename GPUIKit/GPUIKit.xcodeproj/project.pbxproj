@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AB2D26CDE74E3DC69EAF1D88 /* libPods-GPUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 473602EF16F935DE4E91529E /* libPods-GPUIKit.a */; };
+		D731279B228FD16F00A8E3BB /* GPButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312799228FD16F00A8E3BB /* GPButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D731279C228FD16F00A8E3BB /* GPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D731279A228FD16F00A8E3BB /* GPButton.m */; };
 		D7897B162273043E0095CD53 /* UIView+SafeArea.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B142273043E0095CD53 /* UIView+SafeArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7897B172273043E0095CD53 /* UIView+SafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B152273043E0095CD53 /* UIView+SafeArea.m */; };
 		D7897B1B22757FAA0095CD53 /* UIButton+Expand.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B1922757FAA0095CD53 /* UIButton+Expand.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -140,6 +142,8 @@
 		473602EF16F935DE4E91529E /* libPods-GPUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63134B0FF365D4A725DD9891 /* Pods-GPUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUIKit.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GPUIKit/Pods-GPUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		CD7AE1FF93B01581A0E7B0D8 /* Pods-GPUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUIKit.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPUIKit/Pods-GPUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		D7312799228FD16F00A8E3BB /* GPButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; fileEncoding = 4; path = GPButton.h; sourceTree = "<group>"; };
+		D731279A228FD16F00A8E3BB /* GPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPButton.m; sourceTree = "<group>"; };
 		D7897B142273043E0095CD53 /* UIView+SafeArea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SafeArea.h"; sourceTree = "<group>"; };
 		D7897B152273043E0095CD53 /* UIView+SafeArea.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SafeArea.m"; sourceTree = "<group>"; };
 		D7897B1922757FAA0095CD53 /* UIButton+Expand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Expand.h"; sourceTree = "<group>"; };
@@ -307,6 +311,8 @@
 		D7897B1822757F890095CD53 /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				D7312799228FD16F00A8E3BB /* GPButton.h */,
+				D731279A228FD16F00A8E3BB /* GPButton.m */,
 				D7DBD0B8228D0E53007F4B0C /* GPBaseButton.h */,
 				D7DBD0B7228D0E53007F4B0C /* GPBaseButton.m */,
 				D7897B1922757FAA0095CD53 /* UIButton+Expand.h */,
@@ -729,6 +735,7 @@
 				D7DA719A227EDC330026543C /* GPNavigationDefine.h in Headers */,
 				D7897B2522758E570095CD53 /* UIImageView+GPWebCache.h in Headers */,
 				D7897B1F227586E80095CD53 /* UIButton+ImagePosition.h in Headers */,
+				D731279B228FD16F00A8E3BB /* GPButton.h in Headers */,
 				D7DBD0BA228D0E53007F4B0C /* GPBaseButton.h in Headers */,
 				D7DA71912275B0F30026543C /* UIImage+GPBlur.h in Headers */,
 				D7DA71B9227F058A0026543C /* GPGeneralPushAnimation.h in Headers */,
@@ -875,6 +882,7 @@
 				D7A867DF228BB09900E35569 /* UIColor+GPAdd.m in Sources */,
 				D7A8683A228BBF2100E35569 /* GPCategoryIndicatorView.m in Sources */,
 				D7DA71BB227F058A0026543C /* GPPresentAnimation.m in Sources */,
+				D731279C228FD16F00A8E3BB /* GPButton.m in Sources */,
 				D7897B172273043E0095CD53 /* UIView+SafeArea.m in Sources */,
 				D7897B2622758E570095CD53 /* UIImageView+GPWebCache.m in Sources */,
 				D7A867D6228BB09900E35569 /* GPCategoryListContainerView.m in Sources */,

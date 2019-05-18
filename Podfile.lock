@@ -22,7 +22,6 @@ PODS:
     - coobjc (~> 1.2.0)
     - FMDB (~> 2.7.2)
     - FrameAccessor (~> 2.0)
-    - GPFoundation
     - GPRoute
     - GPUIKit
     - KSCrash (~> 1.15.19)
@@ -199,7 +198,7 @@ SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
   GPFoundation: 1f5fe415d5aae6863e69b9957b47bc20e3864918
-  GPPerformance: 1731ead553f77b2c94ecae78dbbb9c32fcc46360
+  GPPerformance: 1a822de13900f5b84e95d73554811c941161449d
   GPRoute: 2c4eefdd61fc588664faecc103c6e8fbfb0f804b
   GPUIKit: 81b5b3daf14e5a170f5389735d20edd32a143a92
   KSCrash: 49855f7867f7d456905c241640a203f53588497d

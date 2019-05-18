@@ -6,7 +6,7 @@
 //  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "GPBaseButton.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

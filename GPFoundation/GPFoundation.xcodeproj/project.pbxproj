@@ -7,306 +7,121 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BBF68231D0CF1B05124521C4 /* libPods-GPFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D69237F25BA333ED8CE833AE /* libPods-GPFoundation.a */; };
-		D7312590228E855F00A8E3BB /* GPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = D731258E228E855F00A8E3BB /* GPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D731259B228E86A500A8E3BB /* NSData+GPGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312599228E86A500A8E3BB /* NSData+GPGZIP.m */; };
-		D731259C228E86A500A8E3BB /* NSData+GPGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = D731259A228E86A500A8E3BB /* NSData+GPGZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125A0228E8B4E00A8E3BB /* NSObject+SwizzleHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D731259E228E8B4E00A8E3BB /* NSObject+SwizzleHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125A1228E8B4E00A8E3BB /* NSObject+SwizzleHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D731259F228E8B4E00A8E3BB /* NSObject+SwizzleHook.m */; };
-		D73125DC228E8E6D00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125CE228E8E6C00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D73125DD228E8E6D00A8E3BB /* NSArray+ArrayHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125CF228E8E6C00A8E3BB /* NSArray+ArrayHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D73125DE228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125D0228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D73125DF228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D1228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125E0228E8E6D00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D2228E8E6D00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125E1228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125D3228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D73125E2228E8E6D00A8E3BB /* NSObject+ZombieHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125D4228E8E6D00A8E3BB /* NSObject+ZombieHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D73125E3228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D5228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125E4228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125D6228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D73125E5228E8E6D00A8E3BB /* NSObject+KVOCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D7228E8E6D00A8E3BB /* NSObject+KVOCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125E6228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D8228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125E7228E8E6D00A8E3BB /* NSArray+ArrayHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125D9228E8E6D00A8E3BB /* NSArray+ArrayHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125E8228E8E6D00A8E3BB /* NSObject+ZombieHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125DA228E8E6D00A8E3BB /* NSObject+ZombieHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125E9228E8E6D00A8E3BB /* NSObject+KVOCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125DB228E8E6D00A8E3BB /* NSObject+KVOCrash.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D73125F0228E8F3A00A8E3BB /* GPExceptionProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125EB228E8F3900A8E3BB /* GPExceptionProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125F1228E8F3A00A8E3BB /* GPException.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125EC228E8F3900A8E3BB /* GPException.m */; };
-		D73125F2228E8F3A00A8E3BB /* GPExceptionMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125ED228E8F3900A8E3BB /* GPExceptionMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125F3228E8F3A00A8E3BB /* GPException.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125EE228E8F3900A8E3BB /* GPException.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125F4228E8F3A00A8E3BB /* GPExceptionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125EF228E8F3900A8E3BB /* GPExceptionProxy.m */; };
-		D73125F8228F990700A8E3BB /* NSObject+DeallocBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = D73125F6228F990700A8E3BB /* NSObject+DeallocBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73125F9228F990700A8E3BB /* NSObject+DeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D73125F7228F990700A8E3BB /* NSObject+DeallocBlock.m */; };
-		D731262D228F998500A8E3BB /* NSMutableSet+MutableSetHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D731261D228F998400A8E3BB /* NSMutableSet+MutableSetHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D731262E228F998500A8E3BB /* NSTimer+CleanTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = D731261E228F998400A8E3BB /* NSTimer+CleanTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D731262F228F998500A8E3BB /* NSNotificationCenter+ClearNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = D731261F228F998400A8E3BB /* NSNotificationCenter+ClearNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7312630228F998500A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312620228F998400A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7312631228F998500A8E3BB /* NSString+StringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312621228F998400A8E3BB /* NSString+StringHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7312632228F998500A8E3BB /* NSString+StringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312622228F998400A8E3BB /* NSString+StringHook.m */; };
-		D7312633228F998500A8E3BB /* NSMutableSet+MutableSetHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312623228F998400A8E3BB /* NSMutableSet+MutableSetHook.m */; };
-		D7312634228F998500A8E3BB /* NSAttributedString+AttributedStringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312624228F998400A8E3BB /* NSAttributedString+AttributedStringHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7312635228F998500A8E3BB /* NSNotificationCenter+ClearNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312625228F998400A8E3BB /* NSNotificationCenter+ClearNotification.m */; };
-		D7312636228F998500A8E3BB /* NSTimer+CleanTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312626228F998500A8E3BB /* NSTimer+CleanTimer.m */; };
-		D7312637228F998500A8E3BB /* NSSet+SetHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312627228F998500A8E3BB /* NSSet+SetHook.m */; };
-		D7312638228F998500A8E3BB /* NSSet+SetHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312628228F998500A8E3BB /* NSSet+SetHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7312639228F998500A8E3BB /* NSAttributedString+AttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312629228F998500A8E3BB /* NSAttributedString+AttributedStringHook.m */; };
-		D731263A228F998500A8E3BB /* NSMutableString+MutableStringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D731262A228F998500A8E3BB /* NSMutableString+MutableStringHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D731263B228F998500A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D731262B228F998500A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m */; };
-		D731263C228F998500A8E3BB /* NSMutableString+MutableStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D731262C228F998500A8E3BB /* NSMutableString+MutableStringHook.m */; };
+		D04794ADEE3FE0D42A3FCDDE /* libPods-GPFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D5CD82660F582509183C21 /* libPods-GPFoundation.a */; };
+		D73126C8228FBF5500A8E3BB /* GPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = D73126C6228FBF5500A8E3BB /* GPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7312722228FBFA500A8E3BB /* NSData+GPGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = D73126FB228FBFA500A8E3BB /* NSData+GPGZIP.m */; };
+		D7312723228FBFA500A8E3BB /* NSData+GPGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = D73126FC228FBFA500A8E3BB /* NSData+GPGZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C065A561FB90E25A0FE58BE3 /* Pods-GPFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPFoundation.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GPFoundation/Pods-GPFoundation.release.xcconfig"; sourceTree = "<group>"; };
-		D69237F25BA333ED8CE833AE /* libPods-GPFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPFoundation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D731258B228E855F00A8E3BB /* GPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D731258E228E855F00A8E3BB /* GPFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPFoundation.h; sourceTree = "<group>"; };
-		D731258F228E855F00A8E3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7312599228E86A500A8E3BB /* NSData+GPGZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GPGZIP.m"; sourceTree = "<group>"; };
-		D731259A228E86A500A8E3BB /* NSData+GPGZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GPGZIP.h"; sourceTree = "<group>"; };
-		D731259E228E8B4E00A8E3BB /* NSObject+SwizzleHook.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; fileEncoding = 4; path = "NSObject+SwizzleHook.h"; sourceTree = "<group>"; };
-		D731259F228E8B4E00A8E3BB /* NSObject+SwizzleHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwizzleHook.m"; sourceTree = "<group>"; };
-		D73125CE228E8E6C00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MutableDictionaryHook.m"; sourceTree = "<group>"; };
-		D73125CF228E8E6C00A8E3BB /* NSArray+ArrayHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ArrayHook.m"; sourceTree = "<group>"; };
-		D73125D0228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DictionaryHook.m"; sourceTree = "<group>"; };
-		D73125D1228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MutableArrayHook.h"; sourceTree = "<group>"; };
-		D73125D2228E8E6D00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MutableDictionaryHook.h"; sourceTree = "<group>"; };
-		D73125D3228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UnrecognizedSelectorHook.m"; sourceTree = "<group>"; };
-		D73125D4228E8E6D00A8E3BB /* NSObject+ZombieHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZombieHook.m"; sourceTree = "<group>"; };
-		D73125D5228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+UnrecognizedSelectorHook.h"; sourceTree = "<group>"; };
-		D73125D6228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MutableArrayHook.m"; sourceTree = "<group>"; };
-		D73125D7228E8E6D00A8E3BB /* NSObject+KVOCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVOCrash.h"; sourceTree = "<group>"; };
-		D73125D8228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DictionaryHook.h"; sourceTree = "<group>"; };
-		D73125D9228E8E6D00A8E3BB /* NSArray+ArrayHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ArrayHook.h"; sourceTree = "<group>"; };
-		D73125DA228E8E6D00A8E3BB /* NSObject+ZombieHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZombieHook.h"; sourceTree = "<group>"; };
-		D73125DB228E8E6D00A8E3BB /* NSObject+KVOCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOCrash.m"; sourceTree = "<group>"; };
-		D73125EB228E8F3900A8E3BB /* GPExceptionProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPExceptionProxy.h; sourceTree = "<group>"; };
-		D73125EC228E8F3900A8E3BB /* GPException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPException.m; sourceTree = "<group>"; };
-		D73125ED228E8F3900A8E3BB /* GPExceptionMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPExceptionMacros.h; sourceTree = "<group>"; };
-		D73125EE228E8F3900A8E3BB /* GPException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPException.h; sourceTree = "<group>"; };
-		D73125EF228E8F3900A8E3BB /* GPExceptionProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPExceptionProxy.m; sourceTree = "<group>"; };
-		D73125F6228F990700A8E3BB /* NSObject+DeallocBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DeallocBlock.h"; sourceTree = "<group>"; };
-		D73125F7228F990700A8E3BB /* NSObject+DeallocBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DeallocBlock.m"; sourceTree = "<group>"; };
-		D731261D228F998400A8E3BB /* NSMutableSet+MutableSetHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+MutableSetHook.h"; sourceTree = "<group>"; };
-		D731261E228F998400A8E3BB /* NSTimer+CleanTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+CleanTimer.h"; sourceTree = "<group>"; };
-		D731261F228F998400A8E3BB /* NSNotificationCenter+ClearNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+ClearNotification.h"; sourceTree = "<group>"; };
-		D7312620228F998400A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+MutableAttributedStringHook.h"; sourceTree = "<group>"; };
-		D7312621228F998400A8E3BB /* NSString+StringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringHook.h"; sourceTree = "<group>"; };
-		D7312622228F998400A8E3BB /* NSString+StringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringHook.m"; sourceTree = "<group>"; };
-		D7312623228F998400A8E3BB /* NSMutableSet+MutableSetHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+MutableSetHook.m"; sourceTree = "<group>"; };
-		D7312624228F998400A8E3BB /* NSAttributedString+AttributedStringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+AttributedStringHook.h"; sourceTree = "<group>"; };
-		D7312625228F998400A8E3BB /* NSNotificationCenter+ClearNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+ClearNotification.m"; sourceTree = "<group>"; };
-		D7312626228F998500A8E3BB /* NSTimer+CleanTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CleanTimer.m"; sourceTree = "<group>"; };
-		D7312627228F998500A8E3BB /* NSSet+SetHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+SetHook.m"; sourceTree = "<group>"; };
-		D7312628228F998500A8E3BB /* NSSet+SetHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+SetHook.h"; sourceTree = "<group>"; };
-		D7312629228F998500A8E3BB /* NSAttributedString+AttributedStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+AttributedStringHook.m"; sourceTree = "<group>"; };
-		D731262A228F998500A8E3BB /* NSMutableString+MutableStringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+MutableStringHook.h"; sourceTree = "<group>"; };
-		D731262B228F998500A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+MutableAttributedStringHook.m"; sourceTree = "<group>"; };
-		D731262C228F998500A8E3BB /* NSMutableString+MutableStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+MutableStringHook.m"; sourceTree = "<group>"; };
-		EF9C9A67DB405FB8C144A0FF /* Pods-GPFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPFoundation.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPFoundation/Pods-GPFoundation.debug.xcconfig"; sourceTree = "<group>"; };
+		23D5CD82660F582509183C21 /* libPods-GPFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPFoundation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A66C3DEAF7F45ECCF4B1BC2 /* Pods-GPFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPFoundation.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPFoundation/Pods-GPFoundation.debug.xcconfig"; sourceTree = "<group>"; };
+		C6595527843B047A6515B643 /* Pods-GPFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPFoundation.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GPFoundation/Pods-GPFoundation.release.xcconfig"; sourceTree = "<group>"; };
+		D73126C3228FBF5500A8E3BB /* GPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73126C6228FBF5500A8E3BB /* GPFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPFoundation.h; sourceTree = "<group>"; };
+		D73126C7228FBF5500A8E3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D73126FB228FBFA500A8E3BB /* NSData+GPGZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GPGZIP.m"; sourceTree = "<group>"; };
+		D73126FC228FBFA500A8E3BB /* NSData+GPGZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GPGZIP.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D7312588228E855F00A8E3BB /* Frameworks */ = {
+		D73126C0228FBF5500A8E3BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBF68231D0CF1B05124521C4 /* libPods-GPFoundation.a in Frameworks */,
+				D04794ADEE3FE0D42A3FCDDE /* libPods-GPFoundation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23003F6797EEB2C54DD73578 /* Frameworks */ = {
+		31C5323539E42A780717C7C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D69237F25BA333ED8CE833AE /* libPods-GPFoundation.a */,
+				23D5CD82660F582509183C21 /* libPods-GPFoundation.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3EBB0BA2378F678C13182226 /* Pods */ = {
+		4D09A6B3813144DC9F943EF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EF9C9A67DB405FB8C144A0FF /* Pods-GPFoundation.debug.xcconfig */,
-				C065A561FB90E25A0FE58BE3 /* Pods-GPFoundation.release.xcconfig */,
+				9A66C3DEAF7F45ECCF4B1BC2 /* Pods-GPFoundation.debug.xcconfig */,
+				C6595527843B047A6515B643 /* Pods-GPFoundation.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D7312581228E855F00A8E3BB = {
+		D73126B9228FBF5500A8E3BB = {
 			isa = PBXGroup;
 			children = (
-				D731258D228E855F00A8E3BB /* GPFoundation */,
-				D731258C228E855F00A8E3BB /* Products */,
-				3EBB0BA2378F678C13182226 /* Pods */,
-				23003F6797EEB2C54DD73578 /* Frameworks */,
+				D73126C5228FBF5500A8E3BB /* GPFoundation */,
+				D73126C4228FBF5500A8E3BB /* Products */,
+				4D09A6B3813144DC9F943EF8 /* Pods */,
+				31C5323539E42A780717C7C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		D731258C228E855F00A8E3BB /* Products */ = {
+		D73126C4228FBF5500A8E3BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D731258B228E855F00A8E3BB /* GPFoundation.framework */,
+				D73126C3228FBF5500A8E3BB /* GPFoundation.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D731258D228E855F00A8E3BB /* GPFoundation */ = {
+		D73126C5228FBF5500A8E3BB /* GPFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				D731258E228E855F00A8E3BB /* GPFoundation.h */,
-				D731258F228E855F00A8E3BB /* Info.plist */,
-				D7312597228E867500A8E3BB /* Base */,
-				D7312596228E866E00A8E3BB /* Exception */,
+				D73126C6228FBF5500A8E3BB /* GPFoundation.h */,
+				D73126C7228FBF5500A8E3BB /* Info.plist */,
+				D73126F9228FBFA500A8E3BB /* Base */,
 			);
 			path = GPFoundation;
 			sourceTree = "<group>";
 		};
-		D7312596228E866E00A8E3BB /* Exception */ = {
+		D73126F9228FBFA500A8E3BB /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				D73125EA228E8F3900A8E3BB /* Main */,
-				D731259D228E8B4E00A8E3BB /* Swizzle */,
-				D73125FA228F996700A8E3BB /* ARC */,
-				D73125B1228E8E5E00A8E3BB /* MRC */,
-				D73125F5228F990700A8E3BB /* DeallocBlock */,
-			);
-			path = Exception;
-			sourceTree = "<group>";
-		};
-		D7312597228E867500A8E3BB /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				D7312598228E86A500A8E3BB /* NSData */,
+				D73126FA228FBFA500A8E3BB /* NSData */,
 			);
 			path = Base;
 			sourceTree = "<group>";
 		};
-		D7312598228E86A500A8E3BB /* NSData */ = {
+		D73126FA228FBFA500A8E3BB /* NSData */ = {
 			isa = PBXGroup;
 			children = (
-				D731259A228E86A500A8E3BB /* NSData+GPGZIP.h */,
-				D7312599228E86A500A8E3BB /* NSData+GPGZIP.m */,
+				D73126FC228FBFA500A8E3BB /* NSData+GPGZIP.h */,
+				D73126FB228FBFA500A8E3BB /* NSData+GPGZIP.m */,
 			);
 			path = NSData;
-			sourceTree = "<group>";
-		};
-		D731259D228E8B4E00A8E3BB /* Swizzle */ = {
-			isa = PBXGroup;
-			children = (
-				D731259E228E8B4E00A8E3BB /* NSObject+SwizzleHook.h */,
-				D731259F228E8B4E00A8E3BB /* NSObject+SwizzleHook.m */,
-			);
-			path = Swizzle;
-			sourceTree = "<group>";
-		};
-		D73125B1228E8E5E00A8E3BB /* MRC */ = {
-			isa = PBXGroup;
-			children = (
-				D73125D9228E8E6D00A8E3BB /* NSArray+ArrayHook.h */,
-				D73125CF228E8E6C00A8E3BB /* NSArray+ArrayHook.m */,
-				D73125D8228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.h */,
-				D73125D0228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.m */,
-				D73125D1228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.h */,
-				D73125D6228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.m */,
-				D73125D2228E8E6D00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.h */,
-				D73125CE228E8E6C00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.m */,
-				D73125D7228E8E6D00A8E3BB /* NSObject+KVOCrash.h */,
-				D73125DB228E8E6D00A8E3BB /* NSObject+KVOCrash.m */,
-				D73125D5228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.h */,
-				D73125D3228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.m */,
-				D73125DA228E8E6D00A8E3BB /* NSObject+ZombieHook.h */,
-				D73125D4228E8E6D00A8E3BB /* NSObject+ZombieHook.m */,
-			);
-			path = MRC;
-			sourceTree = "<group>";
-		};
-		D73125EA228E8F3900A8E3BB /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				D73125ED228E8F3900A8E3BB /* GPExceptionMacros.h */,
-				D73125EB228E8F3900A8E3BB /* GPExceptionProxy.h */,
-				D73125EF228E8F3900A8E3BB /* GPExceptionProxy.m */,
-				D73125EE228E8F3900A8E3BB /* GPException.h */,
-				D73125EC228E8F3900A8E3BB /* GPException.m */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		D73125F5228F990700A8E3BB /* DeallocBlock */ = {
-			isa = PBXGroup;
-			children = (
-				D73125F6228F990700A8E3BB /* NSObject+DeallocBlock.h */,
-				D73125F7228F990700A8E3BB /* NSObject+DeallocBlock.m */,
-			);
-			path = DeallocBlock;
-			sourceTree = "<group>";
-		};
-		D73125FA228F996700A8E3BB /* ARC */ = {
-			isa = PBXGroup;
-			children = (
-				D7312624228F998400A8E3BB /* NSAttributedString+AttributedStringHook.h */,
-				D7312629228F998500A8E3BB /* NSAttributedString+AttributedStringHook.m */,
-				D7312620228F998400A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h */,
-				D731262B228F998500A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m */,
-				D731261D228F998400A8E3BB /* NSMutableSet+MutableSetHook.h */,
-				D7312623228F998400A8E3BB /* NSMutableSet+MutableSetHook.m */,
-				D731262A228F998500A8E3BB /* NSMutableString+MutableStringHook.h */,
-				D731262C228F998500A8E3BB /* NSMutableString+MutableStringHook.m */,
-				D731261F228F998400A8E3BB /* NSNotificationCenter+ClearNotification.h */,
-				D7312625228F998400A8E3BB /* NSNotificationCenter+ClearNotification.m */,
-				D7312628228F998500A8E3BB /* NSSet+SetHook.h */,
-				D7312627228F998500A8E3BB /* NSSet+SetHook.m */,
-				D7312621228F998400A8E3BB /* NSString+StringHook.h */,
-				D7312622228F998400A8E3BB /* NSString+StringHook.m */,
-				D731261E228F998400A8E3BB /* NSTimer+CleanTimer.h */,
-				D7312626228F998500A8E3BB /* NSTimer+CleanTimer.m */,
-			);
-			path = ARC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D7312586228E855F00A8E3BB /* Headers */ = {
+		D73126BE228FBF5500A8E3BB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D731259C228E86A500A8E3BB /* NSData+GPGZIP.h in Headers */,
-				D7312590228E855F00A8E3BB /* GPFoundation.h in Headers */,
-				D73125E3228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.h in Headers */,
-				D73125F8228F990700A8E3BB /* NSObject+DeallocBlock.h in Headers */,
-				D73125DF228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.h in Headers */,
-				D73125E6228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.h in Headers */,
-				D73125F0228E8F3A00A8E3BB /* GPExceptionProxy.h in Headers */,
-				D73125E7228E8E6D00A8E3BB /* NSArray+ArrayHook.h in Headers */,
-				D73125E8228E8E6D00A8E3BB /* NSObject+ZombieHook.h in Headers */,
-				D731263A228F998500A8E3BB /* NSMutableString+MutableStringHook.h in Headers */,
-				D7312638228F998500A8E3BB /* NSSet+SetHook.h in Headers */,
-				D731262F228F998500A8E3BB /* NSNotificationCenter+ClearNotification.h in Headers */,
-				D7312631228F998500A8E3BB /* NSString+StringHook.h in Headers */,
-				D73125F2228E8F3A00A8E3BB /* GPExceptionMacros.h in Headers */,
-				D731262E228F998500A8E3BB /* NSTimer+CleanTimer.h in Headers */,
-				D73125E0228E8E6D00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.h in Headers */,
-				D73125F3228E8F3A00A8E3BB /* GPException.h in Headers */,
-				D73125E5228E8E6D00A8E3BB /* NSObject+KVOCrash.h in Headers */,
-				D7312630228F998500A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h in Headers */,
-				D7312634228F998500A8E3BB /* NSAttributedString+AttributedStringHook.h in Headers */,
-				D731262D228F998500A8E3BB /* NSMutableSet+MutableSetHook.h in Headers */,
-				D73125A0228E8B4E00A8E3BB /* NSObject+SwizzleHook.h in Headers */,
+				D73126C8228FBF5500A8E3BB /* GPFoundation.h in Headers */,
+				D7312723228FBFA500A8E3BB /* NSData+GPGZIP.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D731258A228E855F00A8E3BB /* GPFoundation */ = {
+		D73126C2228FBF5500A8E3BB /* GPFoundation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7312593228E855F00A8E3BB /* Build configuration list for PBXNativeTarget "GPFoundation" */;
+			buildConfigurationList = D73126CB228FBF5600A8E3BB /* Build configuration list for PBXNativeTarget "GPFoundation" */;
 			buildPhases = (
-				C400527A816DEDF859A120D0 /* [CP] Check Pods Manifest.lock */,
-				D7312586228E855F00A8E3BB /* Headers */,
-				D7312587228E855F00A8E3BB /* Sources */,
-				D7312588228E855F00A8E3BB /* Frameworks */,
-				D7312589228E855F00A8E3BB /* Resources */,
+				7D04CF7CABFBDC192EA07AFC /* [CP] Check Pods Manifest.lock */,
+				D73126BE228FBF5500A8E3BB /* Headers */,
+				D73126BF228FBF5500A8E3BB /* Sources */,
+				D73126C0228FBF5500A8E3BB /* Frameworks */,
+				D73126C1228FBF5500A8E3BB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -314,42 +129,42 @@
 			);
 			name = GPFoundation;
 			productName = GPFoundation;
-			productReference = D731258B228E855F00A8E3BB /* GPFoundation.framework */;
+			productReference = D73126C3228FBF5500A8E3BB /* GPFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D7312582228E855F00A8E3BB /* Project object */ = {
+		D73126BA228FBF5500A8E3BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Liyanwei;
 				TargetAttributes = {
-					D731258A228E855F00A8E3BB = {
+					D73126C2228FBF5500A8E3BB = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = D7312585228E855F00A8E3BB /* Build configuration list for PBXProject "GPFoundation" */;
+			buildConfigurationList = D73126BD228FBF5500A8E3BB /* Build configuration list for PBXProject "GPFoundation" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = D7312581228E855F00A8E3BB;
-			productRefGroup = D731258C228E855F00A8E3BB /* Products */;
+			mainGroup = D73126B9228FBF5500A8E3BB;
+			productRefGroup = D73126C4228FBF5500A8E3BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D731258A228E855F00A8E3BB /* GPFoundation */,
+				D73126C2228FBF5500A8E3BB /* GPFoundation */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D7312589228E855F00A8E3BB /* Resources */ = {
+		D73126C1228FBF5500A8E3BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,7 +174,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C400527A816DEDF859A120D0 /* [CP] Check Pods Manifest.lock */ = {
+		7D04CF7CABFBDC192EA07AFC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,37 +195,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D7312587228E855F00A8E3BB /* Sources */ = {
+		D73126BF228FBF5500A8E3BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7312636228F998500A8E3BB /* NSTimer+CleanTimer.m in Sources */,
-				D73125F9228F990700A8E3BB /* NSObject+DeallocBlock.m in Sources */,
-				D7312633228F998500A8E3BB /* NSMutableSet+MutableSetHook.m in Sources */,
-				D73125E9228E8E6D00A8E3BB /* NSObject+KVOCrash.m in Sources */,
-				D73125E2228E8E6D00A8E3BB /* NSObject+ZombieHook.m in Sources */,
-				D731263C228F998500A8E3BB /* NSMutableString+MutableStringHook.m in Sources */,
-				D73125E4228E8E6D00A8E3BB /* NSMutableArray+MutableArrayHook.m in Sources */,
-				D73125F4228E8F3A00A8E3BB /* GPExceptionProxy.m in Sources */,
-				D731259B228E86A500A8E3BB /* NSData+GPGZIP.m in Sources */,
-				D73125DD228E8E6D00A8E3BB /* NSArray+ArrayHook.m in Sources */,
-				D73125DC228E8E6D00A8E3BB /* NSMutableDictionary+MutableDictionaryHook.m in Sources */,
-				D7312632228F998500A8E3BB /* NSString+StringHook.m in Sources */,
-				D7312639228F998500A8E3BB /* NSAttributedString+AttributedStringHook.m in Sources */,
-				D7312637228F998500A8E3BB /* NSSet+SetHook.m in Sources */,
-				D731263B228F998500A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */,
-				D73125A1228E8B4E00A8E3BB /* NSObject+SwizzleHook.m in Sources */,
-				D73125E1228E8E6D00A8E3BB /* NSObject+UnrecognizedSelectorHook.m in Sources */,
-				D7312635228F998500A8E3BB /* NSNotificationCenter+ClearNotification.m in Sources */,
-				D73125DE228E8E6D00A8E3BB /* NSDictionary+DictionaryHook.m in Sources */,
-				D73125F1228E8F3A00A8E3BB /* GPException.m in Sources */,
+				D7312722228FBFA500A8E3BB /* NSData+GPGZIP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D7312591228E855F00A8E3BB /* Debug */ = {
+		D73126C9228FBF5600A8E3BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -472,7 +268,7 @@
 			};
 			name = Debug;
 		};
-		D7312592228E855F00A8E3BB /* Release */ = {
+		D73126CA228FBF5600A8E3BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -528,9 +324,9 @@
 			};
 			name = Release;
 		};
-		D7312594228E855F00A8E3BB /* Debug */ = {
+		D73126CC228FBF5600A8E3BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF9C9A67DB405FB8C144A0FF /* Pods-GPFoundation.debug.xcconfig */;
+			baseConfigurationReference = 9A66C3DEAF7F45ECCF4B1BC2 /* Pods-GPFoundation.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +342,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gp.GPFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -553,9 +350,9 @@
 			};
 			name = Debug;
 		};
-		D7312595228E855F00A8E3BB /* Release */ = {
+		D73126CD228FBF5600A8E3BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C065A561FB90E25A0FE58BE3 /* Pods-GPFoundation.release.xcconfig */;
+			baseConfigurationReference = C6595527843B047A6515B643 /* Pods-GPFoundation.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -571,6 +368,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gp.GPFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -581,25 +379,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7312585228E855F00A8E3BB /* Build configuration list for PBXProject "GPFoundation" */ = {
+		D73126BD228FBF5500A8E3BB /* Build configuration list for PBXProject "GPFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D7312591228E855F00A8E3BB /* Debug */,
-				D7312592228E855F00A8E3BB /* Release */,
+				D73126C9228FBF5600A8E3BB /* Debug */,
+				D73126CA228FBF5600A8E3BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7312593228E855F00A8E3BB /* Build configuration list for PBXNativeTarget "GPFoundation" */ = {
+		D73126CB228FBF5600A8E3BB /* Build configuration list for PBXNativeTarget "GPFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D7312594228E855F00A8E3BB /* Debug */,
-				D7312595228E855F00A8E3BB /* Release */,
+				D73126CC228FBF5600A8E3BB /* Debug */,
+				D73126CD228FBF5600A8E3BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D7312582228E855F00A8E3BB /* Project object */;
+	rootObject = D73126BA228FBF5500A8E3BB /* Project object */;
 }

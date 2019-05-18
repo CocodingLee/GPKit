@@ -10,6 +10,7 @@
 // base
 #import <GPUIKit/UIView+SafeArea.h>
 #import <GPUIKit/GPBaseButton.h>
+#import <GPUIKit/GPButton.h>
 
 #import <GPUIKit/UIButton+Expand.h>
 #import <GPUIKit/UIButton+ImagePosition.h>
