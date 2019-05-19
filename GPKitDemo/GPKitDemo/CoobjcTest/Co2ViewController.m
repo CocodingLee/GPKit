@@ -8,6 +8,16 @@
 
 #import "Co2ViewController.h"
 
+@interface ZombieArray : NSMutableArray
+@end
+
+@implementation ZombieArray
+@end
+
+static ZombieArray* array;
+
+/////////////////////////////////////////////////////////
+
 @interface Co2ViewController ()
 
 @end
@@ -45,7 +55,8 @@
 {
     self = [super init];
     if (self) {
-        
+        [GPException addZombieObjectArray:@[ZombieArray.class]];
+        array = [[ZombieArray alloc] init];
     }
     
     return self;
@@ -67,11 +78,31 @@
     }
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self createNavigationBar];
     [self setupNavigationBar];
+    
+    @autoreleasepool {
+        [array dealloc];
+    }
+    
+    {
+        GPButton* frameLossBtn = [GPButton buttonWithType:GPKitButtonTypeOrange];
+        frameLossBtn.frame = CGRectMake(0, 0, 150, 44);
+        [frameLossBtn setTitle:@"僵尸对象模拟" forState:UIControlStateNormal];
+        [frameLossBtn addTarget:self action:@selector(zombieAction) forControlEvents:UIControlEventTouchUpInside];
+        frameLossBtn.left = 15;
+        frameLossBtn.top = self.gp_navigationBar.height + 10;
+        
+        [self.view addSubview:frameLossBtn];
+    }
 }
 
-
+- (void) zombieAction
+{
+    [array test];
+    //[array addObject:@"a"];
+}
 @end

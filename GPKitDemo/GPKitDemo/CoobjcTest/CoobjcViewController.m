@@ -94,7 +94,6 @@
         
         [self.view addSubview:crashBtn];
     }
-    
 }
 
 - (void) frameLossAction
@@ -112,6 +111,7 @@
     [self testSimpleDictionary];
     [self testUnrecognizedSelector];
     [self testNull];
+    [self testZombie];
 }
 
 - (void) testCPtr
@@ -146,4 +146,13 @@
     NSLog(@"Str length:%ld",str.length);
 }
 
+- (void) testZombie
+{
+    __block __weak CoobjcViewController* vc = nil;
+    @autoreleasepool {
+        vc = [CoobjcViewController new];
+    }
+    
+    [vc.navigationController pushViewController:nil animated:YES];
+}
 @end

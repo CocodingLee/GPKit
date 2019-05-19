@@ -45,7 +45,7 @@
 		D79B2E7A22857DC300D82858 /* CYLMainRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E6B22857DC300D82858 /* CYLMainRootViewController.m */; };
 		D79B2E7B22857DC300D82858 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E6E22857DC300D82858 /* MainTabBarController.m */; };
 		D7A863F5228A61D800E35569 /* CoobjcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863F4228A61D800E35569 /* CoobjcViewController.m */; };
-		D7A86431228A91B700E35569 /* Co2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86430228A91B700E35569 /* Co2ViewController.m */; };
+		D7A86431228A91B700E35569 /* Co2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86430228A91B700E35569 /* Co2ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D7A86434228A921C00E35569 /* GPRouteDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A86433228A921C00E35569 /* GPRouteDomain.m */; };
 		D7E9A2972272FC8900CAEE53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A2962272FC8900CAEE53 /* AppDelegate.m */; };
 		D7E9A29A2272FC8900CAEE53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A2992272FC8900CAEE53 /* ViewController.m */; };
