@@ -13,6 +13,9 @@
 #import <GPPerformance/GPCallStackModel.h>
 #import <GPPerformance/GPCpuMonitor.h>
 
+// 数据库
+#import <GPPerformance/GPLagDB.h>
+
 // Crash 监控
 #import <GPPerformance/GPCrashInspector.h>
 #import <GPPerformance/GPOCExceptionModel.h>

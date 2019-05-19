@@ -1,25 +1,22 @@
 //
-//  GPInspectView.m
+//  GPExceptionView.m
 //  GPPerformance
 //
-//  Created by Liyanwei on 2019/5/15.
+//  Created by Liyanwei on 2019/5/19.
 //  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import "GPInspectFrameLossView.h"
+#import "GPExceptionView.h"
+
 #import "GPLagDB.h"
-#import "GPCallStackModel.h"
+#import "GPOCExceptionModel.h"
 #import "GPFrameLossCell.h"
 
 #import <FrameAccessor/FrameAccessor.h>
 #import <MJRefresh/MJRefresh.h>
-
 #import <coobjc/coobjc.h>
-#import <fmdb/FMDB.h>
-#import <libextobjc/EXTScope.h>
 
-
-@interface GPInspectFrameLossView () < UITableViewDataSource, UITableViewDelegate>
+@interface GPExceptionView () < UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, copy) void(^scrollCallback)(UIScrollView *scrollView);
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) GPSegInfo* segmentInfo;
@@ -31,7 +28,7 @@
 @property (nonatomic, strong) NSMutableArray *frameData;
 @end
 
-@implementation GPInspectFrameLossView
+@implementation GPExceptionView
 
 - (instancetype)initWithSegmentInfo:(GPSegInfo *)segmentInfo
                      viewController:(UIViewController*)viewController
@@ -75,7 +72,7 @@
     self.tableView.frame = self.bounds;
     
     UIEdgeInsets insets = gpSafeArea();
-    self.tableView.contentInsetBottom = insets.bottom;    
+    self.tableView.contentInsetBottom = insets.bottom;
 }
 
 - (void)listViewDidScrollCallback:(void (^)(UIScrollView *))callback
@@ -101,7 +98,7 @@
 {
     // 加载数据
     co_launch(^{
-        NSMutableArray* frameData = await([[GPLagDB shareInstance] selectStackWithPage:self.page]);
+        NSMutableArray* frameData = await([[GPLagDB shareInstance] selectOCExceptionWithPage:self.page]);
         
         NSError* err = co_getError();
         if (!err && frameData.count > 0) {

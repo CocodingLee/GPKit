@@ -7,9 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <coobjc/coobjc.h>
-#import <fmdb/FMDB.h>
-#import <libextobjc/EXTScope.h>
+
 
 #import "GPCallTraceTimeCostModel.h"
 #import "GPCallStackModel.h"
@@ -23,7 +21,7 @@
 #define CPUMONITORRATE 20
 #define STUCKMONITORRATE 88
 
-
+@class COPromise;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GPLagDB : NSObject
@@ -32,15 +30,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*------------卡顿和CPU超标堆栈---------------*/
 
-- (COPromise *)increaseWithStackModel:(GPCallStackModel *)model CO_ASYNC;
-- (COPromise *)selectStackWithPage:(NSUInteger)page CO_ASYNC;
+- (COPromise *)increaseWithStackModel:(GPCallStackModel *)model;
+- (COPromise *)selectStackWithPage:(NSUInteger)page;
 - (void)clearStackData;
 
 /*------------ClsCall方法调用频次-------------*/
 //添加记录s
 - (void)addWithClsCallModel:(GPCallTraceTimeCostModel *)model;
 //分页查询
-- (COPromise *)selectClsCallWithPage:(NSUInteger)page CO_ASYNC;
+- (COPromise *)selectClsCallWithPage:(NSUInteger)page;
 //清除数据
 - (void)clearClsCallData;
 
@@ -48,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 //添加记录s
 - (COPromise *)addWithOCExceptionModel:(GPOCExceptionModel *)model;
 //分页查询
-- (COPromise *)selectOCExceptionWithPage:(NSUInteger)page CO_ASYNC;
+- (COPromise *)selectOCExceptionWithPage:(NSUInteger)page;
 //清除数据
 - (void)clearOCExceptionData;
 @end

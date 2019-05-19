@@ -7,6 +7,9 @@
 //
 
 #import "GPLagDB.h"
+#import <coobjc/coobjc.h>
+#import <fmdb/FMDB.h>
+#import <libextobjc/EXTScope.h>
 
 @interface GPLagDB ()
 @property (nonatomic, copy) NSString *clsCallDBPath;
@@ -61,12 +64,12 @@
                  info: 添加信息
                  insertdate: 日期
                  */
-                NSString *createExceptionSql = @"create table ocexception (sid INTEGER PRIMARY KEY AUTOINCREMENT  NOT NULL, content text , type integer, info text , insertdate double)";
+                NSString *createExceptionSql = @"create table ocexception (oid INTEGER PRIMARY KEY AUTOINCREMENT  NOT NULL, content text , type integer, info text , insertdate double)";
                 [db executeUpdate:createExceptionSql];
-                
-                
             }
         }
+        
+        // 数据库操作队列
         _dbQueue = [FMDatabaseQueue databaseQueueWithPath:_clsCallDBPath];
     }
     return self;
@@ -258,7 +261,7 @@
         
         [self.dbQueue inDatabase:^(FMDatabase *db){
             if ([db open]) {
-                [db executeUpdate:@"insert into ocexception (content , type , info , insertdate) values (?, ?, ? , ?)",model.callStackStr , model.exceptionType , model.exceptionInfo, [NSDate date]];
+                [db executeUpdate:@"insert into ocexception (content , type , info , insertdate) values (?, ?, ? , ?)",model.callStackStr , @(model.exceptionType) , model.exceptionInfo, [NSDate date]];
                 [db close];
                 
                 fullfill(@(YES));
@@ -279,12 +282,12 @@
         @strongify(self);
         FMDatabase *db = [FMDatabase databaseWithPath:self.clsCallDBPath];
         if ([db open]) {
-            FMResultSet *rs = [db executeQuery:@"select * from ocexception where lastcall=? order by frequency desc limit ?, 50",@1, @(page * 50)];
+            FMResultSet *rs = [db executeQuery:@"select * from ocexception "];
             NSUInteger count = 0;
             NSMutableArray *arr = [NSMutableArray array];
             
             while ([rs next]) {
-                GPCallTraceTimeCostModel *model = [self clsCallModelFromResultSet:rs];
+                GPOCExceptionModel *model = [self ocExceptionModelFromResultSet:rs];
                 [arr addObject:model];
                 count ++;
             }

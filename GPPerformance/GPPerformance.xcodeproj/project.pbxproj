@@ -10,6 +10,8 @@
 		C4B695AC94AE89EC47253F58 /* libPods-GPPerformance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 410E3471DBCFB32381CB64DF /* libPods-GPPerformance.a */; };
 		D73127A82290FDAC00A8E3BB /* GPOCExceptionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D73127A62290FDAC00A8E3BB /* GPOCExceptionModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D73127A92290FDAC00A8E3BB /* GPOCExceptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127A72290FDAC00A8E3BB /* GPOCExceptionModel.m */; };
+		D73127AC2291328E00A8E3BB /* GPExceptionView.h in Headers */ = {isa = PBXBuildFile; fileRef = D73127AA2291328E00A8E3BB /* GPExceptionView.h */; };
+		D73127AD2291328E00A8E3BB /* GPExceptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127AB2291328E00A8E3BB /* GPExceptionView.m */; };
 		D79B2E2522855B9D00D82858 /* GPPerformance.h in Headers */ = {isa = PBXBuildFile; fileRef = D79B2E2322855B9D00D82858 /* GPPerformance.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A863D82289622200E35569 /* GPLagMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A863D62289622200E35569 /* GPLagMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A863D92289622200E35569 /* GPLagMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A863D72289622200E35569 /* GPLagMonitor.m */; };
@@ -69,6 +71,8 @@
 		52274441AFF3147250D17D01 /* Pods-GPPerformance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPPerformance.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GPPerformance/Pods-GPPerformance.release.xcconfig"; sourceTree = "<group>"; };
 		D73127A62290FDAC00A8E3BB /* GPOCExceptionModel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; fileEncoding = 4; path = GPOCExceptionModel.h; sourceTree = "<group>"; };
 		D73127A72290FDAC00A8E3BB /* GPOCExceptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPOCExceptionModel.m; sourceTree = "<group>"; };
+		D73127AA2291328E00A8E3BB /* GPExceptionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPExceptionView.h; sourceTree = "<group>"; };
+		D73127AB2291328E00A8E3BB /* GPExceptionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPExceptionView.m; sourceTree = "<group>"; };
 		D79B2E2022855B9D00D82858 /* GPPerformance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPPerformance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79B2E2322855B9D00D82858 /* GPPerformance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPPerformance.h; sourceTree = "<group>"; };
 		D79B2E2422855B9D00D82858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -312,6 +316,8 @@
 				D7A86865228BE8DB00E35569 /* GPInspectFrameLossView.m */,
 				D7DBD0CA228D3985007F4B0C /* GPInspectCrashView.h */,
 				D7DBD0CB228D3985007F4B0C /* GPInspectCrashView.m */,
+				D73127AA2291328E00A8E3BB /* GPExceptionView.h */,
+				D73127AB2291328E00A8E3BB /* GPExceptionView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -358,6 +364,7 @@
 				D7A863E02289705000E35569 /* GPSystemKits.h in Headers */,
 				D7DBD0DF228D4176007F4B0C /* GPDebugRouteDomain.h in Headers */,
 				D73127A82290FDAC00A8E3BB /* GPOCExceptionModel.h in Headers */,
+				D73127AC2291328E00A8E3BB /* GPExceptionView.h in Headers */,
 				D7A863D82289622200E35569 /* GPLagMonitor.h in Headers */,
 				D7DBD0D4228D3CEA007F4B0C /* GPInspectStackView.h in Headers */,
 				D7A863E722899BB800E35569 /* GPCpuMonitor.h in Headers */,
@@ -497,6 +504,7 @@
 				D7A863D92289622200E35569 /* GPLagMonitor.m in Sources */,
 				D7A863E42289724100E35569 /* GPCallStackModel.m in Sources */,
 				D73127A92290FDAC00A8E3BB /* GPOCExceptionModel.m in Sources */,
+				D73127AD2291328E00A8E3BB /* GPExceptionView.m in Sources */,
 				D7A8686F228BFFED00E35569 /* GPFrameLossCell.m in Sources */,
 				D7A863DE22896A1000E35569 /* GPCallStack.m in Sources */,
 				D7A863ED22899D8100E35569 /* GPLagDB.m in Sources */,

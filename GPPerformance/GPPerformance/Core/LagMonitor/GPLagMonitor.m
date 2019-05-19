@@ -16,6 +16,11 @@
 // DB
 #import "GPLagDB.h"
 
+#import <coobjc/coobjc.h>
+#import <fmdb/FMDB.h>
+#import <libextobjc/EXTScope.h>
+
+
 @interface GPLagMonitor ()
 {
 @private

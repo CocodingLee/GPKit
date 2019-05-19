@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, GPSegType) {
     GPSegType_None,
     GPSegType_FrameDropping,
-    GPSegType_ExecutionTime
+    GPSegType_ExecutionTime,
+    GPSegType_Exception
 };
 
 @interface GPSegInfo : NSObject

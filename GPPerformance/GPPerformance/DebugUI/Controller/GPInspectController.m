@@ -13,6 +13,7 @@
 #import "GPInspectFrameLossView.h"
 #import "GPInspectCrashView.h"
 #import "GPInspectStackView.h"
+#import "GPExceptionView.h"
 
 #import "GPSegInfo.h"
 #import "GPSettingsCell.h"
@@ -90,7 +91,12 @@ static CGFloat const HOME_LAB_HEADER_HEIGHT = 300;
     seg3.segmentType = GPSegType_ExecutionTime;
     seg3.cls = GPInspectCrashView.class;
     
-    self.segmentHeaderData = @[seg1 , seg2 , seg3];
+    GPSegInfo* seg4 = [[GPSegInfo alloc] init];
+    seg4.segmentTitle = @"Exception Hook";
+    seg4.segmentType = GPSegType_Exception;
+    seg4.cls = GPExceptionView.class;
+    
+    self.segmentHeaderData = @[seg1 , seg2 , seg3 , seg4];
     
     NSMutableArray* tmp = [[NSMutableArray alloc] init];
     NSMutableArray* titles = [[NSMutableArray alloc] init];

@@ -21,6 +21,10 @@
 #import <KSCrash/KSCrashReportFilterAppleFmt.h>
 
 #import <YYModel/YYModel.h>
+#import <coobjc/coobjc.h>
+#import <fmdb/FMDB.h>
+#import <libextobjc/EXTScope.h>
+
 /////////////////////////////////////////////////
 
 @interface GPCrashItem : NSObject

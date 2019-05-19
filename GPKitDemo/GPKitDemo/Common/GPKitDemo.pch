@@ -39,5 +39,7 @@
 #import <CYLTabBarController/CYLTabBarController.h>
 #import <libextobjc/EXTScope.h>
 #import <FrameAccessor/FrameAccessor.h>
+#import <coobjc/coobjc.h>
+#import <YYModel/YYModel.h>
 
 #endif /* GPKitDemo_pch */

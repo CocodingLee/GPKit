@@ -11,6 +11,11 @@
 #import "GPCallStackModel.h"
 #import "GPLagDB.h"
 
+#import <coobjc/coobjc.h>
+#import <fmdb/FMDB.h>
+#import <libextobjc/EXTScope.h>
+
+
 @interface GPCpuMonitor ()
 // 监控数据写入队列
 @property (nonatomic, strong) dispatch_queue_t monitorDataQueue;

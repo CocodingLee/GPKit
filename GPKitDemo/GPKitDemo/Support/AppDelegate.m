@@ -11,7 +11,10 @@
 #import "CYLMainRootViewController.h"
 
 @interface AppDelegate () <GPExceptionHandle>
-
+// 监控数据写入队列
+@property (nonatomic, strong) dispatch_queue_t monitorDataQueue;
+// 监控数据Actor
+@property (nonatomic, strong) COActor * monitorModelActor;
 @end
 
 @implementation AppDelegate
@@ -43,6 +46,26 @@
     
     [self.window makeKeyAndVisible];
     
+    _monitorDataQueue = dispatch_queue_create("com.gp.performance.exception.queue", NULL);
+    
+    //
+    // 数据写入 协程
+    //
+    _monitorModelActor = co_actor_onqueue(_monitorDataQueue, ^(COActorChan *channel) {
+        id cls = nil;
+        
+        for (COActorMessage *message in channel) {
+            cls = [message type];
+            
+            // DSReq 请求解析
+            if ([cls isKindOfClass:[GPOCExceptionModel class]]) {
+                id tmp = await([self writeToDB:cls]);
+                message.complete(tmp);
+            } else{
+                message.complete(nil);
+            }
+        }
+    });
     
     return YES;
 }
@@ -58,7 +81,7 @@
 - (void)handleCrashException:(NSString*)exceptionMessage
                    extraInfo:(nullable NSDictionary*)info
 {
-    NSLog(@"[CRASH] - %@ , %@" , exceptionMessage , info.description);
+    //NSLog(@"[CRASH] - %@ , %@" , exceptionMessage , info.description);
 }
 
 /**
@@ -73,6 +96,23 @@
                    extraInfo:(nullable NSDictionary*)info
 {
     NSLog(@"[CRASH] - %@ , %ld , %@" , exceptionMessage , (long)exceptionCategory , info.description);
+    // 触发获取主线程堆栈
+    co_launch_now(^{
+        GPOCExceptionModel* model = [[GPOCExceptionModel alloc] init];
+        model.callStackStr = exceptionMessage;
+        model.exceptionType = exceptionCategory;
+        model.exceptionInfo = [info yy_modelToJSONString];
+        
+        id tmp = await([self.monitorModelActor sendMessage:model]);
+        if (!co_getError()) {
+            NSLog(@"crash hook = %@" , tmp);
+        }
+    });
+}
+
+- (COPromise*) writeToDB:(GPOCExceptionModel*) model
+{
+    return [[GPLagDB shareInstance] addWithOCExceptionModel:model];
 }
 
 /**
