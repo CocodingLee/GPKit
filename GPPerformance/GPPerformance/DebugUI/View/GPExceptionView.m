@@ -11,11 +11,13 @@
 #import "GPLagDB.h"
 #import "GPOCExceptionModel.h"
 #import "GPFrameLossCell.h"
+#import "GPDebugRouteDomain.h"
 
 #import <GPFoundation/GPFoundation.h>
 #import <FrameAccessor/FrameAccessor.h>
 #import <MJRefresh/MJRefresh.h>
 #import <coobjc/coobjc.h>
+#import <GPRoute/GPRoute.h>
 
 @interface GPExceptionView () < UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, copy) void(^scrollCallback)(UIScrollView *scrollView);
@@ -160,5 +162,21 @@
     cell.tag = indexPath.row;
     
     return cell;
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    if (indexPath.row < self.exceptionData.count) {
+        GPOCExceptionModel* item =  self.exceptionData[indexPath.row];
+        [[GPRouteManager sharedInstance] openDomain:kRouteCrashDomain
+                                               path:kRouteCrashPath
+                                             params:@{@"p":item.callStackStr}
+                                         completion:^(NSDictionary * _Nonnull params, NSError * _Nonnull error) {
+                                             id vc = params[GPRouteTargetKey];
+                                             if ([vc isKindOfClass:UIViewController.class] && !error) {
+                                                 [self.vc.navigationController pushViewController:vc animated:YES];
+                                             }
+                                         }];
+    }
 }
 @end
