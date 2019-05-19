@@ -96,7 +96,7 @@ static CGFloat const HOME_LAB_HEADER_HEIGHT = 300;
     seg4.segmentType = GPSegType_Exception;
     seg4.cls = GPExceptionView.class;
     
-    self.segmentHeaderData = @[seg1 , seg2 , seg3 , seg4];
+    self.segmentHeaderData = @[seg1 , seg3 , seg4 , seg2];
     
     NSMutableArray* tmp = [[NSMutableArray alloc] init];
     NSMutableArray* titles = [[NSMutableArray alloc] init];

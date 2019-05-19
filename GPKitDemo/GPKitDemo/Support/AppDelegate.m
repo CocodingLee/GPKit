@@ -30,12 +30,13 @@
     [GPInspector setShouldHandleCrash:YES];
     // 配置UI样式
     [GPButton configButtonType];
-    // 监控crash
-    GPException.exceptionWhenTerminate = NO;
-    [GPException configExceptionCategory:GPExceptionGuardAll];
-    [GPException startGuardException];
-    [GPException registerExceptionHandle:self];
-    
+//    
+//    // 监控crash
+//    GPException.exceptionWhenTerminate = NO;
+//    [GPException configExceptionCategory:GPExceptionGuardAll];
+//    [GPException startGuardException];
+//    [GPException registerExceptionHandle:self];
+//    
     // UI 启动
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyWindow];

@@ -24,6 +24,7 @@
 #import <coobjc/coobjc.h>
 #import <fmdb/FMDB.h>
 #import <libextobjc/EXTScope.h>
+#import <GPFoundation/GPFoundation.h>
 
 /////////////////////////////////////////////////
 
@@ -170,8 +171,8 @@
             GPCrashItem* item = [[GPCrashItem alloc] init];
             if ([parsedJSON.allKeys containsObject:@"report"]) {
                 item = [GPCrashItem yy_modelWithJSON:parsedJSON[@"report"]];
-                NSDate* now = [self string2Date:item.timestamp];
-                item.timestamp = [self date2String:now];
+                NSDate* now = [NSTimer string2Date:item.timestamp];
+                item.timestamp = [NSTimer date2String:now];
             }
             
             NSString* content = await([self getCrashDetails:parsedJSON]);
@@ -244,31 +245,6 @@
     return cell;
 }
 
-- (NSDate *) string2Date:(NSString *)dateStr
-{
-    NSDateFormatter *dateFormatter=[[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
-    NSDate *date = [dateFormatter dateFromString:dateStr];
-    
-    // 直接初始化的时间, 也是当前时间
-    NSTimeZone *zone = [NSTimeZone systemTimeZone];
-    NSTimeInterval interval = [zone secondsFromGMTForDate:date];
-    NSDate *current = [date dateByAddingTimeInterval:interval];
-    
-    return current;
-}
-
-- (NSString*) date2String:(NSDate*) date
-{
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-    
-    // NSDate转字符串, 我们需要注意的是因为时区的问题,
-    // 会快八个小时, 所以我需要设置成标准时间才行 
-    [formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
-    NSString *str = [formatter stringFromDate:date];
-    return str;
-}
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {

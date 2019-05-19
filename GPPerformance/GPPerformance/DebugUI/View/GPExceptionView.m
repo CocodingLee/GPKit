@@ -12,6 +12,7 @@
 #import "GPOCExceptionModel.h"
 #import "GPFrameLossCell.h"
 
+#import <GPFoundation/GPFoundation.h>
 #import <FrameAccessor/FrameAccessor.h>
 #import <MJRefresh/MJRefresh.h>
 #import <coobjc/coobjc.h>
@@ -25,7 +26,7 @@
 
 // 业务数据
 @property (nonatomic, assign) NSUInteger page;
-@property (nonatomic, strong) NSMutableArray *frameData;
+@property (nonatomic, strong) NSMutableArray *exceptionData;
 @end
 
 @implementation GPExceptionView
@@ -40,7 +41,7 @@
         
         // 从第0页开始查看卡顿数据
         self.page = 0;
-        self.frameData = @[].mutableCopy;
+        self.exceptionData = @[].mutableCopy;
         
         UITableView *tableView = [[GPBaseTableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
         tableView.delegate = self;
@@ -103,7 +104,7 @@
         NSError* err = co_getError();
         if (!err && frameData.count > 0) {
             // 显示数据
-            [self.frameData addObjectsFromArray:frameData];
+            [self.exceptionData addObjectsFromArray:frameData];
             [self.tableView reloadData];
             
             // 加载下一页
@@ -130,26 +131,33 @@
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
-    return self.frameData.count;
+    return self.exceptionData.count;
 }
 
 - (CGFloat)     tableView:(UITableView *)tableView
   heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 300;
+    return 50;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* kFlag = @"GPFrameLossCell";
-    GPFrameLossCell *cell = [tableView dequeueReusableCellWithIdentifier:kFlag];
+    static NSString* kFlag = @"GPExceptionCell";
+    
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:kFlag];
     if (!cell) {
-        cell = [[GPFrameLossCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kFlag];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kFlag];
+        cell.backgroundColor = [UIColor clearColor];
+        cell.textLabel.textColor = [UIColor orangeColor];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    GPCallStackModel *model = self.frameData[indexPath.row];
-    [cell updateWithModel:model];
+    GPOCExceptionModel* item = self.exceptionData[indexPath.row];
+    NSDate* d = [NSDate dateWithTimeIntervalSinceReferenceDate:item.dateInterval];
+    cell.textLabel.text = [NSTimer date2String:d];
+    cell.detailTextLabel.text = @(item.exceptionType).stringValue;
+    cell.tag = indexPath.row;
     
     return cell;
 }

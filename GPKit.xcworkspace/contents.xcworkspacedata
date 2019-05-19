@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:GPKitDemo/GPKitDemo.xcodeproj">
+      location = "group:GPFoundation/GPFoundation.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:GPFoundation/GPFoundation.xcodeproj">
+      location = "group:GPKitDemo/GPKitDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:GPPerformance/GPPerformance.xcodeproj">

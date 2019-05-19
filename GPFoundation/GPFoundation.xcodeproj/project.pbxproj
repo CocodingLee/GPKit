@@ -11,6 +11,8 @@
 		D73126C8228FBF5500A8E3BB /* GPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = D73126C6228FBF5500A8E3BB /* GPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7312722228FBFA500A8E3BB /* NSData+GPGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = D73126FB228FBFA500A8E3BB /* NSData+GPGZIP.m */; };
 		D7312723228FBFA500A8E3BB /* NSData+GPGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = D73126FC228FBFA500A8E3BB /* NSData+GPGZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D73127B22291437500A8E3BB /* NSTimer+Convert.h in Headers */ = {isa = PBXBuildFile; fileRef = D73127B02291437500A8E3BB /* NSTimer+Convert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D73127B32291437500A8E3BB /* NSTimer+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127B12291437500A8E3BB /* NSTimer+Convert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D73126C7228FBF5500A8E3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D73126FB228FBFA500A8E3BB /* NSData+GPGZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GPGZIP.m"; sourceTree = "<group>"; };
 		D73126FC228FBFA500A8E3BB /* NSData+GPGZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GPGZIP.h"; sourceTree = "<group>"; };
+		D73127B02291437500A8E3BB /* NSTimer+Convert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Convert.h"; sourceTree = "<group>"; };
+		D73127B12291437500A8E3BB /* NSTimer+Convert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Convert.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		D73126F9228FBFA500A8E3BB /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D73127AF2291434B00A8E3BB /* NSTimer */,
 				D73126FA228FBFA500A8E3BB /* NSData */,
 			);
 			path = Base;
@@ -98,6 +103,15 @@
 			path = NSData;
 			sourceTree = "<group>";
 		};
+		D73127AF2291434B00A8E3BB /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D73127B02291437500A8E3BB /* NSTimer+Convert.h */,
+				D73127B12291437500A8E3BB /* NSTimer+Convert.m */,
+			);
+			path = NSTimer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -107,6 +121,7 @@
 			files = (
 				D73126C8228FBF5500A8E3BB /* GPFoundation.h in Headers */,
 				D7312723228FBFA500A8E3BB /* NSData+GPGZIP.h in Headers */,
+				D73127B22291437500A8E3BB /* NSTimer+Convert.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D73127B32291437500A8E3BB /* NSTimer+Convert.m in Sources */,
 				D7312722228FBFA500A8E3BB /* NSData+GPGZIP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
