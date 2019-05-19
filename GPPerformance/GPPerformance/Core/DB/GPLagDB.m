@@ -282,7 +282,7 @@
         @strongify(self);
         FMDatabase *db = [FMDatabase databaseWithPath:self.clsCallDBPath];
         if ([db open]) {
-            FMResultSet *rs = [db executeQuery:@"select * from ocexception "];
+            FMResultSet *rs = [db executeQuery:@"select * from ocexception order by oid desc limit ?, 50" , @(page*50)];
             NSUInteger count = 0;
             NSMutableArray *arr = [NSMutableArray array];
             
