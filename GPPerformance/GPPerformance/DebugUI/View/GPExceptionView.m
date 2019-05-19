@@ -75,6 +75,7 @@
     self.tableView.frame = self.bounds;
     
     UIEdgeInsets insets = gpSafeArea();
+    self.tableView.contentInsetTop = insets.top;
     self.tableView.contentInsetBottom = insets.bottom;
 }
 

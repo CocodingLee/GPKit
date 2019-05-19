@@ -233,6 +233,7 @@ static CGFloat const HOME_LAB_HEADER_HEIGHT = 300;
         cell.contentView.backgroundColor = HEXCOLORA(0xCCCCCC, 0.7);
     }
     
+    [cell update];
     return cell;
 }
 

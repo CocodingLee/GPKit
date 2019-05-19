@@ -34,6 +34,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)setShouldHandleCrash:(BOOL)b;
 /**
+ *是否要hook异常
+ */
++ (void)setShouldHookException:(BOOL)b;
++ (BOOL) isHookException;
+/**
  *是否要hook网络请求
  */
 + (void)setShouldHookNetworkRequest:(BOOL)b;

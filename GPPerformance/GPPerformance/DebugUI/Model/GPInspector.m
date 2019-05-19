@@ -63,4 +63,22 @@ UIWindow* g_lastKeyWindow = nil;
         [[GPCrashInspector sharedInstance] install];
     }
 }
+
++ (void)setShouldHookException:(BOOL)b
+{
+    if (b) {
+        [[NSUserDefaults standardUserDefaults] setObject:@(b ? 1:0) forKey:@"hook_exception"];
+    }
+}
+
++ (BOOL) isHookException
+{
+    id tmp = [[NSUserDefaults standardUserDefaults] objectForKey:@"hook_exception"];
+    if ([tmp isKindOfClass:[NSNumber class]]) {
+        return [tmp boolValue];
+    }
+    
+    return NO;
+}
+
 @end
