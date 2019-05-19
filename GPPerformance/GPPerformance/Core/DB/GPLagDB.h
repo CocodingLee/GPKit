@@ -13,6 +13,8 @@
 
 #import "GPCallTraceTimeCostModel.h"
 #import "GPCallStackModel.h"
+#import "GPOCExceptionModel.h"
+
 
 #define PATH_OF_APP_HOME    NSHomeDirectory()
 #define PATH_OF_TEMP        NSTemporaryDirectory()
@@ -42,6 +44,13 @@ NS_ASSUME_NONNULL_BEGIN
 //清除数据
 - (void)clearClsCallData;
 
+/*------------OC 异常方法 记录-------------*/
+//添加记录s
+- (COPromise *)addWithOCExceptionModel:(GPOCExceptionModel *)model;
+//分页查询
+- (COPromise *)selectOCExceptionWithPage:(NSUInteger)page CO_ASYNC;
+//清除数据
+- (void)clearOCExceptionData;
 @end
 
 NS_ASSUME_NONNULL_END

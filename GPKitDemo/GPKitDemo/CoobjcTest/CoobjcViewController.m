@@ -106,7 +106,44 @@
 
 - (void) crashAction
 {
-    NSString* tmp = @"a";
-    tmp = [tmp stringByAppendingString:nil];
+    // C 异常
+    //[self testCPtr];
+    [self testSampleArray];
+    [self testSimpleDictionary];
+    [self testUnrecognizedSelector];
+    [self testNull];
 }
+
+- (void) testCPtr
+{
+    char* p = (char*)0x123455;
+    *p = '0';
+}
+
+- (void)testSampleArray
+{
+    NSArray* test = @[];
+    NSLog(@"object:%@",test[1]);
+}
+
+- (void)testSimpleDictionary
+{
+    id value = nil;
+    NSDictionary* dic = @{@"key":value};
+    NSLog(@"dic:%@",dic);
+}
+
+- (void)testUnrecognizedSelector
+{
+    [self performSelector:@selector(testUndefineSelector)];
+    [self performSelector:@selector(handleCrashException:exceptionCategory:extraInfo:)];
+}
+
+- (void)testNull
+{
+    NSNull* null = [NSNull null];
+    NSString* str = (NSString*)null;
+    NSLog(@"Str length:%ld",str.length);
+}
+
 @end

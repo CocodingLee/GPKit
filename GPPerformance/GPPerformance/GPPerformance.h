@@ -15,6 +15,7 @@
 
 // Crash 监控
 #import <GPPerformance/GPCrashInspector.h>
+#import <GPPerformance/GPOCExceptionModel.h>
 
 // 函数调用时长
 #import <GPPerformance/GPTraceCore.h>

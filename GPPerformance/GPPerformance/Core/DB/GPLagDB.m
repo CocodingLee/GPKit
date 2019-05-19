@@ -53,6 +53,18 @@
                  */
                 NSString *createStackSql = @"create table stack (sid INTEGER PRIMARY KEY AUTOINCREMENT  NOT NULL, stackcontent text,isstuck integer, insertdate double)";
                 [db executeUpdate:createStackSql];
+                
+                /* 异常 表记录
+                 sid: id
+                 content: 堆栈内容
+                 type: 错误类型
+                 info: 添加信息
+                 insertdate: 日期
+                 */
+                NSString *createExceptionSql = @"create table ocexception (sid INTEGER PRIMARY KEY AUTOINCREMENT  NOT NULL, content text , type integer, info text , insertdate double)";
+                [db executeUpdate:createExceptionSql];
+                
+                
             }
         }
         _dbQueue = [FMDatabaseQueue databaseQueueWithPath:_clsCallDBPath];
@@ -153,7 +165,7 @@
         return;
     }
     
-    [self.dbQueue inDatabase:^(FMDatabase *db){
+    [self.dbQueue inDatabase:^(FMDatabase *db) {
         if ([db open]) {
             //添加白名单
             FMResultSet *rsl = [db executeQuery:@"select cid,frequency from clscall where path = ?", model.path];
@@ -211,7 +223,8 @@
 }
 
 //清除数据
-- (void)clearClsCallData {
+- (void)clearClsCallData
+{
     FMDatabase *db = [FMDatabase databaseWithPath:self.clsCallDBPath];
     if ([db open]) {
         [db executeUpdate:@"delete from clscall"];
@@ -231,6 +244,85 @@
     model.frequency = [rs intForColumn:@"frequency"];
     model.lastCall = [rs boolForColumn:@"lastcall"];
     return model;
+}
+
+/*------------OC 异常方法 记录-------------*/
+//添加记录s
+- (COPromise* ) addWithOCExceptionModel:(GPOCExceptionModel *)model
+{
+    SURE_ASYNC;
+    
+    @weakify(self);
+    return  [COPromise promise:^(COPromiseFulfill  _Nonnull fullfill, COPromiseReject  _Nonnull reject) {
+        @strongify(self);
+        
+        [self.dbQueue inDatabase:^(FMDatabase *db){
+            if ([db open]) {
+                [db executeUpdate:@"insert into ocexception (content , type , info , insertdate) values (?, ?, ? , ?)",model.callStackStr , model.exceptionType , model.exceptionInfo, [NSDate date]];
+                [db close];
+                
+                fullfill(@(YES));
+            } else {
+                NSError* err = [NSError errorWithDomain:@"GPPerformance" code:-1 userInfo:@{@"msg":@"db open failed"}];
+                reject(err);
+            }
+        }];
+    }];
+}
+//分页查询
+- (COPromise *)selectOCExceptionWithPage:(NSUInteger)page CO_ASYNC
+{
+    SURE_ASYNC;
+    
+    @weakify(self);
+    return [COPromise promise:^(COPromiseFulfill  _Nonnull fullfill, COPromiseReject  _Nonnull reject) {
+        @strongify(self);
+        FMDatabase *db = [FMDatabase databaseWithPath:self.clsCallDBPath];
+        if ([db open]) {
+            FMResultSet *rs = [db executeQuery:@"select * from ocexception where lastcall=? order by frequency desc limit ?, 50",@1, @(page * 50)];
+            NSUInteger count = 0;
+            NSMutableArray *arr = [NSMutableArray array];
+            
+            while ([rs next]) {
+                GPCallTraceTimeCostModel *model = [self clsCallModelFromResultSet:rs];
+                [arr addObject:model];
+                count ++;
+            }
+            
+            if (count > 0) {
+                fullfill(arr);
+            } else {
+                NSError* err = [NSError errorWithDomain:@"GPPerformance" code:-1 userInfo:@{@"msg":@"db no data"}];
+                reject(err);
+            }
+            
+            [db close];
+        } else {
+            NSError* err = [NSError errorWithDomain:@"GPPerformance" code:-1 userInfo:@{@"msg":@"db open failed"}];
+            reject(err);
+        }
+    }];
+}
+
+//结果封装成 model
+- (GPOCExceptionModel *) ocExceptionModelFromResultSet:(FMResultSet *)rs
+{
+    GPOCExceptionModel *model = [[GPOCExceptionModel alloc] init];
+    model.callStackStr = [rs stringForColumn:@"content"];
+    model.exceptionType = [rs longForColumn:@"type"];
+    model.exceptionInfo = [rs stringForColumn:@"info"];
+    model.dateInterval = [rs doubleForColumn:@"insertdate"];
+    return model;
+}
+
+//清除数据
+- (void)clearOCExceptionData
+{
+    FMDatabase *db = [FMDatabase databaseWithPath:self.clsCallDBPath];
+    if ([db open]) {
+        [db executeUpdate:@"delete from ocexception"];
+        [db close];
+    }
 }
 
 @end

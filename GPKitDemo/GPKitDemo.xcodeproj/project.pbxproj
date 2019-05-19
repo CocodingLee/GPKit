@@ -26,6 +26,7 @@
 		D7312796228FD05400A8E3BB /* NSNotificationCenter+ClearNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312780228FD05400A8E3BB /* NSNotificationCenter+ClearNotification.m */; };
 		D7312797228FD05400A8E3BB /* GPExceptionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312783228FD05400A8E3BB /* GPExceptionProxy.m */; };
 		D7312798228FD05400A8E3BB /* GPException.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312784228FD05400A8E3BB /* GPException.m */; };
+		D73127A12290F87B00A8E3BB /* NSObject+ZombieHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D731279F2290F87B00A8E3BB /* NSObject+ZombieHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D79B2E332285700B00D82858 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79B2E322285700B00D82858 /* Images.xcassets */; };
 		D79B2E3F2285739200D82858 /* GPUIKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E3E2285739200D82858 /* GPUIKitViewController.m */; };
 		D79B2E42228573A100D82858 /* EZKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E41228573A100D82858 /* EZKitViewController.m */; };
@@ -99,6 +100,8 @@
 		D7312785228FD05400A8E3BB /* GPExceptionProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPExceptionProxy.h; sourceTree = "<group>"; };
 		D7312786228FD05400A8E3BB /* GPException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPException.h; sourceTree = "<group>"; };
 		D731279E228FD29100A8E3BB /* GPExceptionHeads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPExceptionHeads.h; sourceTree = "<group>"; };
+		D731279F2290F87B00A8E3BB /* NSObject+ZombieHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZombieHook.m"; sourceTree = "<group>"; };
+		D73127A02290F87B00A8E3BB /* NSObject+ZombieHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZombieHook.h"; sourceTree = "<group>"; };
 		D7897B2F22759F320095CD53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D79B2E2E2285669A00D82858 /* GPKitDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPKitDemo.pch; sourceTree = "<group>"; };
 		D79B2E322285700B00D82858 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -197,17 +200,19 @@
 		D731275D228FD05400A8E3BB /* MRC */ = {
 			isa = PBXGroup;
 			children = (
-				D731275E228FD05400A8E3BB /* NSDictionary+DictionaryHook.m */,
-				D731275F228FD05400A8E3BB /* NSMutableArray+MutableArrayHook.m */,
-				D7312760228FD05400A8E3BB /* NSArray+ArrayHook.h */,
-				D7312761228FD05400A8E3BB /* NSObject+KVOCrash.m */,
-				D7312762228FD05400A8E3BB /* NSMutableDictionary+MutableDictionaryHook.h */,
-				D7312763228FD05400A8E3BB /* NSObject+UnrecognizedSelectorHook.h */,
-				D7312764228FD05400A8E3BB /* NSArray+ArrayHook.m */,
+				D73127A02290F87B00A8E3BB /* NSObject+ZombieHook.h */,
+				D731279F2290F87B00A8E3BB /* NSObject+ZombieHook.m */,
 				D7312765228FD05400A8E3BB /* NSMutableArray+MutableArrayHook.h */,
+				D731275F228FD05400A8E3BB /* NSMutableArray+MutableArrayHook.m */,
 				D7312766228FD05400A8E3BB /* NSDictionary+DictionaryHook.h */,
+				D731275E228FD05400A8E3BB /* NSDictionary+DictionaryHook.m */,
+				D7312760228FD05400A8E3BB /* NSArray+ArrayHook.h */,
+				D7312764228FD05400A8E3BB /* NSArray+ArrayHook.m */,
 				D7312767228FD05400A8E3BB /* NSObject+KVOCrash.h */,
+				D7312761228FD05400A8E3BB /* NSObject+KVOCrash.m */,
+				D7312763228FD05400A8E3BB /* NSObject+UnrecognizedSelectorHook.h */,
 				D7312768228FD05400A8E3BB /* NSObject+UnrecognizedSelectorHook.m */,
+				D7312762228FD05400A8E3BB /* NSMutableDictionary+MutableDictionaryHook.h */,
 				D7312769228FD05400A8E3BB /* NSMutableDictionary+MutableDictionaryHook.m */,
 			);
 			path = MRC;
@@ -611,6 +616,7 @@
 				D731278E228FD05400A8E3BB /* NSObject+SwizzleHook.m in Sources */,
 				D79B2E7222857DC300D82858 /* CYLPlusDemoChildViewController.m in Sources */,
 				D79B2E45228573B200D82858 /* GPMoreViewController.m in Sources */,
+				D73127A12290F87B00A8E3BB /* NSObject+ZombieHook.m in Sources */,
 				D7312788228FD05400A8E3BB /* NSMutableArray+MutableArrayHook.m in Sources */,
 				D7E9A2972272FC8900CAEE53 /* AppDelegate.m in Sources */,
 				D79B2E7B22857DC300D82858 /* MainTabBarController.m in Sources */,

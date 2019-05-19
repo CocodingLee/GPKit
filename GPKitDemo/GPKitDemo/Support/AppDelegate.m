@@ -10,7 +10,7 @@
 #import "ViewController.h"
 #import "CYLMainRootViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <GPExceptionHandle>
 
 @end
 
@@ -27,7 +27,13 @@
     [GPInspector setShouldHandleCrash:YES];
     // 配置UI样式
     [GPButton configButtonType];
+    // 监控crash
+    GPException.exceptionWhenTerminate = NO;
+    [GPException configExceptionCategory:GPExceptionGuardAll];
+    [GPException startGuardException];
+    [GPException registerExceptionHandle:self];
     
+    // UI 启动
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyWindow];
     
@@ -41,10 +47,39 @@
     return YES;
 }
 
+#pragma mark - GPExceptionHandle
+
+/**
+ Crash message and extra info from current thread
+ 
+ @param exceptionMessage crash message
+ @param info extraInfo,key and value
+ */
+- (void)handleCrashException:(NSString*)exceptionMessage
+                   extraInfo:(nullable NSDictionary*)info
+{
+    NSLog(@"[CRASH] - %@ , %@" , exceptionMessage , info.description);
+}
+
+/**
+ Crash message,exceptionCategory, extra info from current thread
+ 
+ @param exceptionMessage crash message
+ @param exceptionCategory GPExceptionGuardCategory
+ @param info extra info
+ */
+- (void)handleCrashException:(NSString*)exceptionMessage
+           exceptionCategory:(GPExceptionGuardCategory)exceptionCategory
+                   extraInfo:(nullable NSDictionary*)info
+{
+    NSLog(@"[CRASH] - %@ , %ld , %@" , exceptionMessage , (long)exceptionCategory , info.description);
+}
+
 /**
  *  设置navigationBar样式
  */
-- (void)setUpNavigationBarAppearance {
+- (void)setUpNavigationBarAppearance
+{
     UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
     
     UIImage *backgroundImage = nil;
@@ -74,31 +109,35 @@
     
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
+- (void)applicationWillResignActive:(UIApplication *)application
+{
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
 
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
 }
 
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
 
-- (void)applicationWillTerminate:(UIApplication *)application {
+- (void)applicationWillTerminate:(UIApplication *)application
+{
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 @end
