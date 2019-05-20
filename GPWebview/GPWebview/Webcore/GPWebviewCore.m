@@ -8,7 +8,7 @@
 
 #import "GPWebviewCore.h"
 #import "GPSafariUAController.h"
-#import "GPOcJsBridge.h"
+#import "GP_OCJS_WKBridge.h"
 
 static dispatch_once_t gs_userAgentInitToken;
 static NSString *gs_userAgent;
@@ -100,7 +100,7 @@ static NSString *gs_userAgent;
 {
     //为了保证每次都能拿到最新的cookie，这里每次都新建一个对象
     WKUserContentController *userContentController = [[WKUserContentController alloc] init];
-    [userContentController addScriptMessageHandler:[GPOcJsBridge sharedInstance] name:@"WKWebViewCore"];
+    [userContentController addScriptMessageHandler:[GP_OCJS_WKBridge sharedInstance] name:@"WKWebViewCore"];
     if (self.cookies) {
         [userContentController addUserScript:[self cookieScript]];
     }

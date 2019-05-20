@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GPOcJsBridge : NSObject <WKScriptMessageHandler>
+@interface GP_OCJS_WKBridge : NSObject <WKScriptMessageHandler>
 + (instancetype)sharedInstance;
 @end
 

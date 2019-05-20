@@ -11,10 +11,14 @@
 		D73127F92292A15D00A8E3BB /* GPWebview.h in Headers */ = {isa = PBXBuildFile; fileRef = D73127F72292A15D00A8E3BB /* GPWebview.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D73128062292A2DB00A8E3BB /* GPSafariUAController.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128042292A2DB00A8E3BB /* GPSafariUAController.h */; };
 		D73128072292A2DB00A8E3BB /* GPSafariUAController.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128052292A2DB00A8E3BB /* GPSafariUAController.m */; };
-		D731280A2292A4D200A8E3BB /* GPOcJsBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128082292A4D200A8E3BB /* GPOcJsBridge.h */; };
-		D731280B2292A4D200A8E3BB /* GPOcJsBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128092292A4D200A8E3BB /* GPOcJsBridge.m */; };
+		D731280A2292A4D200A8E3BB /* GP_OCJS_WKBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128082292A4D200A8E3BB /* GP_OCJS_WKBridge.h */; };
+		D731280B2292A4D200A8E3BB /* GP_OCJS_WKBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128092292A4D200A8E3BB /* GP_OCJS_WKBridge.m */; };
 		D731280E2292A56300A8E3BB /* GPWebviewCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D731280C2292A56300A8E3BB /* GPWebviewCore.h */; };
 		D731280F2292A56300A8E3BB /* GPWebviewCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D731280D2292A56300A8E3BB /* GPWebviewCore.m */; };
+		D73128122292A89900A8E3BB /* GPJSBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128102292A89900A8E3BB /* GPJSBridge.h */; };
+		D73128132292A89900A8E3BB /* GPJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128112292A89900A8E3BB /* GPJSBridge.m */; };
+		D73128162292A9AF00A8E3BB /* GPWebMsgCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128142292A9AF00A8E3BB /* GPWebMsgCenter.h */; };
+		D73128172292A9AF00A8E3BB /* GPWebMsgCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128152292A9AF00A8E3BB /* GPWebMsgCenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +29,14 @@
 		D73127F82292A15D00A8E3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D73128042292A2DB00A8E3BB /* GPSafariUAController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSafariUAController.h; sourceTree = "<group>"; };
 		D73128052292A2DB00A8E3BB /* GPSafariUAController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSafariUAController.m; sourceTree = "<group>"; };
-		D73128082292A4D200A8E3BB /* GPOcJsBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPOcJsBridge.h; sourceTree = "<group>"; };
-		D73128092292A4D200A8E3BB /* GPOcJsBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPOcJsBridge.m; sourceTree = "<group>"; };
+		D73128082292A4D200A8E3BB /* GP_OCJS_WKBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GP_OCJS_WKBridge.h; sourceTree = "<group>"; };
+		D73128092292A4D200A8E3BB /* GP_OCJS_WKBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GP_OCJS_WKBridge.m; sourceTree = "<group>"; };
 		D731280C2292A56300A8E3BB /* GPWebviewCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPWebviewCore.h; sourceTree = "<group>"; };
 		D731280D2292A56300A8E3BB /* GPWebviewCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPWebviewCore.m; sourceTree = "<group>"; };
+		D73128102292A89900A8E3BB /* GPJSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPJSBridge.h; sourceTree = "<group>"; };
+		D73128112292A89900A8E3BB /* GPJSBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPJSBridge.m; sourceTree = "<group>"; };
+		D73128142292A9AF00A8E3BB /* GPWebMsgCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPWebMsgCenter.h; sourceTree = "<group>"; };
+		D73128152292A9AF00A8E3BB /* GPWebMsgCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPWebMsgCenter.m; sourceTree = "<group>"; };
 		F6E4B594FE4FE3FCF4E7E275 /* libPods-GPWebview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPWebview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,10 +102,14 @@
 			children = (
 				D73128042292A2DB00A8E3BB /* GPSafariUAController.h */,
 				D73128052292A2DB00A8E3BB /* GPSafariUAController.m */,
-				D73128082292A4D200A8E3BB /* GPOcJsBridge.h */,
-				D73128092292A4D200A8E3BB /* GPOcJsBridge.m */,
+				D73128082292A4D200A8E3BB /* GP_OCJS_WKBridge.h */,
+				D73128092292A4D200A8E3BB /* GP_OCJS_WKBridge.m */,
 				D731280C2292A56300A8E3BB /* GPWebviewCore.h */,
 				D731280D2292A56300A8E3BB /* GPWebviewCore.m */,
+				D73128102292A89900A8E3BB /* GPJSBridge.h */,
+				D73128112292A89900A8E3BB /* GPJSBridge.m */,
+				D73128142292A9AF00A8E3BB /* GPWebMsgCenter.h */,
+				D73128152292A9AF00A8E3BB /* GPWebMsgCenter.m */,
 			);
 			path = Webcore;
 			sourceTree = "<group>";
@@ -109,10 +121,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D73128122292A89900A8E3BB /* GPJSBridge.h in Headers */,
 				D73127F92292A15D00A8E3BB /* GPWebview.h in Headers */,
 				D73128062292A2DB00A8E3BB /* GPSafariUAController.h in Headers */,
+				D73128162292A9AF00A8E3BB /* GPWebMsgCenter.h in Headers */,
 				D731280E2292A56300A8E3BB /* GPWebviewCore.h in Headers */,
-				D731280A2292A4D200A8E3BB /* GPOcJsBridge.h in Headers */,
+				D731280A2292A4D200A8E3BB /* GP_OCJS_WKBridge.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D73128172292A9AF00A8E3BB /* GPWebMsgCenter.m in Sources */,
+				D73128132292A89900A8E3BB /* GPJSBridge.m in Sources */,
 				D731280F2292A56300A8E3BB /* GPWebviewCore.m in Sources */,
-				D731280B2292A4D200A8E3BB /* GPOcJsBridge.m in Sources */,
+				D731280B2292A4D200A8E3BB /* GP_OCJS_WKBridge.m in Sources */,
 				D73128072292A2DB00A8E3BB /* GPSafariUAController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

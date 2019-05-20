@@ -6,16 +6,16 @@
 //  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import "GPOcJsBridge.h"
+#import "GP_OCJS_WKBridge.h"
 
-@implementation GPOcJsBridge
+@implementation GP_OCJS_WKBridge
 
 + (instancetype)sharedInstance
 {
-    static GPOcJsBridge *_sharedInstance = nil;
+    static GP_OCJS_WKBridge *_sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedInstance = [[GPOcJsBridge alloc] init];
+        _sharedInstance = [[GP_OCJS_WKBridge alloc] init];
     });
     
     return _sharedInstance;
