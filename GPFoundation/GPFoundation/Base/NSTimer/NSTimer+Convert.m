@@ -38,19 +38,19 @@
 
 + (NSString*) timeInterval2String:(NSTimeInterval)interval
 {
-    NSDate* ts_utc = [NSDate dateWithTimeIntervalSince1970:interval];
+    NSDate* tsUTC = [NSDate dateWithTimeIntervalSince1970:interval];
     
-    NSDateFormatter* df_utc = [[NSDateFormatter alloc] init];
-    [df_utc setTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
-    [df_utc setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+    NSDateFormatter* dfUTC = [[NSDateFormatter alloc] init];
+    [dfUTC setTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
+    [dfUTC setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
     
-    NSDateFormatter* df_local = [[NSDateFormatter alloc] init];
-    [df_local setTimeZone:[NSTimeZone systemTimeZone]];
-    [df_local setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDateFormatter* dfLocal = [[NSDateFormatter alloc] init];
+    [dfLocal setTimeZone:[NSTimeZone systemTimeZone]];
+    [dfLocal setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     
     //NSString* ts_utc_string = [df_utc stringFromDate:ts_utc];
-    NSString* ts_local_string = [df_local stringFromDate:ts_utc];
+    NSString* tsLocal = [dfLocal stringFromDate:tsUTC];
     
-    return ts_local_string;
+    return tsLocal;
 }
 @end
