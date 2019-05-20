@@ -8,13 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-
 @class WKWebView;
-@class GPWebViewImpl;
-typedef GPWebViewImpl GPWebView;
-FOUNDATION_EXTERN NSString *const kWebViewMessageErrorDomain;
+@class GPWebView;
 
 NS_ASSUME_NONNULL_BEGIN
+
+FOUNDATION_EXTERN NSString *const kWebViewMessageErrorDomain;
 
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -65,7 +64,7 @@ fadeOutWithCompletion:(void (^)(void))completion;
 
 ////////////////////////////////////////////////////////////////////////////////
 
-@interface GPWebViewImpl : UIView
+@interface GPWebView : UIView
 @property (nonatomic, weak) id<GPWebViewUIDelegate> UIDelegate;
 @property (nonatomic, weak) id<GPWebViewDelegate> delegate;
 @property (nonatomic, readonly) UIScrollView *scrollView;

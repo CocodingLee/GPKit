@@ -7,7 +7,7 @@
 //
 
 #import "GPDefaultHandler.h"
-#import "GPWebViewImpl.h"
+#import "GPWebView.h"
 
 @implementation GPDefaultHandler
 

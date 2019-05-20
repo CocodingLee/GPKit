@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		305AFF6B52623F1CAFD72069 /* libPods-GPWebview.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E4B594FE4FE3FCF4E7E275 /* libPods-GPWebview.a */; };
-		D73127F92292A15D00A8E3BB /* GPWebview.h in Headers */ = {isa = PBXBuildFile; fileRef = D73127F72292A15D00A8E3BB /* GPWebview.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D73128062292A2DB00A8E3BB /* GPSafariUAController.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128042292A2DB00A8E3BB /* GPSafariUAController.h */; };
 		D73128072292A2DB00A8E3BB /* GPSafariUAController.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128052292A2DB00A8E3BB /* GPSafariUAController.m */; };
 		D731280A2292A4D200A8E3BB /* GP_OCJS_WKBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128082292A4D200A8E3BB /* GP_OCJS_WKBridge.h */; };
@@ -21,18 +20,26 @@
 		D73128172292A9AF00A8E3BB /* GPWebMsgCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128152292A9AF00A8E3BB /* GPWebMsgCenter.m */; };
 		D731281A2292ABD600A8E3BB /* GPWebMsgAcceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128182292ABD600A8E3BB /* GPWebMsgAcceptor.h */; };
 		D731281B2292ABD600A8E3BB /* GPWebMsgAcceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128192292ABD600A8E3BB /* GPWebMsgAcceptor.m */; };
-		D731281D2292AC0400A8E3BB /* GPWebMsgDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D731281C2292AC0400A8E3BB /* GPWebMsgDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73128202292BCB700A8E3BB /* GPWebViewImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = D731281E2292BCB700A8E3BB /* GPWebViewImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73128212292BCB700A8E3BB /* GPWebViewImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D731281F2292BCB700A8E3BB /* GPWebViewImpl.m */; };
 		D73128252292C28500A8E3BB /* GPDefaultHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128232292C28500A8E3BB /* GPDefaultHandler.h */; };
 		D73128262292C28500A8E3BB /* GPDefaultHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128242292C28500A8E3BB /* GPDefaultHandler.m */; };
+		D73128292292C37900A8E3BB /* GPMsgCommonRegisterEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128272292C37900A8E3BB /* GPMsgCommonRegisterEvent.h */; };
+		D731282A2292C37900A8E3BB /* GPMsgCommonRegisterEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128282292C37900A8E3BB /* GPMsgCommonRegisterEvent.m */; };
+		D731282F2292C3EB00A8E3BB /* GPMsgCommonCancelEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = D731282B2292C3EA00A8E3BB /* GPMsgCommonCancelEvent.h */; };
+		D73128302292C3EB00A8E3BB /* GPMsgCommonCancelEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D731282C2292C3EA00A8E3BB /* GPMsgCommonCancelEvent.m */; };
+		D73128312292C3EB00A8E3BB /* GPMsgCommonTriggerEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = D731282D2292C3EB00A8E3BB /* GPMsgCommonTriggerEvent.h */; };
+		D73128322292C3EB00A8E3BB /* GPMsgCommonTriggerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D731282E2292C3EB00A8E3BB /* GPMsgCommonTriggerEvent.m */; };
+		D731283B2292C52B00A8E3BB /* GPWebview.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128372292C52B00A8E3BB /* GPWebview.h */; };
+		D731283C2292C52B00A8E3BB /* GPWebMsgDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128382292C52B00A8E3BB /* GPWebMsgDelegate.h */; };
+		D731283D2292C52B00A8E3BB /* GPWebViewImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128392292C52B00A8E3BB /* GPWebViewImpl.m */; };
+		D731283E2292C52B00A8E3BB /* GPWebViewImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = D731283A2292C52B00A8E3BB /* GPWebViewImpl.h */; };
+		D73128412292C5F600A8E3BB /* GPMsgCommonUnregisterEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D731283F2292C5F600A8E3BB /* GPMsgCommonUnregisterEvent.m */; };
+		D73128422292C5F600A8E3BB /* GPMsgCommonUnregisterEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128402292C5F600A8E3BB /* GPMsgCommonUnregisterEvent.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13968D015081567F5B6870AA /* Pods-GPWebview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPWebview.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GPWebview/Pods-GPWebview.release.xcconfig"; sourceTree = "<group>"; };
 		6AC71AD67F8AF78A1F2F55DD /* Pods-GPWebview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPWebview.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPWebview/Pods-GPWebview.debug.xcconfig"; sourceTree = "<group>"; };
 		D73127F42292A15D00A8E3BB /* GPWebview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPWebview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D73127F72292A15D00A8E3BB /* GPWebview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPWebview.h; sourceTree = "<group>"; };
 		D73127F82292A15D00A8E3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D73128042292A2DB00A8E3BB /* GPSafariUAController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSafariUAController.h; sourceTree = "<group>"; };
 		D73128052292A2DB00A8E3BB /* GPSafariUAController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSafariUAController.m; sourceTree = "<group>"; };
@@ -46,11 +53,20 @@
 		D73128152292A9AF00A8E3BB /* GPWebMsgCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPWebMsgCenter.m; sourceTree = "<group>"; };
 		D73128182292ABD600A8E3BB /* GPWebMsgAcceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPWebMsgAcceptor.h; sourceTree = "<group>"; };
 		D73128192292ABD600A8E3BB /* GPWebMsgAcceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPWebMsgAcceptor.m; sourceTree = "<group>"; };
-		D731281C2292AC0400A8E3BB /* GPWebMsgDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPWebMsgDelegate.h; sourceTree = "<group>"; };
-		D731281E2292BCB700A8E3BB /* GPWebViewImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPWebViewImpl.h; sourceTree = "<group>"; };
-		D731281F2292BCB700A8E3BB /* GPWebViewImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPWebViewImpl.m; sourceTree = "<group>"; };
 		D73128232292C28500A8E3BB /* GPDefaultHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPDefaultHandler.h; sourceTree = "<group>"; };
 		D73128242292C28500A8E3BB /* GPDefaultHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPDefaultHandler.m; sourceTree = "<group>"; };
+		D73128272292C37900A8E3BB /* GPMsgCommonRegisterEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPMsgCommonRegisterEvent.h; sourceTree = "<group>"; };
+		D73128282292C37900A8E3BB /* GPMsgCommonRegisterEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPMsgCommonRegisterEvent.m; sourceTree = "<group>"; };
+		D731282B2292C3EA00A8E3BB /* GPMsgCommonCancelEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMsgCommonCancelEvent.h; sourceTree = "<group>"; };
+		D731282C2292C3EA00A8E3BB /* GPMsgCommonCancelEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPMsgCommonCancelEvent.m; sourceTree = "<group>"; };
+		D731282D2292C3EB00A8E3BB /* GPMsgCommonTriggerEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMsgCommonTriggerEvent.h; sourceTree = "<group>"; };
+		D731282E2292C3EB00A8E3BB /* GPMsgCommonTriggerEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPMsgCommonTriggerEvent.m; sourceTree = "<group>"; };
+		D73128372292C52B00A8E3BB /* GPWebview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPWebview.h; sourceTree = "<group>"; };
+		D73128382292C52B00A8E3BB /* GPWebMsgDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPWebMsgDelegate.h; sourceTree = "<group>"; };
+		D73128392292C52B00A8E3BB /* GPWebViewImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPWebViewImpl.m; sourceTree = "<group>"; };
+		D731283A2292C52B00A8E3BB /* GPWebViewImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPWebViewImpl.h; sourceTree = "<group>"; };
+		D731283F2292C5F600A8E3BB /* GPMsgCommonUnregisterEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPMsgCommonUnregisterEvent.m; sourceTree = "<group>"; };
+		D73128402292C5F600A8E3BB /* GPMsgCommonUnregisterEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMsgCommonUnregisterEvent.h; sourceTree = "<group>"; };
 		F6E4B594FE4FE3FCF4E7E275 /* libPods-GPWebview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPWebview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,10 +120,10 @@
 		D73127F62292A15D00A8E3BB /* GPWebview */ = {
 			isa = PBXGroup;
 			children = (
-				D73127F72292A15D00A8E3BB /* GPWebview.h */,
-				D731281C2292AC0400A8E3BB /* GPWebMsgDelegate.h */,
-				D731281E2292BCB700A8E3BB /* GPWebViewImpl.h */,
-				D731281F2292BCB700A8E3BB /* GPWebViewImpl.m */,
+				D73128382292C52B00A8E3BB /* GPWebMsgDelegate.h */,
+				D73128372292C52B00A8E3BB /* GPWebview.h */,
+				D731283A2292C52B00A8E3BB /* GPWebViewImpl.h */,
+				D73128392292C52B00A8E3BB /* GPWebViewImpl.m */,
 				D73127F82292A15D00A8E3BB /* Info.plist */,
 				D73128222292C26D00A8E3BB /* MsgHandler */,
 				D73127FF2292A24A00A8E3BB /* Webcore */,
@@ -139,6 +155,14 @@
 			children = (
 				D73128232292C28500A8E3BB /* GPDefaultHandler.h */,
 				D73128242292C28500A8E3BB /* GPDefaultHandler.m */,
+				D731282D2292C3EB00A8E3BB /* GPMsgCommonTriggerEvent.h */,
+				D731282E2292C3EB00A8E3BB /* GPMsgCommonTriggerEvent.m */,
+				D731282B2292C3EA00A8E3BB /* GPMsgCommonCancelEvent.h */,
+				D731282C2292C3EA00A8E3BB /* GPMsgCommonCancelEvent.m */,
+				D73128272292C37900A8E3BB /* GPMsgCommonRegisterEvent.h */,
+				D73128282292C37900A8E3BB /* GPMsgCommonRegisterEvent.m */,
+				D73128402292C5F600A8E3BB /* GPMsgCommonUnregisterEvent.h */,
+				D731283F2292C5F600A8E3BB /* GPMsgCommonUnregisterEvent.m */,
 			);
 			path = MsgHandler;
 			sourceTree = "<group>";
@@ -150,16 +174,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D73128202292BCB700A8E3BB /* GPWebViewImpl.h in Headers */,
 				D73128122292A89900A8E3BB /* GPJSBridge.h in Headers */,
-				D73127F92292A15D00A8E3BB /* GPWebview.h in Headers */,
 				D73128062292A2DB00A8E3BB /* GPSafariUAController.h in Headers */,
 				D73128162292A9AF00A8E3BB /* GPWebMsgCenter.h in Headers */,
 				D731280E2292A56300A8E3BB /* GPWebViewCore.h in Headers */,
+				D731283B2292C52B00A8E3BB /* GPWebview.h in Headers */,
 				D731281A2292ABD600A8E3BB /* GPWebMsgAcceptor.h in Headers */,
+				D731283E2292C52B00A8E3BB /* GPWebViewImpl.h in Headers */,
 				D731280A2292A4D200A8E3BB /* GP_OCJS_WKBridge.h in Headers */,
+				D731282F2292C3EB00A8E3BB /* GPMsgCommonCancelEvent.h in Headers */,
+				D73128312292C3EB00A8E3BB /* GPMsgCommonTriggerEvent.h in Headers */,
+				D73128422292C5F600A8E3BB /* GPMsgCommonUnregisterEvent.h in Headers */,
 				D73128252292C28500A8E3BB /* GPDefaultHandler.h in Headers */,
-				D731281D2292AC0400A8E3BB /* GPWebMsgDelegate.h in Headers */,
+				D73128292292C37900A8E3BB /* GPMsgCommonRegisterEvent.h in Headers */,
+				D731283C2292C52B00A8E3BB /* GPWebMsgDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,10 +284,14 @@
 				D73128132292A89900A8E3BB /* GPJSBridge.m in Sources */,
 				D731280F2292A56300A8E3BB /* GPWebViewCore.m in Sources */,
 				D731280B2292A4D200A8E3BB /* GP_OCJS_WKBridge.m in Sources */,
-				D73128212292BCB700A8E3BB /* GPWebViewImpl.m in Sources */,
+				D73128322292C3EB00A8E3BB /* GPMsgCommonTriggerEvent.m in Sources */,
+				D731282A2292C37900A8E3BB /* GPMsgCommonRegisterEvent.m in Sources */,
 				D731281B2292ABD600A8E3BB /* GPWebMsgAcceptor.m in Sources */,
+				D73128412292C5F600A8E3BB /* GPMsgCommonUnregisterEvent.m in Sources */,
+				D731283D2292C52B00A8E3BB /* GPWebViewImpl.m in Sources */,
 				D73128072292A2DB00A8E3BB /* GPSafariUAController.m in Sources */,
 				D73128262292C28500A8E3BB /* GPDefaultHandler.m in Sources */,
+				D73128302292C3EB00A8E3BB /* GPMsgCommonCancelEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@ NSString *const kWebViewMessageErrorDomain = @"kWebViewMessageErrorDomain";
 
 static NSString *const kWebViewCookieChangeNotification = @"kWebViewCookieChangeNotification";
 
-@interface GPWebViewImpl () <GPJSBridgeDelegate, WKNavigationDelegate, GPWebMsgCenterDelegate>
+@interface GPWebView () <GPJSBridgeDelegate, WKNavigationDelegate, GPWebMsgCenterDelegate>
 @property (nonatomic, readwrite) WKWebView *webview;
 @property (nonatomic, strong) GPJSBridge *bridge;
 
@@ -41,7 +41,7 @@ static NSString *const kWebViewCookieChangeNotification = @"kWebViewCookieChange
 @property (nonatomic, strong) NSMutableDictionary<NSString *,NSDictionary *> *eventParam;
 @end
 
-@implementation GPWebViewImpl
+@implementation GPWebView
 
 + (void)appendCustomUserAgent:(NSString *)userAgent;
 {
