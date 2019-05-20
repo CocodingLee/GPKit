@@ -52,6 +52,12 @@ target 'GPFoundation' do
     project './GPFoundation/GPFoundation.xcodeproj'
 end
 
+target 'GPWebview' do
+    platform :ios, '9.0'
+    project './GPWebview/GPWebview.xcodeproj'
+end
+
+
 # 本地工程
 def _localPods
     # UI库
@@ -59,6 +65,7 @@ def _localPods
     pod 'GPPerformance'     , :path => './GPPerformance/'
     pod 'GPRoute'           , :path => './GPRoute/'
     pod 'GPFoundation'      , :path => './GPFoundation/'
+    pod 'GPWebview'         , :path => './GPWebview/'
 end
 
 ##########################################

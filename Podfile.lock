@@ -37,6 +37,7 @@ PODS:
     - MBProgressHUD (~> 1.1.0)
     - MJRefresh (~> 3.1.16)
     - SDWebImage (~> 4.4.5)
+  - GPWebview (1.0.0)
   - KSCrash (1.15.19):
     - KSCrash/Installations (= 1.15.19)
   - KSCrash/Installations (1.15.19):
@@ -154,6 +155,7 @@ DEPENDENCIES:
   - GPPerformance (from `./GPPerformance/`)
   - GPRoute (from `./GPRoute/`)
   - GPUIKit (from `./GPUIKit/`)
+  - GPWebview (from `./GPWebview/`)
   - libextobjc (~> 0.6)
   - lottie-ios (~> 2.5.3)
   - Masonry (~> 1.1.0)
@@ -190,6 +192,8 @@ EXTERNAL SOURCES:
     :path: "./GPRoute/"
   GPUIKit:
     :path: "./GPUIKit/"
+  GPWebview:
+    :path: "./GPWebview/"
 
 SPEC CHECKSUMS:
   cocore: cc9d76229458f286a632d9cecb63bd699bd3529d
@@ -206,6 +210,7 @@ SPEC CHECKSUMS:
   GPPerformance: 1731ead553f77b2c94ecae78dbbb9c32fcc46360
   GPRoute: 2c4eefdd61fc588664faecc103c6e8fbfb0f804b
   GPUIKit: f8a780e6a2e202ee51f927439adb0432eb59254a
+  GPWebview: 2ae762eaf0114911de0362afb13632f173fdf177
   KSCrash: 49855f7867f7d456905c241640a203f53588497d
   libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
@@ -215,6 +220,6 @@ SPEC CHECKSUMS:
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 50f3c721aa2f395d241a50729468b21a9d29c6c7
+PODFILE CHECKSUM: 45a28e2e5aded2a671790e87e08fc09109b482f4
 
 COCOAPODS: 1.5.3
