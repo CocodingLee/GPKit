@@ -20,6 +20,10 @@
 #import <GPUIKit/UIImage+GPBlur.h>
 #import <GPUIKit/UIImage+GPColor.h>
 
+// hud
+#import <GPUIKit/MBProgressHUD_GPExtend.h>
+#import <GPUIKit/MBProgressHUD+GPAdd.h>
+
 //////////////////////////////////////////////////
 // navigation
 #import <GPUIKit/GPNavigationDefine.h>

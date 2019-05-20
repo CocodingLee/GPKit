@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.dependency 'SDWebImage'       , '~> 4.4.5'
   s.dependency 'libextobjc'       , '~> 0.6'
   s.dependency 'FrameAccessor'    , '~> 2.0'
+  s.dependency 'MBProgressHUD'    , '~> 1.1.0'
 
   s.dependency 'lottie-ios'       , '~> 2.5.3'
   s.dependency 'MJRefresh'        , '~> 3.1.16'

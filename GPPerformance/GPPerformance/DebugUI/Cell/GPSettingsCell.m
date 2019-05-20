@@ -10,9 +10,14 @@
 #import <GPUIKit/GPUIKit.h>
 #import <FrameAccessor/FrameAccessor.h>
 #import "GPInspector.h"
+#import "GPLagDB.h"
+#import <KSCrash/KSCrashC.h>
 
 @interface GPSettingsCell ()
 @property (nonatomic , strong) UISwitch* hookExceptionBtn;
+@property (nonatomic , strong) GPButton* clearFrameBtn;
+@property (nonatomic , strong) GPButton* clearCrashBtn;
+@property (nonatomic , strong) GPButton* clearHookBtn;
 @end
 
 @implementation GPSettingsCell
@@ -71,5 +76,60 @@
     }
     
     self.hookExceptionBtn.on = [GPInspector isHookException];
+    
+    if (!self.clearFrameBtn.superview) {
+        GPButton* btn = [GPButton buttonWithType:GPKitButtonTypeOrange];
+        btn.frame = CGRectMake(0, 0, 100, 44);
+        [btn setTitle:@"清空卡顿" forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(clearFrameLoss) forControlEvents:UIControlEventTouchUpInside];
+        btn.left = 15;
+        btn.top = self.hookExceptionBtn.bottom + 5;
+        
+        [self.contentView addSubview:btn];
+        self.clearFrameBtn = btn;
+    }
+    
+    
+    if (!self.clearCrashBtn.superview) {
+        GPButton* btn = [GPButton buttonWithType:GPKitButtonTypeOrange];
+        btn.frame = CGRectMake(0, 0, 100, 44);
+        [btn setTitle:@"清空Crash" forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(clearCrash) forControlEvents:UIControlEventTouchUpInside];
+        btn.left = 15;
+        btn.top = self.clearFrameBtn.bottom + 10;
+        
+        [self.contentView addSubview:btn];
+        self.clearCrashBtn = btn;
+    }
+    
+    if (!self.clearHookBtn.superview) {
+        GPButton* btn = [GPButton buttonWithType:GPKitButtonTypeOrange];
+        btn.frame = CGRectMake(0, 0, 100, 44);
+        [btn setTitle:@"清空Hook" forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(clearHook) forControlEvents:UIControlEventTouchUpInside];
+        btn.left = 15;
+        btn.top = self.clearCrashBtn.bottom + 5;
+        
+        [self.contentView addSubview:btn];
+        self.clearHookBtn = btn;
+    }
+}
+
+- (void) clearFrameLoss
+{
+    [[GPLagDB shareInstance] clearStackData];
+    [MBProgressHUD showSuccess:@"卡顿数据清除完毕！" toView:self.contentView];
+}
+
+- (void) clearCrash
+{
+    kscrash_deleteAllReports();
+    [MBProgressHUD showSuccess:@"Crash数据清除完毕！" toView:self.contentView];
+}
+
+- (void) clearHook
+{
+    [[GPLagDB shareInstance] clearOCExceptionData];
+    [MBProgressHUD showSuccess:@"Hook数据清除完毕!" toView:self.contentView];
 }
 @end

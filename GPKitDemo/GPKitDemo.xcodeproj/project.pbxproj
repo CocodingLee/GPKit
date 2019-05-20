@@ -16,17 +16,17 @@
 		D731278C228FD05400A8E3BB /* NSMutableDictionary+MutableDictionaryHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312769228FD05400A8E3BB /* NSMutableDictionary+MutableDictionaryHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D731278D228FD05400A8E3BB /* NSObject+DeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D731276C228FD05400A8E3BB /* NSObject+DeallocBlock.m */; };
 		D731278E228FD05400A8E3BB /* NSObject+SwizzleHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D731276F228FD05400A8E3BB /* NSObject+SwizzleHook.m */; };
-		D731278F228FD05400A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312772228FD05400A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m */; };
-		D7312790228FD05400A8E3BB /* NSSet+SetHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312773228FD05400A8E3BB /* NSSet+SetHook.m */; };
-		D7312791228FD05400A8E3BB /* NSTimer+CleanTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312774228FD05400A8E3BB /* NSTimer+CleanTimer.m */; };
-		D7312792228FD05400A8E3BB /* NSMutableString+MutableStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312775228FD05400A8E3BB /* NSMutableString+MutableStringHook.m */; };
-		D7312793228FD05400A8E3BB /* NSString+StringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312779228FD05400A8E3BB /* NSString+StringHook.m */; };
-		D7312794228FD05400A8E3BB /* NSMutableSet+MutableSetHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D731277E228FD05400A8E3BB /* NSMutableSet+MutableSetHook.m */; };
-		D7312795228FD05400A8E3BB /* NSAttributedString+AttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D731277F228FD05400A8E3BB /* NSAttributedString+AttributedStringHook.m */; };
-		D7312796228FD05400A8E3BB /* NSNotificationCenter+ClearNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312780228FD05400A8E3BB /* NSNotificationCenter+ClearNotification.m */; };
 		D7312797228FD05400A8E3BB /* GPExceptionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312783228FD05400A8E3BB /* GPExceptionProxy.m */; };
 		D7312798228FD05400A8E3BB /* GPException.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312784228FD05400A8E3BB /* GPException.m */; };
 		D73127A12290F87B00A8E3BB /* NSObject+ZombieHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D731279F2290F87B00A8E3BB /* NSObject+ZombieHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D73127D4229282EE00A8E3BB /* NSMutableString+MutableStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127C4229282EE00A8E3BB /* NSMutableString+MutableStringHook.m */; };
+		D73127D5229282EE00A8E3BB /* NSString+StringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127C5229282EE00A8E3BB /* NSString+StringHook.m */; };
+		D73127D6229282EE00A8E3BB /* NSAttributedString+AttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127C6229282EE00A8E3BB /* NSAttributedString+AttributedStringHook.m */; };
+		D73127D7229282EE00A8E3BB /* NSMutableSet+MutableSetHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127CA229282EE00A8E3BB /* NSMutableSet+MutableSetHook.m */; };
+		D73127D8229282EE00A8E3BB /* NSSet+SetHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127CC229282EE00A8E3BB /* NSSet+SetHook.m */; };
+		D73127D9229282EE00A8E3BB /* NSTimer+CleanTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127CE229282EE00A8E3BB /* NSTimer+CleanTimer.m */; };
+		D73127DA229282EE00A8E3BB /* NSNotificationCenter+ClearNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127CF229282EE00A8E3BB /* NSNotificationCenter+ClearNotification.m */; };
+		D73127DB229282EE00A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127D1229282EE00A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m */; };
 		D79B2E332285700B00D82858 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79B2E322285700B00D82858 /* Images.xcassets */; };
 		D79B2E3F2285739200D82858 /* GPUIKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E3E2285739200D82858 /* GPUIKitViewController.m */; };
 		D79B2E42228573A100D82858 /* EZKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E41228573A100D82858 /* EZKitViewController.m */; };
@@ -78,22 +78,6 @@
 		D731276C228FD05400A8E3BB /* NSObject+DeallocBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DeallocBlock.m"; sourceTree = "<group>"; };
 		D731276E228FD05400A8E3BB /* NSObject+SwizzleHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwizzleHook.h"; sourceTree = "<group>"; };
 		D731276F228FD05400A8E3BB /* NSObject+SwizzleHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwizzleHook.m"; sourceTree = "<group>"; };
-		D7312771228FD05400A8E3BB /* NSString+StringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringHook.h"; sourceTree = "<group>"; };
-		D7312772228FD05400A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+MutableAttributedStringHook.m"; sourceTree = "<group>"; };
-		D7312773228FD05400A8E3BB /* NSSet+SetHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+SetHook.m"; sourceTree = "<group>"; };
-		D7312774228FD05400A8E3BB /* NSTimer+CleanTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CleanTimer.m"; sourceTree = "<group>"; };
-		D7312775228FD05400A8E3BB /* NSMutableString+MutableStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+MutableStringHook.m"; sourceTree = "<group>"; };
-		D7312776228FD05400A8E3BB /* NSNotificationCenter+ClearNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+ClearNotification.h"; sourceTree = "<group>"; };
-		D7312777228FD05400A8E3BB /* NSAttributedString+AttributedStringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+AttributedStringHook.h"; sourceTree = "<group>"; };
-		D7312778228FD05400A8E3BB /* NSMutableSet+MutableSetHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+MutableSetHook.h"; sourceTree = "<group>"; };
-		D7312779228FD05400A8E3BB /* NSString+StringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringHook.m"; sourceTree = "<group>"; };
-		D731277A228FD05400A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+MutableAttributedStringHook.h"; sourceTree = "<group>"; };
-		D731277B228FD05400A8E3BB /* NSMutableString+MutableStringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+MutableStringHook.h"; sourceTree = "<group>"; };
-		D731277C228FD05400A8E3BB /* NSSet+SetHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+SetHook.h"; sourceTree = "<group>"; };
-		D731277D228FD05400A8E3BB /* NSTimer+CleanTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+CleanTimer.h"; sourceTree = "<group>"; };
-		D731277E228FD05400A8E3BB /* NSMutableSet+MutableSetHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+MutableSetHook.m"; sourceTree = "<group>"; };
-		D731277F228FD05400A8E3BB /* NSAttributedString+AttributedStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+AttributedStringHook.m"; sourceTree = "<group>"; };
-		D7312780228FD05400A8E3BB /* NSNotificationCenter+ClearNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+ClearNotification.m"; sourceTree = "<group>"; };
 		D7312782228FD05400A8E3BB /* GPExceptionMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPExceptionMacros.h; sourceTree = "<group>"; };
 		D7312783228FD05400A8E3BB /* GPExceptionProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPExceptionProxy.m; sourceTree = "<group>"; };
 		D7312784228FD05400A8E3BB /* GPException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPException.m; sourceTree = "<group>"; };
@@ -102,6 +86,22 @@
 		D731279E228FD29100A8E3BB /* GPExceptionHeads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPExceptionHeads.h; sourceTree = "<group>"; };
 		D731279F2290F87B00A8E3BB /* NSObject+ZombieHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZombieHook.m"; sourceTree = "<group>"; };
 		D73127A02290F87B00A8E3BB /* NSObject+ZombieHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZombieHook.h"; sourceTree = "<group>"; };
+		D73127C4229282EE00A8E3BB /* NSMutableString+MutableStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+MutableStringHook.m"; sourceTree = "<group>"; };
+		D73127C5229282EE00A8E3BB /* NSString+StringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringHook.m"; sourceTree = "<group>"; };
+		D73127C6229282EE00A8E3BB /* NSAttributedString+AttributedStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+AttributedStringHook.m"; sourceTree = "<group>"; };
+		D73127C7229282EE00A8E3BB /* NSAttributedString+AttributedStringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+AttributedStringHook.h"; sourceTree = "<group>"; };
+		D73127C8229282EE00A8E3BB /* NSMutableSet+MutableSetHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+MutableSetHook.h"; sourceTree = "<group>"; };
+		D73127C9229282EE00A8E3BB /* NSSet+SetHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+SetHook.h"; sourceTree = "<group>"; };
+		D73127CA229282EE00A8E3BB /* NSMutableSet+MutableSetHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+MutableSetHook.m"; sourceTree = "<group>"; };
+		D73127CB229282EE00A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+MutableAttributedStringHook.h"; sourceTree = "<group>"; };
+		D73127CC229282EE00A8E3BB /* NSSet+SetHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+SetHook.m"; sourceTree = "<group>"; };
+		D73127CD229282EE00A8E3BB /* NSTimer+CleanTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+CleanTimer.h"; sourceTree = "<group>"; };
+		D73127CE229282EE00A8E3BB /* NSTimer+CleanTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CleanTimer.m"; sourceTree = "<group>"; };
+		D73127CF229282EE00A8E3BB /* NSNotificationCenter+ClearNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+ClearNotification.m"; sourceTree = "<group>"; };
+		D73127D0229282EE00A8E3BB /* NSMutableString+MutableStringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+MutableStringHook.h"; sourceTree = "<group>"; };
+		D73127D1229282EE00A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+MutableAttributedStringHook.m"; sourceTree = "<group>"; };
+		D73127D2229282EE00A8E3BB /* NSString+StringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringHook.h"; sourceTree = "<group>"; };
+		D73127D3229282EE00A8E3BB /* NSNotificationCenter+ClearNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+ClearNotification.h"; sourceTree = "<group>"; };
 		D7897B2F22759F320095CD53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D79B2E2E2285669A00D82858 /* GPKitDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPKitDemo.pch; sourceTree = "<group>"; };
 		D79B2E322285700B00D82858 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -239,22 +239,22 @@
 		D7312770228FD05400A8E3BB /* ARC */ = {
 			isa = PBXGroup;
 			children = (
-				D7312771228FD05400A8E3BB /* NSString+StringHook.h */,
-				D7312772228FD05400A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m */,
-				D7312773228FD05400A8E3BB /* NSSet+SetHook.m */,
-				D7312774228FD05400A8E3BB /* NSTimer+CleanTimer.m */,
-				D7312775228FD05400A8E3BB /* NSMutableString+MutableStringHook.m */,
-				D7312776228FD05400A8E3BB /* NSNotificationCenter+ClearNotification.h */,
-				D7312777228FD05400A8E3BB /* NSAttributedString+AttributedStringHook.h */,
-				D7312778228FD05400A8E3BB /* NSMutableSet+MutableSetHook.h */,
-				D7312779228FD05400A8E3BB /* NSString+StringHook.m */,
-				D731277A228FD05400A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h */,
-				D731277B228FD05400A8E3BB /* NSMutableString+MutableStringHook.h */,
-				D731277C228FD05400A8E3BB /* NSSet+SetHook.h */,
-				D731277D228FD05400A8E3BB /* NSTimer+CleanTimer.h */,
-				D731277E228FD05400A8E3BB /* NSMutableSet+MutableSetHook.m */,
-				D731277F228FD05400A8E3BB /* NSAttributedString+AttributedStringHook.m */,
-				D7312780228FD05400A8E3BB /* NSNotificationCenter+ClearNotification.m */,
+				D73127C7229282EE00A8E3BB /* NSAttributedString+AttributedStringHook.h */,
+				D73127C6229282EE00A8E3BB /* NSAttributedString+AttributedStringHook.m */,
+				D73127CB229282EE00A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.h */,
+				D73127D1229282EE00A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m */,
+				D73127C8229282EE00A8E3BB /* NSMutableSet+MutableSetHook.h */,
+				D73127CA229282EE00A8E3BB /* NSMutableSet+MutableSetHook.m */,
+				D73127D0229282EE00A8E3BB /* NSMutableString+MutableStringHook.h */,
+				D73127C4229282EE00A8E3BB /* NSMutableString+MutableStringHook.m */,
+				D73127D3229282EE00A8E3BB /* NSNotificationCenter+ClearNotification.h */,
+				D73127CF229282EE00A8E3BB /* NSNotificationCenter+ClearNotification.m */,
+				D73127C9229282EE00A8E3BB /* NSSet+SetHook.h */,
+				D73127CC229282EE00A8E3BB /* NSSet+SetHook.m */,
+				D73127D2229282EE00A8E3BB /* NSString+StringHook.h */,
+				D73127C5229282EE00A8E3BB /* NSString+StringHook.m */,
+				D73127CD229282EE00A8E3BB /* NSTimer+CleanTimer.h */,
+				D73127CE229282EE00A8E3BB /* NSTimer+CleanTimer.m */,
 			);
 			path = ARC;
 			sourceTree = "<group>";
@@ -595,28 +595,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7312789228FD05400A8E3BB /* NSObject+KVOCrash.m in Sources */,
-				D7312794228FD05400A8E3BB /* NSMutableSet+MutableSetHook.m in Sources */,
-				D731278F228FD05400A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */,
-				D7312796228FD05400A8E3BB /* NSNotificationCenter+ClearNotification.m in Sources */,
 				D7A863F5228A61D800E35569 /* CoobjcViewController.m in Sources */,
 				D79B2E6F22857DC300D82858 /* CYLHomeViewController.m in Sources */,
 				D7E9A29A2272FC8900CAEE53 /* ViewController.m in Sources */,
 				D7E9A2A52272FC8A00CAEE53 /* main.m in Sources */,
+				D73127D7229282EE00A8E3BB /* NSMutableSet+MutableSetHook.m in Sources */,
 				D79B2E3F2285739200D82858 /* GPUIKitViewController.m in Sources */,
 				D79B2E7922857DC300D82858 /* CYLPlusButtonSubclass.m in Sources */,
 				D79B2E7322857DC300D82858 /* CYLMessageViewController.m in Sources */,
 				D7A86431228A91B700E35569 /* Co2ViewController.m in Sources */,
 				D79B2E7022857DC300D82858 /* CYLSameCityViewController.m in Sources */,
-				D7312793228FD05400A8E3BB /* NSString+StringHook.m in Sources */,
+				D73127D8229282EE00A8E3BB /* NSSet+SetHook.m in Sources */,
 				D79B2E42228573A100D82858 /* EZKitViewController.m in Sources */,
+				D73127D5229282EE00A8E3BB /* NSString+StringHook.m in Sources */,
 				D731278B228FD05400A8E3BB /* NSObject+UnrecognizedSelectorHook.m in Sources */,
 				D7A86434228A921C00E35569 /* GPRouteDomain.m in Sources */,
-				D7312791228FD05400A8E3BB /* NSTimer+CleanTimer.m in Sources */,
-				D7312795228FD05400A8E3BB /* NSAttributedString+AttributedStringHook.m in Sources */,
 				D731278E228FD05400A8E3BB /* NSObject+SwizzleHook.m in Sources */,
 				D79B2E7222857DC300D82858 /* CYLPlusDemoChildViewController.m in Sources */,
+				D73127D9229282EE00A8E3BB /* NSTimer+CleanTimer.m in Sources */,
 				D79B2E45228573B200D82858 /* GPMoreViewController.m in Sources */,
 				D73127A12290F87B00A8E3BB /* NSObject+ZombieHook.m in Sources */,
+				D73127DA229282EE00A8E3BB /* NSNotificationCenter+ClearNotification.m in Sources */,
 				D7312788228FD05400A8E3BB /* NSMutableArray+MutableArrayHook.m in Sources */,
 				D7E9A2972272FC8900CAEE53 /* AppDelegate.m in Sources */,
 				D79B2E7B22857DC300D82858 /* MainTabBarController.m in Sources */,
@@ -625,12 +624,13 @@
 				D731278A228FD05400A8E3BB /* NSArray+ArrayHook.m in Sources */,
 				D731278C228FD05400A8E3BB /* NSMutableDictionary+MutableDictionaryHook.m in Sources */,
 				D79B2E7422857DC300D82858 /* CYLMineViewController.m in Sources */,
-				D7312792228FD05400A8E3BB /* NSMutableString+MutableStringHook.m in Sources */,
+				D73127D4229282EE00A8E3BB /* NSMutableString+MutableStringHook.m in Sources */,
 				D79B2E7A22857DC300D82858 /* CYLMainRootViewController.m in Sources */,
 				D79B2E7122857DC300D82858 /* CYLDetailsViewController.m in Sources */,
+				D73127DB229282EE00A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */,
 				D7312787228FD05400A8E3BB /* NSDictionary+DictionaryHook.m in Sources */,
-				D7312790228FD05400A8E3BB /* NSSet+SetHook.m in Sources */,
 				D7312797228FD05400A8E3BB /* GPExceptionProxy.m in Sources */,
+				D73127D6229282EE00A8E3BB /* NSAttributedString+AttributedStringHook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
