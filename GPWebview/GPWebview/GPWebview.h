@@ -8,12 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for GPWebview.
-FOUNDATION_EXPORT double GPWebviewVersionNumber;
-
-//! Project version string for GPWebview.
-FOUNDATION_EXPORT const unsigned char GPWebviewVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <GPWebview/PublicHeader.h>
 
 

@@ -23,6 +23,8 @@
 #import <GPRoute/GPRoute.h>
 // GPFoundation
 #import <GPFoundation/GPFoundation.h>
+// GPWebview
+#import <GPWebview/GPWebview.h>
 
 ////////////////////////////////////////////////////////////////////////
 //
