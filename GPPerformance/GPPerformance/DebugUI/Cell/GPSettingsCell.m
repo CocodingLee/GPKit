@@ -80,7 +80,7 @@
     
     if (!self.clearFrameBtn.superview) {
         GPButton* btn = [GPButton buttonWithType:GPKitButtonTypeOrange];
-        btn.frame = CGRectMake(0, 0, 100, 44);
+        btn.frame = CGRectMake(0, 0, 100, 40);
         [btn setTitle:@"清空卡顿" forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(clearFrameLoss) forControlEvents:UIControlEventTouchUpInside];
         btn.left = 15;
@@ -93,7 +93,7 @@
     
     if (!self.clearCrashBtn.superview) {
         GPButton* btn = [GPButton buttonWithType:GPKitButtonTypeOrange];
-        btn.frame = CGRectMake(0, 0, 100, 44);
+        btn.frame = CGRectMake(0, 0, 100, 40);
         [btn setTitle:@"清空Crash" forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(clearCrash) forControlEvents:UIControlEventTouchUpInside];
         btn.left = 15;
@@ -105,7 +105,7 @@
     
     if (!self.clearHookBtn.superview) {
         GPButton* btn = [GPButton buttonWithType:GPKitButtonTypeOrange];
-        btn.frame = CGRectMake(0, 0, 100, 44);
+        btn.frame = CGRectMake(0, 0, 100, 40);
         [btn setTitle:@"清空Hook" forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(clearHook) forControlEvents:UIControlEventTouchUpInside];
         btn.left = 15;
@@ -118,21 +118,34 @@
 
 - (void) clearFrameLoss
 {
-    co_launch(^{
-        [[GPLagDB shareInstance] clearStackData];
+    dispatch_async(dispatch_get_main_queue(), ^{
         [GPProgressHUD showSuccess:@"卡顿数据清除完毕！" onView:self.contentView duration:2.0];
+    });
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[GPLagDB shareInstance] clearStackData];
     });
 }
 
 - (void) clearCrash
 {
-    kscrash_deleteAllReports();
-    [GPProgressHUD showSuccess:@"Crash数据清除完毕！" onView:self.contentView duration:2.0];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [GPProgressHUD showSuccess:@"Crash数据清除完毕！" onView:self.contentView duration:2.0];
+    });
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        kscrash_deleteAllReports();
+    });
 }
 
 - (void) clearHook
 {
-    [[GPLagDB shareInstance] clearOCExceptionData];
-    [GPProgressHUD showSuccess:@"Hook数据清除完毕!" onView:self.contentView duration:2.0];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [GPProgressHUD showSuccess:@"Hook数据清除完毕!" onView:self.contentView duration:2.0];
+    });
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[GPLagDB shareInstance] clearOCExceptionData];
+    });
 }
 @end
