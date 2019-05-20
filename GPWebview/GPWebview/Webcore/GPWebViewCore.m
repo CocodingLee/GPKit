@@ -6,30 +6,30 @@
 //  Copyright © 2019 Liyanwei. All rights reserved.
 //
 
-#import "GPWebviewCore.h"
+#import "GPWebViewCore.h"
 #import "GPSafariUAController.h"
 #import "GP_OCJS_WKBridge.h"
 
 static dispatch_once_t gs_userAgentInitToken;
 static NSString *gs_userAgent;
 
-@interface GPWebviewCore ()
+@interface GPWebViewCore ()
 @property (nonatomic, strong) NSMutableSet *cookieDomains;
 @property (nonatomic, strong) NSMutableDictionary *mutableCookie;
 @property (nonatomic, strong) NSMutableDictionary *mutableAdditionHeader;
 @property (nonatomic, strong) NSLock *lock;
 @end
 
-@implementation GPWebviewCore
+@implementation GPWebViewCore
 @synthesize processPool = _processPool;
 @synthesize userAgent = _userAgent;
 
 + (instancetype)sharedCore
 {
-    static GPWebviewCore *_sharedInstance = nil;
+    static GPWebViewCore *_sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedInstance = [[GPWebviewCore alloc] init];
+        _sharedInstance = [[GPWebViewCore alloc] init];
     });
     
     return _sharedInstance;

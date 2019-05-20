@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GPWebviewCore : NSObject
+@interface GPWebViewCore : NSObject
 
 @property (nonatomic, readonly) WKProcessPool *processPool;
 @property (nonatomic, readonly) WKUserContentController *userContentController;

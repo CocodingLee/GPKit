@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-
-
+#import <GPWebView/GPWebViewImpl.h>
+#import <GPWebView/GPWebMsgDelegate.h>
