@@ -43,5 +43,6 @@
 #import <FrameAccessor/FrameAccessor.h>
 #import <coobjc/coobjc.h>
 #import <YYModel/YYModel.h>
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
 
 #endif /* GPKitDemo_pch */

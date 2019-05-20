@@ -339,14 +339,16 @@ static NSString *const kWebViewCookieChangeNotification = @"kWebViewCookieChange
 }
 
 #pragma mark - NotificationCenter Delegate
-- (void)GPWebViewNotifyByEventName:(NSString *)eventName data:(NSDictionary *)data
+- (void) gpWebViewNotifyByEventName:(NSString *)eventName
+                               data:(NSDictionary *)data
 {
     [self onEvent:eventName data:data];
 }
 
 #pragma mark - WKWebViewDelegate
-- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
-decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
+- (void)                webView:(WKWebView *)webView
+decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
+                decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
 {
     if (navigationAction.sourceFrame.mainFrame) {
         self._loading = YES;
