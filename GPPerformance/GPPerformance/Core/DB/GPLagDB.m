@@ -261,7 +261,7 @@
         
         [self.dbQueue inDatabase:^(FMDatabase *db){
             if ([db open]) {
-                [db executeUpdate:@"insert into ocexception (content , type , info , insertdate) values (?, ?, ? , ?)",model.callStackStr , @(model.exceptionType) , model.exceptionInfo, [NSDate date]];
+                [db executeUpdate:@"insert into ocexception (content , type , info , insertdate) values (?, ?, ? , ?)",model.callStackStr?:@"", @(model.exceptionType) , model.exceptionInfo?:@"", [NSDate date]];
                 [db close];
                 
                 fullfill(@(YES));
@@ -283,6 +283,7 @@
         FMDatabase *db = [FMDatabase databaseWithPath:self.clsCallDBPath];
         if ([db open]) {
             FMResultSet *rs = [db executeQuery:@"select * from ocexception order by oid desc limit ?, 50" , @(page*50)];
+            //FMResultSet *rs = [db executeQuery:@"select * from ocexception"];
             NSUInteger count = 0;
             NSMutableArray *arr = [NSMutableArray array];
             
