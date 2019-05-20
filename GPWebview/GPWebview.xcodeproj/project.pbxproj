@@ -19,6 +19,9 @@
 		D73128132292A89900A8E3BB /* GPJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128112292A89900A8E3BB /* GPJSBridge.m */; };
 		D73128162292A9AF00A8E3BB /* GPWebMsgCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128142292A9AF00A8E3BB /* GPWebMsgCenter.h */; };
 		D73128172292A9AF00A8E3BB /* GPWebMsgCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128152292A9AF00A8E3BB /* GPWebMsgCenter.m */; };
+		D731281A2292ABD600A8E3BB /* GPWebMsgAcceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = D73128182292ABD600A8E3BB /* GPWebMsgAcceptor.h */; };
+		D731281B2292ABD600A8E3BB /* GPWebMsgAcceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D73128192292ABD600A8E3BB /* GPWebMsgAcceptor.m */; };
+		D731281D2292AC0400A8E3BB /* GPWebMsgDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D731281C2292AC0400A8E3BB /* GPWebMsgDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		D73128112292A89900A8E3BB /* GPJSBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPJSBridge.m; sourceTree = "<group>"; };
 		D73128142292A9AF00A8E3BB /* GPWebMsgCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPWebMsgCenter.h; sourceTree = "<group>"; };
 		D73128152292A9AF00A8E3BB /* GPWebMsgCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPWebMsgCenter.m; sourceTree = "<group>"; };
+		D73128182292ABD600A8E3BB /* GPWebMsgAcceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPWebMsgAcceptor.h; sourceTree = "<group>"; };
+		D73128192292ABD600A8E3BB /* GPWebMsgAcceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPWebMsgAcceptor.m; sourceTree = "<group>"; };
+		D731281C2292AC0400A8E3BB /* GPWebMsgDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPWebMsgDelegate.h; sourceTree = "<group>"; };
 		F6E4B594FE4FE3FCF4E7E275 /* libPods-GPWebview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPWebview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				D73127F72292A15D00A8E3BB /* GPWebview.h */,
+				D731281C2292AC0400A8E3BB /* GPWebMsgDelegate.h */,
 				D73127F82292A15D00A8E3BB /* Info.plist */,
 				D73127FF2292A24A00A8E3BB /* Webcore */,
 			);
@@ -110,6 +117,8 @@
 				D73128112292A89900A8E3BB /* GPJSBridge.m */,
 				D73128142292A9AF00A8E3BB /* GPWebMsgCenter.h */,
 				D73128152292A9AF00A8E3BB /* GPWebMsgCenter.m */,
+				D73128182292ABD600A8E3BB /* GPWebMsgAcceptor.h */,
+				D73128192292ABD600A8E3BB /* GPWebMsgAcceptor.m */,
 			);
 			path = Webcore;
 			sourceTree = "<group>";
@@ -126,7 +135,9 @@
 				D73128062292A2DB00A8E3BB /* GPSafariUAController.h in Headers */,
 				D73128162292A9AF00A8E3BB /* GPWebMsgCenter.h in Headers */,
 				D731280E2292A56300A8E3BB /* GPWebviewCore.h in Headers */,
+				D731281A2292ABD600A8E3BB /* GPWebMsgAcceptor.h in Headers */,
 				D731280A2292A4D200A8E3BB /* GP_OCJS_WKBridge.h in Headers */,
+				D731281D2292AC0400A8E3BB /* GPWebMsgDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +234,7 @@
 				D73128132292A89900A8E3BB /* GPJSBridge.m in Sources */,
 				D731280F2292A56300A8E3BB /* GPWebviewCore.m in Sources */,
 				D731280B2292A4D200A8E3BB /* GP_OCJS_WKBridge.m in Sources */,
+				D731281B2292ABD600A8E3BB /* GPWebMsgAcceptor.m in Sources */,
 				D73128072292A2DB00A8E3BB /* GPSafariUAController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
