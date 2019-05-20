@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSTimer (Convert)
 + (NSDate *) string2Date:(NSString *)dateStr;
 + (NSString*) date2String:(NSDate*) date;
++ (NSString*) timeInterval2String:(NSTimeInterval) interval;
 @end
 
 NS_ASSUME_NONNULL_END

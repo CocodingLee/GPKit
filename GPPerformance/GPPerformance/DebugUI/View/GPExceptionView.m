@@ -157,9 +157,8 @@
     }
     
     GPOCExceptionModel* item = self.exceptionData[indexPath.row];
-    NSDate* d = [NSDate dateWithTimeIntervalSince1970:item.dateInterval];
-    cell.textLabel.text = [NSTimer date2String:d];
-    cell.detailTextLabel.text = @(item.exceptionType).stringValue;
+    cell.textLabel.text = [NSTimer timeInterval2String:item.dateInterval];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"exception type = %@" , @(item.exceptionType).stringValue];
     cell.tag = indexPath.row;
     
     return cell;
