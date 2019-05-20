@@ -43,6 +43,8 @@
         [GPException registerExceptionHandle:self];
     }
     
+    // 启动H5
+    [self setupH5Container];
     
     // UI 启动
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -78,6 +80,79 @@
     return YES;
 }
 
+- (void) setupH5Container
+{
+    // 支持的域名
+    [self setupDomain];
+    
+    // UA设置
+    [self setupUserAgent];
+}
+
+#pragma mark - WebView
+- (void) setupDomain
+{
+    [GPWebView addCookieDomain:@"m.baidu.com"];
+    [GPWebView addCookieDomain:@"m.taobao.com"];
+}
+
+- (void) setupUserAgent
+{
+    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
+    
+    // 获取App的版本号
+    NSString *appVersion = [infoDic objectForKey:@"CFBundleShortVersionString"];
+    // 获取App的build版本
+    NSString *appBuildVersion = [infoDic objectForKey:@"CFBundleVersion"];
+    // 新的UA
+    NSString* addUA = [NSString stringWithFormat:@"GPKitDemo/ios/%@.%@" , appVersion , appBuildVersion];
+    
+    // 获取默认User-Agent
+    //UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectZero];
+    //NSString *oldAgent = [webView stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
+    
+    // 给User-Agent添加额外的信息
+    //NSString *newAgent = [NSString stringWithFormat:@"%@ %@", oldAgent, addUA];
+    //NSLog(@"UA = %@" , newAgent);
+    
+    [GPWebView appendCustomUserAgent:addUA];
+}
+
+#pragma mark - WebView header
+- (void)setupLoginHeader
+{
+    NSString* st = @"";
+    NSString* uid = @"";
+    [GPWebView setCookieValue:st forKey:@"serviceTicket"];
+    [GPWebView setAdditionHeader:uid forKey:@"x-mg-uid"];
+    [GPWebView setAdditionHeader:@"as" forKey:@"x-mg-auth"];
+    
+    //[GPWebView setAdditionHeader:vid forKey:@"x-mg-vid"];
+    //NSDictionary* clientInfo = [AGSClientMagaParams clientInfo];
+    //NSData *clientData = [NSJSONSerialization dataWithJSONObject:clientInfo options:0 error:nil];
+    //NSString *clientStr = [[NSString alloc] initWithData:clientData encoding:NSUTF8StringEncoding];
+    //[GPWebView setAdditionHeader:clientStr forKey:@"x-mg-client"];
+}
+
+- (void)setupLogoutHeader
+{
+    [GPWebView setAdditionHeader:@"" forKey:@"x-mg-ast"];
+    [GPWebView setAdditionHeader:@"" forKey:@"x-mg-uid"];
+    [GPWebView setAdditionHeader:@"" forKey:@"x-mg-auth"];
+}
+
+#pragma mark - Cookie
+
+- (void)setupLogoutCookie
+{
+    [GPWebView setCookieValue:@"" forKey:@"x-mg-ast"];
+    [GPWebView setCookieValue:@"" forKey:@"x-mg-uid"];
+    [GPWebView setCookieValue:@"" forKey:@"x-mg-auth"];
+    
+    [GPWebView setCookieValue:@"" forKey:@"ucid"];
+    [GPWebView setCookieValue:@"" forKey:@"ast"];
+    [GPWebView setCookieValue:@"" forKey:@"serviceTicket"];
+}
 #pragma mark - GPExceptionHandle
 
 /**
