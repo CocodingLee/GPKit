@@ -12,6 +12,7 @@
 #import "GPInspector.h"
 #import "GPLagDB.h"
 #import <KSCrash/KSCrashC.h>
+#import <coobjc/coobjc.h>
 
 @interface GPSettingsCell ()
 @property (nonatomic , strong) UISwitch* hookExceptionBtn;
@@ -117,19 +118,21 @@
 
 - (void) clearFrameLoss
 {
-    [[GPLagDB shareInstance] clearStackData];
-    [MBProgressHUD showSuccess:@"卡顿数据清除完毕！" toView:self.contentView];
+    co_launch(^{
+        [[GPLagDB shareInstance] clearStackData];
+        [GPProgressHUD showSuccess:@"卡顿数据清除完毕！" onView:self.contentView duration:2.0];
+    });
 }
 
 - (void) clearCrash
 {
     kscrash_deleteAllReports();
-    [MBProgressHUD showSuccess:@"Crash数据清除完毕！" toView:self.contentView];
+    [GPProgressHUD showSuccess:@"Crash数据清除完毕！" onView:self.contentView duration:2.0];
 }
 
 - (void) clearHook
 {
     [[GPLagDB shareInstance] clearOCExceptionData];
-    [MBProgressHUD showSuccess:@"Hook数据清除完毕!" toView:self.contentView];
+    [GPProgressHUD showSuccess:@"Hook数据清除完毕!" onView:self.contentView duration:2.0];
 }
 @end

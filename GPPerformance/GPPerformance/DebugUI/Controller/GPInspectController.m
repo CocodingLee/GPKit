@@ -230,7 +230,7 @@ static CGFloat const HOME_LAB_HEADER_HEIGHT = 300;
         cell = [[GPSettingsCell alloc] initWithStyle:UITableViewCellStyleDefault
                                           reuseIdentifier:kFlag];
         
-        cell.contentView.backgroundColor = HEXCOLORA(0xCCCCCC, 0.7);
+        cell.contentView.backgroundColor = HEXCOLORA(0x222222 , 0.2);
     }
     
     [cell update];

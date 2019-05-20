@@ -27,6 +27,7 @@
 		D73127D9229282EE00A8E3BB /* NSTimer+CleanTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127CE229282EE00A8E3BB /* NSTimer+CleanTimer.m */; };
 		D73127DA229282EE00A8E3BB /* NSNotificationCenter+ClearNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127CF229282EE00A8E3BB /* NSNotificationCenter+ClearNotification.m */; };
 		D73127DB229282EE00A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127D1229282EE00A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m */; };
+		D73127E922928F3B00A8E3BB /* KOProgressHUDManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D73127E822928F3B00A8E3BB /* KOProgressHUDManager.bundle */; };
 		D79B2E332285700B00D82858 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79B2E322285700B00D82858 /* Images.xcassets */; };
 		D79B2E3F2285739200D82858 /* GPUIKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E3E2285739200D82858 /* GPUIKitViewController.m */; };
 		D79B2E42228573A100D82858 /* EZKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B2E41228573A100D82858 /* EZKitViewController.m */; };
@@ -102,6 +103,7 @@
 		D73127D1229282EE00A8E3BB /* NSMutableAttributedString+MutableAttributedStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+MutableAttributedStringHook.m"; sourceTree = "<group>"; };
 		D73127D2229282EE00A8E3BB /* NSString+StringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringHook.h"; sourceTree = "<group>"; };
 		D73127D3229282EE00A8E3BB /* NSNotificationCenter+ClearNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+ClearNotification.h"; sourceTree = "<group>"; };
+		D73127E822928F3B00A8E3BB /* KOProgressHUDManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KOProgressHUDManager.bundle; sourceTree = "<group>"; };
 		D7897B2F22759F320095CD53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D79B2E2E2285669A00D82858 /* GPKitDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPKitDemo.pch; sourceTree = "<group>"; };
 		D79B2E322285700B00D82858 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 		D79B2E2C2285663000D82858 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				D73127E822928F3B00A8E3BB /* KOProgressHUDManager.bundle */,
 				D79B2E322285700B00D82858 /* Images.xcassets */,
 				D7E9A29E2272FC8A00CAEE53 /* Assets.xcassets */,
 				D7E9A2952272FC8900CAEE53 /* AppDelegate.h */,
@@ -538,6 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D79B2E7522857DC300D82858 /* tab_me_animate.json in Resources */,
+				D73127E922928F3B00A8E3BB /* KOProgressHUDManager.bundle in Resources */,
 				D79B2E7822857DC300D82858 /* tab_message_animate.json in Resources */,
 				D7E9A2A22272FC8A00CAEE53 /* LaunchScreen.storyboard in Resources */,
 				D79B2E7622857DC300D82858 /* tab_home_animate.json in Resources */,

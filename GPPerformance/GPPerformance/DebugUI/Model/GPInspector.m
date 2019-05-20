@@ -66,9 +66,7 @@ UIWindow* g_lastKeyWindow = nil;
 
 + (void)setShouldHookException:(BOOL)b
 {
-    if (b) {
-        [[NSUserDefaults standardUserDefaults] setObject:@(b ? 1:0) forKey:@"hook_exception"];
-    }
+    [[NSUserDefaults standardUserDefaults] setObject:@(b ? 1:0) forKey:@"hook_exception"];
 }
 
 + (BOOL) isHookException

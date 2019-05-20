@@ -157,6 +157,7 @@ DEPENDENCIES:
   - libextobjc (~> 0.6)
   - lottie-ios (~> 2.5.3)
   - Masonry (~> 1.1.0)
+  - MBProgressHUD (~> 1.1.0)
   - MJRefresh (~> 3.1.16)
 
 SPEC REPOS:
@@ -214,6 +215,6 @@ SPEC CHECKSUMS:
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: d33886af8d4655f722f70d16e2c0d8fcf7355aca
+PODFILE CHECKSUM: 50f3c721aa2f395d241a50729468b21a9d29c6c7
 
 COCOAPODS: 1.5.3

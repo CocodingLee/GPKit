@@ -24,6 +24,7 @@ def _3rdPods
    pod 'MJRefresh'              , '~> 3.1.16'
    
    pod 'libextobjc'             , '~> 0.6'
+   pod 'MBProgressHUD'          , '~> 1.1.0'
 end
 
 ##########################################

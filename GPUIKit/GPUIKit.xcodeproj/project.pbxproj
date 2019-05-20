@@ -10,9 +10,8 @@
 		AB2D26CDE74E3DC69EAF1D88 /* libPods-GPUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 473602EF16F935DE4E91529E /* libPods-GPUIKit.a */; };
 		D731279B228FD16F00A8E3BB /* GPButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D7312799228FD16F00A8E3BB /* GPButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D731279C228FD16F00A8E3BB /* GPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D731279A228FD16F00A8E3BB /* GPButton.m */; };
-		D73127E02292884D00A8E3BB /* MBProgressHUD_GPExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = D73127DD2292884D00A8E3BB /* MBProgressHUD_GPExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73127E12292884D00A8E3BB /* MBProgressHUD+GPAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D73127DE2292884D00A8E3BB /* MBProgressHUD+GPAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D73127E22292884D00A8E3BB /* MBProgressHUD+GPAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127DF2292884D00A8E3BB /* MBProgressHUD+GPAdd.m */; };
+		D73127E522928F0A00A8E3BB /* GPProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D73127E322928F0A00A8E3BB /* GPProgressHUD.m */; };
+		D73127E622928F0A00A8E3BB /* GPProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D73127E422928F0A00A8E3BB /* GPProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7897B162273043E0095CD53 /* UIView+SafeArea.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B142273043E0095CD53 /* UIView+SafeArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7897B172273043E0095CD53 /* UIView+SafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = D7897B152273043E0095CD53 /* UIView+SafeArea.m */; };
 		D7897B1B22757FAA0095CD53 /* UIButton+Expand.h in Headers */ = {isa = PBXBuildFile; fileRef = D7897B1922757FAA0095CD53 /* UIButton+Expand.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -147,9 +146,8 @@
 		CD7AE1FF93B01581A0E7B0D8 /* Pods-GPUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUIKit.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GPUIKit/Pods-GPUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		D7312799228FD16F00A8E3BB /* GPButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; fileEncoding = 4; path = GPButton.h; sourceTree = "<group>"; };
 		D731279A228FD16F00A8E3BB /* GPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPButton.m; sourceTree = "<group>"; };
-		D73127DD2292884D00A8E3BB /* MBProgressHUD_GPExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD_GPExtend.h; sourceTree = "<group>"; };
-		D73127DE2292884D00A8E3BB /* MBProgressHUD+GPAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+GPAdd.h"; sourceTree = "<group>"; };
-		D73127DF2292884D00A8E3BB /* MBProgressHUD+GPAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+GPAdd.m"; sourceTree = "<group>"; };
+		D73127E322928F0A00A8E3BB /* GPProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPProgressHUD.m; sourceTree = "<group>"; };
+		D73127E422928F0A00A8E3BB /* GPProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPProgressHUD.h; sourceTree = "<group>"; };
 		D7897B142273043E0095CD53 /* UIView+SafeArea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SafeArea.h"; sourceTree = "<group>"; };
 		D7897B152273043E0095CD53 /* UIView+SafeArea.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SafeArea.m"; sourceTree = "<group>"; };
 		D7897B1922757FAA0095CD53 /* UIButton+Expand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Expand.h"; sourceTree = "<group>"; };
@@ -308,9 +306,8 @@
 		D73127DC2292884D00A8E3BB /* HUD */ = {
 			isa = PBXGroup;
 			children = (
-				D73127DD2292884D00A8E3BB /* MBProgressHUD_GPExtend.h */,
-				D73127DE2292884D00A8E3BB /* MBProgressHUD+GPAdd.h */,
-				D73127DF2292884D00A8E3BB /* MBProgressHUD+GPAdd.m */,
+				D73127E422928F0A00A8E3BB /* GPProgressHUD.h */,
+				D73127E322928F0A00A8E3BB /* GPProgressHUD.m */,
 			);
 			path = HUD;
 			sourceTree = "<group>";
@@ -701,11 +698,11 @@
 				D7DA719D227EFA4B0026543C /* GPNavigationBar.h in Headers */,
 				D7DA71A8227F00D50026543C /* GPNavigationItem.h in Headers */,
 				D7DA71B0227F04820026543C /* UIViewController+GPTransition.h in Headers */,
+				D73127E622928F0A00A8E3BB /* GPProgressHUD.h in Headers */,
 				D7A863F9228A651800E35569 /* GPBaseViewController.h in Headers */,
 				D7A867EF228BB49A00E35569 /* GPPagerListContainerView.h in Headers */,
 				D7A867D7228BB09900E35569 /* GPCategoryCollectionView.h in Headers */,
 				D7A86814228BBCB600E35569 /* GPCategoryIndicatorComponentView.h in Headers */,
-				D73127E12292884D00A8E3BB /* MBProgressHUD+GPAdd.h in Headers */,
 				D7A86853228BE1B700E35569 /* GPCategoryTitleImageCellModel.h in Headers */,
 				D7A867F2228BB4CC00E35569 /* GPPagerView.h in Headers */,
 				D7A86756228BA54300E35569 /* GPCategoryImageView.h in Headers */,
@@ -757,7 +754,6 @@
 				D7DBD0BA228D0E53007F4B0C /* GPBaseButton.h in Headers */,
 				D7DA71912275B0F30026543C /* UIImage+GPBlur.h in Headers */,
 				D7DA71B9227F058A0026543C /* GPGeneralPushAnimation.h in Headers */,
-				D73127E02292884D00A8E3BB /* MBProgressHUD_GPExtend.h in Headers */,
 				D7DA71BD227F058A0026543C /* GPPresentDismissAnimation.h in Headers */,
 				D7DA71BE227F058A0026543C /* GPPresentAnimation.h in Headers */,
 				D7897B1B22757FAA0095CD53 /* UIButton+Expand.h in Headers */,
@@ -868,7 +864,6 @@
 				D7A867D5228BB09900E35569 /* GPCategoryIndicatorParamsModel.m in Sources */,
 				D7A8674E228BA54300E35569 /* GPCategoryTitleCellModel.m in Sources */,
 				D7A86755228BA54300E35569 /* GPCategoryImageCellModel.m in Sources */,
-				D73127E22292884D00A8E3BB /* MBProgressHUD+GPAdd.m in Sources */,
 				D7A86843228BC1C000E35569 /* GPCategoryDotCellModel.m in Sources */,
 				D7DA71922275B0F30026543C /* UIImage+GPBlur.m in Sources */,
 				D7A863F8228A651800E35569 /* GPBaseViewController.m in Sources */,
@@ -910,6 +905,7 @@
 				D7A8685B228BE22600E35569 /* GPCategoryBaseCellModel.m in Sources */,
 				D7A867E3228BB1E100E35569 /* GPBaseCollectionView.m in Sources */,
 				D7A867DD228BB09900E35569 /* GPCategoryFactory.m in Sources */,
+				D73127E522928F0A00A8E3BB /* GPProgressHUD.m in Sources */,
 				D7A8685F228BE22600E35569 /* GPCategoryBaseCell.m in Sources */,
 				D7DA71BA227F058A0026543C /* GPPresentDismissAnimation.m in Sources */,
 				D7DA71AD227F04210026543C /* GPNavigationController.m in Sources */,
