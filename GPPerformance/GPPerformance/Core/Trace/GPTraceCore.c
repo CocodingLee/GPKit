@@ -424,7 +424,6 @@ static void hook_Objc_msgSend() {
     ret()
 }
 
-
 #pragma mark public
 
 void gpCallTraceStart()
@@ -434,13 +433,13 @@ void gpCallTraceStart()
     dispatch_once(&onceToken, ^{
         pthread_key_create(&_thread_key, &release_thread_call_stack);
         fish_rebind_symbols((struct rebinding[6])
-        {
-            {     "objc_msgSend"
-                , (void *)hook_Objc_msgSend
-                , (void **)&orig_objc_msgSend
-            }
-         
-        }, 1);
+                            {
+                                {     "objc_msgSend"
+                                    , (void *)hook_Objc_msgSend
+                                    , (void **)&orig_objc_msgSend
+                                }
+                                
+                            }, 1);
     });
 }
 

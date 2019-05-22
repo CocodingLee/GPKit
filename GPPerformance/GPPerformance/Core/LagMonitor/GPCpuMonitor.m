@@ -94,7 +94,7 @@
                 if (cpuUsage > CPUMONITORRATE) {
                     
                     // 触发获取主线程堆栈
-                    co_launch_now(^{
+                    co_launch(^{
                         id tmp = await([self.monitorModelActor sendMessage:@(threads[i])]);
                         if (!co_getError()) {
                             //NSLog(@"cpu monitor = %@" , tmp);

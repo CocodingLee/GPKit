@@ -33,8 +33,9 @@ static const char DeallocNSObjectKey;
 
 @implementation NSObject (DeallocBlock)
 
-- (void)gp_deallocBlock:(void(^)(void))block{
-    @synchronized(self){
+- (void)gp_deallocBlock:(void(^)(void))block
+{
+    @synchronized(self) {
         NSMutableArray* blockArray = objc_getAssociatedObject(self, &DeallocNSObjectKey);
         if (!blockArray) {
             blockArray = [NSMutableArray array];

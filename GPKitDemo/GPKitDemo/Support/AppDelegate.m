@@ -180,7 +180,7 @@
 {
     NSLog(@"[CRASH] - %@ , %ld , %@" , exceptionMessage , (long)exceptionCategory , info.description);
     // 触发获取主线程堆栈
-    co_launch_now(^{
+    co_launch(^{
         GPOCExceptionModel* model = [[GPOCExceptionModel alloc] init];
         model.callStackStr = exceptionMessage;
         model.exceptionType = exceptionCategory;

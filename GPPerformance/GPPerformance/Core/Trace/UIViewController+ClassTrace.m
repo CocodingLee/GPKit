@@ -13,7 +13,6 @@
 #import <objc/runtime.h>
 
 @implementation UIViewController (ClassTrace)
-
 //
 //+ (void)load
 //{
@@ -30,7 +29,6 @@
 //        [GPHook hookClass:self fromSelector:fromSelectorDisappear toSelector:toSelectorDisappear];
 //    });
 //}
-//
 
 #pragma mark - Method Hook
 - (void)clsCallHookViewWillAppear:(BOOL)animated
