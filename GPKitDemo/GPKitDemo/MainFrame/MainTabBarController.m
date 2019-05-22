@@ -49,29 +49,30 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
     return (self = (MainTabBarController *)tabBarController);
 }
 
-- (NSArray *)viewControllers {
+- (NSArray *)viewControllers
+{
     
     // 首页 UIKit 调试
     GPUIKitViewController *firstViewController = [[GPUIKitViewController alloc] init];
-    UIViewController *firstNavigationController = [[CYLBaseNavigationController alloc]
+    UIViewController *firstNavigationController = [[GPNavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     [firstViewController cyl_setHideNavigationBarSeparator:YES];
     
     // coobjc 调试
     CoobjcViewController *secondViewController = [[CoobjcViewController alloc] init];
-    UIViewController *secondNavigationController = [[CYLBaseNavigationController alloc]
+    UIViewController *secondNavigationController = [[GPNavigationController alloc]
                                                     initWithRootViewController:secondViewController];
     [secondViewController cyl_setHideNavigationBarSeparator:YES];
     
     // mvvm 测试
     EZKitViewController *thirdViewController = [[EZKitViewController alloc] init];
-    UIViewController *thirdNavigationController = [[CYLBaseNavigationController alloc]
+    UIViewController *thirdNavigationController = [[GPNavigationController alloc]
                                                    initWithRootViewController:thirdViewController];
     [thirdViewController cyl_setHideNavigationBarSeparator:YES];
     
     // 更多
     GPMoreViewController *fourthViewController = [[GPMoreViewController alloc] init];
-    UIViewController *fourthNavigationController = [[CYLBaseNavigationController alloc]
+    UIViewController *fourthNavigationController = [[GPNavigationController alloc]
                                                     initWithRootViewController:fourthViewController];
     [fourthNavigationController cyl_setHideNavigationBarSeparator:YES];
     NSArray *viewControllers = @[

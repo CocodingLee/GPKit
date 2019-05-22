@@ -24,6 +24,11 @@ static ZombieArray* array;
 
 @implementation Co2ViewController
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleDefault;
+}
+
 /**
  业务域
  

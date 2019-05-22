@@ -13,6 +13,11 @@
 
 @implementation CoobjcViewController
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 - (instancetype) init
 {
     self = [super init];
@@ -32,6 +37,7 @@
     self.gp_navigationItem.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.gp_navigationItem.titleLabel.font = [UIFont boldSystemFontOfSize:17];
     self.gp_navigationBar.backgroundColor = HEXCOLOR(0xFFFFFF);
+    self.gp_navigationBar.backgroundColor = HEXCOLORA(0x222222 , 0.5);
     
     if (@available(iOS 11.0, *)) {
         [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];

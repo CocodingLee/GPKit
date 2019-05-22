@@ -76,6 +76,8 @@
                                              selector:@selector(applicationEnterBackground)
                                                  name: UIApplicationDidEnterBackgroundNotification
                                                object:nil];
+    
+    [self setNeedsStatusBarAppearanceUpdate]; 
 }
 
 - (void) applicationBecomeActive
