@@ -21,6 +21,7 @@
         return;
     }
     
-    [[GPWebMsgCenter sharedCenter] unregisterEventWithName:eventName observer:(id<GPWebMsgCenterDelegate>)webiew];
+    [[GPWebMsgCenter sharedCenter] unregisterEventWithName:eventName
+                                                  observer:(id<GPWebMsgCenterDelegate>)webiew];
 }
 @end
