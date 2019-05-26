@@ -25,5 +25,4 @@
 
 
 ## demo 如下
-！[conv_ops](https://github.com/CocodingLee/GPKit/blob/master/demo.gif)
-
+![image](https://github.com/CocodingLee/GPKit/blob/master/demo.gif)
