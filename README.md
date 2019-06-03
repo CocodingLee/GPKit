@@ -26,3 +26,11 @@
 
 ## demo 如下
 ![image](https://github.com/CocodingLee/GPKit/blob/master/demo.gif)
+
+
+## 感谢
+demo 中使用或者参考了如下代码，一一声明。
+1. https://github.com/CocodingLee/KSCrash
+2. https://github.com/CocodingLee/JJException
+3. https://github.com/CocodingLee/SPAlertController
+4. https://github.com/xta0/VZInspector
